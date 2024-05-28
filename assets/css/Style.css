@@ -42,13 +42,9 @@
 }
 
 html {
-   font-size: 62.5%;
    overflow-x: hidden;
 }
 
-body {
-   background-color: var(--light-bg);
-}
 
 .home-bg {
    background: none; /* Remove background from home-bg */
