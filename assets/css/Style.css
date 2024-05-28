@@ -42,13 +42,13 @@
 }
 
 html {
+<<<<<<< HEAD
    /* font-size: 62.5%; */
+=======
+>>>>>>> Sabol
    overflow-x: hidden;
 }
 
-body {
-   background-color: var(--light-bg);
-}
 
 .home-bg {
    background: none; /* Remove background from home-bg */
