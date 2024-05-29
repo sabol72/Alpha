@@ -60,6 +60,12 @@ html {
   overflow-x: hidden;
 }
 
+.btn-small {
+  /* padding: 5px 10px; */
+  font-size: 2px;
+}
+
+
 /* Body and Anchor Styles */
 body {
   color: var(--default-color); /* from File 2 */
