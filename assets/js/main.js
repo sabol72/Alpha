@@ -176,6 +176,6 @@
 // for slider
 $(document).ready(function(){
   $('.carousel').carousel({
-    interval: 1000 // Adjust the interval (in milliseconds) as needed
+    interval: 3000 // Adjust the interval (in milliseconds) as needed
   });
 });
