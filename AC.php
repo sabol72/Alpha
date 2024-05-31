@@ -1,45 +1,3 @@
-<?php require"db_Connect.php"?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title> BBC- maintenance and repair</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-  <!-- slider css -->
-  <style>
-    /* Optional: Custom styles for the image slider */
-    .carousel-item img {
-      width: 100%;
-      height: auto;
-    }
-  </style>
-</head>
-
-<body class="index-page">
 <?php
 // Initialize variables
 $showForm = true;
@@ -89,251 +47,78 @@ $conn->close();
     }
 }
 ?>
+ <!-- Services Section -->
+ <section id="services" class="services section" id="service">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+<!-- Section Title -->
+<div class="container section-title" data-aos="fade-up">
+  <h2>AC Services</h2>
+  <p class="text-black">AC Services that we provide for you.</p>
+</div><!-- End Section Title -->
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <img src="assets/img/logo.png" alt="">
-        
-      </a>
+<div class="container">
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#service">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li> <a href="#book"><button type="button" class="btn btn-primary">Book Now</button></a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+  <div class="row g-5">
 
-    </div>
-  </header>
+    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+      <div class="service-item item-cyan position-relative">
+        <img src="assets/img/install.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+        <div>
+          <h3>AC Installation</h3>
+          <p>If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Buildling  Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.
 
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-      
-      <Section class="home-bg">
-        <section class="home">
-           <div class="swiper home-slider">
-              <div class="swiper-wrapper">
-     
-                 <div class="swiper-slide slide">
-                    <div class="image-container">
-                       <img src="Slider2.jpeg" alt="">
-                       <div class="overlay"></div>
-                       <div class="content">
-                           <span style="color: rgb(255, 255, 255); font-size: 70px;">AC Services</span>
-                           <span>Get Your Service now!</span><br>
-                           <a href="shop.php" class="btn">Book now</a>
-                       </div>
-                    </div>
-                 </div>
-                 <div class="swiper-slide slide">
-                  <div class="image-container">
-                     <img src="Slider2.jpeg" alt="">
-                     <div class="overlay"></div>
-                     <div class="content">
-                         <span style="color: rgb(255, 255, 255); font-size: 70px;">Cleaning Services</span><br>
-                         <span>Get Your Service now!</span><br>
-                         <a href="shop.php" class="btn">Book now</a>
-                     </div>
-                  </div>
-               </div> 
-           </div>
-              </div>
-              <!-- Add Pagination -->
-              <div class="swiper-pagination"></div>
-              <!-- Add Navigation -->
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-           </div>
-        </section>
-     </Section>
-    </section><!-- /Hero Section -->
-    
-     
-
-
-    <!-- Services Section -->
-    <section id="services" class="services section" id="service">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Cleaning Serviceses</h2>
-        <p>All the cleaning services that we provide for you</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row g-5">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item item-cyan position-relative">
-            <img src="assets/img/deep.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
-              <div>
-                <h3>Deep Cleaning Service</h3>
-                <p>Upholstery and mattress cleaning, Carpet cleaning, Cleaning of unreachable and tough spots</p>
-                
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item item-orange position-relative">
-            <img src="assets/img/hvac.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
-              <div>
-                <h3>HVAC Air Duct Cleaning Service</h3>
-                <p>Breathe cleaner air with our expert HVAC air duct cleaning service, ensuring optimal indoor air quality.</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-         
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative">
-            <img src="assets/img/uph.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
-              <div>
-                <h3>Upholstery Sofa Steam Cleaning</h3>
-                <p>Revive your upholstery with our professional sofa steam cleaning service, restoring freshness</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative">
-            <img src="assets/img/village.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
-              <div>
-                <h3>Villa & House Cleaning</h3>
-                <p>Dusting, vacuuming, mopping, sanitizing bathrooms and kitchens, laundry or dishwashing</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative">
-            <img src="assets/img/water tank.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
-              <div>
-                <h3>Water tank Cleaning & Disinfection</h3>
-                <p>Our Water Tank Cleaning & Disinfection Service is a comprehensive solution aimed at ensuring the purity</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative">
-            <img src="assets/img/window.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
-              <div>
-                <h3>Window Glass Cleaning</h3>
-                <p>Exterior Window Cleaning, Facade Cleaning, High-rise Window Cleaning</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative">
-            <img src="assets/img/mattress.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
-              <div>
-                <h3>Mattress Cleaning</h3>
-                <p>Revitalize your sleep sanctuary with our professional mattress cleaning service, ensuring a deep clean</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative">
-            <img src="assets/img/carpet.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
-              <div>
-                <h3>Carpet Cleaning</h3>
-                <p>Revive your carpets with our professional cleaning service, restoring freshness and vibrancy to your home.</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative">
-            <img src="assets/img/pool.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
-              <div>
-                <h3>Pool Cleaning</h3>
-                <p>Keep your pool pristine with our expert pool cleaning service, ensuring crystal-clear waters for your enjoyment.</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
+</p>
           
         </div>
-
       </div>
+    </div><!-- End Service Item -->
 
-    </section><!-- /Services Section -->
+    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+      <div class="service-item item-orange position-relative">
+      <img src="assets/img/maintainance.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+        <div>
+          <h3>AC Maintainance</h3>
+          <p>Regular AC maintenance is essential to ensure that your AC system is running at its best. Our AC maintenance service includes cleaning and checking your AC system’s various components, including the filters, coils, and condenser. By doing this, we can identify any potential issues and fix them before they become bigger problems.</p>
+        </div>
+      </div>
+    </div><!-- End Service Item -->
+
+    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+      <div class="service-item item-teal position-relative">
+      <img src="assets/img/repair.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+        <div>
+          <h3>AC Repairt</h3>
+          <p>If your AC system is not functioning properly, you need a reliable AC repair service that you can trust. Our expert AC technicians can diagnose and repair a wide range of AC problems, from leaks and compressor issues to gas filing and more.
+
+          One common issue with AC systems is leakage, which can lead to a range of problems, including reduced efficiency and higher electricity bills. Our AC technicians can diagnose and fix any leaks in your AC system, ensuring that it is running at its best.</p>
+          
+        </div>
+      </div>
+    </div><!-- End Service Item -->
+
+    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+      <div class="service-item item-red position-relative">
+      <img src="assets/img/duct.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+        <div>
+          <h3>AC Duct cleaning</h3>
+          <p>The ducts that distribute cool air throughout your space can become clogged with dust, dirt, and other debris. This can reduce the efficiency of your AC system and even affect your indoor air quality. Our AC duct cleaning service ensures that your ducts are clean and free of debris, so your AC system is working efficiently and your indoor air quality is healthy.
+
+            we take pride in providing reliable, affordable, and high-quality AC technician services in Dubai. Contact us today to schedule an appointment with one of our experienced AC technicians.</p>
+          
+        </div>
+      </div>
+    </div><!-- End Service Item -->
 
     
 
 
-
-      
-    <!-- about us -->
-
-    <div class="container section-title" data-aos="fade-up" id="about">
-    <h2>About Us</h2>
-    <P style="color: black;"> Al Bahja Building Maintenance and cleaning services do regular cleaning jobs, upholstery cleaning, <br>after party cleaning, deep cleaning, and move-in move-out cleaning. Al Bahja Building Maintenance<br> and cleaning services have cleaners and buses running around Dubai every day.</P>
   </div>
 
-  <div class="container">
-    <h2 class="text-center my-4"> Meet Our Team</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/img/absolute-image.jpg" alt="Jane" class="card-img-top">
-          <div class="card-body">
-            <h2 class="card-title">Jane Doe</h2>
-            <p class="card-text">CEO & Founder</p>
-            <p class="card-text">Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>jane@example.com</p>
-            <button class="btn btn-primary">Contact</button>
-          </div>
-        </div>
-      </div>
+</div>
 
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/img/absolute-image.jpg" alt="Mike" class="card-img-top">
-          <div class="card-body">
-            <h2 class="card-title">Mike Ross</h2>
-            <p class="card-text">Art Director</p>
-            <p class="card-text">Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>mike@example.com</p>
-            <button class="btn btn-primary">Contact</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/img/absolute-image.jpg" alt="John" class="card-img-top">
-          <div class="card-body">
-            <h2 class="card-title">John Doe</h2>
-            <p class="card-text">Designer</p>
-            <p class="card-text">Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>john@example.com</p>
-            <button class="btn btn-primary">Contact</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end about us -->
+</section><!-- /Services Section -->
 
 
-
-  
   <!-- features section -->
 
   <div class="container section-title " data-aos="fade-up" id="features">
@@ -402,13 +187,7 @@ $conn->close();
           </div>
         </div>
       </div>
-
-<!-- end feature section-->
-
-
-
-
-
+    
     <!-- Contact Section -->
    <section id="contact" class="contact section" id="contact">
 
@@ -448,9 +227,6 @@ $conn->close();
 
         </div>
 
-
-
-        <!-- booking services -->
         <div class="container mt-5" id="book">
         <h3 class="text-center">Book Your Service Now</h3>
             <div id="formContainer" <?php if (!$showForm) echo 'style="display: none;"'; ?>>
@@ -532,40 +308,70 @@ $conn->close();
                 </div>
             </div>
         </div><!-- End Container for Form and Confirmation -->
-
-
-
-
-
-
-
-
-
-
-
-        <!-- location section -->
-    
         <div class="row gy-4 mt-1 justify-content-center align-items-center">
     <div class="col-12 text-center">
         <h3>Our Location</h3>
     </div>
-    <div class="col-12" data-aos="fade-up" data-aos-delay="300">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" 
-            frameborder="0" 
-            style="border:0; width: 100%; height: 400px;" 
-            allowfullscreen 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-            
-        </iframe>
-    </div>
+    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div><!-- End Google Maps -->
 </div>
-
     </div><!-- End Container for Contact Section Content -->
 
 </section><!-- End Contact Section -->
 <!-- /Contact Section -->
+
+    <!-- about us -->
+
+    <div class="container section-title" data-aos="fade-up" id="about">
+    <h2>About Us</h2>
+    <P style="color: black;"> we are committed to keeping your home or business comfortable year-round with reliable air conditioning maintenance and repair services. Serving the  area, our team of experienced technicians is dedicated to providing exceptional service and exceeding our customers' expectations.</P>
+  </div>
+
+  <div class="container">
+    <h2 class="text-center my-4"> Meet Our Team</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="assets/img/absolute-image.jpg" alt="Jane" class="card-img-top">
+          <div class="card-body">
+            <h2 class="card-title">Jane Doe</h2>
+            <p class="card-text">CEO & Founder</p>
+            <p class="card-text">Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>jane@example.com</p>
+            <button class="btn btn-primary">Contact</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="assets/img/absolute-image.jpg" alt="Mike" class="card-img-top">
+          <div class="card-body">
+            <h2 class="card-title">Mike Ross</h2>
+            <p class="card-text">Art Director</p>
+            <p class="card-text">Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>mike@example.com</p>
+            <button class="btn btn-primary">Contact</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="assets/img/absolute-image.jpg" alt="John" class="card-img-top">
+          <div class="card-body">
+            <h2 class="card-title">John Doe</h2>
+            <p class="card-text">Designer</p>
+            <p class="card-text">Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>john@example.com</p>
+            <button class="btn btn-primary">Contact</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   </main>
 
@@ -630,8 +436,6 @@ $conn->close();
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
-  <div id="preloader"></div>
-
 
   
 
