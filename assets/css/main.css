@@ -3,7 +3,7 @@
 
 /* Combined Root Variables */
 :root {
-  --main-color: #2980b9; /* from File 1 */
+  --main-color: #a7107a; /* from File 1 */
   --orange: #f39c12; /* from File 1 */
   --red: #e74c3c; /* from File 1 */
   --black: #333; /* from File 1 */
@@ -15,7 +15,7 @@
   --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* from File 2 */
   --heading-font: "Nunito", sans-serif; /* from File 2 */
   --nav-font: "Inter", sans-serif; /* from File 2 */
-  --background-color: #ffffff; /* from File 2 */
+  --background-color: #eef3ee; /* from File 2 */
   --default-color: #3d4348; /* from File 2 */
   --heading-color: #3e5055; /* from File 2 */
   --accent-color: #388da8; /* from File 2 */
@@ -158,7 +158,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   height: 100vh; /* from File 1 */
-  padding: 2rem;
+  padding: 2rem, 2rem, 2rem, 4rem;
   user-select: none;
 }
 

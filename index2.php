@@ -128,7 +128,7 @@ $conn->close();
                        <img src="Slider2.jpeg" alt="">
                        <div class="overlay"></div>
                        <div class="content">
-                           <span style="color: rgb(255, 255, 255); font-size: 70px;">AC Maintenance</span>
+                           <span style="color: rgb(255, 255, 255); font-size: 70px;">AC Services</span>
                            <span>Get Your Service now!</span><br>
                            <a href="shop.php" class="btn">Book now</a>
                        </div>
@@ -139,31 +139,12 @@ $conn->close();
                      <img src="Slider2.jpeg" alt="">
                      <div class="overlay"></div>
                      <div class="content">
-                         <span style="color: rgb(255, 255, 255); font-size: 70px;">AC Maintenance</span><br>
+                         <span style="color: rgb(255, 255, 255); font-size: 70px;">Cleaning Services</span><br>
                          <span>Get Your Service now!</span><br>
                          <a href="shop.php" class="btn">Book now</a>
                      </div>
                   </div>
-               </div>  <div class="swiper-slide slide">
-                <div class="image-container">
-                   <img src="Slider2.jpeg" alt="">
-                   <div class="overlay"></div>
-                   <div class="content">
-                       <span style="color: rgb(255, 255, 255); font-size: 70px;">AC Maintenance</span><br>
-                       <span>Get Your Service now!</span><br>
-                       <a href="shop.php" class="btn">Book now</a>
-                   </div>
-                </div>
-             </div>  <div class="swiper-slide slide">
-              <div class="image-container">
-                 <img src="Slider2.jpeg" alt="">
-                 <div class="overlay"></div>
-                 <div class="content">
-                     <span style="color: rgb(255, 255, 255); font-size: 70px;">AC Maintenance</span><br>
-                     <span>Get Your Service now!</span><br>
-                     <a href="shop.php" class="btn">Book now</a>
-                 </div>
-              </div>
+               </div> 
            </div>
               </div>
               <!-- Add Pagination -->
@@ -175,6 +156,126 @@ $conn->close();
         </section>
      </Section>
     </section><!-- /Hero Section -->
+    
+     
+
+
+    <!-- Services Section -->
+    <section id="services" class="services section" id="service">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Cleaning Serviceses</h2>
+        <p>All the cleaning services that we provide for you</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row g-5">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-cyan position-relative">
+            <img src="assets/img/deep.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+              <div>
+                <h3>Deep Cleaning Service</h3>
+                <p>Upholstery and mattress cleaning, Carpet cleaning, Cleaning of unreachable and tough spots</p>
+                
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-orange position-relative">
+            <img src="assets/img/hvac.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+              <div>
+                <h3>HVAC Air Duct Cleaning Service</h3>
+                <p>Breathe cleaner air with our expert HVAC air duct cleaning service, ensuring optimal indoor air quality.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+         
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+            <img src="assets/img/uph.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+              <div>
+                <h3>Upholstery Sofa Steam Cleaning</h3>
+                <p>Revive your upholstery with our professional sofa steam cleaning service, restoring freshness</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+            <img src="assets/img/village.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+              <div>
+                <h3>Villa & House Cleaning</h3>
+                <p>Dusting, vacuuming, mopping, sanitizing bathrooms and kitchens, laundry or dishwashing</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+            <img src="assets/img/water tank.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+              <div>
+                <h3>Water tank Cleaning & Disinfection</h3>
+                <p>Our Water Tank Cleaning & Disinfection Service is a comprehensive solution aimed at ensuring the purity</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+            <img src="assets/img/window.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+              <div>
+                <h3>Window Glass Cleaning</h3>
+                <p>Exterior Window Cleaning, Facade Cleaning, High-rise Window Cleaning</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+            <img src="assets/img/mattress.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+              <div>
+                <h3>Mattress Cleaning</h3>
+                <p>Revitalize your sleep sanctuary with our professional mattress cleaning service, ensuring a deep clean</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+            <img src="assets/img/carpet.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+              <div>
+                <h3>Carpet Cleaning</h3>
+                <p>Revive your carpets with our professional cleaning service, restoring freshness and vibrancy to your home.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+            <img src="assets/img/pool.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+              <div>
+                <h3>Pool Cleaning</h3>
+                <p>Keep your pool pristine with our expert pool cleaning service, ensuring crystal-clear waters for your enjoyment.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    
+
 
 
       
@@ -182,7 +283,7 @@ $conn->close();
 
     <div class="container section-title" data-aos="fade-up" id="about">
     <h2>About Us</h2>
-    <P style="color: black;"> we are committed to keeping your home or business comfortable year-round with reliable air conditioning maintenance and repair services. Serving the  area, our team of experienced technicians is dedicated to providing exceptional service and exceeding our customers' expectations.</P>
+    <P style="color: black;"> Al Bahja Building Maintenance and cleaning services do regular cleaning jobs, upholstery cleaning, <br>after party cleaning, deep cleaning, and move-in move-out cleaning. Al Bahja Building Maintenance<br> and cleaning services have cleaners and buses running around Dubai every day.</P>
   </div>
 
   <div class="container">
@@ -228,9 +329,11 @@ $conn->close();
       </div>
     </div>
   </div>
+  <!-- end about us -->
 
 
 
+  
   <!-- features section -->
 
   <div class="container section-title " data-aos="fade-up" id="features">
@@ -299,100 +402,12 @@ $conn->close();
           </div>
         </div>
       </div>
-    
-     
 
-    
-
-                   
-           
-
-            
+<!-- end feature section-->
 
 
 
-    <!-- Services Section -->
-    <section id="services" class="services section" id="service">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Services that we provide for you.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row g-5">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item item-cyan position-relative">
-              <img src="assets/img/install.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
-              <div>
-                <h3>AC Installation</h3>
-                <p>If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Buildling  Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.
-
-</p>
-                
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item item-orange position-relative">
-            <img src="assets/img/maintainance.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
-              <div>
-                <h3>AC Maintainance</h3>
-                <p>Regular AC maintenance is essential to ensure that your AC system is running at its best. Our AC maintenance service includes cleaning and checking your AC system’s various components, including the filters, coils, and condenser. By doing this, we can identify any potential issues and fix them before they become bigger problems.</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative">
-            <img src="assets/img/repair.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
-              <div>
-                <h3>AC Repairt</h3>
-                <p>If your AC system is not functioning properly, you need a reliable AC repair service that you can trust. Our expert AC technicians can diagnose and repair a wide range of AC problems, from leaks and compressor issues to gas filing and more.
-
-                One common issue with AC systems is leakage, which can lead to a range of problems, including reduced efficiency and higher electricity bills. Our AC technicians can diagnose and fix any leaks in your AC system, ensuring that it is running at its best.</p>
-                
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item item-red position-relative">
-            <img src="assets/img/duct.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
-              <div>
-                <h3>AC Duct cleaning</h3>
-                <p>The ducts that distribute cool air throughout your space can become clogged with dust, dirt, and other debris. This can reduce the efficiency of your AC system and even affect your indoor air quality. Our AC duct cleaning service ensures that your ducts are clean and free of debris, so your AC system is working efficiently and your indoor air quality is healthy.
-
-                  we take pride in providing reliable, affordable, and high-quality AC technician services in Dubai. Contact us today to schedule an appointment with one of our experienced AC technicians.</p>
-                
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          
-
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-    
-
-
-
-       
-
-    
-    
-  
-
-            
 
     <!-- Contact Section -->
    <section id="contact" class="contact section" id="contact">
@@ -433,6 +448,9 @@ $conn->close();
 
         </div>
 
+
+
+        <!-- booking services -->
         <div class="container mt-5" id="book">
         <h3 class="text-center">Book Your Service Now</h3>
             <div id="formContainer" <?php if (!$showForm) echo 'style="display: none;"'; ?>>
@@ -514,14 +532,36 @@ $conn->close();
                 </div>
             </div>
         </div><!-- End Container for Form and Confirmation -->
+
+
+
+
+
+
+
+
+
+
+
+        <!-- location section -->
+    
         <div class="row gy-4 mt-1 justify-content-center align-items-center">
     <div class="col-12 text-center">
         <h3>Our Location</h3>
     </div>
-    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div><!-- End Google Maps -->
+    <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" 
+            frameborder="0" 
+            style="border:0; width: 100%; height: 400px;" 
+            allowfullscreen 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+            
+        </iframe>
+    </div>
 </div>
+
     </div><!-- End Container for Contact Section Content -->
 
 </section><!-- End Contact Section -->
