@@ -14,7 +14,7 @@ var swiper = new Swiper(".home-slider", {
        clickable: true,
     },
     autoplay: {
-       delay: 2000, // Adjust the delay in milliseconds (e.g., 5000 for 5 seconds)
+       delay: 5000, // Adjust the delay in milliseconds (e.g., 5000 for 5 seconds)
        disableOnInteraction: false, // Allow autoplay to continue after manual navigation
     },
     navigation: {
