@@ -102,12 +102,12 @@ $conn->close();
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html#hero" class="">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#features">Features</a></li>
-          <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-          <li><button type="button" class="btn btn-primary">Book Now</button></li>
+          <li><a href="#hero" class="">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li> <a href="#book"><button type="button" class="btn btn-primary">Book Now</button></a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -178,49 +178,131 @@ $conn->close();
      </Section>
     </section><!-- /Hero Section -->
 
-    <!-- Featured Services Section -->
-    <section id="featured-services" class="featured-services section">
 
-      <div class="container">
+      
+    <!-- about us -->
 
-        <div class="row gy-4">
+    <div class="container section-title" data-aos="fade-up" id="about">
+    <h2>About Us</h2>
+    <P style="color: black;"> we are committed to keeping your home or business comfortable year-round with reliable air conditioning maintenance and repair services. Serving the  area, our team of experienced technicians is dedicated to providing exceptional service and exceeding our customers' expectations.</P>
+  </div>
 
-          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Lorem Ipsum</a></h4>
-                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-              </div>
-            </div>
+  <div class="container">
+    <h2 class="text-center my-4"> Meet Our Team</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="assets/img/absolute-image.jpg" alt="Jane" class="card-img-top">
+          <div class="card-body">
+            <h2 class="card-title">Jane Doe</h2>
+            <p class="card-text">CEO & Founder</p>
+            <p class="card-text">Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>jane@example.com</p>
+            <button class="btn btn-primary">Contact</button>
           </div>
-          <!-- End Service Item -->
-
-          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Dolor Sitema</a></h4>
-                <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exa</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Sed ut perspiciatis</a></h4>
-                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
         </div>
-
       </div>
 
-    </section><!-- /Featured Services Section -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="assets/img/absolute-image.jpg" alt="Mike" class="card-img-top">
+          <div class="card-body">
+            <h2 class="card-title">Mike Ross</h2>
+            <p class="card-text">Art Director</p>
+            <p class="card-text">Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>mike@example.com</p>
+            <button class="btn btn-primary">Contact</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="assets/img/absolute-image.jpg" alt="John" class="card-img-top">
+          <div class="card-body">
+            <h2 class="card-title">John Doe</h2>
+            <p class="card-text">Designer</p>
+            <p class="card-text">Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>john@example.com</p>
+            <button class="btn btn-primary">Contact</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- features section -->
+
+  <div class="container section-title " data-aos="fade-up" id="features">
+      <h1 class="text-center mt-5 mb-4">Our Features</h1>
+    </div>
+  
+  
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <div class="feature-box">
+            <div class="text-center">
+              <i class="fas fa-tools fa-3x mb-3"></i>
+              <h3>Expert Technicians</h3>
+              <p>Our team consists of experienced technicians who are trained to handle all types of AC maintenance and repair tasks with precision and expertise.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 mb-4">
+          <div class="feature-box">
+            <div class="text-center">
+              <i class="fas fa-clock fa-3x mb-3"></i>
+              <h3>24/7 Emergency Service</h3>
+              <p>We understand that AC issues can arise at any time. That's why we offer round-the-clock emergency repair services to address urgent problems promptly.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 mb-4">
+          <div class="feature-box">
+            <div class="text-center">
+              <i class="fas fa-wrench fa-3x mb-3"></i>
+              <h3>Comprehensive Repairs</h3>
+              <p>From minor repairs to major overhauls, we provide comprehensive repair services to restore your AC system's functionality and efficiency quickly and effectively.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 mb-4">
+          <div class="feature-box">
+            <div class="text-center">
+              <i class="fas fa-check-circle fa-3x mb-3"></i>
+              <h3>Quality Assurance</h3>
+              <p>We take pride in the quality of our workmanship and stand behind the services we provide. With us, you can expect reliable repairs and lasting results every time.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 mb-4">
+          <div class="feature-box">
+            <div class="text-center">
+              <i class="fas fa-tools fa-3x mb-3"></i>
+              <h3>Preventive Maintenance</h3>
+              <p>Our preventive maintenance plans are designed to keep your AC system running smoothly year-round, helping to prevent breakdowns and prolong the lifespan of your equipment.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 mb-4">
+          <div class="feature-box">
+            <div class="text-center">
+              <i class="fas fa-handshake fa-3x mb-3"></i>
+              <h3>Customer Satisfaction</h3>
+              <p>Your satisfaction is our priority. We strive to deliver exceptional service and exceed your expectations at every step of the process, from diagnosis to repair.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+     
 
     
 
@@ -232,7 +314,7 @@ $conn->close();
 
 
     <!-- Services Section -->
-    <section id="services" class="services section">
+    <section id="services" class="services section" id="service">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -311,7 +393,7 @@ $conn->close();
             
 
     <!-- Contact Section -->
-   <section id="contact" class="contact section">
+   <section id="contact" class="contact section" id="contact">
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
@@ -349,7 +431,7 @@ $conn->close();
 
         </div>
 
-        <div class="container mt-5">
+        <div class="container mt-5" id="book">
         <h3 class="text-center">Book Your Service Now</h3>
             <div id="formContainer" <?php if (!$showForm) echo 'style="display: none;"'; ?>>
                 <form action="" method="post" class="needs-validation" novalidate>
@@ -444,6 +526,61 @@ $conn->close();
 <!-- /Contact Section -->
 
   </main>
+
+
+  <!-- footer part -->
+
+  <footer>
+    <div class="main-content">
+       <div class="left box">
+          <h2>BBC.Maintainance</h2>
+          <div class="content">
+             <p>Al Bahja Building Maintenance and cleaning services do regular cleaning jobs, upholstery cleaning,
+                after party cleaning, deep cleaning, and move-in move-out cleaning.</p>
+             <div class="social">
+                <a href="#"><span class="fab fa-facebook-f"></span></a>
+                <a href="#"><span class="fab fa-twitter"></span></a>
+                <a href="#"><span class="fab fa-instagram"></span></a>
+                <a href="#"><span class="fab fa-youtube"></span></a>
+             </div>
+          </div>
+       </div>
+
+       <div class="center box">
+          <h2>Details</h2>
+          <div class="content">
+             <div class="place">
+                <span class="fas fa-map-marker-alt"></span>
+                <span class="text">Amwaj Building , Burdubai, Office No. <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                   &nbsp; &nbsp;G19, P.O Box: 46777</span>
+             </div>
+             <div class="phone">
+                <span class="fas fa-phone-alt"></span>
+                <span class="text">+971 (04) 357 2148
+                </span>
+             </div>
+             <div class="email">
+                <span class="fas fa-envelope"></span>
+                <span class="text">
+                   info@bbcmaintenance.com
+                </span>
+             </div>
+          </div>
+       </div>
+
+       <div class="service">
+          <h5>Services</h5>
+          <br>
+          <ul class="service-list">
+              <li><a href="#">AC Installations</a></li>
+              <li><a href="#">AC Maintenance</a></li>
+              <li><a href="#">AC Repair</a></li>
+              <li><a href="#">AC Duct Cleaning</a></li>
+          </ul>
+      </div>
+      
+ </footer>
+
 
 
 
