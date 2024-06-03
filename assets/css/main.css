@@ -78,7 +78,21 @@ a {
   text-decoration: none;
   transition: 0.3s;
 }
-
+#services {
+  padding-top: 10px;
+}
+#about {
+  padding-top: 200px; 
+ }
+ #features {
+    padding-top: 130px;  
+ } 
+ #book{
+    padding-top: 100px;
+ }
+/* .booking-section{
+    padding-top: 400px;
+} */
 a:hover {
   color: color-mix(in srgb, var(--accent-color), transparent 25%); /* from File 2 */
   text-decoration: none;
