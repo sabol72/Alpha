@@ -448,7 +448,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
     color: var(--nav-color); /* from File 2 */
-    font-size: 28px;
+    font-size: 32px;
     cursor: pointer;
     display: none;
     line-height: 0;
@@ -2098,17 +2098,6 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
-
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
-
-
-
-
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 *{
