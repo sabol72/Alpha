@@ -36,7 +36,7 @@
 </head>
 
 <body class="index-page">
-  <?php require "db_Connect.php"; ?>
+  
  
 
   <header id="header" class="header d-flex align-items-center fixed-top">
