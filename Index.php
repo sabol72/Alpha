@@ -36,7 +36,58 @@
 </head>
 
 <body class="index-page">
+  <?php require "db_Connect.php"; ?>
+  <?php
+// Initialize variables
+$showForm = true;
+$message = "";
+
+// Check if the form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Retrieve form data
+    $name = $_POST['gname'];
+    $email = $_POST['gmail'];
+    $mobile = $_POST['cnum'];
+    $address = $_POST['CAddress'];
+    $serviceType = $_POST['cage'];
+    $userMessage = $_POST['message'];
+
+    // Validate form data
+    if (!empty($name) && !empty($email) && !empty($mobile) && !empty($address) && !empty($serviceType) && !empty($userMessage)) {
   
+$customer_name = $_POST['gname'];
+$customer_email = $_POST['gmail'];
+$mobile = $_POST['cnum'];
+$address = $_POST['CAddress'];
+$service_type = $_POST['cage'];
+$message = $_POST['message'];
+
+$sql = "INSERT INTO bookings (customer_name, customer_email, mobile, address, service_type, message) 
+        VALUES (?, ?, ?, ?, ?, ?)";
+
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("ssssss", $customer_name, $customer_email, $mobile, $address, $service_type, $message);
+$txt="";
+if ($stmt->execute()) {
+    // $txt = "New record created successfully";
+
+    // echo "<script>alert('$txt');</script>";
+} else {
+    $txt = "Error: " . $sql . "<br>" . $conn->error;
+    echo "<script>alert('$txt');</script>";
+}
+
+$stmt->close();
+$conn->close();
+
+        // Display confirmation message
+        $showForm = false;
+        $message = "You have booked your service. We will get back to you shortly.";
+    }
+}
+?>
+ 
+
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
       <a href="index.html" class="logo d-flex align-items-center me-auto">
