@@ -23,22 +23,20 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+ 
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+   <link href="assets/css/main.css" rel="stylesheet"> 
   <style>
-    .carousel-item img {
+    /* .carousel-item img {
       width: 100%;
       height: auto;
-    }
+    } */
   </style>
 </head>
 
 <body class="index-page">
   
- 
-
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
       <a href="index.html" class="logo d-flex align-items-center me-auto">
