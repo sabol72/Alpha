@@ -1,32 +1,32 @@
-<div class="step">
-  <h2>Step 3: Customer Information</h2>
-  <form method="POST">
+<?php
+session_start();
+?>
+<!-- Step 3: Personal Details -->
+<div class="step-content">
+  <h2>Step 3: Personal Details</h2>
+  <form method="POST" action="">
     <div class="mb-3">
-      <label for="gname" class="form-label">Name:</label>
-      <input type="text" class="form-control" id="gname" name="gname" required>
+      <label for="name" class="form-label">Name:</label>
+      <input type="text" class="form-control" id="name" name="name" required>
     </div>
     <div class="mb-3">
-      <label for="gmail" class="form-label">Email:</label>
-      <input type="email" class="form-control" id="gmail" name="gmail" required>
+      <label for="email" class="form-label">Email:</label>
+      <input type="email" class="form-control" id="email" name="email" required>
     </div>
     <div class="mb-3">
-      <label for="cnum" class="form-label">Contact Number:</label>
-      <input type="tel" class="form-control" id="cnum" name="cnum" required>
+      <label for="phone" class="form-label">Phone:</label>
+      <input type="tel" class="form-control" id="phone" name="phone" required>
     </div>
     <div class="mb-3">
-      <label for="CAddress" class="form-label">Address:</label>
-      <textarea class="form-control" id="CAddress" name="CAddress" required></textarea>
+      <label for="address" class="form-label">Address:</label>
+      <input type="text" class="form-control" id="address" name="address" required>
     </div>
-    <button type="button" class="btn btn-primary" onclick="nextStep()">Next</button>
+    <div class="mb-3">
+      <label for="additionalMessage" class="form-label">Additional Message:</label>
+      <textarea class="form-control" id="additionalMessage" name="additionalMessage" rows="4"></textarea>
+    </div>
+    <input type="hidden" name="step" value="3">
+    <button type="submit" name="prev" value="prev" class="btn btn-secondary">Previous</button>
+    <button type="submit" class="btn btn-primary">Next</button>
   </form>
 </div>
-
-<script>
-  function nextStep() {
-    if ($('#gname').val() && $('#gmail').val() && $('#cnum').val() && $('#CAddress').val()) {
-      $('form').submit();
-    } else {
-      alert('Please fill in all fields.');
-    }
-  }
-</script>

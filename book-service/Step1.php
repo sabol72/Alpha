@@ -1,25 +1,19 @@
-<div class="step">
-  <h2>Step 1: Select Service Type</h2>
-  <form method="POST">
+<?php
+session_start();
+?>
+<!-- Step 1: Service Details -->
+<div class="step-content">
+  <h2>Step 1: Service Details</h2>
+  <form method="POST" action="">
     <div class="mb-3">
       <label for="serviceType" class="form-label">Select Service Type:</label>
-      <select class="form-select" id="serviceType" name="serviceType" required>
-        <option value="">Select Service Type</option>
-        <option value="maintenance">Maintenance</option>
-        <option value="repair">Repair</option>
-        <option value="cleaning">Cleaning</option>
+      <select class="form-control" id="serviceType" name="serviceType" required>
+        <option value="">Select Service</option>
+        <option value="ac_service">AC Services</option>
+        <option value="cleaning_service">Cleaning Services</option>
       </select>
     </div>
-    <button type="button" class="btn btn-primary" onclick="nextStep()">Next</button>
+    <input type="hidden" name="step" value="1">
+    <button type="submit" class="btn btn-primary">Next</button>
   </form>
 </div>
-
-<script>
-  function nextStep() {
-    if ($('#serviceType').val()) {
-      $('form').submit();
-    } else {
-      alert('Please select a service type.');
-    }
-  }
-</script>

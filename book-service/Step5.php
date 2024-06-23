@@ -1,20 +1,25 @@
-<div class="step">
+<?php
+session_start();
+?>
+<!-- Step 5: Confirmation -->
+<div class="step-content">
   <h2>Step 5: Confirmation</h2>
-  <p>Please review your details below:</p>
-  
-  <ul>
-    <li><strong>Service Type:</strong> <?php echo $_SESSION['serviceType']; ?></li>
-    <li><strong>Number of Cleaners:</strong> <?php echo $_SESSION['cleaners']; ?></li>
-    <li><strong>Hours Required:</strong> <?php echo $_SESSION['hours']; ?></li>
-    <li><strong>Name:</strong> <?php echo $_SESSION['gname']; ?></li>
-    <li><strong>Email:</strong> <?php echo $_SESSION['gmail']; ?></li>
-    <li><strong>Contact Number:</strong> <?php echo $_SESSION['cnum']; ?></li>
-    <li><strong>Address:</strong> <?php echo $_SESSION['CAddress']; ?></li>
-    <li><strong>Payment Option:</strong> <?php echo $_SESSION['paymentOption']; ?></li>
-  </ul>
-  
-  <form method="POST" action="process_booking.php">
-    <!-- Any additional hidden fields or submit buttons can be added here -->
-    <button type="submit" class="btn btn-primary">Confirm Booking</button>
+  <div>
+    <p>Service Type: <?php echo $_SESSION['formData'][1]['serviceType']; ?></p>
+    <p>Preferred Date: <?php echo $_SESSION['formData'][2]['date']; ?></p>
+    <p>Preferred Time: <?php echo $_SESSION['formData'][2]['time']; ?></p>
+    <p>Number of Workers: <?php echo $_SESSION['formData'][2]['workers']; ?></p>
+    <p>Number of Hours: <?php echo $_SESSION['formData'][2]['hours']; ?></p>
+    <p>Name: <?php echo $_SESSION['formData'][3]['name']; ?></p>
+    <p>Email: <?php echo $_SESSION['formData'][3]['email']; ?></p>
+    <p>Phone: <?php echo $_SESSION['formData'][3]['phone']; ?></p>
+    <p>Address: <?php echo $_SESSION['formData'][3]['address']; ?></p>
+    <p>Additional Message: <?php echo $_SESSION['formData'][3]['additionalMessage']; ?></p>
+    <p>Payment Method: <?php echo $_SESSION['formData'][4]['paymentMethod']; ?></p>
+  </div>
+  <form method="POST" action="">
+    <button type="submit" name="prev" value="prev" class="btn btn-secondary">Previous</button>
+    <button type="submit" name="submit" class="btn btn-primary">Confirm Booking</button>
   </form>
 </div>
+<? session_destroy();?>

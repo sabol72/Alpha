@@ -1,24 +1,28 @@
-<div class="step">
-  <h2>Step 2: Cleaners and Hours</h2>
-  <form method="POST">
+<?php
+session_start();
+?>
+<!-- Step 2: Additional Information -->
+<div class="step-content">
+  <h2>Step 2: Additional Information</h2>
+  <form method="POST" action="">
     <div class="mb-3">
-      <label for="cleaners" class="form-label">Number of Cleaners:</label>
-      <input type="number" class="form-control" id="cleaners" name="cleaners" required>
+      <label for="date" class="form-label">Preferred Date:</label>
+      <input type="date" class="form-control" id="date" name="date" required>
     </div>
     <div class="mb-3">
-      <label for="hours" class="form-label">Hours Required:</label>
+      <label for="time" class="form-label">Preferred Time:</label>
+      <input type="time" class="form-control" id="time" name="time" required>
+    </div>
+    <div class="mb-3">
+      <label for="workers" class="form-label">Number of Workers:</label>
+      <input type="number" class="form-control" id="workers" name="workers" required>
+    </div>
+    <div class="mb-3">
+      <label for="hours" class="form-label">Number of Hours:</label>
       <input type="number" class="form-control" id="hours" name="hours" required>
     </div>
-    <button type="button" class="btn btn-primary" onclick="nextStep()">Next</button>
+    <input type="hidden" name="step" value="2">
+    <button type="submit" name="prev" value="prev" class="btn btn-secondary">Previous</button>
+    <button type="submit" class="btn btn-primary">Next</button>
   </form>
 </div>
-
-<script>
-  function nextStep() {
-    if ($('#cleaners').val() && $('#hours').val()) {
-      $('form').submit();
-    } else {
-      alert('Please fill in all fields.');
-    }
-  }
-</script>
