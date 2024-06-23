@@ -367,64 +367,6 @@
 
 
   </main>
-
-
-  <!-- footer part -->
-
-  <footer>
-    <div class="main-content">
-       <div class="left box">
-          <h2>BBC.Maintainance</h2>
-          <div class="content">
-             <p>Al Bahja Building Maintenance and cleaning services do regular cleaning jobs, upholstery cleaning,
-                after party cleaning, deep cleaning, and move-in move-out cleaning.</p>
-             <div class="social">
-                <a href="#"><span class="fab fa-facebook-f"></span></a>
-                <a href="#"><span class="fab fa-twitter"></span></a>
-                <a href="#"><span class="fab fa-instagram"></span></a>
-                <a href="#"><span class="fab fa-youtube"></span></a>
-             </div>
-          </div>
-       </div>
-
-       <div class="center box">
-          <h2>Details</h2>
-          <div class="content">
-             <div class="place">
-                <span class="fas fa-map-marker-alt"></span>
-                <span class="text">Amwaj Building , Burdubai, Office No. <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                   &nbsp; &nbsp;G19, P.O Box: 46777</span>
-             </div>
-             <div class="phone">
-                <span class="fas fa-phone-alt"></span>
-                <span class="text">+971 (04) 357 2148
-                </span>
-             </div>
-             <div class="email">
-                <span class="fas fa-envelope"></span>
-                <span class="text">
-                   info@bbcmaintenance.com
-                </span>
-             </div>
-          </div>
-       </div>
-
-       <div class="service">
-          <h5>Services</h5>
-          <br>
-          <ul class="service-list">
-              <li><a href="#">AC Installations</a></li>
-              <li><a href="#">AC Maintenance</a></li>
-              <li><a href="#">AC Repair</a></li>
-              <li><a href="#">AC Duct Cleaning</a></li>
-          </ul>
-      </div>
-      
- </footer>
-
-
-
-
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
