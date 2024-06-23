@@ -89,6 +89,7 @@ $conn->close();
  
 
   <header id="header" class="header d-flex align-items-center fixed-top">
+  
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <img src="assets/img/logo.png" alt="">
@@ -121,18 +122,18 @@ $conn->close();
                   <div class="content">
                     <span style="color: rgb(255, 255, 255); font-size: 70px;">AC Services</span>
                     <span>Get Your Service now!</span><br>
-                    <button id="slider1-btn" class="btn load-content-btn" data-file="AC.php">Click Here</button>
+                    <button id="slider1-btn" class="btn load-content-btn"  onclick="redirectToAC()">Click Here</button>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide slide">
                 <div class="image-container">
-                  <img src="Slider2.jpeg" alt="">
+                  <img src="Slider3.jpeg" alt="">
                   <div class="overlay"></div>
                   <div class="content">
                     <span style="color: rgb(255, 255, 255); font-size: 70px;">Cleaning Services</span><br>
                     <span>Get Your Service now!</span><br>
-                    <button id="slider2-btn" class="btn load-content-btn" data-file="CLEAN.php">Click Here</button>
+                    <button id="slider2-btn" class="btn load-content-btn"  onclick="redirectToCLEAN()">Click Here</button>
                   </div>
                 </div>
               </div>
@@ -146,9 +147,134 @@ $conn->close();
       </section>
     </section>
 
-    <section id="dynamic-content" class="dynamic-content">
+    <!-- <section id="dynamic-content" class="dynamic-content">
       <!-- Loaded content will appear here -->
-    </section>
+    <!-- </section> --> -->
+
+
+    
+    <!-- Features Section -->
+    <section id="features" class="features section" style="padding-top: 0;" >
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 class=""> Our Features</h2>
+        <h3>Your Comfort, Our Priority</h3> 
+          <h5>"From installation to maintenance, we prioritize your comfort with meticulous care and attention."</h5>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row justify-content-between">
+
+          <div class="col-lg-5 d-flex align-items-center">
+
+            <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+                  <i class="bi bi-binoculars"></i>
+                  <div>
+                    <h4 class="d-none d-lg-block">Comprehensive Service Options:</h4>
+                    <p>
+                    Offer a range of services such as AC installation, maintenance, repair, duct cleaning, and indoor air quality assessments.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+                  <i class="bi bi-box-seam"></i>
+                  <div>
+                    <h4 class="d-none d-lg-block">Emergency Services</h4>
+                    <p>
+                    Provide 24/7 emergency repair services for air conditioning units to cater to urgent needs of customers.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+                  <i class="bi bi-brightness-high"></i>
+                  <div>
+                    <h4 class="d-none d-lg-block">Certified Technicians</h4>
+                    <p>
+                    Employ trained and certified technicians who are skilled in handling various types and brands of AC units and cleaning equipment.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul><!-- End Tab Nav -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="tab-pane fade active show" id="features-tab-1">
+                <img src="assets/img/feature.webp" alt="" class="img-fluid">
+              </div><!-- End Tab Content Item -->
+
+              <div class="tab-pane fade" id="features-tab-2">
+                <img src="assets/img/tabs-2.jpg" alt="" class="img-fluid">
+              </div><!-- End Tab Content Item -->
+
+              <div class="tab-pane fade" id="features-tab-3">
+                <img src="assets/img/tabs-3.jpg" alt="" class="img-fluid">
+              </div><!-- End Tab Content Item -->
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+
+    </section><!-- /Features Details Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row g-5">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-cyan position-relative">
+              <i class="bi bi-activity icon"></i>
+              <div>
+                <h3>AC SERVICES </h3>
+                <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+                <a href="install.php" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-orange position-relative">
+              <i class="bi bi-broadcast icon"></i>
+              <div>
+                <h3>CLEANING</h3>
+                <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+                <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
 
   </main>
 
@@ -184,25 +310,29 @@ $conn->close();
   <!-- Preloader -->
   <div id="preloader"></div>
 
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  
+<!-- Preloader -->
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- for slider of photos -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+<!-- for slider of photos -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/script.js"></script>
-
+<!-- Main JS File -->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 
 </html>

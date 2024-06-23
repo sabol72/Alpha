@@ -179,3 +179,15 @@ $(document).ready(function(){
     interval: 1000 // Adjust the interval (in milliseconds) as needed
   });
 });
+
+  // JavaScript function to handle button click
+  function redirectToAC() {
+    // Redirect to ac.php
+    window.location.href = 'ac.php';
+}
+
+ // JavaScript function to handle button click
+ function redirectToCLEAN() {
+  // Redirect to ac.php
+  window.location.href = 'CLEAN.php';
+}
