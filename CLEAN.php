@@ -50,6 +50,7 @@
       <div class="container section-title" data-aos="fade-up">
         <h2>Cleaning Serviceses</h2>
         <p class="text-black">All the cleaning services that we provide for you</p>
+      
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -62,7 +63,7 @@
               <div>
                 <h3>Deep Cleaning Service</h3>
                 <p>Upholstery and mattress cleaning, Carpet cleaning, Cleaning of unreachable and tough spots</p>
-                
+                <a href="cleaning-service.php#deep" class="btn btn-primary">Learn More</a>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -73,6 +74,7 @@
               <div>
                 <h3>HVAC Air Duct Cleaning Service</h3>
                 <p>Breathe cleaner air with our expert HVAC air duct cleaning service, ensuring optimal indoor air quality.</p>
+                <a href="cleaning-service.php#hvac-duct-cleaning" class="btn btn-primary">Learn More</a>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -85,6 +87,7 @@
               <div>
                 <h3>Upholstery Sofa Steam Cleaning</h3>
                 <p>Revive your upholstery with our professional sofa steam cleaning service, restoring freshness</p>
+
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -450,7 +453,8 @@
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
-
+ <!-- footer part -->
+ <?php include "footer.php"?>
 
   
 

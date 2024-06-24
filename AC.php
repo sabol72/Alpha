@@ -52,64 +52,62 @@
   <p class="text-black">AC Services that we provide for you.</p>
 </div><!-- End Section Title -->
 
-<div class="container">
-  <div class="row g-5">
+<section class="services-section py-3">
+    <div class="container">
+      <div class="row g-5">
 
-  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="service-item item-cyan position-relative">
-          <img src="assets/img/install.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
-          <div>
-            <h3>AC Installation</h3>
-            <p>If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Building Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.</p>
-            <!-- Button to redirect to install.php -->
-            <a href="install.php" class="btn btn-primary">Learn More</a>
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-item item-cyan position-relative">
+            <img src="assets/img/install.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+            <div>
+              <h3>AC Installation</h3>
+              <p>If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Building Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.</p>
+              <!-- Button to redirect to install.php -->
+              <a href="ac-service.php#install" class="btn btn-primary">Learn More</a>
+            </div>
           </div>
-        </div>
-      </div><!-- End Service Item -->
+        </div><!-- End Service Item -->
 
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-      <div class="service-item item-red position-relative">
-        <img src="assets/img/duct.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
-        <div>
-          <h3>AC Duct Cleaning</h3>
-          <p>The ducts that distribute cool air throughout your space can become clogged with dust, dirt, and other debris. This can reduce the efficiency of your AC system and even affect your indoor air quality. Our AC duct cleaning service ensures that your ducts are clean and free of debris, so your AC system is working efficiently and your indoor air quality is healthy.</p>
-          <!-- Button to redirect to duct.php -->
-          <a href="cleaning.php" class="btn btn-primary">Learn More</a>
-        </div>
-      </div>
-    </div><!-- End Service Item -->
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-item item-red position-relative">
+            <img src="assets/img/duct.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+            <div>
+              <h3>AC Duct Cleaning</h3>
+              <p>The ducts that distribute cool air throughout your space can become clogged with dust, dirt, and other debris. This can reduce the efficiency of your AC system and even affect your indoor air quality. Our AC duct cleaning service ensures that your ducts are clean and free of debris, so your AC system is working efficiently and your indoor air quality is healthy.</p>
+              <!-- Button to redirect to cleaning.php -->
+              <a href="ac-service.php?service=cleaning" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
 
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-item item-orange position-relative">
+            <img src="assets/img/maintainance.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+            <div>
+              <h3>AC Maintenance</h3>
+              <p>Regular AC maintenance is essential to ensure that your AC system is running at its best. Our AC maintenance service includes cleaning and checking your AC system’s various components, including the filters, coils, and condenser. By doing this, we can identify any potential issues and fix them before they become bigger problems.</p>
+              <!-- Button to redirect to maintain.php -->
+              <a href="ac-service.php?service=maintenance" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
 
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-item item-teal position-relative">
+            <img src="assets/img/repair.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+            <div>
+              <h3>AC Repair</h3>
+              <p>If your AC system is not functioning properly, you need a reliable AC repair service that you can trust. Our expert AC technicians can diagnose and repair a wide range of AC problems, from leaks and compressor issues to gas filling and more.</p>
+              <!-- Button to redirect to repair.php -->
+              <a href="ac-service.php?service=repair" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
 
-    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-      <div class="service-item item-orange position-relative">
-        <img src="assets/img/maintainance.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
-        <div>
-          <h3>AC Maintenance</h3>
-          <p>Regular AC maintenance is essential to ensure that your AC system is running at its best. Our AC maintenance service includes cleaning and checking your AC system’s various components, including the filters, coils, and condenser. By doing this, we can identify any potential issues and fix them before they become bigger problems.</p>
-          <!-- Button to redirect to maintenance.php -->
-          <a href="maintain.php" class="btn btn-primary">Learn More</a>
-        </div>
-      </div>
-    </div><!-- End Service Item -->
+      </div><!-- End row -->
+    </div><!-- End container -->
+  </section><!-- /Services Section -->
 
-    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-      <div class="service-item item-teal position-relative">
-        <img src="assets/img/repair.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
-        <div>
-          <h3>AC Repair</h3>
-          <p>If your AC system is not functioning properly, you need a reliable AC repair service that you can trust. Our expert AC technicians can diagnose and repair a wide range of AC problems, from leaks and compressor issues to gas filling and more.</p>
-          <!-- Button to redirect to repair.php -->
-          <a href="repair.php" class="btn btn-primary">Learn More</a>
-        </div>
-      </div>
-    </div><!-- End Service Item -->
-
-   
-  </div><!-- End row -->
-</div><!-- End container -->
-
-</section><!-- /Services Section -->
 
 
   <!-- features section -->
@@ -371,6 +369,8 @@
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
+    <!-- footer part -->
+  <?php include "footer.php"?>
 
   
 

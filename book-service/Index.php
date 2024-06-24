@@ -137,7 +137,7 @@
     if ($currentStep < 4) {
       header("Location: index.php?step=" . ($currentStep + 1));
     } else {
-      header("Location: confirmation.php");
+      header("Location: index.php?step=" . ($currentStep + 1));
     }
     exit();
   }
@@ -171,14 +171,7 @@
             <div id="formContent">
               <!-- Step content will be loaded here dynamically -->
             </div>
-            <div id="formButtons" class="mt-4">
-              <?php if ($currentStep > 1) : ?>
-                <button type="button" id="prevBtn" class="btn btn-primary" onclick="changeStep(<?php echo $currentStep - 1; ?>)">Previous</button>
-              <?php endif; ?>
-              <?php if ($currentStep < 5) : ?>
-                <button type="button" id="nextBtn" class="btn btn-primary" onclick="changeStep(<?php echo $currentStep + 1; ?>)">Next</button>
-              <?php endif; ?>
-            </div>
+
           </div>
         </div>
       </div>

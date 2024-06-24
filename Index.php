@@ -257,7 +257,7 @@ $conn->close();
                 <h3>AC Installation</h3>
                 <p>If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Buildling  Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.
                </p>
-                
+               <a href="ac-service.php" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -267,8 +267,8 @@ $conn->close();
               <i class="bi bi-broadcast icon"></i>
               <div>
                 <h3>CLEANING</h3>
-                <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-                <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                <p>Al Bahja Building Maintenance is your trusted partner for comprehensive cleaning services in Dubai. We offer a wide range of cleaning solutions tailored to meet your specific needs, ensuring your home or office is clean, comfortable, and safe</p>
+                <a href="cleaning-service.php" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -284,57 +284,9 @@ $conn->close();
 
 
   <!-- footer part -->
+  <?php include "footer.php"?>
 
-  <footer>
-    <div class="main-content">
-       <div class="left box">
-          <h2>BBC.Maintainance</h2>
-          <div class="content">
-             <p>Al Bahja Building Maintenance and cleaning services do regular cleaning jobs, upholstery cleaning,
-                after party cleaning, deep cleaning, and move-in move-out cleaning.</p>
-             <div class="social">
-                <a href="#"><span class="fab fa-facebook-f"></span></a>
-                <a href="#"><span class="fab fa-twitter"></span></a>
-                <a href="#"><span class="fab fa-instagram"></span></a>
-                <a href="#"><span class="fab fa-youtube"></span></a>
-             </div>
-          </div>
-       </div>
-
-       <div class="center box">
-          <h2>Details</h2>
-          <div class="content">
-             <div class="place">
-                <span class="fas fa-map-marker-alt"></span>
-                <span class="text">Amwaj Building , Burdubai, Office No. <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                   &nbsp; &nbsp;G19, P.O Box: 46777</span>
-             </div>
-             <div class="phone">
-                <span class="fas fa-phone-alt"></span>
-                <span class="text">+971 (04) 357 2148
-                </span>
-             </div>
-             <div class="email">
-                <span class="fas fa-envelope"></span>
-                <span class="text">
-                   info@bbcmaintenance.com
-                </span>
-             </div>
-          </div>
-       </div>
-
-       <div class="service">
-          <h5>Services</h5>
-          <br>
-          <ul class="service-list">
-              <li><a href="#">AC Installations</a></li>
-              <li><a href="#">AC Maintenance</a></li>
-              <li><a href="#">AC Repair</a></li>
-              <li><a href="#">AC Duct Cleaning</a></li>
-          </ul>
-      </div>
-      
- </footer>
+ 
 
 
 
