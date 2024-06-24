@@ -3,18 +3,16 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BBC- Maintenance and Repair</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="../assets/img/favicon.png" rel="icon">
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="stylesheet">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -28,7 +26,7 @@
   <!-- Main CSS File -->
   <link href="../assets/css/main.css" rel="stylesheet">
   <style>
-    /* Add the custom styles here or in main.css */
+    /* Add your custom styles here */
     body {
       color: black;
     }
@@ -82,62 +80,28 @@
       border: 2px solid black;
       outline: none;
     }
-
-    /* Custom focus outline for accessibility */
-    input[type="text"]:focus,
-    input[type="email"]:focus,
-    input[type="tel"]:focus,
-    input[type="date"]:focus,
-    input[type="time"]:focus,
-    select:focus,
-    textarea:focus,
-    button:focus {
-      outline: 2px solid black;
-    }
   </style>
 </head>
 
 <body class="index-page">
-  <?php require "../db_Connect.php"; ?>
-  <?php
-  session_start();
+<?php
+session_start();
 
-  // Function to save form data to session
-  function saveFormData($step) {
-    switch ($step) {
-      case 1:
-        $_SESSION['serviceType'] = $_POST['serviceType'];
-        break;
-      case 2:
-        $_SESSION['cleaners'] = $_POST['cleaners'];
-        $_SESSION['hours'] = $_POST['hours'];
-        break;
-      case 3:
-        $_SESSION['gname'] = $_POST['gname'];
-        $_SESSION['gmail'] = $_POST['gmail'];
-        $_SESSION['cnum'] = $_POST['cnum'];
-        $_SESSION['CAddress'] = $_POST['CAddress'];
-        break;
-      case 4:
-        $_SESSION['paymentOption'] = $_POST['paymentOption'];
-        break;
-      default:
-        break;
-    }
-  }
+// Reset session data if the page is loaded via GET request (refresh)
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    session_destroy(); // Destroy all data registered to a session
+    session_start(); // Re-initialize the session
+    $_SESSION['currentStep'] = 1;
+    $_SESSION['formData'] = [];
+}
 
-  // Check if we are on a specific step
-  $currentStep = isset($_GET['step']) ? intval($_GET['step']) : 1;
-
-  // Handle form submission for each step
-  if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    saveFormData($currentStep);
-
-    // Redirect to the next step
-    if ($currentStep < 4) {
-      header("Location: index.php?step=" . ($currentStep + 1));
+// Handle form submissions
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Check if "prev" button is pressed
+    if (isset($_POST['prev'])) {
+        $_SESSION['currentStep'] = max(1, $_SESSION['currentStep'] - 1);
     } else {
-      header("Location: index.php?step=" . ($currentStep + 1));
+      header("Location: confirmation.php");
     }
     exit();
   }
@@ -186,40 +150,45 @@
   <!-- Main JS File -->
   <script src="../assets/js/main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <script>
-    let currentStep = <?php echo $currentStep; ?>;
-    let formData = <?php echo json_encode($_SESSION); ?>;
+    let currentStep = <?php echo isset($_SESSION['currentStep']) ? $_SESSION['currentStep'] : 1; ?>;
+    let formData = <?php echo isset($_SESSION['formData']) ? json_encode($_SESSION['formData']) : '{}'; ?>;
 
-    function loadStep(step) {
-      $.get(`step${step}.php`, function(data) {
-        $('#formContent').html(data);
-        fillFormWithSavedData();
-      });
-    }
-
-    function changeStep(step) {
+    function changeStep(stepChange) {
       if (validateStep()) {
-        saveFormData(currentStep);
-        currentStep = step;
+        saveFormData();
+        currentStep += stepChange;
+        if (currentStep < 1) currentStep = 1;
         loadStep(currentStep);
         toggleButtons();
       }
     }
 
-    function toggleButtons() {
-      $('#prevBtn').toggle(currentStep > 1);
-      $('#nextBtn').text(currentStep === 4 ? 'Submit' : 'Next');
+    function loadStep(step) {
+      $.get(`Step${step}.php`, function(data) {
+        $('#formContent').html(data);
+        fillFormWithSavedData();
+      });
     }
 
-    function saveFormData(step) {
+    function toggleButtons() {
+      $('#prevBtn').toggle(currentStep > 1);
+      $('#nextBtn').text(currentStep === 5 ? 'Submit' : 'Next');
+    }
+
+    function saveFormData() {
       $('#formContent').find('input, select, textarea').each(function() {
-        formData[$(this).attr('name')] = $(this).val();
+        formData[currentStep] = formData[currentStep] || {};
+        formData[currentStep][this.id] = $(this).val();
       });
     }
 
     function fillFormWithSavedData() {
-      for (let name in formData) {
-        $(`[name="${name}"]`).val(formData[name]);
+      if (formData[currentStep]) {
+        for (let id in formData[currentStep]) {
+          $(`#${id}`).val(formData[currentStep][id]);
+        }
       }
     }
 
