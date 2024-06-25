@@ -149,11 +149,8 @@ $conn->close();
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2 class=""> Our Features</h2>
-        <h3>Your Comfort, Our Priority</h3> 
-          <h5>"From installation to maintenance, we prioritize your comfort with meticulous care and attention."</h5>
-      </div><!-- End Section Title -->
-
-      <div class="container">
+        <h3 class="text-muted">Your Comfort, Our Priority</h3>
+          <h5 class="text-secondary">From installation to maintenance, we prioritize your comfort with meticulous care and attention.</h5>
         <div class="row justify-content-between">
 
           <div class="col-lg-5 d-flex align-items-center">
@@ -231,9 +228,8 @@ $conn->close();
       <div class="container section-title" data-aos="fade-up" id="service">
         <h2>Services</h2>
         <p>Services that we provide for you.</p>
-      </div><!-- End Section Title -->
+      
 
-      <div class="container">
 
         <div class="row g-5">
 
@@ -259,11 +255,8 @@ $conn->close();
               </div>
             </div>
           </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
+</div>
+      </div><!-- End Section Title -->
     </section><!-- /Services Section -->
 
 

@@ -82,13 +82,13 @@ a {
   padding-top: 10px;
 }
 #about {
-  padding-top: 200px; 
+  padding-top: 20px; 
  }
  #features {
-    padding-top: 130px;  
+    padding-top: 13px;  
  } 
  #book{
-    padding-top: 100px;
+    padding-top: 10px;
  }
 /* .booking-section{
     padding-top: 400px;
@@ -98,7 +98,12 @@ a:hover {
   text-decoration: none;
 }
 
-
+.container {
+  background: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 30px;
+}
 
 
 /* Headings */
@@ -534,7 +539,8 @@ h1, h2, h3, h4, h5, h6 {
 # Global Footer
 --------------------------------------------------------------*/
 footer {
-  background-color: rgb(250, 242, 242);
+  background-color: var(--background-color);
+  box-shadow: 0px -18px 18px color-mix(in srgb, var(--default-color), transparent 85%);
   position: relative;
   width: 100%;
   min-height: 350px;
@@ -1998,12 +2004,6 @@ section,
   font-size: 2.1875rem;
   font-weight: 600;
   color: #150202;
-}
-footer{
-  position: relative;
-  bottom: 0px;
-  width: 100%;
-  background: #696666;
 }
 .main-content{
   display: flex;
