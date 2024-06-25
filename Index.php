@@ -105,7 +105,7 @@ $conn->close();
           <li><a href="#features">Features</a></li>
           <li><a href="#service">Services</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li> <a href="#book"><button type="button" class="btn btn-primary">Book Now</button></a></li>
+          <li> <a href="book-service/index.php"><button type="button" class="btn btn-primary">Book Now</button></a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
