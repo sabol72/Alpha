@@ -93,12 +93,12 @@ $conn->close();
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#service">Services</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li> <a href="book-service/index.php"><button type="button" class="btn btn-primary">Book Now</button></a></li>
+          <li> <a href="book-service/booking.php"><button type="button" class="btn btn-primary">Book Now</button></a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -114,7 +114,7 @@ $conn->close();
             <div class="swiper-wrapper">
               <div class="swiper-slide slide">
                 <div class="image-container">
-                  <img src="Slider2.jpeg" alt="">
+                  <img src="assets/img/checking-conditioner.jpg" alt="">
                   <div class="overlay"></div>
                   <div class="content">
                     <span style="color: rgb(255, 255, 255); font-size: 70px;">AC Services</span>
@@ -125,7 +125,7 @@ $conn->close();
               </div>
               <div class="swiper-slide slide">
                 <div class="image-container">
-                  <img src="Slider3.jpeg" alt="">
+                  <img src="assets/img/clean.jpg" alt="">
                   <div class="overlay"></div>
                   <div class="content">
                     <span style="color: rgb(255, 255, 255); font-size: 70px;">Cleaning Services</span><br>
@@ -268,7 +268,7 @@ $conn->close();
 
 
   </main>
-
+  <?php include "book-service/booking.php"; ?>
   <?php include "FAQ.php"?>
   <!-- footer part -->
   <?php include "footer.php"?>

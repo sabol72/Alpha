@@ -187,7 +187,7 @@
     </section><!-- /Service Details Section -->
 
   </main>
-
+  <?php include "book-service/booking.php"; ?>
   <?php include "FAQ.php"?>
   <!-- footer part -->
   <?php include "footer.php"?>

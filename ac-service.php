@@ -210,6 +210,7 @@
     </section><!-- /Services Section -->
 
   </main>
+  <?php include "book-service/booking.php"; ?>
   <?php include "FAQ.php"?>
 
   <!-- Footer -->
