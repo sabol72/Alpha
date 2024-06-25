@@ -148,14 +148,7 @@ $conn->close();
           </div>
         </section>
       </section>
-    </section>
-
-    <!-- <section id="dynamic-content" class="dynamic-content">
-      <!-- Loaded content will appear here -->
-    <!-- </section> --> -->
-
-
-    
+    </section>  
     <!-- Features Section -->
     <section id="features" class="features section" style="padding-top: 0;" >
 
