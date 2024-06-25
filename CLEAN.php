@@ -1,53 +1,48 @@
 
-<?php
-// Initialize variables
-$showForm = true;
-$message = "";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cleaning services</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-// Check if the form is submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Retrieve form data
-    $name = $_POST['gname'];
-    $email = $_POST['gmail'];
-    $mobile = $_POST['cnum'];
-    $address = $_POST['CAddress'];
-    $serviceType = $_POST['cage'];
-    $userMessage = $_POST['message'];
-
-    // Validate form data
-    if (!empty($name) && !empty($email) && !empty($mobile) && !empty($address) && !empty($serviceType) && !empty($userMessage)) {
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   
-$customer_name = $_POST['gname'];
-$customer_email = $_POST['gmail'];
-$mobile = $_POST['cnum'];
-$address = $_POST['CAddress'];
-$service_type = $_POST['cage'];
-$message = $_POST['message'];
+ 
 
-$sql = "INSERT INTO bookings (customer_name, customer_email, mobile, address, service_type, message) 
-        VALUES (?, ?, ?, ?, ?, ?)";
+  <!-- Main CSS File -->
+   <link href="assets/css/main.css" rel="stylesheet"> 
+</head>
 
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("ssssss", $customer_name, $customer_email, $mobile, $address, $service_type, $message);
-$txt="";
-if ($stmt->execute()) {
-    // $txt = "New record created successfully";
+</head>
+<body>
+<header id="header" class="header d-flex align-items-center fixed-top">
+  
+  <div class="container-fluid container-xl position-relative d-flex align-items-center">
+    <a href="index.php" class="logo d-flex align-items-center me-auto">
+      <img src="assets/img/logo.png" alt="">
+    </a>
 
-    // echo "<script>alert('$txt');</script>";
-} else {
-    $txt = "Error: " . $sql . "<br>" . $conn->error;
-    echo "<script>alert('$txt');</script>";
-}
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#book"><button type="button" class="btn btn-primary">Book Now</button></a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+  </div>
+</header>  
 
-$stmt->close();
-$conn->close();
-
-        // Display confirmation message
-        $showForm = false;
-        $message = "You have booked your service. We will get back to you shortly.";
-    }
-}
-?>
     <!-- Services Section -->
     <section id="services" class="services section" id="service">
 
@@ -55,6 +50,7 @@ $conn->close();
       <div class="container section-title" data-aos="fade-up">
         <h2>Cleaning Serviceses</h2>
         <p class="text-black">All the cleaning services that we provide for you</p>
+      
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -67,7 +63,7 @@ $conn->close();
               <div>
                 <h3>Deep Cleaning Service</h3>
                 <p>Upholstery and mattress cleaning, Carpet cleaning, Cleaning of unreachable and tough spots</p>
-                
+                <a href="cleaning-service.php#deep" class="btn btn-primary">Learn More</a>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -78,6 +74,7 @@ $conn->close();
               <div>
                 <h3>HVAC Air Duct Cleaning Service</h3>
                 <p>Breathe cleaner air with our expert HVAC air duct cleaning service, ensuring optimal indoor air quality.</p>
+                <a href="cleaning-service.php#hvac-duct-cleaning" class="btn btn-primary">Learn More</a>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -90,6 +87,7 @@ $conn->close();
               <div>
                 <h3>Upholstery Sofa Steam Cleaning</h3>
                 <p>Revive your upholstery with our professional sofa steam cleaning service, restoring freshness</p>
+
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -455,7 +453,8 @@ $conn->close();
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
-
+ <!-- footer part -->
+ <?php include "footer.php"?>
 
   
 

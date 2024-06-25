@@ -24,18 +24,16 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+ 
 
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-  <!-- slider css -->
+   <link href="assets/css/main.css" rel="stylesheet"> 
   <style>
-    /* Optional: Custom styles for the image slider */
-    .carousel-item img {
+    /* .carousel-item img {
       width: 100%;
       height: auto;
-    }
+    } */
   </style>
 </head>
 
@@ -91,6 +89,7 @@ $conn->close();
 ?>
 
   <header id="header" class="header d-flex align-items-center fixed-top">
+  
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
@@ -114,205 +113,132 @@ $conn->close();
   </header>
 
   <main class="main">
-
-    <!-- Hero Section -->
     <section id="hero" class="hero section">
-      
-      <Section class="home-bg">
+      <section class="home-bg">
         <section class="home">
-           <div class="swiper home-slider">
-              <div class="swiper-wrapper">
-     
-                 <div class="swiper-slide slide">
-                    <div class="image-container">
-                       <img src="Slider2.jpeg" alt="">
-                       <div class="overlay"></div>
-                       <div class="content">
-                           <span style="color: rgb(255, 255, 255); font-size: 70px;">AC Maintenance</span>
-                           <span>Get Your Service now!</span><br>
-                           <a href="shop.php" class="btn">Book now</a>
-                       </div>
-                    </div>
-                 </div>
-                 <div class="swiper-slide slide">
-                  <div class="image-container">
-                     <img src="Slider2.jpeg" alt="">
-                     <div class="overlay"></div>
-                     <div class="content">
-                         <span style="color: rgb(255, 255, 255); font-size: 70px;">AC Maintenance</span><br>
-                         <span>Get Your Service now!</span><br>
-                         <a href="shop.php" class="btn">Book now</a>
-                     </div>
-                  </div>
-               </div>  <div class="swiper-slide slide">
+          <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide">
                 <div class="image-container">
-                   <img src="Slider2.jpeg" alt="">
-                   <div class="overlay"></div>
-                   <div class="content">
-                       <span style="color: rgb(255, 255, 255); font-size: 70px;">AC Maintenance</span><br>
-                       <span>Get Your Service now!</span><br>
-                       <a href="shop.php" class="btn">Book now</a>
-                   </div>
+                  <img src="Slider2.jpeg" alt="">
+                  <div class="overlay"></div>
+                  <div class="content">
+                    <span style="color: rgb(255, 255, 255); font-size: 70px;">AC Services</span>
+                    <span>Get Your Service now!</span><br>
+                    <button id="slider1-btn" class="btn load-content-btn"  onclick="redirectToAC()">Click Here</button>
+                  </div>
                 </div>
-             </div>  <div class="swiper-slide slide">
-              <div class="image-container">
-                 <img src="Slider2.jpeg" alt="">
-                 <div class="overlay"></div>
-                 <div class="content">
-                     <span style="color: rgb(255, 255, 255); font-size: 70px;">AC Maintenance</span><br>
-                     <span>Get Your Service now!</span><br>
-                     <a href="shop.php" class="btn">Book now</a>
-                 </div>
               </div>
-           </div>
+              <div class="swiper-slide slide">
+                <div class="image-container">
+                  <img src="Slider3.jpeg" alt="">
+                  <div class="overlay"></div>
+                  <div class="content">
+                    <span style="color: rgb(255, 255, 255); font-size: 70px;">Cleaning Services</span><br>
+                    <span>Get Your Service now!</span><br>
+                    <button id="slider2-btn" class="btn load-content-btn"  onclick="redirectToCLEAN()">Click Here</button>
+                  </div>
+                </div>
               </div>
-              <!-- Add Pagination -->
-              <div class="swiper-pagination"></div>
-              <!-- Add Navigation -->
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-           </div>
+              <!-- Add more slides as needed -->
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
         </section>
-     </Section>
-    </section><!-- /Hero Section -->
+      </section>
+    </section>
 
+    <!-- <section id="dynamic-content" class="dynamic-content">
+      <!-- Loaded content will appear here -->
+    <!-- </section> --> -->
 
-      
-    <!-- about us -->
-
-    <div class="container section-title" data-aos="fade-up" id="about">
-    <h2>About Us</h2>
-    <P style="color: black;"> we are committed to keeping your home or business comfortable year-round with reliable air conditioning maintenance and repair services. Serving the  area, our team of experienced technicians is dedicated to providing exceptional service and exceeding our customers' expectations.</P>
-  </div>
-
-  <div class="container">
-    <h2 class="text-center my-4"> Meet Our Team</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/img/absolute-image.jpg" alt="Jane" class="card-img-top">
-          <div class="card-body">
-            <h2 class="card-title">Jane Doe</h2>
-            <p class="card-text">CEO & Founder</p>
-            <p class="card-text">Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>jane@example.com</p>
-            <button class="btn btn-primary">Contact</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/img/absolute-image.jpg" alt="Mike" class="card-img-top">
-          <div class="card-body">
-            <h2 class="card-title">Mike Ross</h2>
-            <p class="card-text">Art Director</p>
-            <p class="card-text">Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>mike@example.com</p>
-            <button class="btn btn-primary">Contact</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/img/absolute-image.jpg" alt="John" class="card-img-top">
-          <div class="card-body">
-            <h2 class="card-title">John Doe</h2>
-            <p class="card-text">Designer</p>
-            <p class="card-text">Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>john@example.com</p>
-            <button class="btn btn-primary">Contact</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <!-- features section -->
-
-  <div class="container section-title " data-aos="fade-up" id="features">
-      <h1 class="text-center mt-5 mb-4">Our Features</h1>
-    </div>
-  
-  
-      <div class="row">
-        <div class="col-lg-4 mb-4">
-          <div class="feature-box">
-            <div class="text-center">
-              <i class="fas fa-tools fa-3x mb-3"></i>
-              <h3>Expert Technicians</h3>
-              <p>Our team consists of experienced technicians who are trained to handle all types of AC maintenance and repair tasks with precision and expertise.</p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-lg-4 mb-4">
-          <div class="feature-box">
-            <div class="text-center">
-              <i class="fas fa-clock fa-3x mb-3"></i>
-              <h3>24/7 Emergency Service</h3>
-              <p>We understand that AC issues can arise at any time. That's why we offer round-the-clock emergency repair services to address urgent problems promptly.</p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-lg-4 mb-4">
-          <div class="feature-box">
-            <div class="text-center">
-              <i class="fas fa-wrench fa-3x mb-3"></i>
-              <h3>Comprehensive Repairs</h3>
-              <p>From minor repairs to major overhauls, we provide comprehensive repair services to restore your AC system's functionality and efficiency quickly and effectively.</p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-lg-4 mb-4">
-          <div class="feature-box">
-            <div class="text-center">
-              <i class="fas fa-check-circle fa-3x mb-3"></i>
-              <h3>Quality Assurance</h3>
-              <p>We take pride in the quality of our workmanship and stand behind the services we provide. With us, you can expect reliable repairs and lasting results every time.</p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-lg-4 mb-4">
-          <div class="feature-box">
-            <div class="text-center">
-              <i class="fas fa-tools fa-3x mb-3"></i>
-              <h3>Preventive Maintenance</h3>
-              <p>Our preventive maintenance plans are designed to keep your AC system running smoothly year-round, helping to prevent breakdowns and prolong the lifespan of your equipment.</p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-lg-4 mb-4">
-          <div class="feature-box">
-            <div class="text-center">
-              <i class="fas fa-handshake fa-3x mb-3"></i>
-              <h3>Customer Satisfaction</h3>
-              <p>Your satisfaction is our priority. We strive to deliver exceptional service and exceed your expectations at every step of the process, from diagnosis to repair.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-     
 
     
+    <!-- Features Section -->
+    <section id="features" class="features section" style="padding-top: 0;" >
 
-                   
-           
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 class=""> Our Features</h2>
+        <h3>Your Comfort, Our Priority</h3> 
+          <h5>"From installation to maintenance, we prioritize your comfort with meticulous care and attention."</h5>
+      </div><!-- End Section Title -->
 
-            
+      <div class="container">
+        <div class="row justify-content-between">
+
+          <div class="col-lg-5 d-flex align-items-center">
+
+            <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+                  <i class="bi bi-binoculars"></i>
+                  <div>
+                    <h4 class="d-none d-lg-block">Comprehensive Service Options:</h4>
+                    <p>
+                    Offer a range of services such as AC installation, maintenance, repair, duct cleaning, and indoor air quality assessments.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+                  <i class="bi bi-box-seam"></i>
+                  <div>
+                    <h4 class="d-none d-lg-block">Emergency Services</h4>
+                    <p>
+                    Provide 24/7 emergency repair services for air conditioning units to cater to urgent needs of customers.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+                  <i class="bi bi-brightness-high"></i>
+                  <div>
+                    <h4 class="d-none d-lg-block">Certified Technicians</h4>
+                    <p>
+                    Employ trained and certified technicians who are skilled in handling various types and brands of AC units and cleaning equipment.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul><!-- End Tab Nav -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="tab-pane fade active show" id="features-tab-1">
+                <img src="assets/img/feature.webp" alt="" class="img-fluid">
+              </div><!-- End Tab Content Item -->
+
+              <div class="tab-pane fade" id="features-tab-2">
+                <img src="assets/img/tabs-2.jpg" alt="" class="img-fluid">
+              </div><!-- End Tab Content Item -->
+
+              <div class="tab-pane fade" id="features-tab-3">
+                <img src="assets/img/tabs-3.jpg" alt="" class="img-fluid">
+              </div><!-- End Tab Content Item -->
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
 
 
+    </section><!-- /Features Details Section -->
 
     <!-- Services Section -->
-    <section id="services" class="services section" id="service">
+    <section id="services" class="services section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -331,49 +257,21 @@ $conn->close();
                 <h3>AC Installation</h3>
                 <p>If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Buildling  Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.
                </p>
-                
+               <a href="ac-service.php" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item item-orange position-relative">
-            <img src="assets/img/maintainance.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+              <i class="bi bi-broadcast icon"></i>
               <div>
-                <h3>AC Maintainance</h3>
-                <p>Regular AC maintenance is essential to ensure that your AC system is running at its best. Our AC maintenance service includes cleaning and checking your AC system’s various components, including the filters, coils, and condenser. By doing this, we can identify any potential issues and fix them before they become bigger problems.</p>
+                <h3>CLEANING</h3>
+                <p>Al Bahja Building Maintenance is your trusted partner for comprehensive cleaning services in Dubai. We offer a wide range of cleaning solutions tailored to meet your specific needs, ensuring your home or office is clean, comfortable, and safe</p>
+                <a href="cleaning-service.php" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative">
-            <img src="assets/img/repair.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
-              <div>
-                <h3>AC Repairt</h3>
-                <p>If your AC system is not functioning properly, you need a reliable AC repair service that you can trust. Our expert AC technicians can diagnose and repair a wide range of AC problems, from leaks and compressor issues to gas filing and more.
-
-                One common issue with AC systems is leakage, which can lead to a range of problems, including reduced efficiency and higher electricity bills. Our AC technicians can diagnose and fix any leaks in your AC system, ensuring that it is running at its best.</p>
-                
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item item-red position-relative">
-            <img src="assets/img/duct.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
-              <div>
-                <h3>AC Duct cleaning</h3>
-                <p>The ducts that distribute cool air throughout your space can become clogged with dust, dirt, and other debris. This can reduce the efficiency of your AC system and even affect your indoor air quality. Our AC duct cleaning service ensures that your ducts are clean and free of debris, so your AC system is working efficiently and your indoor air quality is healthy.
-
-                  we take pride in providing reliable, affordable, and high-quality AC technician services in Dubai. Contact us today to schedule an appointment with one of our experienced AC technicians.</p>
-                
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          
-
 
         </div>
 
@@ -381,206 +279,14 @@ $conn->close();
 
     </section><!-- /Services Section -->
 
-    
-
-
-
-       
-
-    
-    
-  
-
-            
-
-    <!-- Contact Section -->
-   <section id="contact" class="contact section" id="contact">
-
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-        <h2>Contact Us</h2>
-        
-    </div><!-- End Section Title -->
-
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-            <div class="col-lg-6">
-                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
-                    <i class="bi bi-geo-alt"></i>
-                    <h3>Address</h3>
-                    <p>A108 Adam Street, New York, NY 535022</p>
-                </div>
-            </div><!-- End Info Item -->
-
-            <div class="col-lg-3 col-md-6">
-                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
-                    <i class="bi bi-telephone"></i>
-                    <h3>Call Us</h3>
-                    <p>+1 5589 55488 55</p>
-                </div>
-            </div><!-- End Info Item -->
-
-            <div class="col-lg-3 col-md-6">
-                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
-                    <i class="bi bi-envelope"></i>
-                    <h3>Email Us</h3>
-                    <p>info@example.com</p>
-                </div>
-            </div><!-- End Info Item -->
-
-        </div>
-
-        <div class="container mt-5" id="book">
-        <h3 class="text-center">Book Your Service Now</h3>
-            <div id="formContainer" <?php if (!$showForm) echo 'style="display: none;"'; ?>>
-                <form action="" method="post" class="needs-validation" novalidate>
-                    <div class="bg-white p-4 p-sm-5">
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="gname" name="gname" placeholder="Customer Name" required>
-                                    <label for="gname">Your Name</label>
-                                    <div class="invalid-feedback">
-                                        Please provide your name.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="gmail" name="gmail" placeholder="Customer Email" required>
-                                    <label for="gmail">Your Email</label>
-                                    <div class="invalid-feedback">
-                                        Please provide a valid email address.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="cnum" name="cnum" placeholder="Your Mobile" required pattern="[0-9]+" title="Please enter only numeric digits" minlength="10" maxlength="15">
-                                    <label for="cnum">Your Mobile</label>
-                                    <div class="invalid-feedback">
-                                        Please provide your mobile number (10 digits).
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="CAddress" name="CAddress" placeholder="Your Address" required>
-                                    <label for="CAddress">Your Address</label>
-                                    <div class="invalid-feedback">
-                                        Please provide your address.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <select class="form-select" id="cage" name="cage" aria-label="Service Type" required>
-                                        <option value="" selected disabled>Select Service Type</option>
-                                        <option value="Service 1">Service 1</option>
-                                        <option value="Service 2">Service 2</option>
-                                        <option value="Service 3">Service 3</option>
-                                        <option value="Service 4">Service 4</option>
-                                    </select>
-                                    <label for="cage">Service Type</label>
-                                    <div class="invalid-feedback">
-                                        Please select a service type.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 80px" required></textarea>
-                                    <label for="message">Message</label>
-                                    <div class="invalid-feedback">
-                                        Please leave a message.
-                                    </div>
-                                </div>
-                            </div>
-                            <input type="hidden" name="status" value="New">
-                            <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit">Book Now!</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div id="confirmationContainer" <?php if ($showForm) echo 'style="display: none;"'; ?>>
-                <div class="bg-white p-4 p-sm-5 text-center">
-                    <p class="lead"><?php echo $message; ?></p>
-                    <button class="btn btn-primary py-3 px-5" onclick="showForm()">Book Another Service</button>
-                </div>
-            </div>
-        </div><!-- End Container for Form and Confirmation -->
-        <div class="row gy-4 mt-1 justify-content-center align-items-center">
-    <div class="col-12 text-center">
-        <h3>Our Location</h3>
-    </div>
-    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div><!-- End Google Maps -->
-</div>
-    </div><!-- End Container for Contact Section Content -->
-
-</section><!-- End Contact Section -->
-<!-- /Contact Section -->
 
   </main>
 
 
   <!-- footer part -->
+  <?php include "footer.php"?>
 
-  <footer>
-    <div class="main-content">
-       <div class="left box">
-          <h2>BBC.Maintainance</h2>
-          <div class="content">
-             <p>Al Bahja Building Maintenance and cleaning services do regular cleaning jobs, upholstery cleaning,
-                after party cleaning, deep cleaning, and move-in move-out cleaning.</p>
-             <div class="social">
-                <a href="#"><span class="fab fa-facebook-f"></span></a>
-                <a href="#"><span class="fab fa-twitter"></span></a>
-                <a href="#"><span class="fab fa-instagram"></span></a>
-                <a href="#"><span class="fab fa-youtube"></span></a>
-             </div>
-          </div>
-       </div>
-
-       <div class="center box">
-          <h2>Details</h2>
-          <div class="content">
-             <div class="place">
-                <span class="fas fa-map-marker-alt"></span>
-                <span class="text">Amwaj Building , Burdubai, Office No. <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                   &nbsp; &nbsp;G19, P.O Box: 46777</span>
-             </div>
-             <div class="phone">
-                <span class="fas fa-phone-alt"></span>
-                <span class="text">+971 (04) 357 2148
-                </span>
-             </div>
-             <div class="email">
-                <span class="fas fa-envelope"></span>
-                <span class="text">
-                   info@bbcmaintenance.com
-                </span>
-             </div>
-          </div>
-       </div>
-
-       <div class="service">
-          <h5>Services</h5>
-          <br>
-          <ul class="service-list">
-              <li><a href="#">AC Installations</a></li>
-              <li><a href="#">AC Maintenance</a></li>
-              <li><a href="#">AC Repair</a></li>
-              <li><a href="#">AC Duct Cleaning</a></li>
-          </ul>
-      </div>
-      
- </footer>
+ 
 
 
 
@@ -591,25 +297,29 @@ $conn->close();
   <!-- Preloader -->
   <div id="preloader"></div>
 
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  
+<!-- Preloader -->
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- for slider of photos -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+<!-- for slider of photos -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/script.js"></script>
-
+<!-- Main JS File -->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 
 </html>

@@ -1,54 +1,50 @@
-<?php
-// Initialize variables
-$showForm = true;
-$message = "";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AC services</title>
 
-// Check if the form is submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Retrieve form data
-    $name = $_POST['gname'];
-    $email = $_POST['gmail'];
-    $mobile = $_POST['cnum'];
-    $address = $_POST['CAddress'];
-    $serviceType = $_POST['cage'];
-    $userMessage = $_POST['message'];
+   
 
-    // Validate form data
-    if (!empty($name) && !empty($email) && !empty($mobile) && !empty($address) && !empty($serviceType) && !empty($userMessage)) {
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   
-$customer_name = $_POST['gname'];
-$customer_email = $_POST['gmail'];
-$mobile = $_POST['cnum'];
-$address = $_POST['CAddress'];
-$service_type = $_POST['cage'];
-$message = $_POST['message'];
+ 
 
-$sql = "INSERT INTO bookings (customer_name, customer_email, mobile, address, service_type, message) 
-        VALUES (?, ?, ?, ?, ?, ?)";
+  <!-- Main CSS File -->
+   <link href="assets/css/main.css" rel="stylesheet"> 
+</head>
+<body>
+<header id="header" class="header d-flex align-items-center fixed-top">
+  
+  <div class="container-fluid container-xl position-relative d-flex align-items-center">
+    <a href="index.php" class="logo d-flex align-items-center me-auto">
+      <img src="assets/img/logo.png" alt="">
+    </a>
 
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("ssssss", $customer_name, $customer_email, $mobile, $address, $service_type, $message);
-$txt="";
-if ($stmt->execute()) {
-    // $txt = "New record created successfully";
-
-    // echo "<script>alert('$txt');</script>";
-} else {
-    $txt = "Error: " . $sql . "<br>" . $conn->error;
-    echo "<script>alert('$txt');</script>";
-}
-
-$stmt->close();
-$conn->close();
-
-        // Display confirmation message
-        $showForm = false;
-        $message = "You have booked your service. We will get back to you shortly.";
-    }
-}
-?>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#book"><button type="button" class="btn btn-primary">Book Now</button></a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+  </div>
+</header>
+  
  <!-- Services Section -->
- <section id="services" class="services section" id="service">
+<section id="services" class="services section" id="service">
 
 <!-- Section Title -->
 <div class="container section-title" data-aos="fade-up">
@@ -56,67 +52,62 @@ $conn->close();
   <p class="text-black">AC Services that we provide for you.</p>
 </div><!-- End Section Title -->
 
-<div class="container">
+<section class="services-section py-3">
+    <div class="container">
+      <div class="row g-5">
 
-  <div class="row g-5">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-item item-cyan position-relative">
+            <img src="assets/img/install.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+            <div>
+              <h3>AC Installation</h3>
+              <p>If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Building Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.</p>
+              <!-- Button to redirect to install.php -->
+              <a href="ac-service.php#install" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
 
-    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-      <div class="service-item item-cyan position-relative">
-        <img src="assets/img/install.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
-        <div>
-          <h3>AC Installation</h3>
-          <p>If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Buildling  Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-item item-red position-relative">
+            <img src="assets/img/duct.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+            <div>
+              <h3>AC Duct Cleaning</h3>
+              <p>The ducts that distribute cool air throughout your space can become clogged with dust, dirt, and other debris. This can reduce the efficiency of your AC system and even affect your indoor air quality. Our AC duct cleaning service ensures that your ducts are clean and free of debris, so your AC system is working efficiently and your indoor air quality is healthy.</p>
+              <!-- Button to redirect to cleaning.php -->
+              <a href="ac-service.php?service=cleaning" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
 
-</p>
-          
-        </div>
-      </div>
-    </div><!-- End Service Item -->
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-item item-orange position-relative">
+            <img src="assets/img/maintainance.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+            <div>
+              <h3>AC Maintenance</h3>
+              <p>Regular AC maintenance is essential to ensure that your AC system is running at its best. Our AC maintenance service includes cleaning and checking your AC system’s various components, including the filters, coils, and condenser. By doing this, we can identify any potential issues and fix them before they become bigger problems.</p>
+              <!-- Button to redirect to maintain.php -->
+              <a href="ac-service.php?service=maintenance" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
 
-    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-      <div class="service-item item-orange position-relative">
-      <img src="assets/img/maintainance.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
-        <div>
-          <h3>AC Maintainance</h3>
-          <p>Regular AC maintenance is essential to ensure that your AC system is running at its best. Our AC maintenance service includes cleaning and checking your AC system’s various components, including the filters, coils, and condenser. By doing this, we can identify any potential issues and fix them before they become bigger problems.</p>
-        </div>
-      </div>
-    </div><!-- End Service Item -->
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-item item-teal position-relative">
+            <img src="assets/img/repair.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+            <div>
+              <h3>AC Repair</h3>
+              <p>If your AC system is not functioning properly, you need a reliable AC repair service that you can trust. Our expert AC technicians can diagnose and repair a wide range of AC problems, from leaks and compressor issues to gas filling and more.</p>
+              <!-- Button to redirect to repair.php -->
+              <a href="ac-service.php?service=repair" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
 
-    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-      <div class="service-item item-teal position-relative">
-      <img src="assets/img/repair.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
-        <div>
-          <h3>AC Repairt</h3>
-          <p>If your AC system is not functioning properly, you need a reliable AC repair service that you can trust. Our expert AC technicians can diagnose and repair a wide range of AC problems, from leaks and compressor issues to gas filing and more.
+      </div><!-- End row -->
+    </div><!-- End container -->
+  </section><!-- /Services Section -->
 
-          One common issue with AC systems is leakage, which can lead to a range of problems, including reduced efficiency and higher electricity bills. Our AC technicians can diagnose and fix any leaks in your AC system, ensuring that it is running at its best.</p>
-          
-        </div>
-      </div>
-    </div><!-- End Service Item -->
-
-    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-      <div class="service-item item-red position-relative">
-      <img src="assets/img/duct.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
-        <div>
-          <h3>AC Duct cleaning</h3>
-          <p>The ducts that distribute cool air throughout your space can become clogged with dust, dirt, and other debris. This can reduce the efficiency of your AC system and even affect your indoor air quality. Our AC duct cleaning service ensures that your ducts are clean and free of debris, so your AC system is working efficiently and your indoor air quality is healthy.
-
-            we take pride in providing reliable, affordable, and high-quality AC technician services in Dubai. Contact us today to schedule an appointment with one of our experienced AC technicians.</p>
-          
-        </div>
-      </div>
-    </div><!-- End Service Item -->
-
-    
-
-
-  </div>
-
-</div>
-
-</section><!-- /Services Section -->
 
 
   <!-- features section -->
@@ -378,6 +369,8 @@ $conn->close();
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
+    <!-- footer part -->
+  <?php include "footer.php"?>
 
   
 

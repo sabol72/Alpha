@@ -180,50 +180,14 @@ $(document).ready(function(){
   });
 });
 
-// booking form additional
+  // JavaScript function to handle button click
+  function redirectToAC() {
+    // Redirect to ac.php
+    window.location.href = 'ac.php';
+}
 
-    document.addEventListener('DOMContentLoaded', function () {
-        const nextButtons = document.querySelectorAll('.next-btn');
-        const prevButtons = document.querySelectorAll('.prev-btn');
-        const progressBar = document.querySelector('.progress-bar');
-        const steps = document.querySelectorAll('.step');
-
-        let currentStep = 1;
-
-        function updateProgress(step) {
-            const progress = (step - 1) / (steps.length - 1) * 100;
-            progressBar.style.width = progress + '%';
-            progressBar.setAttribute('aria-valuenow', progress);
-        }
-
-        function showStep(step) {
-            steps.forEach((s, index) => {
-                if (index === step - 1) {
-                    s.classList.add('active');
-                } else {
-                    s.classList.remove('active');
-                }
-            });
-            updateProgress(step);
-        }
-
-        nextButtons.forEach(button => {
-            button.addEventListener('click', function () {
-                currentStep = parseInt(this.getAttribute('data-next-step'));
-                showStep(currentStep);
-            });
-        });
-
-        prevButtons.forEach(button => {
-            button.addEventListener('click', function () {
-                currentStep = parseInt(this.getAttribute('data-prev-step'));
-                showStep(currentStep);
-            });
-        });
-
-        // Initialize the first step
-        showStep(currentStep);
-    });
-
-
-// Booking form additonal end
+ // JavaScript function to handle button click
+ function redirectToCLEAN() {
+  // Redirect to ac.php
+  window.location.href = 'CLEAN.php';
+}
