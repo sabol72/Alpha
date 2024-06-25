@@ -87,11 +87,29 @@
         <div id="extras-section" style="display: none;">
             <h4>Extras</h4>
             <div class="form-group">
-                <label for="extras">Select Extras</label>
-                <select multiple class="form-control" id="extras">
-                    <option value="Extra 1">Extra 1</option>
-                    <option value="Extra 2">Extra 2</option>
-                    <option value="Extra 3">Extra 3</option>
+                <label for="hours">Select Number of Hours</label>
+                <select class="form-control" id="hours">
+                    <option value="1">1 Hour</option>
+                    <option value="2">2 Hours</option>
+                    <option value="3">3 Hours</option>
+                    <option value="4">4 Hours</option>
+                    <option value="5">5 Hours</option>
+                    <option value="6">6 Hours</option>
+                    <option value="7">7 Hours</option>
+                    <option value="8">8 Hours</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="workers">Select Number of Workers</label>
+                <select class="form-control" id="workers">
+                    <option value="1">1 Worker</option>
+                    <option value="2">2 Workers</option>
+                    <option value="3">3 Workers</option>
+                    <option value="4">4 Workers</option>
+                    <option value="5">5 Workers</option>
+                    <option value="6">6 Workers</option>
+                    <option value="7">7 Workers</option>
+                    <option value="8">8 Workers</option>
                 </select>
             </div>
             <button type="button" class="btn btn-secondary" onclick="previousSection('service-section')">Back</button>
@@ -152,7 +170,8 @@
             <h4>Confirm Booking</h4>
             <p><strong>Location:</strong> <span id="confirm-location"></span></p>
             <p><strong>Service Type:</strong> <span id="confirm-service-type"></span></p>
-            <p><strong>Extras:</strong> <span id="confirm-extras"></span></p>
+            <p><strong>Number Of Hours:</strong> <span id="confirm-hours"></span></p>
+            <p><strong>Number of Workers:</strong> <span id="confirm-workers"></span></p>
             <p><strong>Date:</strong> <span id="confirm-date"></span></p>
             <p><strong>Time:</strong> <span id="confirm-time"></span></p>
             <p><strong>Name:</strong> <span id="confirm-name"></span></p>
@@ -203,7 +222,8 @@
     function displayConfirmation() {
         document.getElementById('confirm-location').textContent = document.getElementById('location').value;
         document.getElementById('confirm-service-type').textContent = document.getElementById('service-type').value;
-        document.getElementById('confirm-extras').textContent = Array.from(document.getElementById('extras').selectedOptions).map(option => option.text).join(', ');
+        document.getElementById('confirm-hours').textContent = Array.from(document.getElementById('hours').selectedOptions).map(option => option.text).join(', ');
+        document.getElementById('confirm-workers').textContent = Array.from(document.getElementById('workers').selectedOptions).map(option => option.text).join(', ');
         document.getElementById('confirm-date').textContent = document.getElementById('date').value;
         document.getElementById('confirm-time').textContent = document.getElementById('time').value;
         document.getElementById('confirm-name').textContent = document.getElementById('name').value;
