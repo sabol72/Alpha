@@ -29,12 +29,6 @@
 
   <!-- Main CSS File -->
    <link href="assets/css/main.css" rel="stylesheet"> 
-  <style>
-    /* .carousel-item img {
-      width: 100%;
-      height: auto;
-    } */
-  </style>
 </head>
 
 <body class="index-page">
@@ -99,7 +93,7 @@ $conn->close();
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="">Home</a></li>
+          <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#service">Services</a></li>
@@ -149,11 +143,6 @@ $conn->close();
         </section>
       </section>
     </section>
-
-    <!-- <section id="dynamic-content" class="dynamic-content">
-      <!-- Loaded content will appear here -->
-    <!-- </section> --> -->
-
 
     
     <!-- Features Section -->
@@ -241,7 +230,7 @@ $conn->close();
     <section id="services" class="services section">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <div class="container section-title" data-aos="fade-up" id="service">
         <h2>Services</h2>
         <p>Services that we provide for you.</p>
       </div><!-- End Section Title -->
@@ -282,7 +271,7 @@ $conn->close();
 
   </main>
 
-
+  <?php include "FAQ.php"?>
   <!-- footer part -->
   <?php include "footer.php"?>
 

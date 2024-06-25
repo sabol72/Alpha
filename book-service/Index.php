@@ -1,208 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BBC- Maintenance and Repair</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="../assets/img/favicon.png" rel="icon">
-  <link href="../assets/img/apple-touch-icon.png" rel="stylesheet">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="../assets/css/main.css" rel="stylesheet">
-  <style>
-    /* Add your custom styles here */
-    body {
-      color: black;
-    }
-
-    button {
-      color: black;
-      background-color: white;
-      border: 2px solid green;
-      padding: 10px 20px;
-      transition: all 0.3s ease;
-    }
-
-    button:hover,
-    button:focus {
-      color: white;
-      background-color: green;
-      border: 2px solid black;
-      outline: none;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    input[type="date"],
-    input[type="time"],
-    select,
-    textarea {
-      color: black;
-      background-color: white;
-      border: 2px solid green;
-      padding: 10px;
-      transition: all 0.3s ease;
-    }
-
-    input[type="text"]:hover,
-    input[type="email"]:hover,
-    input[type="tel"]:hover,
-    input[type="date"]:hover,
-    input[type="time"]:hover,
-    select:hover,
-    textarea:hover,
-    input[type="text"]:focus,
-    input[type="email"]:focus,
-    input[type="tel"]:focus,
-    input[type="date"]:focus,
-    input[type="time"]:focus,
-    select:focus,
-    textarea:focus {
-      color: white;
-      background-color: green;
-      border: 2px solid black;
-      outline: none;
-    }
-  </style>
-</head>
-
-<body class="index-page">
-<?php
-session_start();
-
-// Reset session data if the page is loaded via GET request (refresh)
-if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    session_destroy(); // Destroy all data registered to a session
-    session_start(); // Re-initialize the session
-    $_SESSION['currentStep'] = 1;
-    $_SESSION['formData'] = [];
-}
-
-// Handle form submissions
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Check if "prev" button is pressed
-    if (isset($_POST['prev'])) {
-        $_SESSION['currentStep'] = max(1, $_SESSION['currentStep'] - 1);
-    } else {
-      header("Location: confirmation.php");
-    }
-    exit();
-  }
-  ?>
-
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-      <a href="index.php" class="logo d-flex align-items-center">
-        <img src="../assets/img/logo.png" alt="">
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul class="d-flex align-items-center justify-content-end">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#book"><button type="button" class="btn btn-primary">Book Now</button></a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-    </div>
-  </header>
-
-  <main class="main">
-    <section id="hero" class="hero section">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div id="formContent">
-              <!-- Step content will be loaded here dynamically -->
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Vendor JS Files -->
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/aos/aos.js"></script>
-  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="../assets/js/main.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-  <script>
-    let currentStep = <?php echo isset($_SESSION['currentStep']) ? $_SESSION['currentStep'] : 1; ?>;
-    let formData = <?php echo isset($_SESSION['formData']) ? json_encode($_SESSION['formData']) : '{}'; ?>;
-
-    function changeStep(stepChange) {
-      if (validateStep()) {
-        saveFormData();
-        currentStep += stepChange;
-        if (currentStep < 1) currentStep = 1;
-        loadStep(currentStep);
-        toggleButtons();
-      }
-    }
-
-    function loadStep(step) {
-      $.get(`Step${step}.php`, function(data) {
-        $('#formContent').html(data);
-        fillFormWithSavedData();
-      });
-    }
-
-    function toggleButtons() {
-      $('#prevBtn').toggle(currentStep > 1);
-      $('#nextBtn').text(currentStep === 5 ? 'Submit' : 'Next');
-    }
-
-    function saveFormData() {
-      $('#formContent').find('input, select, textarea').each(function() {
-        formData[currentStep] = formData[currentStep] || {};
-        formData[currentStep][this.id] = $(this).val();
-      });
-    }
-
-    function fillFormWithSavedData() {
-      if (formData[currentStep]) {
-        for (let id in formData[currentStep]) {
-          $(`#${id}`).val(formData[currentStep][id]);
+    <meta charset="UTF-8">
+    <title>Booking System</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <style>
+        .progress {
+            height: 40px;
+            position: relative;
         }
-      }
+        .progress-bar {
+            height: 100%;
+            position: relative;
+            z-index: 2;
+        }
+        .progress-bar-steps {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            z-index: 1;
+        }
+        .progress-bar-step {
+            flex: 1;
+            text-align: center;
+            line-height: 40px;
+        }
+        .progress-bar-step:not(:first-child)::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #e9ecef;
+            z-index: -1;
+        }
+        .progress-bar-step.active::before {
+            background: #007bff;
+        }
+    </style>
+</head>
+<body>
+<div class="container mt-5">
+    <h2 class="text-center">Booking System</h2>
+    <div class="progress my-4">
+        <div class="progress-bar bg-success" role="progressbar" style="width: 16.6%;" id="progress-bar"></div>
+        <div class="progress-bar-steps">
+            <div class="progress-bar-step active">Service</div>
+            <div class="progress-bar-step">Extras</div>
+            <div class="progress-bar-step">Time</div>
+            <div class="progress-bar-step">Details</div>
+            <div class="progress-bar-step">Payment</div>
+            <div class="progress-bar-step">Done</div>
+        </div>
+    </div>
+    <form id="booking-form">
+        <!-- Service Section -->
+        <div id="service-section">
+            <h4>Please select your service</h4>
+            <div class="form-group">
+                <label for="location">Location</label>
+                <select class="form-control" id="location" required>
+                    <option value="">Select City</option>
+                    <option value="Dubai">Dubai</option>
+                    <option value="Abu Dhabi">Abu Dhabi</option>
+                    <option value="Sharjah">Sharjah</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="service-type">Service Type</label>
+                <select class="form-control" id="service-type" required>
+                    <option value="">Select Service</option>
+                    <option value="AC Service">AC Service</option>
+                    <option value="Cleaning">Cleaning</option>
+                </select>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="nextSection('extras-section')">Next</button>
+        </div>
+        <!-- Extras Section -->
+        <div id="extras-section" style="display: none;">
+            <h4>Extras</h4>
+            <div class="form-group">
+                <label for="extras">Select Extras</label>
+                <select multiple class="form-control" id="extras">
+                    <option value="Extra 1">Extra 1</option>
+                    <option value="Extra 2">Extra 2</option>
+                    <option value="Extra 3">Extra 3</option>
+                </select>
+            </div>
+            <button type="button" class="btn btn-secondary" onclick="previousSection('service-section')">Back</button>
+            <button type="button" class="btn btn-primary" onclick="nextSection('time-section')">Next</button>
+        </div>
+        <!-- Time Section -->
+        <div id="time-section" style="display: none;">
+            <h4>Time</h4>
+            <div class="form-group">
+                <label for="date">Select Date</label>
+                <input type="date" class="form-control" id="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Select Time</label>
+                <input type="time" class="form-control" id="time" required>
+            </div>
+            <button type="button" class="btn btn-secondary" onclick="previousSection('extras-section')">Back</button>
+            <button type="button" class="btn btn-primary" onclick="nextSection('details-section')">Next</button>
+        </div>
+        <!-- Details Section -->
+        <div id="details-section" style="display: none;">
+            <h4>Details</h4>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" class="form-control" id="phone" required>
+            </div>
+            <button type="button" class="btn btn-secondary" onclick="previousSection('time-section')">Back</button>
+            <button type="button" class="btn btn-primary" onclick="nextSection('payment-section')">Next</button>
+        </div>
+        <!-- Payment Section -->
+        <div id="payment-section" style="display: none;">
+            <h4>Payment</h4>
+            <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" class="form-control" id="card-number" required>
+            </div>
+            <div class="form-group">
+                <label for="expiry-date">Expiry Date</label>
+                <input type="text" class="form-control" id="expiry-date" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" class="form-control" id="cvv" required>
+            </div>
+            <button type="button" class="btn btn-secondary" onclick="previousSection('details-section')">Back</button>
+            <button type="button" class="btn btn-primary" onclick="nextSection('done-section')">Next</button>
+        </div>
+        <!-- Done Section -->
+        <div id="done-section" style="display: none;">
+            <h4>Confirm Booking</h4>
+            <p><strong>Location:</strong> <span id="confirm-location"></span></p>
+            <p><strong>Service Type:</strong> <span id="confirm-service-type"></span></p>
+            <p><strong>Extras:</strong> <span id="confirm-extras"></span></p>
+            <p><strong>Date:</strong> <span id="confirm-date"></span></p>
+            <p><strong>Time:</strong> <span id="confirm-time"></span></p>
+            <p><strong>Name:</strong> <span id="confirm-name"></span></p>
+            <p><strong>Email:</strong> <span id="confirm-email"></span></p>
+            <p><strong>Phone:</strong> <span id="confirm-phone"></span></p>
+            <p><strong>Card Number:</strong> <span id="confirm-card-number"></span></p>
+            <button type="button" class="btn btn-secondary" onclick="previousSection('payment-section')">Back</button>
+            <button type="submit" class="btn btn-success">Confirm Booking</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    let currentSection = 'service-section';
+    const sections = ['service-section', 'extras-section', 'time-section', 'details-section', 'payment-section', 'done-section'];
+    const progress = document.getElementById('progress-bar');
+
+    function nextSection(sectionId) {
+        document.getElementById(currentSection).style.display = 'none';
+        document.getElementById(sectionId).style.display = 'block';
+        currentSection = sectionId;
+        updateProgressBar();
+        if (sectionId === 'done-section') {
+            displayConfirmation();
+        }
     }
 
-    function validateStep() {
-      // Add your step validation logic here
-      return true;
+    function previousSection(sectionId) {
+        document.getElementById(currentSection).style.display = 'none';
+        document.getElementById(sectionId).style.display = 'block';
+        currentSection = sectionId;
+        updateProgressBar();
     }
 
-    $(document).ready(function() {
-      loadStep(currentStep);
-      toggleButtons();
+    function updateProgressBar() {
+        const currentIndex = sections.indexOf(currentSection);
+        const percentage = ((currentIndex + 1) / sections.length) * 100;
+        progress.style.width = percentage + '%';
+        document.querySelectorAll('.progress-bar-step').forEach((step, index) => {
+            if (index <= currentIndex) {
+                step.classList.add('active');
+            } else {
+                step.classList.remove('active');
+            }
+        });
+    }
+
+    function displayConfirmation() {
+        document.getElementById('confirm-location').textContent = document.getElementById('location').value;
+        document.getElementById('confirm-service-type').textContent = document.getElementById('service-type').value;
+        document.getElementById('confirm-extras').textContent = Array.from(document.getElementById('extras').selectedOptions).map(option => option.text).join(', ');
+        document.getElementById('confirm-date').textContent = document.getElementById('date').value;
+        document.getElementById('confirm-time').textContent = document.getElementById('time').value;
+        document.getElementById('confirm-name').textContent = document.getElementById('name').value;
+        document.getElementById('confirm-email').textContent = document.getElementById('email').value;
+        document.getElementById('confirm-phone').textContent = document.getElementById('phone').value;
+        document.getElementById('confirm-card-number').textContent = document.getElementById('card-number').value;
+    }
+
+    document.getElementById('booking-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Booking Confirmed!');
+        // Here you would normally send the form data to the server using AJAX
+        // For example:
+        // fetch('path/to/your/admin/panel', {
+        //     method: 'POST',
+        //     body: new FormData(this)
+        // }).then(response => response.json()).then(data => {
+        //     console.log(data);
+        // });
     });
-  </script>
-
+</script>
 </body>
-
 </html>
