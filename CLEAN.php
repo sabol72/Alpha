@@ -31,7 +31,7 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero">Home</a></li>
+        <li><a href="#services">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#features">Features</a></li>
         <li><a href="#services">Services</a></li>
@@ -87,6 +87,7 @@
               <div>
                 <h3>Upholstery Sofa Steam Cleaning</h3>
                 <p>Revive your upholstery with our professional sofa steam cleaning service, restoring freshness</p>
+                <a href="cleaning-service.php#hvac-duct-cleaning" class="btn btn-primary">Learn More</a>
 
               </div>
             </div>
@@ -98,6 +99,7 @@
               <div>
                 <h3>Villa & House Cleaning</h3>
                 <p>Dusting, vacuuming, mopping, sanitizing bathrooms and kitchens, laundry or dishwashing</p>
+                <a href="cleaning-service.php#hvac-duct-cleaning" class="btn btn-primary">Learn More</a>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -109,6 +111,7 @@
               <div>
                 <h3>Water tank Cleaning & Disinfection</h3>
                 <p>Our Water Tank Cleaning & Disinfection Service is a comprehensive solution aimed at ensuring the purity</p>
+                <a href="cleaning-service.php#hvac-duct-cleaning" class="btn btn-primary">Learn More</a>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -119,6 +122,7 @@
               <div>
                 <h3>Window Glass Cleaning</h3>
                 <p>Exterior Window Cleaning, Facade Cleaning, High-rise Window Cleaning</p>
+                <a href="cleaning-service.php#hvac-duct-cleaning" class="btn btn-primary">Learn More</a>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -128,7 +132,9 @@
             <img src="assets/img/mattress.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
               <div>
                 <h3>Mattress Cleaning</h3>
-                <p>Revitalize your sleep sanctuary with our professional mattress cleaning service, ensuring a deep clean</p>
+               
+               <p>Revitalize your sleep sanctuary with our professional mattress cleaning service, ensuring a deep clean</p>
+               <a href="cleaning-service.php#hvac-duct-cleaning" class="btn btn-primary">Learn More</a>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -139,6 +145,7 @@
               <div>
                 <h3>Carpet Cleaning</h3>
                 <p>Revive your carpets with our professional cleaning service, restoring freshness and vibrancy to your home.</p>
+                <a href="cleaning-service.php#hvac-duct-cleaning" class="btn btn-primary">Learn More</a>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -148,8 +155,10 @@
             <img src="assets/img/pool.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
               <div>
                 <h3>Pool Cleaning</h3>
-                <p>Keep your pool pristine with our expert pool cleaning service, ensuring crystal-clear waters for your enjoyment.</p>
-              </div>
+                
+              <p>Keep your pool pristine with our expert pool cleaning service, ensuring crystal-clear waters for your enjoyment.</p>
+              <a href="cleaning-service.php#hvac-duct-cleaning" class="btn btn-primary">Learn More</a>
+            </div>
             </div>
           </div><!-- End Service Item -->
 

@@ -58,7 +58,7 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <a href="index.php" class="logo d-flex align-items-center me-auto">
         <img src="assets/img/logo.png" alt="">
       </a>
 
@@ -126,55 +126,55 @@
 
           <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
             <div id="deep-cleaning" class="service-content active-content" id="deep">
-              <img src="assets/img/deep-cleaning.jpg" alt="Deep Cleaning" class="img-fluid services-img">
+              <img src="deep-clean.jpg" alt="Deep Cleaning" class="img-fluid services-img">
               <h3>WELCOME TO DEEP CLEANING SERVICE</h3>
               <p>If you're looking for thorough and comprehensive cleaning services, our deep cleaning service is perfect for you. We clean every nook and corner of your home or office, ensuring a fresh and hygienic environment.</p>
             </div>
 
             <div id="hvac-duct-cleaning" class="service-content" >
-              <img src="assets/img/hvac-duct-cleaning.jpg" alt="HVAC Air Duct Cleaning" class="img-fluid services-img">
+              <img src="hvac.jpg" alt="HVAC Air Duct Cleaning" class="img-fluid services-img">
               <h3>WELCOME TO HVAC AIR DUCT CLEANING</h3>
               <p>Breathe cleaner air with our expert HVAC air duct cleaning service, ensuring optimal indoor air quality for your home or office.</p>
             </div>
 
             <div id="upholstery-cleaning" class="service-content">
-              <img src="assets/img/upholstery-cleaning.jpg" alt="Upholstery Sofa Steam Cleaning" class="img-fluid services-img">
+              <img src="sofa.jpg" alt="Upholstery Sofa Steam Cleaning" class="img-fluid services-img">
               <h3>WELCOME TO UPHOLSTERY SOFA STEAM CLEANING</h3>
               <p>Revitalize your upholstery with our professional sofa steam cleaning service, removing dirt, stains, and allergens, and ensuring a fresh and clean sofa.</p>
             </div>
 
             <div id="villa-cleaning" class="service-content">
-              <img src="assets/img/villa-cleaning.jpg" alt="Villa & House Cleaning" class="img-fluid services-img">
+              <img src="house-clean.jpg" alt="Villa & House Cleaning" class="img-fluid services-img">
               <h3>WELCOME TO VILLA & HOUSE CLEANING</h3>
               <p>Our villa and house cleaning service includes dusting, vacuuming, mopping, sanitizing bathrooms and kitchens, and more, ensuring your home is clean and comfortable.</p>
             </div>
 
             <div id="water-tank-cleaning" class="service-content">
-              <img src="assets/img/water-tank-cleaning.jpg" alt="Water Tank Cleaning & Disinfection" class="img-fluid services-img">
+              <img src="water-tank.jpg" alt="Water Tank Cleaning & Disinfection" class="img-fluid services-img">
               <h3>WELCOME TO WATER TANK CLEANING & DISINFECTION</h3>
               <p>Our water tank cleaning and disinfection service ensures that your water tank is clean, safe, and free from harmful bacteria and contaminants.</p>
             </div>
 
             <div id="window-cleaning" class="service-content">
-              <img src="assets/img/window-cleaning.jpg" alt="Window Glass Cleaning" class="img-fluid services-img">
+              <img src="glass-clean.jpg" alt="Window Glass Cleaning" class="img-fluid services-img">
               <h3>WELCOME TO WINDOW GLASS CLEANING</h3>
               <p>Our window glass cleaning service leaves your windows sparkling clean, enhancing the appearance and letting more light into your home or office.</p>
             </div>
 
             <div id="mattress-cleaning" class="service-content">
-              <img src="assets/img/mattress-cleaning.jpg" alt="Mattress Cleaning" class="img-fluid services-img">
+              <img src="mattress.jpg" alt="Mattress Cleaning" class="img-fluid services-img">
               <h3>WELCOME TO MATTRESS CLEANING</h3>
               <p>Our mattress cleaning service removes dust mites, allergens, and stains, ensuring your mattress is clean, fresh, and comfortable for a good night's sleep.</p>
             </div>
 
             <div id="carpet-cleaning" class="service-content">
-              <img src="assets/img/carpet-cleaning.jpg" alt="Carpet Cleaning" class="img-fluid services-img">
+              <img src="carpet-clean.jpg" alt="Carpet Cleaning" class="img-fluid services-img">
               <h3>WELCOME TO CARPET CLEANING</h3>
               <p>Our carpet cleaning service uses the latest technology, a variety of cleaning solutions, and deep cleaning techniques to ensure your carpets are clean and hygienic.</p>
             </div>
 
             <div id="pool-cleaning" class="service-content">
-              <img src="assets/img/pool-cleaning.jpg" alt="Pool Cleaning" class="img-fluid services-img">
+              <img src="pool.jpg" alt="Pool Cleaning" class="img-fluid services-img">
               <h3>WELCOME TO POOL CLEANING</h3>
               <p>Our swimming pool cleaning service ensures the cleanliness and safety of your pool, so you can enjoy a refreshing swim whenever you like.</p>
             </div>
@@ -188,6 +188,7 @@
 
   </main>
 
+  <?php include "FAQ.php"?>
   <!-- footer part -->
   <?php include "footer.php"?>
   <!-- Scroll Top -->
