@@ -176,13 +176,9 @@
             <h4>Confirm Booking</h4>
             <p><strong>Location:</strong> <span id="confirm-location"></span></p>
             <p><strong>Service Type:</strong> <span id="confirm-service-type"></span></p>
-<<<<<<< HEAD
+            <p><strong>Service Type:</strong> <span id="confirm-sub-service"></span></p>
             <p><strong>Number Of Hours:</strong> <span id="confirm-hours"></span></p>
             <p><strong>Number of Workers:</strong> <span id="confirm-workers"></span></p>
-=======
-            <p><strong>Sub Service:</strong> <span id="confirm-sub-service"></span></p>
-            <p><strong>Extras:</strong> <span id="confirm-extras"></span></p>
->>>>>>> 41e091954874af524bb8c00f9dfed7c941f8ee56
             <p><strong>Date:</strong> <span id="confirm-date"></span></p>
             <p><strong>Time:</strong> <span id="confirm-time"></span></p>
             <p><strong>Name:</strong> <span id="confirm-name"></span></p>
@@ -262,13 +258,9 @@
     function displayConfirmation() {
         document.getElementById('confirm-location').textContent = document.getElementById('location').value;
         document.getElementById('confirm-service-type').textContent = document.getElementById('service-type').value;
-<<<<<<< HEAD
+        document.getElementById('confirm-sub-service').textContent = document.getElementById('sub-service').value;
         document.getElementById('confirm-hours').textContent = Array.from(document.getElementById('hours').selectedOptions).map(option => option.text).join(', ');
         document.getElementById('confirm-workers').textContent = Array.from(document.getElementById('workers').selectedOptions).map(option => option.text).join(', ');
-=======
-        document.getElementById('confirm-sub-service').textContent = document.getElementById('sub-service').value;
-        document.getElementById('confirm-extras').textContent = Array.from(document.getElementById('extras').selectedOptions).map(option => option.text).join(', ');
->>>>>>> 41e091954874af524bb8c00f9dfed7c941f8ee56
         document.getElementById('confirm-date').textContent = document.getElementById('date').value;
         document.getElementById('confirm-time').textContent = document.getElementById('time').value;
         document.getElementById('confirm-name').textContent = document.getElementById('name').value;
