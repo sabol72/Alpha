@@ -142,13 +142,7 @@ $conn->close();
           </div>
         </section>
       </section>
-<<<<<<< HEAD
     </section>  
-=======
-    </section>
-
-    
->>>>>>> b036a3dc861acacf8d45b7a55b36ed22c4d4849a
     <!-- Features Section -->
     <section id="features" class="features section" style="padding-top: 0;" >
 
@@ -279,11 +273,6 @@ $conn->close();
   <!-- footer part -->
   <?php include "footer.php"?>
 
- 
-
-
-
-
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -294,9 +283,6 @@ $conn->close();
 <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 <!-- Preloader -->
-
-
-
 
 <!-- Vendor JS Files -->
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
