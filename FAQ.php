@@ -15,8 +15,8 @@
     />
   </head>
   <body>
-    <div class="FAQ">
-      <h1>FAQs</h1>
+    <div class="container section-title">
+      <h2>FAQs</h2>
       <p>When it comes to repair & maintenance for your home or office, you need an expert. Let's get started</p>
 
       <div class="faq">

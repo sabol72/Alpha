@@ -1,5 +1,5 @@
 
-<footer>
+<footer class="mt-5">
         <div class="footer-cointaner">
             <div class="row">
                   <div class="col" id="company">

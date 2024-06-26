@@ -48,13 +48,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Cleaning Serviceses</h2>
-        <p class="text-black">All the cleaning services that we provide for you</p>
-      
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
+        <h2>Cleaning Services</h2>
         <div class="row g-5">
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
@@ -167,16 +161,14 @@
 
       </div>
 
+
     </section><!-- /Services Section -->
 
     
  <!-- features section -->
 
  <div class="container section-title " data-aos="fade-up" id="features">
-      <h1 class="text-center mt-5 mb-4">Our Features</h1>
-    </div>
-  
-  
+      <h2 class="text-center mt-5 mb-4">Our Features</h2>
       <div class="row">
         <div class="col-lg-4 mb-4">
           <div class="feature-box">
@@ -238,23 +230,16 @@
           </div>
         </div>
       </div>
-
+</div>
+</div>
 <!-- end feature section-->
-
-
-      
 
     <!-- Contact Section -->
    <section id="contact" class="contact section" id="contact">
 
     <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
+    <div class="container section-title" data-aos="fade-up" data-aos-delay="100">
         <h2>Contact Us</h2>
-        
-    </div><!-- End Section Title -->
-
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4">
 
             <div class="col-lg-6">
@@ -301,160 +286,11 @@
     </div>
 </div>
 
-    </div><!-- End Container for Contact Section Content -->
+</div><!-- End Container for Contact Section Content -->
 
 </section><!-- End Contact Section -->
 <!-- /Contact Section -->
-
-
-
-        <!-- booking services -->
-        <div class="container mt-5" id="book">
-        <h3 class="text-center">Book Your Service Now</h3>
-            <div id="formContainer" <?php if (!$showForm) echo 'style="display: none;"'; ?>>
-                <form action="" method="post" class="needs-validation" novalidate>
-                    <div class="bg-white p-4 p-sm-5">
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="gname" name="gname" placeholder="Customer Name" required>
-                                    <label for="gname">Your Name</label>
-                                    <div class="invalid-feedback">
-                                        Please provide your name.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="gmail" name="gmail" placeholder="Customer Email" required>
-                                    <label for="gmail">Your Email</label>
-                                    <div class="invalid-feedback">
-                                        Please provide a valid email address.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="cnum" name="cnum" placeholder="Your Mobile" required pattern="[0-9]+" title="Please enter only numeric digits" minlength="10" maxlength="15">
-                                    <label for="cnum">Your Mobile</label>
-                                    <div class="invalid-feedback">
-                                        Please provide your mobile number (10 digits).
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="CAddress" name="CAddress" placeholder="Your Address" required>
-                                    <label for="CAddress">Your Address</label>
-                                    <div class="invalid-feedback">
-                                        Please provide your address.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <select class="form-select" id="cage" name="cage" aria-label="Service Type" required>
-                                        <option value="" selected disabled>Select Service Type</option>
-                                        <option value="Service 1">Service 1</option>
-                                        <option value="Service 2">Service 2</option>
-                                        <option value="Service 3">Service 3</option>
-                                        <option value="Service 4">Service 4</option>
-                                    </select>
-                                    <label for="cage">Service Type</label>
-                                    <div class="invalid-feedback">
-                                        Please select a service type.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 80px" required></textarea>
-                                    <label for="message">Message</label>
-                                    <div class="invalid-feedback">
-                                        Please leave a message.
-                                    </div>
-                                </div>
-                            </div>
-                            <input type="hidden" name="status" value="New">
-                            <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit">Book Now!</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div id="confirmationContainer" <?php if ($showForm) echo 'style="display: none;"'; ?>>
-                <div class="bg-white p-4 p-sm-5 text-center">
-                    <p class="lead"><?php echo $message; ?></p>
-                    <button class="btn btn-primary py-3 px-5" onclick="showForm()">Book Another Service</button>
-                </div>
-            </div>
-        </div><!-- End Container for Form and Confirmation -->
-
-
-
-
-
-
-
-
-
-
-
-       
-    <!-- about us -->
-
-    <div class="container section-title" data-aos="fade-up" id="about">
-    <h2>About Us</h2>
-    <P style="color: black;"> Al Bahja Building Maintenance and cleaning services do regular cleaning jobs, upholstery cleaning, <br>after party cleaning, deep cleaning, and move-in move-out cleaning. Al Bahja Building Maintenance<br> and cleaning services have cleaners and buses running around Dubai every day.</P>
-  </div>
-
-  <div class="container">
-    <h2 class="text-center my-4"> Meet Our Team</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/img/absolute-image.jpg" alt="Jane" class="card-img-top">
-          <div class="card-body">
-            <h2 class="card-title">Jane Doe</h2>
-            <p class="card-text">CEO & Founder</p>
-            <p class="card-text">Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>jane@example.com</p>
-            <button class="btn btn-primary">Contact</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/img/absolute-image.jpg" alt="Mike" class="card-img-top">
-          <div class="card-body">
-            <h2 class="card-title">Mike Ross</h2>
-            <p class="card-text">Art Director</p>
-            <p class="card-text">Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>mike@example.com</p>
-            <button class="btn btn-primary">Contact</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/img/absolute-image.jpg" alt="John" class="card-img-top">
-          <div class="card-body">
-            <h2 class="card-title">John Doe</h2>
-            <p class="card-text">Designer</p>
-            <p class="card-text">Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>john@example.com</p>
-            <button class="btn btn-primary">Contact</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end about us -->
-
-  </main>
+</main>
 
 
 

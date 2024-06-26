@@ -49,11 +49,8 @@
 <!-- Section Title -->
 <div class="container section-title" data-aos="fade-up">
   <h2>AC Services</h2>
-  <p class="text-black">AC Services that we provide for you.</p>
-</div><!-- End Section Title -->
 
 <section class="services-section py-3">
-    <div class="container">
       <div class="row g-5">
 
         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
@@ -105,18 +102,15 @@
         </div><!-- End Service Item -->
 
       </div><!-- End row -->
-    </div><!-- End container -->
   </section><!-- /Services Section -->
+</div><!-- End Section Title -->
 
 
 
   <!-- features section -->
 
   <div class="container section-title " data-aos="fade-up" id="features">
-      <h1 class="text-center mt-5 mb-4">Our Features</h1>
-    </div>
-  
-  
+      <h2 class="text-center mt-5 mb-4">Our Features</h2>
       <div class="row">
         <div class="col-lg-4 mb-4">
           <div class="feature-box">
@@ -178,6 +172,10 @@
           </div>
         </div>
       </div>
+    </div>
+  
+  
+     
     
     <!-- Contact Section -->
    <section id="contact" class="contact section" id="contact">
@@ -185,13 +183,7 @@
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>Contact Us</h2>
-        
-    </div><!-- End Section Title -->
-
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
+          <div class="row gy-4">
             <div class="col-lg-6">
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
                     <i class="bi bi-geo-alt"></i>
@@ -217,7 +209,6 @@
             </div><!-- End Info Item -->
 
         </div>
-        <?php include "book-service/booking.php"; ?>
         <div class="row gy-4 mt-1 justify-content-center align-items-center">
     <div class="col-12 text-center">
         <h3>Our Location</h3>
@@ -226,63 +217,10 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div><!-- End Google Maps -->
 </div>
-    </div><!-- End Container for Contact Section Content -->
-
-</section><!-- End Contact Section -->
+  </div><!-- End Container for Contact Section Content -->
+    </section><!-- End Contact Section -->
 <!-- /Contact Section -->
-
-    <!-- about us -->
-
-    <div class="container section-title" data-aos="fade-up" id="about">
-    <h2>About Us</h2>
-    <P style="color: black;"> we are committed to keeping your home or business comfortable year-round with reliable air conditioning maintenance and repair services. Serving the  area, our team of experienced technicians is dedicated to providing exceptional service and exceeding our customers' expectations.</P>
-  </div>
-
-  <div class="container">
-    <h2 class="text-center my-4"> Meet Our Team</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/img/absolute-image.jpg" alt="Jane" class="card-img-top">
-          <div class="card-body">
-            <h2 class="card-title">Jane Doe</h2>
-            <p class="card-text">CEO & Founder</p>
-            <p class="card-text">Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>jane@example.com</p>
-            <button class="btn btn-primary">Contact</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/img/absolute-image.jpg" alt="Mike" class="card-img-top">
-          <div class="card-body">
-            <h2 class="card-title">Mike Ross</h2>
-            <p class="card-text">Art Director</p>
-            <p class="card-text">Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>mike@example.com</p>
-            <button class="btn btn-primary">Contact</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/img/absolute-image.jpg" alt="John" class="card-img-top">
-          <div class="card-body">
-            <h2 class="card-title">John Doe</h2>
-            <p class="card-text">Designer</p>
-            <p class="card-text">Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>john@example.com</p>
-            <button class="btn btn-primary">Contact</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
+    <?php include "book-service/booking.php"; ?>
   </main>
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

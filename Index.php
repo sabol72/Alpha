@@ -147,13 +147,10 @@ $conn->close();
     <section id="features" class="features section" style="padding-top: 0;" >
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <div class="container mt-0 section-title" data-aos="fade-up">
         <h2 class=""> Our Features</h2>
-        <h3>Your Comfort, Our Priority</h3> 
-          <h5>"From installation to maintenance, we prioritize your comfort with meticulous care and attention."</h5>
-      </div><!-- End Section Title -->
-
-      <div class="container">
+        <h3 class="text-muted">Your Comfort, Our Priority</h3>
+          <h5 class="text-secondary">From installation to maintenance, we prioritize your comfort with meticulous care and attention.</h5>
         <div class="row justify-content-between">
 
           <div class="col-lg-5 d-flex align-items-center">
@@ -231,9 +228,8 @@ $conn->close();
       <div class="container section-title" data-aos="fade-up" id="service">
         <h2>Services</h2>
         <p>Services that we provide for you.</p>
-      </div><!-- End Section Title -->
+      
 
-      <div class="container">
 
         <div class="row g-5">
 
@@ -258,18 +254,17 @@ $conn->close();
                 <a href="cleaning-service.php" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>
+          <?php include "book-service/booknow.php"?>
 
-        </div>
-
-      </div>
-
+</div>
+      </div><!-- End Section Title -->
     </section><!-- /Services Section -->
 
+    <?php include "FAQ.php"?>
 
-  </main>
-  <?php include "book-service/booking.php"; ?>
-  <?php include "FAQ.php"?>
+    </main>
+
   <!-- footer part -->
   <?php include "footer.php"?>
 

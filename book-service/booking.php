@@ -11,6 +11,15 @@
         body {
             background-color: #f8f9fa;
         }
+<<<<<<< HEAD
+=======
+        .container {
+            background: #ffffff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 30px;
+        }
+>>>>>>> 58768f48b377f23035a8f459db9bcaf23143e2e5
         h2, h4 {
             color: #343a40;
         }
@@ -111,8 +120,9 @@
     </style>
 </head>
 <body>
-<div class="container mt-5">
-    <h2 class="text-center">Book your service now!!</h2>
+
+<div class="container mt-5 section-title" data-aos="fade-up">
+        <h2>Book your service now!!</h2>
     <div class="progress my-4">
         <div class="progress-bar bg-success" role="progressbar" style="width: 16.6%;" id="progress-bar"></div>
         <div class="progress-bar-steps">
