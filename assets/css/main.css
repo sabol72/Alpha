@@ -3,7 +3,7 @@
 
 /* Combined Root Variables */
 :root {
-  --main-color: #a7107a; /* from File 1 */
+  --main-color: #4dbe20; /* from File 1 */
   --orange: #f39c12; /* from File 1 */
   --red: #e74c3c; /* from File 1 */
   --black: #333; /* from File 1 */
@@ -18,9 +18,9 @@
   --background-color: #eef3ee; /* from File 2 */
   --default-color: #000000; /* from File 2 */
   --heading-color: #0f5163; /* from File 2 */
-  --accent-color: #388da8; /* from File 2 */
+  --accent-color: #0ed818; /* from File 2 */
   --nav-color: #313336; /* from File 2 */
-  --nav-hover-color: #77b6ca; /* from File 2 */
+  --nav-hover-color: #49bd26; /* from File 2 */
   --nav-dropdown-background-color: #ffffff; /* from File 2 */
   --nav-dropdown-color: #313336; /* from File 2 */
   --nav-dropdown-hover-color: #77b6ca; /* from File 2 */
@@ -140,7 +140,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary {
-  background-color: #007bff;
+  background-color: #2ae903;
   color: #fff;
   border: none;
   border-radius: 10px;
@@ -148,7 +148,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary:hover {
-  background-color: #0056b3;
+  background-color: #00b30f;
 }
 
 .container {
@@ -244,7 +244,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .home-bg .home .slide .image-container .content .btn:hover {
-  background-color: var(--black);
+  color: var(--main-color);
+  background-color: var(--white);
 }
 
 /* Swiper Styles */
@@ -816,6 +817,14 @@ section,
 
 .section-title h2 {
   font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.section-title h2:hover {
+  color: #09ff00;
+  font-size: 35px;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
