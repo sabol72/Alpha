@@ -11,15 +11,12 @@
         body {
             background-color: #f8f9fa;
         }
-<<<<<<< HEAD
-=======
         .container {
             background: #ffffff;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             padding: 30px;
         }
->>>>>>> 58768f48b377f23035a8f459db9bcaf23143e2e5
         h2, h4 {
             color: #343a40;
         }
