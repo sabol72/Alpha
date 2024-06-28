@@ -1,3 +1,15 @@
+<?php
+// session_start();
+// // session_unset();
+// session_destroy();
+
+// // Check if the user is logged in
+// if (!isset($_SESSION['admin_logged_in'])) {
+//     // Redirect to login page
+//     header("Location: adminlogin.php");
+//     exit();
+// }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,19 +30,12 @@
             <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom"><i
                     class="fas fa-user-secret me-2"></i>BBC.Service</div>
             <div class="list-group list-group-flush my-3">
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text active"><i
-                        class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fas fa-project-diagram me-2"></i>AC Services</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fas fa-chart-line me-2"></i>Cleaning Services</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fas fa-paperclip me-2"></i>New Booking</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fas fa-shopping-cart me-2"></i>Old Booking</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fas fa-gift me-2"></i>Products</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
+                    <a href="#" class="btn btn-outline-secondary btn-sidebar active" data-filter="dashboard"><i class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
+                    <a href="#" class="btn btn-outline-secondary btn-sidebar" data-filter="ac_services"><i class="fas fa-project-diagram me-2"></i>AC Services</a>
+                    <a href="#" class="btn btn-outline-secondary btn-sidebar" data-filter="cleaning_services"><i class="fas fa-chart-line me-2"></i>Cleaning Services</a>
+                    <a href="#" class="btn btn-outline-secondary btn-sidebar" data-filter="new_booking"><i class="fas fa-paperclip me-2"></i>New Booking</a>
+                    <a href="#" class="btn btn-outline-secondary btn-sidebar" data-filter="old_booking"><i class="fas fa-shopping-cart me-2"></i>Old Booking</a>
+                    <a href="logout.php" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
                         class="fas fa-power-off me-2"></i>Logout</a>
             </div>
         </div>
@@ -55,12 +60,12 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-user me-2"></i>Yama pradeep
+                                <i class="fas fa-user me-2"></i>Admin
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Profile</a></li>
                                 <li><a class="dropdown-item" href="#">Settings</a></li>
-                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                                <li><a class="dropdown-item" href="logout.php">Logout</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -117,85 +122,21 @@
                         <table class="table bg-white rounded shadow-sm  table-hover">
                             <thead>
                                 <tr>
-                                    <th scope="col" width="50">#</th>
-                                    <th scope="col">Product</th>
-                                    <th scope="col">Customer</th>
-                                    <th scope="col">Price</th>
+                                    <th>Name</th>
+                                    <th>Location</th>
+                                    <th>Service</th>
+                                    <th>Hours</th>
+                                    <th>Workers</th>
+                                    <th>phone</th>
+                                    <th>email</th>
+                                    <th>payment method</th>
+                                    <th>Prefered_time</th>
+                                    <th>Prefered_date</th>
+                                    <!-- Add more headers as needed -->
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Deep Cleaning Service</td>
-                                    <td>Sabol kc</td>
-                                    <td>$100</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>AC installation</td>
-                                    <td>Abiral Shah</td>
-                                    <td>$750</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Village House Cleaning</td>
-                                    <td>Preem Shrestha</td>
-                                    <td>$600</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>AC Repair</td>
-                                    <td>Yama pradeep</td>
-                                    <td>$1500</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">5</th>
-                                    <td>Pool Clean/ing</td>
-                                    <td>Sidhartha</td>
-                                    <td>$120</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">6</th>
-                                    <td>Mattress Cleaning</td>
-                                    <td>Topey</td>
-                                    <td>$1800</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">7</th>
-                                    <td>Pen</td>
-                                    <td>Bilbo</td>
-                                    <td>$75</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">8</th>
-                                    <td>Notebook</td>
-                                    <td>Frodo</td>
-                                    <td>$36</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">9</th>
-                                    <td>Dress</td>
-                                    <td>Kimo</td>
-                                    <td>$255</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">10</th>
-                                    <td>Paint</td>
-                                    <td>Zico</td>
-                                    <td>$434</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">11</th>
-                                    <td>Carpet</td>
-                                    <td>Jeco</td>
-                                    <td>$1236</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">12</th>
-                                    <td>Food</td>
-                                    <td>Haso</td>
-                                    <td>$422</td>
-                                </tr>
+                                <!-- Table body will be populated dynamically -->
                             </tbody>
                         </table>
                     </div>
@@ -215,6 +156,54 @@
         toggleButton.onclick = function () {
             el.classList.toggle("toggled");
         };
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Select all sidebar buttons
+            const sidebarButtons = document.querySelectorAll('.btn-sidebar');
+
+            // Function to handle button click
+            function handleButtonClick(event) {
+                event.preventDefault();
+
+                // Remove active class from all buttons
+                sidebarButtons.forEach(btn => btn.classList.remove('active'));
+
+                // Add active class to the clicked button
+                this.classList.add('active');
+
+                // Get the filter value
+                const filter = this.getAttribute('data-filter');
+
+                // AJAX request to fetch data
+                fetch('fetch_data.php?filter=' + filter)
+                    .then(response => response.json())
+                    .then(data => {
+                        // Clear existing table rows
+                        const tableBody = document.querySelector('tbody');
+                        tableBody.innerHTML = '';
+
+                        // Populate table with fetched data
+                        data.forEach(row => {
+                            const tr = document.createElement('tr');
+                            // Adjust these according to your actual column names from the database
+                            tr.innerHTML = `<td>${row.customer_name}</td><td>${row.location}</td><td>${row.sub_service}</td><td>${row.hours} Hours</td><td>${row.workers} Workers</td><td>+971 ${row.customer_phone}</td><td><a href="mailto:${row.customer_email}">${row.customer_email}</a></td><td>${row.payment_method}</td><td>${row.booking_time}</td><td>${row.booking_date}</td>`;
+                            tableBody.appendChild(tr);
+                        });
+                    })
+                    .catch(error => console.error('Error fetching data:', error));
+            }
+
+            // Attach click event listener to each sidebar button
+            sidebarButtons.forEach(btn => {
+                btn.addEventListener('click', handleButtonClick);
+            });
+
+            // Trigger click on the active button to load initial data (optional)
+            const activeButton = document.querySelector('.btn-sidebar.active');
+            if (activeButton) {
+                activeButton.click();
+            }
+        });
     </script>
 </body>
 

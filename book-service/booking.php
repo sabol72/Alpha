@@ -203,8 +203,8 @@
     <div id="details-section" style="display: none;">
         <h4>Details</h4>
         <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" name="name" required>
+            <label for="name">Full Name</label>
+            <input type="text" class="form-control" id="Cname" name="Cname" required>
         </div>
         <div class="form-group">
             <label for="email">Email</label>
@@ -256,7 +256,7 @@
         <p><strong>Number of Workers:</strong> <span id="confirm-workers"></span></p>
         <p><strong>Date:</strong> <span id="confirm-date"></span></p>
         <p><strong>Time:</strong> <span id="confirm-time"></span></p>
-        <p><strong>Name:</strong> <span id="confirm-name"></span></p>
+        <p><strong>Name:</strong> <span id="confirm-Cname"></span></p>
         <p><strong>Email:</strong> <span id="confirm-email"></span></p>
         <p><strong>Phone:</strong> <span id="confirm-phone"></span></p>
         <p><strong>Payment Method:</strong> <span id="confirm-payment-method"></span></p>
@@ -351,7 +351,7 @@ function displayConfirmation() {
     document.getElementById('confirm-workers').textContent = Array.from(document.getElementById('workers').selectedOptions).map(option => option.text).join(', ');
     document.getElementById('confirm-date').textContent = document.getElementById('date').value;
     document.getElementById('confirm-time').textContent = document.getElementById('time').value;
-    document.getElementById('confirm-name').textContent = document.getElementById('name').value;
+    document.getElementById('confirm-Cname').textContent = document.getElementById('Cname').value;
     document.getElementById('confirm-email').textContent = document.getElementById('email').value;
     document.getElementById('confirm-phone').textContent = document.getElementById('phone').value;
     

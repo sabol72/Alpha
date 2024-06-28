@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Set session variable to indicate the admin is logged in
         $_SESSION['admin_logged_in'] = true;
         // Redirect to the booking information page
-        header("Location: admin1.php");
+        header("Location: index.php");
         exit();
     } else {
         $error = "Invalid username or password.";
