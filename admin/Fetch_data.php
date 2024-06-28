@@ -12,7 +12,7 @@ if (isset($_GET['filter'])) {
             $sql = "SELECT * FROM bookings";
             break;
         case 'ac_services':
-            $sql = "SELECT * FROM bookings WHERE service_type = 'Maintenance'";
+            $sql = "SELECT * FROM bookings WHERE service_type = 'AC Service'";
             break;
         case 'cleaning_services':
             $sql = "SELECT * FROM bookings WHERE service_type = 'Cleaning'";
