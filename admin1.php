@@ -1,7 +1,7 @@
 <?php
 session_start();
 // session_unset();
-session_destroy();
+// session_destroy();
 
 // Check if the user is logged in
 if (!isset($_SESSION['admin_logged_in'])) {
@@ -17,7 +17,7 @@ if (!isset($_SESSION['admin_logged_in'])) {
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="admin1.css" />
     <title>BBC admin dashboard</title>
@@ -40,8 +40,7 @@ if (!isset($_SESSION['admin_logged_in'])) {
                         class="fas fa-paperclip me-2"></i>New Booking</a>
                 <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-shopping-cart me-2"></i>Old Booking</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="fas fa-gift me-2"></i>Products</a>
+                
                 <a href="logout.php" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
                         class="fas fa-power-off me-2"></i>Logout</a>
             </div>
@@ -67,7 +66,7 @@ if (!isset($_SESSION['admin_logged_in'])) {
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-user me-2"></i>Yama pradeep
+                                <i class="fas fa-user me-2"></i>ADMIN
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Profile</a></li>
@@ -80,146 +79,27 @@ if (!isset($_SESSION['admin_logged_in'])) {
             </nav>
 
             <div class="container-fluid px-4">
+                <!-- Booking Details Section -->
+                <div id="booking-details">
+                    <!-- This section will be dynamically populated -->
+                </div>
+
+                <!-- Other sections of your admin page -->
                 <div class="row g-3 my-2">
                     <div class="col-md-3">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                            <div>
-                                <h3 class="fs-2">200</h3>
-                                <p class="fs-5">Products</p>
-                            </div>
-                            <i class="fas fa-gift fs-1 primary-text border rounded-full secondary-bg p-3"></i>
-                        </div>
+                        <!-- Example of other content -->
                     </div>
-
-                    <div class="col-md-3">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                            <div>
-                                <h3 class="fs-2">1000</h3>
-                                <p class="fs-5">Sales</p>
-                            </div>
-                            <i
-                                class="fas fa-hand-holding-usd fs-1 primary-text border rounded-full secondary-bg p-3"></i>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                            <div>
-                                <h3 class="fs-2">1500</h3>
-                                <p class="fs-5">Delivery</p>
-                            </div>
-                            <i class="fas fa-truck fs-1 primary-text border rounded-full secondary-bg p-3"></i>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                            <div>
-                                <h3 class="fs-2">%15</h3>
-                                <p class="fs-5">Increase</p>
-                            </div>
-                            <i class="fas fa-chart-line fs-1 primary-text border rounded-full secondary-bg p-3"></i>
-                        </div>
+                    <div class="col-md-9">
+                        <!-- Example of other content -->
                     </div>
                 </div>
-
-                <div class="row my-5">
-                    <h3 class="fs-4 mb-3">Recent Orders</h3>
-                    <div class="col">
-                        <table class="table bg-white rounded shadow-sm  table-hover">
-                            <thead>
-                                <tr>
-                                    <th scope="col" width="50">#</th>
-                                    <th scope="col">Product</th>
-                                    <th scope="col">Customer</th>
-                                    <th scope="col">Price</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Deep Cleaning Service</td>
-                                    <td>Sabol kc</td>
-                                    <td>$100</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>AC installation</td>
-                                    <td>Abiral Shah</td>
-                                    <td>$750</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Village House Cleaning</td>
-                                    <td>Preem Shrestha</td>
-                                    <td>$600</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>AC Repair</td>
-                                    <td>Yama pradeep</td>
-                                    <td>$1500</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">5</th>
-                                    <td>Pool Clean/ing</td>
-                                    <td>Sidhartha</td>
-                                    <td>$120</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">6</th>
-                                    <td>Mattress Cleaning</td>
-                                    <td>Topey</td>
-                                    <td>$1800</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">7</th>
-                                    <td>Pen</td>
-                                    <td>Bilbo</td>
-                                    <td>$75</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">8</th>
-                                    <td>Notebook</td>
-                                    <td>Frodo</td>
-                                    <td>$36</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">9</th>
-                                    <td>Dress</td>
-                                    <td>Kimo</td>
-                                    <td>$255</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">10</th>
-                                    <td>Paint</td>
-                                    <td>Zico</td>
-                                    <td>$434</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">11</th>
-                                    <td>Carpet</td>
-                                    <td>Jeco</td>
-                                    <td>$1236</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">12</th>
-                                    <td>Food</td>
-                                    <td>Haso</td>
-                                    <td>$422</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
     <!-- /#page-content-wrapper -->
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         var el = document.getElementById("wrapper");
         var toggleButton = document.getElementById("menu-toggle");
@@ -227,6 +107,27 @@ if (!isset($_SESSION['admin_logged_in'])) {
         toggleButton.onclick = function () {
             el.classList.toggle("toggled");
         };
+
+        // Function to load booking details on page load
+        $(document).ready(function () {
+            // Load booking details initially
+            loadBookingDetails();
+
+            // Function to load booking details via AJAX
+            function loadBookingDetails() {
+                $.ajax({
+                    url: 'fetch_bookings.php', // PHP script to fetch bookings
+                    type: 'GET',
+                    dataType: 'html',
+                    success: function (response) {
+                        $('#booking-details').html(response);
+                    },
+                    error: function (xhr, status, error) {
+                        console.error('Error fetching booking details:', error);
+                    }
+                });
+            }
+        });
     </script>
 </body>
 
