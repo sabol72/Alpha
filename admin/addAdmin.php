@@ -1,46 +1,39 @@
 <?php
-session_start();
 
 // Include the database connection file
 include '../db_Connect.php';
-// Process form submission for login
+// Initialize a message variable
+$message = '';
+
+// Process form submission for adding a new admin user
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // Query the database for the admin user
-    $sql = "SELECT * FROM admin_users WHERE username = ?";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("s", $username);
-    $stmt->execute();
-    $result = $stmt->get_result();
+    // Hash the password before inserting it into the database
+    $passwordHash = password_hash($password, PASSWORD_DEFAULT);
 
-    if ($result->num_rows == 1) {
-        $row = $result->fetch_assoc();
-        // Verify the password
-        if (password_verify($password, $row['password'])) {
-            // Set session variable to indicate the admin is logged in
-            $_SESSION['admin_logged_in'] = true;
-            // Redirect to the booking information page
-            header("Location: index.php");
-            exit();
-        } else {
-            $error = "Invalid username or password.";
-        }
+    // Insert the new admin user into the database
+    $sql = "INSERT INTO admin_users (username, password) VALUES (?, ?)";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("ss", $username, $passwordHash);
+
+    if ($stmt->execute()) {
+        $message = "Admin user inserted successfully.";
     } else {
-        $error = "Invalid username or password.";
+        $message = "Error: " . $stmt->error;
     }
 
     $stmt->close();
+    $conn->close();
 }
-$conn->close();
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Login</title>
+    <title>Add Admin User</title>
     <!-- Bootstrap CSS -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
@@ -100,10 +93,10 @@ button:active {
 </head>
 <body>
     <div class="container mt-5">
-        <h2 class="mb-4">Admin Login</h2>
+        <h2 class="mb-4">Add Admin User</h2>
         <?php
-        if (isset($error)) {
-            echo "<div class='alert alert-danger'>$error</div>";
+        if (!empty($message)) {
+            echo "<div class='alert alert-info'>$message</div>";
         }
         ?>
         <form method="post">
@@ -115,7 +108,7 @@ button:active {
                 <label for="password" class="form-label">Password</label>
                 <input type="password" class="form-control" id="password" name="password" required>
             </div>
-            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="submit" class="btn btn-primary">Add User</button>
         </form>
     </div>
     <!-- Bootstrap JS -->
