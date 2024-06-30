@@ -11,10 +11,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
 
     // Check if the entered credentials match the hardcoded credentials
-    if ($username == $adminUsername && $password == $adminPassword) {
+    if ($username === $adminUsername && $password === $adminPassword) {
         // Set session variable to indicate the admin is logged in
         $_SESSION['admin_logged_in'] = true;
-        // Redirect to the booking information page
+        // Redirect to the index page
         header("Location: index.php");
         exit();
     } else {
@@ -89,11 +89,9 @@ button:active {
 <body>
     <div class="container mt-5">
         <h2 class="mb-4">Admin Login</h2>
-        <?php
-        if (isset($error)) {
-            echo "<div class='alert alert-danger'>$error</div>";
-        }
-        ?>
+        <?php if (isset($error)): ?>
+        <p><?php echo $error; ?></p>
+    <?php endif; ?>
         <form method="post">
             <div class="mb-3">
                 <label for="username" class="form-label">Username</label>
