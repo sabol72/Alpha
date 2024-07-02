@@ -1,15 +1,14 @@
 <?php
 session_start();
 
-// Define hardcoded admin credentials
-$adminUsername = 'BBCADMIN';
-$adminPassword = 'BBCADMIN';
-
+// Include the database connection file
+include '../db_Connect.php';
 // Process form submission for login
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
+<<<<<<< HEAD
     // Check if the entered credentials match the hardcoded credentials
     if ($username === $adminUsername && $password === $adminPassword) {
         // Set session variable to indicate the admin is logged in
@@ -17,12 +16,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Redirect to the index page
         header("Location: index.php");
         exit();
+=======
+    // Query the database for the admin user
+    $sql = "SELECT * FROM admin_users WHERE username = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows == 1) {
+        $row = $result->fetch_assoc();
+        // Verify the password
+        if (password_verify($password, $row['password'])) {
+            // Set session variable to indicate the admin is logged in
+            $_SESSION['admin_logged_in'] = true;
+            // Redirect to the booking information page
+            header("Location: index.php");
+            exit();
+        } else {
+            $error = "Invalid username or password.";
+        }
+>>>>>>> 89e57b4387190c5627f2f4219e77da38dc8de3f7
     } else {
         $error = "Invalid username or password.";
     }
-}
-?>
 
+    $stmt->close();
+}
+$conn->close();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
