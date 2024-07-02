@@ -33,6 +33,7 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tru
                     <a href="#" class="btn btn-outline-secondary btn-sidebar" data-filter="cleaning_services"><i class="fas fa-chart-line me-2"></i>Cleaning Services</a>
                     <a href="#" class="btn btn-outline-secondary btn-sidebar" data-filter="new_booking"><i class="fas fa-paperclip me-2"></i>New Booking</a>
                     <a href="#" class="btn btn-outline-secondary btn-sidebar" data-filter="old_booking"><i class="fas fa-shopping-cart me-2"></i>Old Booking</a>
+                    <a href="addAdmin.php" class="btn btn-outline-secondary btn-sidebar" ><i class="fas fa-shopping-cart me-2"></i>Add Admin</a>
                     <a href="logout.php" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
                         class="fas fa-power-off me-2"></i>Logout</a>
             </div>
