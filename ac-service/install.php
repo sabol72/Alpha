@@ -144,7 +144,7 @@
 
           <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
             <div id="install" class="service-content active-content ">
-              <img src="install.jpg" alt="AC Installation" class="img-fluid services-img">
+            <img src="install.jpg" alt="AC Installation" class="img-fluid services-img">
               <h3>WELCOME TO AC INSTALLATION SERVICE</h3>
               <p>If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Buildling Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.
                 
@@ -171,7 +171,8 @@
     Not only do we provide expert installation services, but we also offer advice on the best AC system to suit your space and budget. Trust us to keep your environment comfortable and cool.
     </p>
     
-  </div>
+           </div>
+           </div>
   <img src="install3.jpg" alt="AC Installation" class=" img-fluid services-img me-3 w-50">
  
 </div>
