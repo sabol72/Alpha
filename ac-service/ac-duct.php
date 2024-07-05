@@ -121,12 +121,12 @@
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0" style="color: #000;">AC Installation Service</h1>
+        <h1 class="mb-2 mb-lg-0" style="color: #000;"> AC DUCT CLEANING</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="../index.php" style="color: #000;">Home</a></li>
             <li><a href="../index.php#service" style="color: #000;">Services</a></li>
-            <li class="current" style="color: #000;">AC Installation</li>
+            <li class="current" style="color: #000;"> AC DUCT CLEANING</li>
           </ol>
         </nav>
       </div>
@@ -173,6 +173,38 @@
       </div>
 
     </section><!-- /Service Details Section -->
+    <section id="service-details" class="service-details section">
+
+<div class="container">
+
+  <div class="row gy-5">
+  
+    <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
+      <img src="../acinstall.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <div class="text-content">
+        <h3>WELCOME TO AC INSTALLATION SERVICE</h3>
+        <p>If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Building Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.</p>
+      </div>
+    </div>
+
+    <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
+      <div class="text-content">
+        <h3>ANOTHER SECTION TITLE</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor nisi sit amet facilisis cursus. Vivamus ac posuere dui. Nunc sit amet velit malesuada, posuere turpis non, tincidunt velit. Aliquam euismod laoreet nisl, in gravida nunc vehicula non. Proin iaculis libero vitae ipsum gravida, a scelerisque eros euismod. Nulla facilisi.</p>
+      </div>
+      <img src="../install3.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+    </div>
+
+<!-- Book Now Button -->
+<div class="row justify-content-center">
+      <div class="col-auto">
+        <a href="book-service/booking.php" class="btn btn-primary" data-aos="fade-up" data-aos-delay="50">Book Now</a>
+      </div>
+    </div>
+
+</div>
+</div>
+</section>
       <!-- Services Section -->
       <section class="services-section py-3">
       <div class="container">

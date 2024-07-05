@@ -3,7 +3,8 @@
         <div class="footer-cointaner">
             <div class="row">
                   <div class="col" id="company">
-                      <img src="logo.png" alt="" class="logo">
+                      <img src="assets/img/logo.png" class="logo">
+                      <!-- <img src="../logo.png"  class="logo"> -->
                       <p>
                         We are specialized in designings, make your business a brand.
                         Try our premium services.

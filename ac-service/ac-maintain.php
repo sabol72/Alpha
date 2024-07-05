@@ -22,8 +22,7 @@
   <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+ 
   <!-- Main CSS File -->
   <link href="../assets/css/main.css" rel="stylesheet">
 
@@ -173,6 +172,39 @@
       </div>
 
     </section><!-- /Service Details Section -->
+
+    <section id="service-details" class="service-details section">
+
+<div class="container">
+
+  <div class="row gy-5">
+  
+    <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
+      <img src="../acinstall.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <div class="text-content">
+        <h3>WELCOME TO AC INSTALLATION SERVICE</h3>
+        <p>If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Building Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.</p>
+      </div>
+    </div>
+
+    <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
+      <div class="text-content">
+        <h3>ANOTHER SECTION TITLE</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor nisi sit amet facilisis cursus. Vivamus ac posuere dui. Nunc sit amet velit malesuada, posuere turpis non, tincidunt velit. Aliquam euismod laoreet nisl, in gravida nunc vehicula non. Proin iaculis libero vitae ipsum gravida, a scelerisque eros euismod. Nulla facilisi.</p>
+      </div>
+      <img src="../install3.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+    </div>
+
+<!-- Book Now Button -->
+<div class="row justify-content-center">
+      <div class="col-auto">
+        <a href="book-service/booking.php" class="btn btn-primary" data-aos="fade-up" data-aos-delay="50">Book Now</a>
+      </div>
+    </div>
+
+</div>
+</div>
+</section>
       <!-- Services Section -->
       <section class="services-section py-3">
       <div class="container">
@@ -246,7 +278,7 @@
   <script src="../assets/vendor/php-email-form/validate.js"></script>
   <script src="../assets/vendor/aos/aos.js"></script>
   <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
 
   <!-- Main JS File -->
   <script src="../assets/js/main.js"></script>
