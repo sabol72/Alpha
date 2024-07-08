@@ -180,19 +180,19 @@
   <div class="row gy-5">
   
     <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-      <img src="../acinstall.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/ductcleaning.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
       <div class="text-content">
-        <h3>WELCOME TO AC INSTALLATION SERVICE</h3>
-        <p>If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Building Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.</p>
+        <h3>Excellence in Ac Duct Cleaning Services </h3>
+        <p>At Al Bahja Building Maintenance and Cleaning Services, we pride ourselves on providing comprehensive and reliable maintenance and cleaning solutions for both residential and commercial properties. Our commitment to excellence and customer satisfaction sets us apart as a leading service provider in the industry.</p>
       </div>
     </div>
 
     <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
       <div class="text-content">
-        <h3>ANOTHER SECTION TITLE</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor nisi sit amet facilisis cursus. Vivamus ac posuere dui. Nunc sit amet velit malesuada, posuere turpis non, tincidunt velit. Aliquam euismod laoreet nisl, in gravida nunc vehicula non. Proin iaculis libero vitae ipsum gravida, a scelerisque eros euismod. Nulla facilisi.</p>
+        <h3>Expert Ac Duct Cleaning Services</h3>
+        <p>At Al Bahja Building Maintenance and Cleaning Services, we are dedicated to providing superior maintenance and cleaning solutions for residential and commercial properties. Our team of skilled professionals ensures that every aspect of your building is well-maintained, safe, and spotless.</p>
       </div>
-      <img src="../install3.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/duct3.png" alt="AC Installation" class="img-fluid services-img me-3 w-50">
     </div>
 
 <!-- Book Now Button -->
