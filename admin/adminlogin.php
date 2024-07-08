@@ -101,11 +101,9 @@ button:active {
 <body>
     <div class="container mt-5">
         <h2 class="mb-4">Admin Login</h2>
-        <?php
-        if (isset($error)) {
-            echo "<div class='alert alert-danger'>$error</div>";
-        }
-        ?>
+        <?php if (isset($error)): ?>
+        <p><?php echo $error; ?></p>
+    <?php endif; ?>
         <form method="post">
             <div class="mb-3">
                 <label for="username" class="form-label">Username</label>

@@ -1,14 +1,12 @@
 <?php
-// session_start();
-// // session_unset();
-// session_destroy();
+session_start();
 
-// // Check if the user is logged in
-// if (!isset($_SESSION['admin_logged_in'])) {
-//     // Redirect to login page
-//     header("Location: adminlogin.php");
-//     exit();
-// }
+// Check if the user is logged in
+if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== true) {
+    // Redirect to login page
+    header("Location: adminlogin.php");
+    exit();
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
