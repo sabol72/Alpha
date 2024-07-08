@@ -51,6 +51,26 @@
     .service-content.active-content {
       display: block;
     }
+    /* .img-fluid {
+    max-width: 50%;
+    height: auto;
+    }
+    */
+
+
+@media (max-width: 767px) {
+  .service-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-content img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+
   </style>
 
 </head>
@@ -120,19 +140,59 @@
             </div>
 
           </div>
+  
 
           <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
-            <div id="install" class="service-content active-content">
+            <div id="install" class="service-content active-content ">
               <img src="install.jpg" alt="AC Installation" class="img-fluid services-img">
               <h3>WELCOME TO AC INSTALLATION SERVICE</h3>
-              <p>If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Buildling Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.</p>
+              <p>If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Buildling Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.
+                
+              </p>
+            
             </div>
+           </div>
+          <div id="install" class="service-content active-content  d-flex align-items-start" data-aos="fade-up" data-aos-delay="200">
+            <img src="acinstall.jpg" alt="AC Installation" class=" img-fluid services-img me-3 w-50">
+        <div>
+    <!-- <h3>WELCOME TO AC INSTALLATION SERVICE</h3> -->
+    <p>Are you searching for a reliable AC installation service in Dubai? Look no further than Al Bahja Building Maintenance. Our team of experienced AC technicians is equipped to handle a wide range of AC systems, from window units to split systems.
+    We understand the importance of having your new unit installed safely and securely. That's why we ensure each installation is carried out with the utmost care and professionalism.
+    Not only do we provide expert installation services, but we also offer advice on the best AC system to suit your space and budget. Trust us to keep your environment comfortable and cool.
+    </p>
+  </div>
+</div>
+<div id="install" class="service-content active-content  d-flex align-items-start" data-aos="fade-up" data-aos-delay="200">
+            
+        <div>
+    <!-- <h3>WELCOME TO AC INSTALLATION SERVICE</h3> -->
+    <p>Are you searching for a reliable AC installation service in Dubai? Look no further than Al Bahja Building Maintenance. Our team of experienced AC technicians is equipped to handle a wide range of AC systems, from window units to split systems.
+    We understand the importance of having your new unit installed safely and securely. That's why we ensure each installation is carried out with the utmost care and professionalism.
+    Not only do we provide expert installation services, but we also offer advice on the best AC system to suit your space and budget. Trust us to keep your environment comfortable and cool.
+    </p>
+    
+  </div>
+  <img src="install3.jpg" alt="AC Installation" class=" img-fluid services-img me-3 w-50">
+ 
+ 
+</div>
+
+  <div class="row justify-content-center">
+    <div class="col-auto">
+      <a href="book-service/booking.php" class="btn btn-primary" data-aos="fade-up" data-aos-delay="200">Book Now</a>
+    </div>
+  </div>
+</div>
+
+
+
 
             <div id="cleaning" class="service-content">
               <img src="cleaner.jpg" alt="AC Duct Cleaning" class="img-fluid services-img">
               <h3>WELCOME TO AC DUCT CLEANING SERVICE</h3>
               <p>Keep your AC ducts clean and your indoor air fresh with our AC duct cleaning service. We remove dust, allergens, and contaminants, ensuring your AC system works efficiently and your air quality is improved.</p>
             </div>
+      
 
             <div id="maintain" class="service-content">
               <img src="maintain.jpg" alt="AC Maintenance Service" class="img-fluid services-img">
@@ -149,8 +209,6 @@
           </div>
 
         </div>
-
-      </div>
 
     </section><!-- /Service Details Section -->
 
