@@ -1,522 +1,288 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>BBC- Maintenance and Repair</title>
+  <title>AC Installation Service</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Custom Styles -->
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+
   <style>
+    /* Additional CSS styles specific to this page */
     body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #f0f0f0; /* Light gray background */
-      margin: 0;
-      padding: 0;
+      background-color: #fff;
+      color: #000; /* Default text color */
+      font-family: 'Roboto', sans-serif; /* Example font family */
+      line-height: 1.6;
     }
 
-/* Header Styles */
-.header {
-  color: var(--default-color); /* from File 2 */
-  background-color: var(--background-color); /* from File 2 */
-  padding: 0px 0;
-  transition: all 0.5s;
-  z-index: 997;
-}
-
-/* Ensuring logo is stable and responsive */
-.header .logo {
-  display: flex;
-  align-items: center;
-  line-height: 1;
-  padding: 10px 0; /* Adjust padding as needed */
-}
-
-.header .logo img {
-  max-height: 50px; /* Adjust max height for responsiveness */
-  width: auto;
-  margin-right: 8px;
-  transition: max-height 0.3s ease;
-}
-
-.header .logo h1 {
-  font-size: 30px;
-  margin: 0;
-  font-weight: 700;
-  color: var(--heading-color); /* from File 2 */
-}
-
-/* Responsive adjustments */
-@media (max-width: 480px) {
-  .header .logo img {
-      max-height: 24px;
-      position: fixed; /* Smaller logo on very small screens */
-  }
-
-  .header .logo h1 {
-      font-size: 24px;
-  }
-}
-
-
-@media (max-width: 1200px) {
-  .header .logo {
-    order: 1;
-  }
-
- 
-  .header .navmenu {
-    order: 3;
-  }
-}
-
-.scrolled .header {
-    padding:  0; /* Adjust padding to make header look bigger */
-  box-shadow: 0px 0 18px color-mix(in srgb, var(--default-color), transparent 85%); /* from File 2 */
-}
-
-.index-page .header {
-  --background-color: rgba(255, 255, 255, 0); /* from File 2 */
-}
-
-.index-page.scrolled .header {
-  --background-color: #ffffff; /* from File 2 */
-}
-
-/* Navigation Menu Styles */
-@media (min-width: 1200px) {
-  .navmenu {
-    padding: 0px;
-  }
-
-  .navmenu ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style: none;
-    align-items: center;
-  }
-
-  .navmenu li {
-    position: relative;
-  }
-
-  .navmenu a,
-  .navmenu a:focus {
-    color: var(--nav-color); /* from File 2 */
-    padding: 18px 15px;
-    font-size: 16px;
-    font-family: var(--nav-font); /* from File 2 */
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-    transition: 0.3s;
-  }
-
-  .navmenu a:hover,
-  .navmenu .active,
-  .navmenu .active:focus,
-  .navmenu li:hover > a {
-    color: var(--nav-hover-color); /* from File 2 */
-  }
-
-  .navmenu li:hover .dropdown {
-    display: block;
-  }
-
-  .navmenu .dropdown {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: calc(100% + 30px);
-    z-index: 99;
-    opacity: 0;
-    visibility: hidden;
-    padding: 15px 0;
-    margin: 0;
-    background: var(--nav-dropdown-background-color); /* from File 2 */
-    box-shadow: 0px 0 30px rgba(127, 137, 161, 0.25);
-    transition: 0.3s;
-  }
-
-  .navmenu .dropdown ul {
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s;
-    transition-delay: 0s;
-  }
-
-  .navmenu .dropdown li {
-    min-width: 200px;
-  }
-
-  .navmenu li:hover > .dropdown,
-  .navmenu li:hover > .dropdown ul {
-    opacity: 1;
-    top: 100%;
-    visibility: visible;
-  }
-
-  .navmenu .dropdown a {
-    padding: 10px 20px;
-    font-size: 15px;
-    font-weight: 500;
-    color: var(--nav-dropdown-color); /* from File 2 */
-    background: var(--nav-dropdown-background-color); /* from File 2 */
-  }
-
-  .navmenu .dropdown a:hover,
-  .navmenu .dropdown .active:hover,
-  .navmenu .dropdown .active:focus,
-  .navmenu .dropdown .active {
-    color: var(--nav-dropdown-hover-color); /* from File 2 */
-  }
-
-  .navmenu .dropdown .dropdown {
-    top: 0;
-    left: calc(100% - 30px);
-    visibility: hidden;
-  }
-
-  .navmenu .dropdown .dropdown li {
-    min-width: 200px;
-  }
-
-  .navmenu li:hover > .dropdown .dropdown {
-    opacity: 1;
-    top: 0;
-    left: 100%;
-    visibility: visible;
-  }
-}
-
-/* Media Query for Smaller Screens */
-@media (max-width: 1199px) {
-  .mobile-nav-toggle {
-    color: var(--nav-color); /* from File 2 */
-    font-size: 28px;
-    cursor: pointer;
-    display: none;
-    line-height: 0;
-    transition: 0.5s;
-  }
-
-  .mobile-nav-toggle.bi-x {
-    color: var(--main-color); /* from File 1 */
-  }
-
-  .navmenu {
-    display: none;
-  }
-
-  .navmenu ul {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9997;
-    width: 100%;
-    height: 100%;
-    padding: 10px 0;
-    margin: 0;
-    transition: 0.3s;
-    background-color: var(--background-color); /* from File 2 */
-    overflow-y: auto;
-    transition: 0.3s;
-  }
-
-  .navmenu ul::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(52, 59, 64, 0.9);
-    z-index: 9996;
-    overflow: hidden;
-    transform: scaleX(0);
-    transform-origin: 0 0;
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .navmenu ul.show::before {
-    transform: scaleX(1);
-  }
-
-  .navmenu ul.show {
-    display: block;
-    right: 0;
-    visibility: visible;
-    opacity: 1;
-  }
-
-  .navmenu li {
-    position: relative;
-  }
-
-  .navmenu a,
-  .navmenu a:focus {
-    font-size: 16px;
-    padding: 10px 20px;
-    color: var(--nav-color); /* from File 2 */
-  }
-
-  .navmenu .dropdown ul {
-    position: static;
-    display: none;
-    margin-top: 10px;
-    padding: 10px 0;
-    transition: all 0.5s ease-in-out;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-  }
-
-  .navmenu .dropdown > .dropdown-active {
-    display: block;
-  }
-
-  .navmenu .dropdown .dropdown ul {
-    margin: 10px 0;
-    padding: 10px 0;
-  }
-
-  .navmenu .dropdown .dropdown {
-    margin: 10px 0;
-    padding: 10px 0;
-  }
-
-  .scrolled .mobile-nav-toggle {
-    color: var(--default-color); /* from File 2 */
-  }
-
-  .mobile-nav-active {
-    overflow: hidden;
-  }
-
-  .mobile-nav-active .navmenu {
-    display: block;
-  }
-
-  .mobile-nav-active .mobile-nav-toggle {
-    color: var(--main-color); /* from File 1 */
-  }
-}
-
-
-
-    .hero-section {
-      background-image: url('path/to/your-background-image.jpg'); /* Replace with your image path */
-      background-size: cover;
-      background-position: center;
-      color: #ffffff; /* Text color (white) */
-      text-align: center;
-      padding: 150px 0; /* Adjust padding as needed */
-      margin-top: 80px; /* Ensure content starts below the fixed header */
+    .service-details-page {
+      background-color: #fff;
+      color: #000; /* Default text color */
     }
 
-    .hero-section h1 {
-      font-size: 2.5rem; /* Larger font size for h1 */
-      font-weight: 600; /* Bold font weight */
-      color: #333333; /* Darker color for h1 */
-      margin-bottom: 20px; /* Bottom margin for spacing */
-    }
-
-    .hero-section p {
-      font-size: 1.2rem; /* Font size for p */
-      color: #666666; /* Less dark color for p */
-    }
-
-    .navbar {
-      background-color: #333333; /* Dark background color for navbar */
-      text-align: center; /* Center align text */
-      padding: 10px 0; /* Padding top and bottom */
-      z-index: 999; /* Ensure it's above other content */
-    }
-
-    .navbar-nav {
-      display: flex;
-      justify-content: center;
-    }
-
-    .navbar-nav .nav-item {
-      margin: 0 10px;
-    }
-
-    .navbar-nav .nav-link {
-      color: #ffffff; /* Navbar link color */
-      font-size: 1.2rem; /* Navbar link font size */
-    }
-
-    /* Custom styles can be added here if needed */
-    .service-item {
-      display: flex;
-      align-items: center;
-    }
-
-    .service-item img {
-      width: 80px; /* Adjust width as needed */
-      height: auto; /* Maintain aspect ratio */
-      margin-right: 15px; /* Add margin between image and text */
-    }
-    .services-section {
-      background-color: #ffffff; /* White background for services section */
-      padding: 50px 0; /* Adjust padding as needed */
-    }
-
+    .service-box h4,
     .service-title {
-      font-weight: 600; /* Semi-bold font weight */
+      color: #000; /* Black font color */
     }
 
-    .service-item {
-      display: flex;
-      align-items: center;
+    .services-img {
+      max-width: 100%;
+      height: auto;
     }
 
-    .service-item img {
-      width: 80px; /* Adjust width as needed */
-      height: auto; /* Maintain aspect ratio */
-      margin-right: 15px; /* Add margin between image and text */
+    .service-content {
+      display: block; /* Ensure content is visible by default */
+      color: #000; /* Black font color */
     }
 
+    .services-list a {
+      color: #000; /* Black font color for service list links */
+      text-decoration: none; /* Remove underline */
+    }
+
+    .services-list a.active {
+      font-weight: bold; /* Example: make active link bold */
+    }
+
+    .help-box {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .help-box h4 {
+      color: #000; /* Black font color */
+    }
+
+    .help-box p {
+      color: #000; /* Black font color */
+    }
+
+    .sticky-service-list {
+      position: sticky;
+      top: 20px; /* Adjust top distance as needed */
+      height: calc(100vh - 40px); /* Height of viewport minus top and bottom margin */
+      overflow-y: auto; /* Enable vertical scrolling */
+      margin: 20px 0; /* Margin around the sticky list */
+      padding: 10px; /* Padding for inner content */
+      background-color: #f9f9f9; /* Background color of sticky area */
+      border: 1px solid #ddd; /* Example border */
+      border-radius: 5px; /* Example border radius */
+    }
+    
   </style>
+
 </head>
 
-<body>
+<body class="service-details-page">
 
-  <header class="header">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="Logo">
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="../index.php" class="logo d-flex align-items-center me-auto">
+        <img src="../assets/img/logo.png" alt="">
       </a>
 
-      <nav class="navmenu">
+      <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#book"><button type="button" class="btn btn-primary">Book Now</button></a></li>
+          <li><a href="../index.php#hero" class="">Home</a></li>
+          <li><a href="../index.php#about">About</a></li>
+          <li><a href="../index.php#feature">Features</a></li>
+          <li><a href="../index.php#service">Services</a></li>
+          <li><a href="../index.php#contact">Contact</a></li>
+          <li><a href="../index.php#book"><button type="button" class="btn btn-primary">Book Now</button></a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
     </div>
   </header>
 
-  <div class="container-fluid hero-section">
-    <div class="row">
-      <div class="col-md-12">
-        <h1>EMERGENCY AC REPAIR SERVICES IN DUBAI | 24/7 AIR CONDITIONING REPAIR</h1>
-        <p>AC Repair Dubai, AC Repair Services near Me, Emergency AC Repair, Air Conditioning Repair, AC Maintenance, AC Installation</p>
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0" style="color: #000;">AC Installation Service</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="../index.php" style="color: #000;">Home</a></li>
+            <li><a href="../index.php#service" style="color: #000;">Services</a></li>
+            <li class="current" style="color: #000;">AC Installation</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
+
+      <div class="container">
+
+        <div class="row gy-5">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="service-box">
+              <h4 style="color: #000;">Services List</h4>
+              <div class="services-list">
+                <a href="ac-install.php" class="active" style="color: #000;"><i class="bi bi-arrow-right-circle"></i><span>AC Installation</span></a>
+                <a href="ac-duct.php" style="color: #000;"><i class="bi bi-arrow-right-circle"></i><span>AC Duct Cleaning</span></a>
+                <a href="ac-maintain.php" style="color: #000;"><i class="bi bi-arrow-right-circle"></i><span>AC Maintenance Service</span></a>
+                <a href="ac-repair.php" style="color: #000;"><i class="bi bi-arrow-right-circle"></i><span>AC Repair</span></a>
+              </div>
+            </div><!-- End Services List -->
+
+            <div class="help-box">
+              <i class="bi bi-headset help-icon"></i>
+              <h4 style="color: #000;">Have a Question?</h4>
+              <p style="color: #000;" class="d-flex align-items-center mt-2 mb-0"><i class="bi bi-telephone me-2"></i> <span>+1 5589 55488 55</span></p>
+              <p style="color: #000;" class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a href="mailto:contact@example.com" style="color: #000;">contact@example.com</a></p>
+            </div>
+
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <div id="install" class="service-content">
+              <img src="install.jpg" alt="AC Installation" class="img-fluid services-img">
+              <h3 style="color: #000;">WELCOME TO AC INSTALLATION SERVICE</h3>
+              <p style="color: #000;">If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Building Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Service Details Section -->
+
+
+<section id="service-details" class="service-details section">
+
+<div class="container">
+
+  <div class="row gy-5">
+  
+    <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
+      <img src="../acinstall.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <div class="text-content">
+        <h3>WELCOME TO AC INSTALLATION SERVICE</h3>
+        <p>If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Building Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.</p>
       </div>
     </div>
-  </div>
 
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">AC Installation</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">AC Repair</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Duct Cleaning</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Maintenance</a>
-          </li>
-        </ul>
+    <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
+      <div class="text-content">
+        <h3>ANOTHER SECTION TITLE</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor nisi sit amet facilisis cursus. Vivamus ac posuere dui. Nunc sit amet velit malesuada, posuere turpis non, tincidunt velit. Aliquam euismod laoreet nisl, in gravida nunc vehicula non. Proin iaculis libero vitae ipsum gravida, a scelerisque eros euismod. Nulla facilisi.</p>
+      </div>
+      <img src="../install3.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+    </div>
+
+<!-- Book Now Button -->
+<div class="row justify-content-center">
+      <div class="col-auto">
+        <a href="book-service/booking.php" class="btn btn-primary" data-aos="fade-up" data-aos-delay="50">Book Now</a>
       </div>
     </div>
-  </nav>
 
-
-  <div class="container pt-5" >
-  <div class="row">
-    <div class="col-md-6 ">
-      <img src="repair.jpg" class="img-fluid" alt="Cleaning Image">
-    </div>
-    <div class="col-md-6">
-        <h1 style="font-size: 1.5rem;">WELCOME TO AC INSTALLATION SERVICE</h1>
-        <p style="color: black;">
-  If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Buildling Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.
-  <ul>
-    <li>AC Installation</li>
-    <li>AC Duct Cleaning</li>
-    <li>AC Maintenance Service</li>
-    <li>AC Repair</li>
-  </ul>
-</p>
-    </div>
-  </div>
 </div>
-
-
-<section class="services-section py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center mb-4">
-          <h2 class="service-title" style="font-weight: 400; color: #555;">Our Services</h2>
+</div>
+</section>
+    <!-- Services Section -->
+    <section class="services-section py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center mb-4">
+            <h2 class="service-title">Our Services</h2>
+          </div>
         </div>
-      </div>
-  <!-- Service Item Section -->
-  <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center mb-4">
-          <h2 class="service-title">Our AC Installation Services</h2>
-        </div>
-      </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 mb-4">
-          <div class="service-item item-cyan position-relative p-4 d-flex align-items-center">
-            <img src="assets/img/install.png" alt="AC Installation" class="mr-3" >
-            <div>
-              <h3>AC Installation</h3>
-              <p>If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Building
-                Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to
-                split systems, ensuring that your new unit is installed safely and securely.</p>
+
+        <div class="row gy-4">
+          <div class="col-lg-6 mb-4">
+            <div class="service-item item-cyan position-relative p-4 d-flex align-items-center">
+              <img src="../assets/img/install.png" alt="AC Installation" class="mr-3">
+              <div>
+                <h3>AC Installation</h3>
+                <p>If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Building
+                  Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to
+                  split systems, ensuring that your new unit is installed safely and securely.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="service-item item-green position-relative p-4 d-flex align-items-center">
+              <img src="../assets/img/duct.png" alt="AC Duct Cleaning" class="mr-3">
+              <div>
+                <h3>AC Duct Cleaning</h3>
+                <p>Keep your AC ducts clean and your indoor air fresh with our AC duct cleaning service. We remove dust, allergens, and contaminants, ensuring your AC system works efficiently and your air quality is improved.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="service-item item-blue position-relative p-4 d-flex align-items-center">
+              <img src="../assets/img/duct.png" alt="AC Maintenance Service" class="mr-3">
+              <div>
+                <h3>AC Maintenance Service</h3>
+                <p>Ensure your AC system works smoothly year-round with our AC maintenance service. We offer regular inspections, cleaning, and adjustments to keep your AC unit running efficiently and prevent breakdowns.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="service-item item-orange position-relative p-4 d-flex align-items-center">
+              <img src="../assets/img/repair.png" alt="AC Repair" class="mr-3">
+              <div>
+                <h3>AC Repair</h3>
+                <p>If your AC system is not cooling properly or making strange noises, our AC repair service can help. Our technicians diagnose and repair all types of AC problems to restore comfort to your space.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section><!-- /Services Section -->
+ <!-- Footer -->
+ <!-- <?php include "../FAQ.php"?> -->
+  </main>
+ 
+  <!-- Footer -->
+  <?php include "../footer.php"?>
+  <!-- End Footer -->
 
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-
-
+  <!-- Preloader -->
+  <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <!-- Main JS File -->
+  <script src="../assets/js/main.js"></script>
 
 </body>
 
