@@ -8,15 +8,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-<<<<<<< HEAD
-    // Check if the entered credentials match the hardcoded credentials
-    if ($username === $adminUsername && $password === $adminPassword) {
-        // Set session variable to indicate the admin is logged in
-        $_SESSION['admin_logged_in'] = true;
-        // Redirect to the index page
-        header("Location: index.php");
-        exit();
-=======
     // Query the database for the admin user
     $sql = "SELECT * FROM admin_users WHERE username = ?";
     $stmt = $conn->prepare($sql);
@@ -36,7 +27,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } else {
             $error = "Invalid username or password.";
         }
->>>>>>> 89e57b4387190c5627f2f4219e77da38dc8de3f7
     } else {
         $error = "Invalid username or password.";
     }
