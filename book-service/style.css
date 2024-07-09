@@ -1,4 +1,4 @@
-body {
+:body {
     font-family: Arial, sans-serif;
 }
 
@@ -31,9 +31,9 @@ label {
 
 select, input[type="date"], input[type="time"], input[type="text"], input[type="radio"], .form-control {
     width: 100%;
-    padding: 5px 5px; /* Adjusted to combine styles */
+    padding: 10px 15px; /* Adjusted to combine styles */
     margin-bottom: 20px; /* Added from file2 */
-    border-radius: 10px; /* From file1 */
+    border-radius: 20px; /* From file1 */
     font-size: 0.9rem; /* From file1 */
     transition: all 0.3s ease; /* From file1 */
 }
@@ -81,29 +81,34 @@ button:focus, button:hover {
     margin-bottom: 1.5rem;
 }
 
-.progress-container {
+.progress {
+    height: 30px;
     position: relative;
-    width: 100%;
+}
+
+.progress-bar {
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    background-color: #28a745;
+    transition: width 0.4s ease;
 }
 
 .progress-bar-steps {
-    position: relative;
-    top: -10px; /* Adjust this value as needed */
+    position: absolute;
+    top: 0;
     width: 100%;
-    height: 30px; /* Adjust this value as needed */
-    font-weight: 2px;
+    height: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5px;
     z-index: 1;
 }
 
 .progress-bar-step {
     flex: 1;
     text-align: center;
-    line-height: 30px; /* Adjust this value as needed */
+    line-height: 30px;
     color: #6c757d;
-    padding: 2px 5px;
 }
 
 .progress-bar-step.active {
@@ -127,30 +132,6 @@ button:focus, button:hover {
     background: #007bff;
 }
 
-.progress {
-    height: 0;
-    position: relative;
-}
-
-.progress-bar {
-    height: 100%;
-    position: relative;
-    z-index: 2;
-    background-color: #28a745;
-    transition: width 0.4s ease;
-}
-
-.form-section {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-}
-
-
-.progress-bar-step.active::before {
-    background: #007bff;
-}
-
 .form-section {
     display: none;
     opacity: 0;
@@ -165,18 +146,6 @@ button:focus, button:hover {
 .summary {
     display: none;
 }
-
-.confirmation-summary {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-.summary-content {
-    max-height: 300px; /* Adjust this value as needed */
-    overflow-y: auto; /* Add scrollbar if content exceeds max height */
-}
-/* 
 .confirmation-summary {
     position: sticky;
     top: 20px;
@@ -185,7 +154,7 @@ button:focus, button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     height: 100%;
-} */
+}
 .confirmation-summary.active {
     display: block; /* Show when active */
 }
