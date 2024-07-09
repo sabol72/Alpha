@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h2, h4 {
+    color: #343a40;
+    margin-bottom: 20px; /* Added from file2 */
+}
+
+.booking-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.step {
+    display: none;
+}
+
+.step.active {
+    display: block;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select, input[type="date"], input[type="time"], input[type="text"], input[type="radio"], .form-control {
+    width: 100%;
+    padding: 10px 15px; /* Adjusted to combine styles */
+    margin-bottom: 20px; /* Added from file2 */
+    border-radius: 20px; /* From file1 */
+    font-size: 0.9rem; /* From file1 */
+    transition: all 0.3s ease; /* From file1 */
+}
+
+.form-control:focus, select:focus, input[type="date"]:focus, input[type="time"]:focus, input[type="text"]:focus, input[type="radio"]:focus {
+    border-color: #007bff; /* From file1 */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25); /* From file1 */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff7f00;
+    color: #fff;
+    border: none;
+    border-radius: 20px; /* From file1, adjusted to 20px */
+    cursor: pointer;
+    transition: all 0.3s ease; /* From file1 */
+}
+
+button:focus, button:hover {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.25); /* From file1 */
+    background-color: #ff5200; /* From file2 */
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+.btn-primary:hover{
+    background-color: #00ff0d;
+    transform: scale(1.1); /* Increases size by 10% on hover */
+    transition: transform 0.2s ease-in-out; /* Smooth transition */
+}
+.btn-secondary {
+    background-color: #be3030;
+    border: none;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.progress {
+    height: 30px;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    background-color: #28a745;
+    transition: width 0.4s ease;
+}
+
+.progress-bar-steps {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.progress-bar-step {
+    flex: 1;
+    text-align: center;
+    line-height: 30px;
+    color: #6c757d;
+}
+
+.progress-bar-step.active {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.progress-bar-step:not(:first-child)::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #e9ecef;
+    z-index: -1;
+    transition: background 0.4s ease;
+}
+
+.progress-bar-step.active::before {
+    background: #007bff;
+}
+
+.form-section {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.form-section.active {
+    display: block;
+    opacity: 1;
+}
+
+.summary {
+    display: none;
+}
+.confirmation-summary {
+    position: sticky;
+    top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    height: 100%;
+}
+.confirmation-summary.active {
+    display: block; /* Show when active */
+}
+.form-section {
+    display: none; /* Hide all sections by default */
+    margin-bottom: 20px;
+}
+.form-section.active {
+    display: block; /* Show the active section */
+}
+.progress-bar-step {
+    width: 16.6%;
+    text-align: center;
+}
+.progress-bar-step.active {
+    background-color: #28a745;
+    color: white;
+}
+.hidden {
+    display: none !important;
+}
