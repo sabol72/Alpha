@@ -264,7 +264,7 @@
   </main>
 
   <!-- Footer -->
-  <?php include "../footer.php"?>
+  <?php include "footer.php"?>
   <!-- End Footer -->
 
   <!-- Scroll Top -->

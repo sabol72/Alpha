@@ -180,7 +180,7 @@
   <div class="row gy-5">
   
     <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-      <img src="../img/ductcleaning.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/duct2.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
       <div class="text-content">
         <h3>Excellence in Ac Duct Cleaning Services </h3>
         <p>At Al Bahja Building Maintenance and Cleaning Services, we pride ourselves on providing comprehensive and reliable maintenance and cleaning solutions for both residential and commercial properties. Our commitment to excellence and customer satisfaction sets us apart as a leading service provider in the industry.</p>
@@ -264,7 +264,7 @@
   </main>
 
   <!-- Footer -->
-  <?php include "../footer.php"?>
+  <?php include "footer.php"?>
   <!-- End Footer -->
 
   <!-- Scroll Top -->

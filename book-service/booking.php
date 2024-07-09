@@ -267,7 +267,7 @@
         <button type="submit" class="btn btn-success">Confirm Booking</button>
     </div>
 </form>
-
+</div>
 <script>
     let currentSection = 'service-section';
     const sections = ['service-section', 'extras-section', 'time-section', 'details-section', 'payment-section', 'done-section'];
