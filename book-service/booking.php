@@ -9,12 +9,69 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <!-- <link rel="stylesheet" href="../assets/css/main.css"> -->
     <link rel="stylesheet" href="style.css">
+    <!-- Main CSS File -->
+   <link href="../assets/css/main.css" rel="stylesheet"> 
+   <style>
+    .confirmation-summary {
+    max-height: 400px; /* Adjust the max height as per your requirement */
+    overflow-y: auto; /* Add vertical scrollbar when content exceeds max height */
+    padding-right: 15px; /* Adjust for scrollbar width */
+}
+
+.summary-content {
+    padding-right: 15px; /* Adjust for scrollbar width */
+}
+
+/* Optional: Styling for scrollbar (customize as needed) */
+.confirmation-summary::-webkit-scrollbar {
+    width: 8px;
+}
+
+.confirmation-summary::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.confirmation-summary::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.confirmation-summary::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+   </style>
 
 </head>
 <body class="index-page">
-<main class="main">
-<div class="container mt-5" data-aos="fade-up">
-    <h2>Book your service now!!</h2>
+
+<header id="header" class="header d-flex align-items-center fixed-top">
+  
+  <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+    <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <img src="../assets/img/logo.png" alt="">
+      
+    </a>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="../Index.php">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li> <a href="book-service/booking.php"><button type="button" class="btn btn-primary">Book Now</button></a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+
+  </div>
+</header>
+<main class="main pt-5">
+
+<div class="container mt-5 " data-aos="fade-up"  style="margin-top: 400px;" >
+<h2 style="text-align: center;">Book your service now!!</h2>
     <div class="progress my-4">
         <div class="progress-bar bg-success" role="progressbar" style="width: 16.6%;" id="progress-bar"></div>
         <div class="progress-bar-steps d-flex justify-content-between">
@@ -32,35 +89,45 @@
                 <!-- Service Section -->
                 <div id="service-section" class="form-section active">
                     <h4>Please select your service</h4>
-                    <div class="form-group">
-                        <label for="location">Location</label>
-                        <select class="form-control" id="location" name="location" required>
-                            <option value="">Select City</option>
-                            <option value="Dubai">Dubai</option>
-                            <option value="Abu Dhabi">Abu Dhabi</option>
-                            <option value="Sharjah">Sharjah</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="service-type">Service Type</label>
-                        <select class="form-control" id="service-type" name="service-type" required onchange="loadSubServices()">
-                            <option value="">Select Service</option>
-                            <option value="AC Service">AC Service</option>
-                            <option value="Cleaning">Cleaning</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="sub-service">Sub Service</label>
-                        <select class="form-control" id="sub-service" name="sub-service" required>
-                            <option value="">Select Sub Service</option>
-                        </select>
-                    </div>
+                    <div class="row" style="background-color:  #e0f5db; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+  <div class="col-md-4">
+    <div class="form-group">
+      <label for="location">Location</label>
+      <select class="form-control" id="location" name="location" required>
+        <option value="">Select City</option>
+        <option value="Dubai">Dubai</option>
+        <option value="Abu Dhabi">Abu Dhabi</option>
+        <option value="Sharjah">Sharjah</option>
+      </select>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+      <label for="service-type">Service Type</label>
+      <select class="form-control" id="service-type" name="service-type" required onchange="loadSubServices()">
+        <option value="">Select Service</option>
+        <option value="AC Service">AC Service</option>
+        <option value="Cleaning">Cleaning</option>
+      </select>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+      <label for="sub-service">Sub Service</label>
+      <select class="form-control" id="sub-service" name="sub-service" required>
+        <option value="">Select Sub Service</option>
+      </select>
+    </div>
+  </div>
+</div>
+
                     <button type="button" class="btn btn-primary" onclick="nextSection('extras-section')">Next</button>
                 </div>
                 <!-- Extras Section -->
                 <div id="extras-section" class="form-section">
                     <h4>Extras</h4>
-                    <div class="form-group">
+                    <div class="form-group" style="background-color:  #e0f5db; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+
                         <label for="hours">Select Number of Hours</label>
                         <select class="form-control" id="hours" name="hours">
                             <option value="1">1 Hour</option>
@@ -73,7 +140,9 @@
                             <option value="8">8 Hours</option>
                         </select>
                     </div>
-                    <div class="form-group">
+                  
+                    <div class="form-group" style="background-color:  #e0f5db; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+
                         <label for="workers">Select Number of Workers</label>
                         <select class="form-control" id="workers" name="workers">
                             <option value="1">1 Worker</option>
@@ -92,39 +161,60 @@
                 <!-- Time Section -->
                 <div id="time-section" class="form-section">
                     <h4>Time</h4>
-                    <div class="form-group">
-                        <label for="date">Select Date</label>
-                        <input type="date" class="form-control" id="date" name="date" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="time">Select Time</label>
-                        <input type="time" class="form-control" id="time" name="time" required>
-                    </div>
+                    <div class="row" style="background-color: #e0f5db; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+  <div class="col-md-6">
+    <div class="form-group row">
+      <label for="date" class="col-sm-6 col-form-label">Select Date</label>
+      <div class="col-sm-6">
+        <input type="date" class="form-control" id="date" name="date" required>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group row">
+      <label for="time" class="col-sm-6 col-form-label">Select Time</label>
+      <div class="col-sm-6">
+        <input type="time" class="form-control" id="time" name="time" required>
+      </div>
+    </div>
+  </div>
+</div>
+
                     <button type="button" class="btn btn-secondary" onclick="previousSection('extras-section')">Back</button>
                     <button type="button" class="btn btn-primary" onclick="nextSection('details-section')">Next</button>
                 </div>
                 <!-- Details Section -->
                 <div id="details-section" class="form-section">
                     <h4>Details</h4>
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" class="form-control" id="Cname" name="Cname" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone</label>
-                        <input type="tel" class="form-control" id="phone" name="phone" required>
-                    </div>
+                    <div class="row" style="background-color: #e0f5db; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+  <div class="col-md-4">
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" class="form-control" id="Cname" name="Cname" required>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+      <label for="phone">Phone</label>
+      <input type="tel" class="form-control" id="phone" name="phone" required>
+    </div>
+  </div>
+</div>
+
                     <button type="button" class="btn btn-secondary" onclick="previousSection('time-section')">Back</button>
                     <button type="button" class="btn btn-primary" onclick="nextSection('payment-section')">Next</button>
                 </div>
                 <!-- Payment Section -->
                 <div id="payment-section" class="form-section">
                     <h4>Payment Method</h4>
-                    <div class="form-group">
+                    <div class="form-group" style="background-color:  #e0f5db; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+
                         <label for="payment-method">Select Payment Method</label>
                         <select class="form-control" id="payment-method" name="payment-method" onchange="togglePaymentFields()">
                             <option value="credit_card">Credit Card</option>
@@ -133,7 +223,7 @@
                         </select>
                     </div>
                     <div id="credit-card-details" style="display: none;">
-                        <div class="form-group">
+                    <div class="form-group" style="background-color:  #e0f5db; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
                             <label for="card-number">Card Number</label>
                             <input type="text" class="form-control" id="card-number" name="card-number">
                         </div>
@@ -174,146 +264,32 @@
             </form>
         </div>
         <div class="col-md-4">
-            <div class="confirmation-summary active" id="confirmation-summary">
-            <h5>Summary</h5>
-                <p><strong>Location:</strong> <span id="summary-location"></span></p>
-                <p><strong>Service Type:</strong> <span id="summary-service-type"></span></p>
-                <p><strong>Sub Service:</strong> <span id="summary-sub-service"></span></p>
-                <p><strong>Number Of Hours:</strong> <span id="summary-hours"></span></p>
-                <p><strong>Number of Workers:</strong> <span id="summary-workers"></span></p>
-                <p><strong>Date:</strong> <span id="summary-date"></span></p>
-                <p><strong>Time:</strong> <span id="summary-time"></span></p>
-                <p><strong>Full Name:</strong> <span id="summary-name"></span></p>
-                <p><strong>Email:</strong> <span id="summary-email"></span></p>
-                <p><strong>Phone:</strong> <span id="summary-phone"></span></p>
-                <p><strong>Payment Method:</strong> <span id="summary-payment-method"></span></p>
-                <div id="summary-card-details" style="display: none;">
-                    <p><strong>Card Number:</strong> <span id="summary-card-number"></span></p>
-                    <p><strong>Expiry Date:</strong> <span id="summary-expiry-date"></span></p>
-                    <p><strong>CVV:</strong> <span id="summary-cvv"></span></p>
-                </div>            </div>
-        </div>
-    </div>
-<<<<<<< HEAD
-    <!-- Extras Section -->
-    <div id="extras-section" style="display: none;">
-        <h4>Extras</h4>
-        <div class="form-group">
-            <label for="hours">Select Number of Hours</label>
-            <select class="form-control" id="hours" name="hours">
-                <option value="1">1 Hour</option>
-                <option value="2">2 Hours</option>
-                <option value="3">3 Hours</option>
-                <option value="4">4 Hours</option>
-                <option value="5">5 Hours</option>
-                <option value="6">6 Hours</option>
-                <option value="7">7 Hours</option>
-                <option value="8">8 Hours</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="workers">Select Number of Workers</label>
-            <select class="form-control" id="workers" name="workers">
-                <option value="1">1 Worker</option>
-                <option value="2">2 Workers</option>
-                <option value="3">3 Workers</option>
-                <option value="4">4 Workers</option>
-                <option value="5">5 Workers</option>
-                <option value="6">6 Workers</option>
-                <option value="7">7 Workers</option>
-                <option value="8">8 Workers</option>
-            </select>
-        </div>
-        <button type="button" class="btn btn-secondary" onclick="previousSection('service-section')">Back</button>
-        <button type="button" class="btn btn-primary" onclick="nextSection('time-section')">Next</button>
-    </div>
-    <!-- Time Section -->
-    <div id="time-section" style="display: none;">
-        <h4>Time</h4>
-        <div class="form-group">
-            <label for="date">Select Date</label>
-            <input type="date" class="form-control" id="date" name="date" required>
-        </div>
-        <div class="form-group">
-            <label for="time">Select Time</label>
-            <input type="time" class="form-control" id="time" name="time" required>
-        </div>
-        <button type="button" class="btn btn-secondary" onclick="previousSection('extras-section')">Back</button>
-        <button type="button" class="btn btn-primary" onclick="nextSection('details-section')">Next</button>
-    </div>
-    <!-- Details Section -->
-    <div id="details-section" style="display: none;">
-        <h4>Details</h4>
-        <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" class="form-control" id="Cname" name="Cname" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="phone">Phone</label>
-            <input type="tel" class="form-control" id="phone" name="phone" required>
-        </div>
-        <button type="button" class="btn btn-secondary" onclick="previousSection('time-section')">Back</button>
-        <button type="button" class="btn btn-primary" onclick="nextSection('payment-section')">Next</button>
-    </div>
-    <!-- Payment Section -->
-    <div id="payment-section" style="display: none;">
-        <h4>Payment Method</h4>
-        <div class="form-group">
-            <label for="payment-method">Select Payment Method</label>
-            <select class="form-control" id="payment-method" name="payment-method" onchange="togglePaymentFields()">
-                <option value="credit_card">Credit Card</option>
-                <option value="debit_card">Debit Card</option>
-                <option value="cod">Cash on Delivery (COD)</option>
-            </select>
-        </div>
-        <div id="credit-card-details" style="display: none;">
-            <div class="form-group">
-                <label for="card-number">Card Number</label>
-                <input type="text" class="form-control" id="card-number" name="card-number">
-            </div>
-            <div class="form-group">
-                <label for="expiry-date">Expiry Date</label>
-                <input type="text" class="form-control" id="expiry-date">
-            </div>
-            <div class="form-group">
-                <label for="cvv">CVV</label>
-                <input type="text" class="form-control" id="cvv">
+    <div class="confirmation-summary active" id="confirmation-summary">
+        <h5>Summary</h5>
+        <div class="summary-content">
+            <p><strong>Location:</strong> <span id="summary-location"></span></p>
+            <p><strong>Service Type:</strong> <span id="summary-service-type"></span></p>
+            <p><strong>Sub Service:</strong> <span id="summary-sub-service"></span></p>
+            <p><strong>Number Of Hours:</strong> <span id="summary-hours"></span></p>
+            <p><strong>Number of Workers:</strong> <span id="summary-workers"></span></p>
+            <p><strong>Date:</strong> <span id="summary-date"></span></p>
+            <p><strong>Time:</strong> <span id="summary-time"></span></p>
+            <p><strong>Full Name:</strong> <span id="summary-name"></span></p>
+            <p><strong>Email:</strong> <span id="summary-email"></span></p>
+            <p><strong>Phone:</strong> <span id="summary-phone"></span></p>
+            <p><strong>Payment Method:</strong> <span id="summary-payment-method"></span></p>
+            <div id="summary-card-details" style="display: none;">
+                <p><strong>Card Number:</strong> <span id="summary-card-number"></span></p>
+                <p><strong>Expiry Date:</strong> <span id="summary-expiry-date"></span></p>
+                <p><strong>CVV:</strong> <span id="summary-cvv"></span></p>
             </div>
         </div>
-        <button type="button" class="btn btn-secondary" onclick="previousSection('details-section')">Back</button>
-        <button type="button" class="btn btn-primary" onclick="nextSection('done-section')">Next</button>
     </div>
-
-    <!-- Done Section -->
-    <div id="done-section" style="display: none;">
-        <h4>Confirm Booking</h4>
-        <p><strong>Location:</strong> <span id="confirm-location"></span></p>
-        <p><strong>Service Type:</strong> <span id="confirm-service-type"></span></p>
-        <p><strong>Sub Service:</strong> <span id="confirm-sub-service"></span></p>
-        <p><strong>Number Of Hours:</strong> <span id="confirm-hours"></span></p>
-        <p><strong>Number of Workers:</strong> <span id="confirm-workers"></span></p>
-        <p><strong>Date:</strong> <span id="confirm-date"></span></p>
-        <p><strong>Time:</strong> <span id="confirm-time"></span></p>
-        <p><strong>Name:</strong> <span id="confirm-Cname"></span></p>
-        <p><strong>Email:</strong> <span id="confirm-email"></span></p>
-        <p><strong>Phone:</strong> <span id="confirm-phone"></span></p>
-        <p><strong>Payment Method:</strong> <span id="confirm-payment-method"></span></p>
-        <p id="card-details-section" style="display: none;">
-            <strong>Card Number:</strong> <span id="confirm-card-number"></span>
-        </p>
-        <button type="button" class="btn btn-secondary" onclick="previousSection('payment-section')">Back</button>
-        <button type="submit" class="btn btn-success">Confirm Booking</button>
-    </div>
-</form>
 </div>
-=======
+
+    </div>
 </div>
 </main>
->>>>>>> d3072a0c9e08c9e0e8afaae47b4429ca08a2c29c
 <script>
     function loadSubServices() {
         var serviceType = document.getElementById('service-type').value;

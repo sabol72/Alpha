@@ -6,7 +6,12 @@ h2, h4 {
     color: #343a40;
     margin-bottom: 20px; /* Added from file2 */
 }
-
+ .form-group.row {
+            margin-bottom: 1rem; /* Adjust margin between form groups */
+        }
+        .confirmation-summary {
+            font-size: 0.9rem; /* Adjust booking summary font size */
+        }
 .booking-form {
     max-width: 600px;
     margin: 0 auto;
