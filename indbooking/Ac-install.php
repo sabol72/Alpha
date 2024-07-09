@@ -30,8 +30,8 @@ body{
     <header>
 </header>
     <main>
+    <?php include "../ac-service/ac-install.php";?>
         <div class="container mt-5 title-section" data-aos="fade-up">
-            <?php include "../ac-service/ac-install.php";?>
         <h2>Choose your service</h2>
             <div class="buttons">
                 <a class="gbutton"href="#">Ac Install</a>
