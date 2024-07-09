@@ -27,7 +27,7 @@
                     <div class="progress-bar-step">Done</div>
                 </div>
                 <div class="progress my-4">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 16.6%;" id="progress-bar">
+                    <div class="progress-bar" role="progressbar" style="width: 16.6%;" id="progress-bar">
                     </div>
                 </div>
             </div>
