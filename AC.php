@@ -104,7 +104,7 @@
       </div><!-- End row -->
   </section><!-- /Services Section -->
 </div><!-- End Section Title -->
-
+</section>
 
 
   <!-- features section -->
@@ -142,16 +142,16 @@
           </div>
         </div>
   
+        
         <div class="col-lg-4 mb-4">
           <div class="feature-box">
             <div class="text-center">
-              <i class="fas fa-check-circle fa-3x mb-3"></i>
+              <i class="fas fa-tools fa-3x mb-3"></i>
               <h3>Quality Assurance</h3>
               <p>We take pride in the quality of our workmanship and stand behind the services we provide. With us, you can expect reliable repairs and lasting results every time.</p>
             </div>
           </div>
         </div>
-  
         <div class="col-lg-4 mb-4">
           <div class="feature-box">
             <div class="text-center">
@@ -173,6 +173,7 @@
         </div>
       </div>
     </div>
+    
   
   
      

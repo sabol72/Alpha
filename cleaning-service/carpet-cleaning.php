@@ -166,19 +166,19 @@
   <div class="row gy-5">
   
     <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-      <img src="../acinstall.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/carpet3.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
       <div class="text-content">
-        <h3>WELCOME TO DUCT AIR CLEANING SERVICE</h3>
-        <p>If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Building Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.</p>
+        <h3>Expert Carpet Cleaning for a Pristine Home</h3>
+        <p> Choose Al Bahja Building Maintenance and Cleaning Services for refresh your living space with our professional carpet cleaning services. Our advanced cleaning methods remove deep-seated dirt, tough stains, and allergens, ensuring your carpets look and feel like new. Trust our experienced team to deliver thorough and efficient cleaning, enhancing the beauty and hygiene of your home.</p>
       </div>
     </div>
 
     <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
       <div class="text-content">
-        <h3>ANOTHER SECTION TITLE</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor nisi sit amet facilisis cursus. Vivamus ac posuere dui. Nunc sit amet velit malesuada, posuere turpis non, tincidunt velit. Aliquam euismod laoreet nisl, in gravida nunc vehicula non. Proin iaculis libero vitae ipsum gravida, a scelerisque eros euismod. Nulla facilisi.</p>
+        <h3>Deep Clean Your Carpets for Lasting Freshness</h3>
+        <p>Experience the ultimate in carpet care with our expert cleaning services. We use eco-friendly products and state-of-the-art equipment to eliminate dirt, dust, and odors, leaving your carpets revitalized and fresh. Enjoy a healthier home environment and extend the life of your carpets with our comprehensive cleaning solutions.</p>
       </div>
-      <img src="../install3.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/carpet2.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
     </div>
 
 <!-- Book Now Button -->
@@ -191,10 +191,12 @@
 </div>
 </div>
 </section>
+
+<?php include "service.php" ?>
   </main>
 
   <!-- Footer -->
-  <?php include "../footer.php" ?>
+  <?php include "footer.php" ?>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

@@ -166,19 +166,19 @@
   <div class="row gy-5">
   
     <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-      <img src="../acinstall.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/villahouse.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
       <div class="text-content">
-        <h3>WELCOME TO DUCT AIR CLEANING SERVICE</h3>
-        <p>If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Building Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.</p>
+        <h3>Transform Your Home with Villa & House Cleaning Services</h3>
+        <p>Elevate your living space with our top-notch villa and house cleaning services. Whether you need a one-time deep clean or regular maintenance, our professional team is here to ensure your home shines with cleanliness. Using industry-leading equipment and eco-friendly products, we tackle dust, grime, and stains effectively, leaving every surface sparkling and sanitized. From kitchens to bathrooms, bedrooms to living areas, we pay meticulous attention to detail to create a pristine environment you'll be proud to call home. Experience the difference with our tailored cleaning solutions designed to meet your specific needs and exceed your expectations.</p>
       </div>
     </div>
 
     <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
       <div class="text-content">
-        <h3>ANOTHER SECTION TITLE</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor nisi sit amet facilisis cursus. Vivamus ac posuere dui. Nunc sit amet velit malesuada, posuere turpis non, tincidunt velit. Aliquam euismod laoreet nisl, in gravida nunc vehicula non. Proin iaculis libero vitae ipsum gravida, a scelerisque eros euismod. Nulla facilisi.</p>
+        <h3>Why Choose Professional Villa & House Cleaning?</h3>
+        <p>Discover the advantages of professional villa and house cleaning! Our services go beyond surface cleaning to eliminate dust, dirt, and allergens, creating a healthier indoor environment. With attention to detail and a commitment to excellence, our trained cleaners provide meticulous care for every room. Enjoy peace of mind knowing your villa or house is in expert hands, with results that exceed your expectations. Choose professional cleaning to enhance hygiene, maintain your property's value, and enjoy a fresh, inviting home every day.</p>
       </div>
-      <img src="../install3.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/villahouse3.webp" alt="AC Installation" class="img-fluid services-img me-3 w-50">
     </div>
 
 <!-- Book Now Button -->
@@ -191,10 +191,12 @@
 </div>
 </div>
 </section>
+
+<?php include "service.php" ?>
   </main>
 
   <!-- Footer -->
-  <?php include "../footer.php" ?>
+  <?php include "footer.php" ?>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

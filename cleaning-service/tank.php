@@ -170,19 +170,20 @@
   <div class="row gy-5">
   
     <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-      <img src="../acinstall.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/watertank3.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
       <div class="text-content">
-        <h3>WELCOME TO DUCT AIR CLEANING SERVICE</h3>
-        <p>If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Building Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.</p>
+        <h3>
+        Expert Water Tank Cleaning and Disinfection Services</h3>
+        <p>Maintain pristine water quality with our expert water tank cleaning and disinfection services. We utilize advanced techniques to eliminate sediment, bacteria, and contaminants, ensuring your water remains clean and safe. Our thorough process includes comprehensive disinfection with eco-friendly solutions, promoting health and hygiene for your household or business. Trust our skilled technicians to deliver reliable results, safeguarding your water supply and providing peace of mind. Choose our professional services for effective tank cleaning and disinfection that prioritizes safety and cleanliness.</p>
       </div>
     </div>
 
     <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
       <div class="text-content">
-        <h3>ANOTHER SECTION TITLE</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor nisi sit amet facilisis cursus. Vivamus ac posuere dui. Nunc sit amet velit malesuada, posuere turpis non, tincidunt velit. Aliquam euismod laoreet nisl, in gravida nunc vehicula non. Proin iaculis libero vitae ipsum gravida, a scelerisque eros euismod. Nulla facilisi.</p>
+        <h3>The Importance of Clean Water Tanks</h3>
+        <p>Understand why clean water tanks are crucial for your health and safety. Over time, sediment buildup and microbial growth can compromise water quality, leading to health risks. Our specialized cleaning and disinfection services remove contaminants, ensuring your water remains pure and safe for consumption. By maintaining clean tanks, you protect against waterborne diseases and ensure the longevity of your plumbing system. Trust our expertise to maintain optimal water hygiene standards with regular cleaning and disinfection of your water tanks.</p>
       </div>
-      <img src="../install3.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/watertank2.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
     </div>
 
 <!-- Book Now Button -->
@@ -195,10 +196,12 @@
 </div>
 </div>
 </section>
+
+<?php include "service.php" ?>
   </main>
 
   <!-- Footer -->
-  <?php include "../footer.php" ?>
+  <?php include "footer.php" ?>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

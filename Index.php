@@ -239,7 +239,7 @@ $conn->close();
                 <h3>AC Installation</h3>
                 <p>If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Buildling  Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.
                </p>
-               <a href="ac-service.php" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+               <a href="ac-service/ac-install.php" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -250,7 +250,7 @@ $conn->close();
               <div>
                 <h3>CLEANING</h3>
                 <p>Al Bahja Building Maintenance is your trusted partner for comprehensive cleaning services in Dubai. We offer a wide range of cleaning solutions tailored to meet your specific needs, ensuring your home or office is clean, comfortable, and safe</p>
-                <a href="cleaning-service.php" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                <a href="cleaning-service/deep-cleaning.php" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div>
