@@ -99,7 +99,7 @@ $conn->close();
           <li><a href="#features">Features</a></li>
           <li><a href="#service">Services</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li> <a href="book-service/booking.php"><button type="button" class="btn btn-primary">Book Now</button></a></li>
+          <li> <a href="indbooking/index.php"><button type="button" class="btn btn-primary">Book Now</button></a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -230,8 +230,6 @@ $conn->close();
         <h2>Services</h2>
         <p>Services that we provide for you.</p>
       
-
-
         <div class="row g-5">
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
@@ -256,8 +254,6 @@ $conn->close();
               </div>
             </div>
           </div>
-          <?php include "book-service/booknow.php"?>
-
 </div>
       </div><!-- End Section Title -->
     </section><!-- /Services Section -->

@@ -2,10 +2,9 @@
 <footer class="mt-5">
         <div class="footer-cointaner">
             <div class="row">
-                  <div class="col" id="company">
-                      <img src="assets/img/logo.png" class="logo">
-                      <!-- <img src="../logo.png"  class="logo"> -->
-                      <p>
+                  <div class="col service-item" id="company">
+                  <img src="assets/img/logo.png" alt="">
+                  <p>
                         We are specialized in designings, make your business a brand.
                         Try our premium services.
                       </p>
@@ -19,7 +18,7 @@
                   </div>
 
 
-                  <div class="col" id="services" style="margin-top: -70px;">
+                  <div class="col service-item" id="services" style="margin-top: -70px;">
                      <h3>Services</h3>
                      <div class="links">
                         <a href="#">AC Services</a>
