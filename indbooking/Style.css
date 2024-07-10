@@ -67,25 +67,8 @@
 /* Container */
 .title-section {
   text-align: center;
-  padding: 50px 0 60px 0; /* Adjusted padding to include top padding */
+  padding-bottom: 60px;
   position: relative;
-  background-image: url('Background.jpeg');
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.644); /* Add box shadow here */
-  color: white; /* Ensure the text is visible */
-  z-index: 1;
-}
-
-.title-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent overlay */
-  z-index: -1;
 }
 
 .title-section h2 {
@@ -95,7 +78,6 @@
   padding-bottom: 20px;
   position: relative;
 }
-
 .title-section h2:hover {
   color: #09ff00;
   font-size: 35px;

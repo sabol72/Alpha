@@ -1,4 +1,4 @@
-:body {
+body {
     font-family: Arial, sans-serif;
 }
 
@@ -30,16 +30,16 @@ label {
 
 select, input[type="date"], input[type="time"], input[type="text"], input[type="radio"], .form-control {
     width: 100%;
-    padding: 10px 15px; /* Adjusted to combine styles */
-    margin-bottom: 20px; /* Added from file2 */
-    border-radius: 20px; /* From file1 */
-    font-size: 0.9rem; /* From file1 */
-    transition: all 0.3s ease; /* From file1 */
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
 }
 
-.form-control:focus, select:focus, input[type="date"]:focus, input[type="time"]:focus, input[type="text"]:focus, input[type="radio"]:focus {
-    border-color: #007bff; /* From file1 */
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25); /* From file1 */
+select:focus, input[type="date"]:focus, input[type="time"]:focus, input[type="text"]:focus, input[type="radio"]:focus, .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
 }
 
 button {
@@ -47,37 +47,45 @@ button {
     background-color: #ff7f00;
     color: #fff;
     border: none;
-    border-radius: 20px; /* From file1, adjusted to 20px */
+    border-radius: 20px;
     cursor: pointer;
-    transition: all 0.3s ease; /* From file1 */
+    transition: all 0.3s ease;
 }
 
 button:focus, button:hover {
-    box-shadow: 0 0 10px rgba(0, 123, 255, 0.25); /* From file1 */
-    background-color: #ff5200; /* From file2 */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.25);
+    background-color: #ff5200;
 }
-
+btn-grp {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
 .btn-primary {
-    background-color: #007bff;
+    background-color: #3e743c;
     border: none;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     background-color: #00ff0d;
     transform: scale(1.1); /* Increases size by 10% on hover */
     transition: transform 0.2s ease-in-out; /* Smooth transition */
 }
+
 .btn-secondary {
-    background-color: #be3030;
+    background-color: #413434;
     border: none;
 }
 
+.btn-secondary:hover {
+    background-color: #be3030;
+    transform: scale(0.9); /* Increases size by 10% on hover */
+    transition: transform 0.2s ease-in-out; /* Smooth transition */
+}
 .btn-success {
     background-color: #28a745;
     border: none;
-}
-
-.form-group {
-    margin-bottom: 1.5rem;
 }
 
 .progress {
@@ -135,16 +143,37 @@ button:focus, button:hover {
     display: none;
     opacity: 0;
     transition: opacity 0.4s ease;
+    margin-bottom: 20px;
+    flex-direction: column; /* Display items in a column */
 }
 
 .form-section.active {
-    display: block;
+    display: flex; /* Show the active section */
     opacity: 1;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.progress-bar-step {
+    width: 16.6%;
+    text-align: center;
+}
+
+.progress-bar-step.active {
+    background-color: #28a745;
+    color: white;
+}
+
+.hidden {
+    display: none !important;
 }
 
 .summary {
     display: none;
 }
+
 .confirmation-summary {
     position: sticky;
     top: 20px;
@@ -154,24 +183,15 @@ button:focus, button:hover {
     border-radius: 10px;
     height: 100%;
 }
+
 .confirmation-summary.active {
     display: block; /* Show when active */
 }
-.form-section {
-    display: none; /* Hide all sections by default */
-    margin-bottom: 20px;
+.form-group-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
-.form-section.active {
-    display: block; /* Show the active section */
-}
-.progress-bar-step {
-    width: 16.6%;
-    text-align: center;
-}
-.progress-bar-step.active {
-    background-color: #28a745;
-    color: white;
-}
-.hidden {
-    display: none !important;
+.form-group {
+    flex: 1;
 }
