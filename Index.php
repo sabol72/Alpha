@@ -230,8 +230,6 @@ $conn->close();
         <h2>Services</h2>
         <p>Services that we provide for you.</p>
       
-
-
         <div class="row g-5">
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">

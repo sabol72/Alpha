@@ -153,7 +153,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   margin-top: 5rem;
+  background: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 30px;
 }
+
 
 
 .invalid-feedback {
@@ -2130,8 +2135,6 @@ section,
     text-align: left;
     
 }
-
-
 
  .service:after{
     position: absolute;

@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.header {
+    padding-top: 30px;
+    min-height: 70px;
+}
+
+.header h2 {
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+.content1 {
+    padding: 20px;
+}
+
+.image-and-text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    
+}
+
+.text-content {
+    flex: 1;
+    margin-top: 10px;
+}
+
+.cta {
+    padding: 20px;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.cta h2 {
+    margin-bottom: 10px;
+}
+
+.cta p {
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+
+
+
+
+.section {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto; 
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+
+.text-content h2, .text-content p {
+    margin-top: 10px; 
+}
+
+
+
+
+/* what we work */
+
+.work {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.how-we-work {
+    text-align: center;
+    padding: 10px 10px;
+    background-color: #f9f9f9;
+    
+}
+
+.how-we-work h2 {
+    font-size: 2em;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.step {
+    background-color: #6dac49;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.step .icon {
+    background-color: #f6d201;
+    border-radius: 50%;
+    padding: 15px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step .icon img {
+    width: 50px;
+    height: auto;
+}
+
+.step h3 {
+    margin-top: 0;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.step p {
+    margin-bottom: 0;
+    color: #f3f3f3;
+} 
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* why choose us */
+.chooseus {
+    text-align: center;
+    padding: 20px;
+
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.services-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Space between the cards */
+    justify-items: center;
+}
+
+.services-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-card i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.services-card h2 {
+    margin: 10px 0;
+    font-size: 25px;
+    
+}
+
+.services-card p {
+    font-size: 13px;
+    line-height: 1.5;
+}
+/* why choose us end */
+
+/* what we offer start */
+
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.grid-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.grid-item p {
+    color: #34495e;
+    font-size: 16px;
+    margin: 0;
+}
+
