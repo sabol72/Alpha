@@ -1,3 +1,4 @@
+
 <?php
 require "db_Connect.php";
 // Process form submission to update status
@@ -16,6 +17,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['booking_id']) && isset
         echo "Error updating record: " . $conn->error;
     }
     // Close connection after processing the form
+}
+
+
+session_start();
+
+// Check if the user is logged in
+if (!isset($_SESSION['admin_logged_in'])) {
+    // Redirect to login page
+    header("Location: adminlogin.php");
+    exit();
 }
 ?>
 <!DOCTYPE html>

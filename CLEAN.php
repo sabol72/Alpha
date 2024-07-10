@@ -1,64 +1,54 @@
 
-<?php
-// Initialize variables
-$showForm = true;
-$message = "";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cleaning services</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-// Check if the form is submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Retrieve form data
-    $name = $_POST['gname'];
-    $email = $_POST['gmail'];
-    $mobile = $_POST['cnum'];
-    $address = $_POST['CAddress'];
-    $serviceType = $_POST['cage'];
-    $userMessage = $_POST['message'];
-
-    // Validate form data
-    if (!empty($name) && !empty($email) && !empty($mobile) && !empty($address) && !empty($serviceType) && !empty($userMessage)) {
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   
-$customer_name = $_POST['gname'];
-$customer_email = $_POST['gmail'];
-$mobile = $_POST['cnum'];
-$address = $_POST['CAddress'];
-$service_type = $_POST['cage'];
-$message = $_POST['message'];
+ 
 
-$sql = "INSERT INTO bookings (customer_name, customer_email, mobile, address, service_type, message) 
-        VALUES (?, ?, ?, ?, ?, ?)";
+  <!-- Main CSS File -->
+   <link href="assets/css/main.css" rel="stylesheet"> 
+</head>
 
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("ssssss", $customer_name, $customer_email, $mobile, $address, $service_type, $message);
-$txt="";
-if ($stmt->execute()) {
-    // $txt = "New record created successfully";
+</head>
+<body>
+<header id="header" class="header d-flex align-items-center fixed-top">
+  
+  <div class="container-fluid container-xl position-relative d-flex align-items-center">
+    <a href="../index.php" class="logo d-flex align-items-center me-auto">
+      <img src="assets/img/logo.png" alt="">
+    </a>
 
-    // echo "<script>alert('$txt');</script>";
-} else {
-    $txt = "Error: " . $sql . "<br>" . $conn->error;
-    echo "<script>alert('$txt');</script>";
-}
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#services">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#book"><button type="button" class="btn btn-primary">Book Now</button></a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+  </div>
+</header>  
 
-$stmt->close();
-$conn->close();
-
-        // Display confirmation message
-        $showForm = false;
-        $message = "You have booked your service. We will get back to you shortly.";
-    }
-}
-?>
     <!-- Services Section -->
     <section id="services" class="services section" id="service">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Cleaning Serviceses</h2>
-        <p class="text-black">All the cleaning services that we provide for you</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
+        <h2>Cleaning Services</h2>
         <div class="row g-5">
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
@@ -67,7 +57,7 @@ $conn->close();
               <div>
                 <h3>Deep Cleaning Service</h3>
                 <p>Upholstery and mattress cleaning, Carpet cleaning, Cleaning of unreachable and tough spots</p>
-                
+                <a href="cleaning-service/deep-cleaning.php" class="btn btn-primary">Learn More</a>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -78,6 +68,7 @@ $conn->close();
               <div>
                 <h3>HVAC Air Duct Cleaning Service</h3>
                 <p>Breathe cleaner air with our expert HVAC air duct cleaning service, ensuring optimal indoor air quality.</p>
+                <a href="cleaning-service/air-duct.php" class="btn btn-primary">Learn More</a>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -90,6 +81,8 @@ $conn->close();
               <div>
                 <h3>Upholstery Sofa Steam Cleaning</h3>
                 <p>Revive your upholstery with our professional sofa steam cleaning service, restoring freshness</p>
+                <a href="cleaning-service/sofa-steam.php" class="btn btn-primary">Learn More</a>
+
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -100,6 +93,7 @@ $conn->close();
               <div>
                 <h3>Villa & House Cleaning</h3>
                 <p>Dusting, vacuuming, mopping, sanitizing bathrooms and kitchens, laundry or dishwashing</p>
+                <a href="cleaning-service/villa.php" class="btn btn-primary">Learn More</a>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -111,6 +105,7 @@ $conn->close();
               <div>
                 <h3>Water tank Cleaning & Disinfection</h3>
                 <p>Our Water Tank Cleaning & Disinfection Service is a comprehensive solution aimed at ensuring the purity</p>
+                <a href="cleaning-service/tank.php" class="btn btn-primary">Learn More</a>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -121,6 +116,7 @@ $conn->close();
               <div>
                 <h3>Window Glass Cleaning</h3>
                 <p>Exterior Window Cleaning, Facade Cleaning, High-rise Window Cleaning</p>
+                <a href="cleaning-service/glass-cleaning.php" class="btn btn-primary">Learn More</a>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -130,7 +126,9 @@ $conn->close();
             <img src="assets/img/mattress.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
               <div>
                 <h3>Mattress Cleaning</h3>
-                <p>Revitalize your sleep sanctuary with our professional mattress cleaning service, ensuring a deep clean</p>
+               
+               <p>Revitalize your sleep sanctuary with our professional mattress cleaning service, ensuring a deep clean</p>
+               <a href="cleaning-service/mattress-cleaning.php" class="btn btn-primary">Learn More</a>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -141,6 +139,7 @@ $conn->close();
               <div>
                 <h3>Carpet Cleaning</h3>
                 <p>Revive your carpets with our professional cleaning service, restoring freshness and vibrancy to your home.</p>
+                <a href="cleaning-service/carpet-cleaning.php" class="btn btn-primary">Learn More</a>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -150,8 +149,10 @@ $conn->close();
             <img src="assets/img/pool.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
               <div>
                 <h3>Pool Cleaning</h3>
-                <p>Keep your pool pristine with our expert pool cleaning service, ensuring crystal-clear waters for your enjoyment.</p>
-              </div>
+                
+              <p>Keep your pool pristine with our expert pool cleaning service, ensuring crystal-clear waters for your enjoyment.</p>
+              <a href="cleaning-service/pool-cleaning.php" class="btn btn-primary">Learn More</a>
+            </div>
             </div>
           </div><!-- End Service Item -->
 
@@ -160,16 +161,14 @@ $conn->close();
 
       </div>
 
+
     </section><!-- /Services Section -->
 
     
  <!-- features section -->
 
  <div class="container section-title " data-aos="fade-up" id="features">
-      <h1 class="text-center mt-5 mb-4">Our Features</h1>
-    </div>
-  
-  
+      <h2 class="text-center mt-5 mb-4">Our Features</h2>
       <div class="row">
         <div class="col-lg-4 mb-4">
           <div class="feature-box">
@@ -231,23 +230,16 @@ $conn->close();
           </div>
         </div>
       </div>
-
+</div>
+</div>
 <!-- end feature section-->
-
-
-      
 
     <!-- Contact Section -->
    <section id="contact" class="contact section" id="contact">
 
     <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
+    <div class="container section-title" data-aos="fade-up" data-aos-delay="100">
         <h2>Contact Us</h2>
-        
-    </div><!-- End Section Title -->
-
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4">
 
             <div class="col-lg-6">
@@ -275,105 +267,9 @@ $conn->close();
             </div><!-- End Info Item -->
 
         </div>
-
-
-
-        <!-- booking services -->
-        <div class="container mt-5" id="book">
-        <h3 class="text-center">Book Your Service Now</h3>
-            <div id="formContainer" <?php if (!$showForm) echo 'style="display: none;"'; ?>>
-                <form action="" method="post" class="needs-validation" novalidate>
-                    <div class="bg-white p-4 p-sm-5">
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="gname" name="gname" placeholder="Customer Name" required>
-                                    <label for="gname">Your Name</label>
-                                    <div class="invalid-feedback">
-                                        Please provide your name.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="gmail" name="gmail" placeholder="Customer Email" required>
-                                    <label for="gmail">Your Email</label>
-                                    <div class="invalid-feedback">
-                                        Please provide a valid email address.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="cnum" name="cnum" placeholder="Your Mobile" required pattern="[0-9]+" title="Please enter only numeric digits" minlength="10" maxlength="15">
-                                    <label for="cnum">Your Mobile</label>
-                                    <div class="invalid-feedback">
-                                        Please provide your mobile number (10 digits).
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="CAddress" name="CAddress" placeholder="Your Address" required>
-                                    <label for="CAddress">Your Address</label>
-                                    <div class="invalid-feedback">
-                                        Please provide your address.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <select class="form-select" id="cage" name="cage" aria-label="Service Type" required>
-                                        <option value="" selected disabled>Select Service Type</option>
-                                        <option value="Service 1">Service 1</option>
-                                        <option value="Service 2">Service 2</option>
-                                        <option value="Service 3">Service 3</option>
-                                        <option value="Service 4">Service 4</option>
-                                    </select>
-                                    <label for="cage">Service Type</label>
-                                    <div class="invalid-feedback">
-                                        Please select a service type.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 80px" required></textarea>
-                                    <label for="message">Message</label>
-                                    <div class="invalid-feedback">
-                                        Please leave a message.
-                                    </div>
-                                </div>
-                            </div>
-                            <input type="hidden" name="status" value="New">
-                            <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit">Book Now!</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div id="confirmationContainer" <?php if ($showForm) echo 'style="display: none;"'; ?>>
-                <div class="bg-white p-4 p-sm-5 text-center">
-                    <p class="lead"><?php echo $message; ?></p>
-                    <button class="btn btn-primary py-3 px-5" onclick="showForm()">Book Another Service</button>
-                </div>
-            </div>
-        </div><!-- End Container for Form and Confirmation -->
-
-
-
-
-
-
-
-
-
-
-
-        <!-- location section -->
+         <!-- location section -->
     
-        <div class="row gy-4 mt-1 justify-content-center align-items-center">
+         <div class="row gy-4 mt-1 justify-content-center align-items-center">
     <div class="col-12 text-center">
         <h3>Our Location</h3>
     </div>
@@ -390,118 +286,11 @@ $conn->close();
     </div>
 </div>
 
-    </div><!-- End Container for Contact Section Content -->
+</div><!-- End Container for Contact Section Content -->
 
 </section><!-- End Contact Section -->
 <!-- /Contact Section -->
-    <!-- about us -->
-
-    <div class="container section-title" data-aos="fade-up" id="about">
-    <h2>About Us</h2>
-    <P style="color: black;"> Al Bahja Building Maintenance and cleaning services do regular cleaning jobs, upholstery cleaning, <br>after party cleaning, deep cleaning, and move-in move-out cleaning. Al Bahja Building Maintenance<br> and cleaning services have cleaners and buses running around Dubai every day.</P>
-  </div>
-
-  <div class="container">
-    <h2 class="text-center my-4"> Meet Our Team</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/img/absolute-image.jpg" alt="Jane" class="card-img-top">
-          <div class="card-body">
-            <h2 class="card-title">Jane Doe</h2>
-            <p class="card-text">CEO & Founder</p>
-            <p class="card-text">Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>jane@example.com</p>
-            <button class="btn btn-primary">Contact</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/img/absolute-image.jpg" alt="Mike" class="card-img-top">
-          <div class="card-body">
-            <h2 class="card-title">Mike Ross</h2>
-            <p class="card-text">Art Director</p>
-            <p class="card-text">Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>mike@example.com</p>
-            <button class="btn btn-primary">Contact</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/img/absolute-image.jpg" alt="John" class="card-img-top">
-          <div class="card-body">
-            <h2 class="card-title">John Doe</h2>
-            <p class="card-text">Designer</p>
-            <p class="card-text">Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>john@example.com</p>
-            <button class="btn btn-primary">Contact</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end about us -->
-
-  </main>
-
-
-  <!-- footer part -->
-
-  <footer>
-    <div class="main-content">
-       <div class="left box">
-          <h2>BBC.Maintainance</h2>
-          <div class="content">
-             <p>Al Bahja Building Maintenance and cleaning services do regular cleaning jobs, upholstery cleaning,
-                after party cleaning, deep cleaning, and move-in move-out cleaning.</p>
-             <div class="social">
-                <a href="#"><span class="fab fa-facebook-f"></span></a>
-                <a href="#"><span class="fab fa-twitter"></span></a>
-                <a href="#"><span class="fab fa-instagram"></span></a>
-                <a href="#"><span class="fab fa-youtube"></span></a>
-             </div>
-          </div>
-       </div>
-
-       <div class="center box">
-          <h2>Details</h2>
-          <div class="content">
-             <div class="place">
-                <span class="fas fa-map-marker-alt"></span>
-                <span class="text">Amwaj Building , Burdubai, Office No. <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                   &nbsp; &nbsp;G19, P.O Box: 46777</span>
-             </div>
-             <div class="phone">
-                <span class="fas fa-phone-alt"></span>
-                <span class="text">+971 (04) 357 2148
-                </span>
-             </div>
-             <div class="email">
-                <span class="fas fa-envelope"></span>
-                <span class="text">
-                   info@bbcmaintenance.com
-                </span>
-             </div>
-          </div>
-       </div>
-
-       <div class="service">
-          <h5>Services</h5>
-          <br>
-          <ul class="service-list">
-              <li><a href="#">AC Installations</a></li>
-              <li><a href="#">AC Maintenance</a></li>
-              <li><a href="#">AC Repair</a></li>
-              <li><a href="#">AC Duct Cleaning</a></li>
-          </ul>
-      </div>
-      
- </footer>
-
+</main>
 
 
 
@@ -509,7 +298,8 @@ $conn->close();
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
-
+ <!-- footer part -->
+ <?php include "footer.php"?>
 
   
 
