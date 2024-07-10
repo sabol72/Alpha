@@ -33,10 +33,10 @@ body{
         <div class="container mt-5 title-section" data-aos="fade-up">
         <h2>Choose your service</h2>
             <div class="buttons">
-                <a class="gbutton"href="#">Ac Install</a>
-                <a class="gbutton"href="#">Ac Cleaning</a>
-                <a class="gbutton"href="#">Ac Duct Cleaning</a>
-                <a class="gbutton"href="#">Ac Repair</a>
+                <a class="gbutton"href="../book-service/booking.php">Ac Install</a>
+                <a class="gbutton"href="../book-service/booking.php">Ac Cleaning</a>
+                <a class="gbutton"href="../book-service/booking.php">Ac Duct Cleaning</a>
+                <a class="gbutton"href="../book-service/booking.php">Ac Repair</a>
 
             </div>
         </div>
