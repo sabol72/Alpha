@@ -300,7 +300,8 @@
       </div>
     </section><!-- /Services Section -->
  <!-- Footer -->
- <!-- <?php include "../FAQ.php"?> -->
+ <?php include "FAQ.php" ?>
+
   </main>
  
   <!-- Footer -->

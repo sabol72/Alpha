@@ -299,6 +299,7 @@
       </div>
     </section><!-- /Services Section -->
 
+    <?php include "FAQ.php" ?>
 
   </main>
 

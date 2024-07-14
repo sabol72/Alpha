@@ -224,6 +224,9 @@
 
   
 <?php include "service.php" ?>
+
+<?php include "FAQ.php" ?>
+
   </main>
 
   <!-- Footer -->

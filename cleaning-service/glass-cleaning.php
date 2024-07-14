@@ -223,6 +223,9 @@
     </section><!-- /Service Details Section -->
 
 <?php include "service.php" ?>
+
+<?php include "FAQ.php" ?>
+
   </main>
 
   <!-- Footer -->
