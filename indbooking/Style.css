@@ -4,8 +4,14 @@
 
 /* Custom large button styles */
 .custom-btn-lg {
+  background-image: var(--linear-gradient-colors);
   padding: 1.5rem 3rem; /* Adjust padding as needed */
   font-size: 1.5rem; /* Adjust font size as needed */
+}
+.custom-btn-lg:hover {
+  background-image: var(--linear-hover-colors);
+  transform: scale(1.1); /* Scale up by 10% on hover */
+
 }
 
 /* Back button styles */

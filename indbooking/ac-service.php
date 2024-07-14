@@ -39,7 +39,7 @@
             </form>
         </div>
     </div>
-    <a href="#" class="btn btn-primary back-button">&laquo; Back</a>
+    <a href="#" class="btn btn-primary back-button" onclick="window.history.back(); return false;">&laquo; Back</a>
 
 </div>
 

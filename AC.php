@@ -174,9 +174,7 @@
       </div>
     </div>
   
-  
-     
-    
+
     <!-- Contact Section -->
    <section id="contact" class="contact section" id="contact">
 

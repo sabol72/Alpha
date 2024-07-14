@@ -16,52 +16,52 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 mb-3">
                 <form method="POST" action="redirect.php">
-                    <button type="submit" name="service" value="Deep Cleaning Service" class="gbutton btn btn-primary btn-block custom-btn-lg">Deep Cleaning Service</button>
+                    <button type="submit" name="serviceType" value="Deep Cleaning Service" class="gbutton btn btn-primary btn-block custom-btn-lg">Deep Cleaning Service</button>
                 </form>
             </div>
             <div class="col-lg-6 col-md-6 mb-3">
                 <form method="POST" action="redirect.php">
-                    <button type="submit" name="service" value="HV/AC Air Duct Cleaning Service" class="gbutton btn btn-primary btn-block custom-btn-lg">HV/AC Air Duct Cleaning Service</button>
+                    <button type="submit" name="serviceType" value="HV/AC Air Duct Cleaning Service" class="gbutton btn btn-primary btn-block custom-btn-lg">HV/AC Air Duct Cleaning Service</button>
                 </form>
             </div>
             <div class="col-lg-6 col-md-6 mb-3">
                 <form method="POST" action="redirect.php">
-                    <button type="submit" name="service" value="Upholstery Sofa Steam Cleaning" class="gbutton btn btn-primary btn-block custom-btn-lg">Upholstery Sofa Steam Cleaning</button>
+                    <button type="submit" name="serviceType" value="Upholstery Sofa Steam Cleaning" class="gbutton btn btn-primary btn-block custom-btn-lg">Upholstery Sofa Steam Cleaning</button>
                 </form>
             </div>
             <div class="col-lg-6 col-md-6 mb-3">
                 <form method="POST" action="redirect.php">
-                    <button type="submit" name="service" value="Villa & House Cleaning" class="gbutton btn btn-primary btn-block custom-btn-lg">Villa & House Cleaning</button>
+                    <button type="submit" name="serviceType" value="Villa & House Cleaning" class="gbutton btn btn-primary btn-block custom-btn-lg">Villa & House Cleaning</button>
                 </form>
             </div>
             <div class="col-lg-6 col-md-6 mb-3">
                 <form method="POST" action="redirect.php">
-                    <button type="submit" name="service" value="Water Tank Cleaning & Disinfection" class="gbutton btn btn-primary btn-block custom-btn-lg">Water Tank Cleaning & Disinfection</button>
+                    <button type="submit" name="serviceType" value="Water Tank Cleaning & Disinfection" class="gbutton btn btn-primary btn-block custom-btn-lg">Water Tank Cleaning & Disinfection</button>
                 </form>
             </div>
             <div class="col-lg-6 col-md-6 mb-3">
                 <form method="POST" action="redirect.php">
-                    <button type="submit" name="service" value="Window Glass Cleaning" class="gbutton btn btn-primary btn-block custom-btn-lg">Window Glass Cleaning</button>
+                    <button type="submit" name="serviceType" value="Window Glass Cleaning" class="gbutton btn btn-primary btn-block custom-btn-lg">Window Glass Cleaning</button>
                 </form>
             </div>
             <div class="col-lg-6 col-md-6 mb-3">
                 <form method="POST" action="redirect.php">
-                    <button type="submit" name="service" value="Matress Cleaning" class="gbutton btn btn-primary btn-block custom-btn-lg">Matress Cleaning</button>
+                    <button type="submit" name="serviceType" value="Matress Cleaning" class="gbutton btn btn-primary btn-block custom-btn-lg">Matress Cleaning</button>
                 </form>
             </div>
             <div class="col-lg-6 col-md-6 mb-3">
                 <form method="POST" action="redirect.php">
-                    <button type="submit" name="service" value="Carpet Cleaning" class="gbutton btn btn-primary btn-block custom-btn-lg">Carpet Cleaning</button>
+                    <button type="submit" name="serviceType" value="Carpet Cleaning" class="gbutton btn btn-primary btn-block custom-btn-lg">Carpet Cleaning</button>
                 </form>
             </div>
             <div class="col-lg-6 col-md-6 mb-3">
                 <form method="POST" action="redirect.php">
-                    <button type="submit" name="service" value="Pool Cleaning" class="gbutton btn btn-primary btn-block custom-btn-lg">Pool Cleaning</button>
+                    <button type="submit" name="serviceType" value="Pool Cleaning" class="gbutton btn btn-primary btn-block custom-btn-lg">Pool Cleaning</button>
                 </form>
             </div>
         </div>
-        <a href="#" class="btn btn-primary back-button">&laquo; Back</a>
-    </div>
+        <a href="#" class="btn btn-primary back-button" onclick="window.history.back(); return false;">&laquo; Back</a>
+        </div>
 </main>
 <script src="Script.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
