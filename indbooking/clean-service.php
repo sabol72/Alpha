@@ -69,7 +69,7 @@ body{
             </div>
         </div>
     </main>
-    <?php include"../footer.php"?>
+    
     <script src="Script.js">
   </script>
 </body>
