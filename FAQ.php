@@ -94,23 +94,32 @@
     </div>
 
     <script>
-      var acc = document.getElementsByClassName("accordion");
-      var i;
+        var acc = document.getElementsByClassName("accordion");
 
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          this.parentElement.classList.toggle("active");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                // Close all panels
+                for (var j = 0; j < acc.length; j++) {
+                    var panel = acc[j].nextElementSibling;
+                    if (acc[j] !== this) {
+                        acc[j].classList.remove("active");
+                        acc[j].parentElement.classList.remove("active");
+                        panel.style.display = "none";
+                    }
+                }
 
-          var pannel = this.nextElementSibling;
+                // Toggle the clicked panel
+                this.classList.toggle("active");
+                this.parentElement.classList.toggle("active");
 
-          if (pannel.style.display === "block") {
-            pannel.style.display = "none";
-          } else {
-            pannel.style.display = "block";
-          }
-        });
-      }
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
     </script>
   </body>
 </html>

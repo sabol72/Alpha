@@ -175,9 +175,7 @@
     </div>
     
   
-  
-     
-    
+
     <!-- Contact Section -->
    <section id="contact" class="contact section" id="contact">
 
@@ -222,7 +220,10 @@
     </section><!-- End Contact Section -->
 <!-- /Contact Section -->
  
+<<<<<<< HEAD
     <?php include "FAQ.php"; ?>
+=======
+>>>>>>> 6a4515e50abaa0e8d2aae86a921074e6b8c64799
    </main>
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

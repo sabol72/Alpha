@@ -181,6 +181,14 @@
               </div>
             </div>
 
+            <!-- Book Now Button -->
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                  <a href="book-service/booking.php" class="btn btn-primary" data-aos="fade-up" data-aos-delay="50">Book Now</a>
+                </div>
+              </div>
+
+
              <!-- Add other service details sections similarly -->
              <div class="booking-section mt-5">
                   <h2 class="booking-info">Discover an unforgettable experience with our exclusive booking service.</h2>
@@ -194,6 +202,31 @@
 
         </div>
 
+<<<<<<< HEAD
+=======
+         
+      <div class="service-content active-content d-flex align-items-start mt-5" data-aos="fade-up" data-aos-delay="30">
+      <img src="../acinstall.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <div class="text-content">
+        <h3>WELCOME TO DUCT AIR CLEANING SERVICE</h3>
+        <p>If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Building Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.</p>
+      </div>
+    </div>
+
+
+    <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
+      <div class="text-content">
+        <h3>ANOTHER SECTION TITLE</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor nisi sit amet facilisis cursus. Vivamus ac posuere dui. Nunc sit amet velit malesuada, posuere turpis non, tincidunt velit. Aliquam euismod laoreet nisl, in gravida nunc vehicula non. Proin iaculis libero vitae ipsum gravida, a scelerisque eros euismod. Nulla facilisi.</p>
+      </div>
+      <img src="../install3.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+    </div>
+
+      </div>
+
+
+     
+>>>>>>> 6a4515e50abaa0e8d2aae86a921074e6b8c64799
 
         <div class="section-title pb-3 pt-5">
           <h2>What's more!</h2></div>

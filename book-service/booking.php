@@ -1,3 +1,8 @@
+<?php
+session_start();
+$selectedService = isset($_SESSION['selectedService']) ? $_SESSION['selectedService'] : 'None';
+$selectedServiceType = isset($_SESSION['selectedServiceType']) ? $_SESSION['selectedServiceType'] : 'None';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,18 +58,14 @@
                             </div>
                             <div class="form-group">
                                 <label for="service-type">Service Type</label>
-                                <select class="form-control" id="service-type" name="service-type" required onchange="loadSubServices()">
-                                    <option value="">Select Service</option>
-                                    <option value="AC Service">AC Service</option>
-                                    <option value="Cleaning">Cleaning</option>
-                                </select>
-                            </div>
+                                    <input type="text" class="form-control" id="service-type" name="service-type" value="<?php echo htmlspecialchars($selectedService); ?>" readonly>
+                                </div>
+
                             <div class="form-group">
                                 <label for="sub-service">Sub Service</label>
-                                <select class="form-control" id="sub-service" name="sub-service" required>
-                                    <option value="">Select Sub Service</option>
-                                </select>
+                                <input type="text" class="form-control" id="sub-service" name="sub-service" value="<?php echo htmlspecialchars($selectedServiceType); ?>" readonly>
                             </div>
+
                         </div>
                         <div class="btn-grp">
                             <button type="button" class="btn btn-primary" onclick="nextSection('extras-section')">Next</button>
@@ -327,13 +328,13 @@
         window.nextSection = nextSection;
         window.previousSection = previousSection;
         window.togglePaymentFields = togglePaymentFields;
-        bookingForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-            alert('Booking Confirmed!');
-            bookingForm.reset();
-            showSection(0);
-            updateSummary();
-        });
+        // bookingForm.addEventListener('submit', function (e) {
+        //     e.preventDefault();
+        //     alert('Booking Confirmed!');
+        //     bookingForm.reset();
+        //     showSection(0);
+        //     updateSummary();
+        // });
 
         // Initialize first section
         showSection(0);

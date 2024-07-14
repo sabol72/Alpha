@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,28 +7,6 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="Style.css" rel="stylesheet">
     <link href="../assets/css/main.css" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Poppins", sans-serif;
-        }
-
-        body {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .floating-alert {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1050;
-        }
-    </style>
 </head>
 <body>
 
@@ -39,21 +18,36 @@
                 <p class="mb-0">Learn more About the Services before Booking.</p>
             </div>
             <div class="modal-footer">
-            <button type="button" class="btn btn-primary" id="visitButton">Learn</button>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="visitButton">Learn</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
 </div>
 
 <main>
-    <div class="container mt-5 title-section" data-aos="fade-up">
-        <h2>Choose your service</h2>
-        <div class="buttons">
-            <a class="gbutton" href="ac-service.php">Air Conditioner</a>
-            <a class="gbutton" href="clean-service.php">Cleaning</a>
+
+<div class="container mt-5 title-section" data-aos="fade-up">
+<h2 class="text-center">Choose your service</h2>
+<div class="row">
+        <div class="col-md-6">
+            <form method="POST" action="redirect.php">
+                <div class="mb-3">
+                    <button type="submit" name="service" value="Air Conditioner" class="gbutton btn btn-primary btn-block custom-btn-lg">Air Conditioner</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <form method="POST" action="redirect.php">
+                <div class="mb-3">
+                    <button type="submit" name="service" value="Cleaning" class="gbutton btn btn-primary btn-block custom-btn-lg">Cleaning</button>
+                </div>
+            </form>
         </div>
     </div>
+    <a href="#" class="btn btn-primary back-button" onclick="window.history.back(); return false;">&laquo; Back</a>
+    </div>
+
 </main>
 
 <!-- Scripts at the end of the body -->
