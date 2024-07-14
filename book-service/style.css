@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 body {
-=======
-:body {
->>>>>>> abiral
     font-family: Arial, sans-serif;
 }
 
@@ -35,7 +31,6 @@ label {
 
 select, input[type="date"], input[type="time"], input[type="text"], input[type="radio"], .form-control {
     width: 100%;
-<<<<<<< HEAD
     padding: 10px 15px;
     margin-bottom: 20px;
     border-radius: 20px;
@@ -46,18 +41,6 @@ select, input[type="date"], input[type="time"], input[type="text"], input[type="
 select:focus, input[type="date"]:focus, input[type="time"]:focus, input[type="text"]:focus, input[type="radio"]:focus, .form-control:focus {
     border-color: #007bff;
     box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
-=======
-    padding: 10px 15px; /* Adjusted to combine styles */
-    margin-bottom: 20px; /* Added from file2 */
-    border-radius: 20px; /* From file1 */
-    font-size: 0.9rem; /* From file1 */
-    transition: all 0.3s ease; /* From file1 */
-}
-
-.form-control:focus, select:focus, input[type="date"]:focus, input[type="time"]:focus, input[type="text"]:focus, input[type="radio"]:focus {
-    border-color: #007bff; /* From file1 */
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25); /* From file1 */
->>>>>>> abiral
 }
 
 button {
@@ -65,7 +48,6 @@ button {
     background-color: #ff7f00;
     color: #fff;
     border: none;
-<<<<<<< HEAD
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -87,28 +69,10 @@ btn-grp {
 }
 
 .btn-primary:hover {
-=======
-    border-radius: 20px; /* From file1, adjusted to 20px */
-    cursor: pointer;
-    transition: all 0.3s ease; /* From file1 */
-}
-
-button:focus, button:hover {
-    box-shadow: 0 0 10px rgba(0, 123, 255, 0.25); /* From file1 */
-    background-color: #ff5200; /* From file2 */
-}
-
-.btn-primary {
-    background-color: #007bff;
-    border: none;
-}
-.btn-primary:hover{
->>>>>>> abiral
     background-color: #00ff0d;
     transform: scale(1.1); /* Increases size by 10% on hover */
     transition: transform 0.2s ease-in-out; /* Smooth transition */
 }
-<<<<<<< HEAD
 
 .btn-secondary {
     background-color: #413434;
@@ -120,25 +84,11 @@ button:focus, button:hover {
     transform: scale(0.9); /* Increases size by 10% on hover */
     transition: transform 0.2s ease-in-out; /* Smooth transition */
 }
-=======
-.btn-secondary {
-    background-color: #be3030;
-    border: none;
-}
-
->>>>>>> abiral
 .btn-success {
     background-color: #28a745;
     border: none;
 }
 
-<<<<<<< HEAD
-=======
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
->>>>>>> abiral
 .progress {
     height: 30px;
     position: relative;
@@ -194,7 +144,6 @@ button:focus, button:hover {
     display: none;
     opacity: 0;
     transition: opacity 0.4s ease;
-<<<<<<< HEAD
     margin-bottom: 20px;
     flex-direction: column; /* Display items in a column */
 }
@@ -226,18 +175,6 @@ button:focus, button:hover {
     display: none;
 }
 
-=======
-}
-
-.form-section.active {
-    display: block;
-    opacity: 1;
-}
-
-.summary {
-    display: none;
-}
->>>>>>> abiral
 .confirmation-summary {
     position: sticky;
     top: 20px;
@@ -247,7 +184,6 @@ button:focus, button:hover {
     border-radius: 10px;
     height: 100%;
 }
-<<<<<<< HEAD
 
 .confirmation-summary.active {
     display: block; /* Show when active */
@@ -259,26 +195,4 @@ button:focus, button:hover {
 }
 .form-group {
     flex: 1;
-=======
-.confirmation-summary.active {
-    display: block; /* Show when active */
-}
-.form-section {
-    display: none; /* Hide all sections by default */
-    margin-bottom: 20px;
-}
-.form-section.active {
-    display: block; /* Show the active section */
-}
-.progress-bar-step {
-    width: 16.6%;
-    text-align: center;
-}
-.progress-bar-step.active {
-    background-color: #28a745;
-    color: white;
-}
-.hidden {
-    display: none !important;
->>>>>>> abiral
 }
