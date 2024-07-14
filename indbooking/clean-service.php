@@ -60,7 +60,6 @@
                 </form>
             </div>
         </div>
-<<<<<<< HEAD
         <a href="#" class="btn btn-primary back-button">&laquo; Back</a>
     </div>
 </main>
@@ -68,11 +67,5 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-=======
-    </main>
-    
-    <script src="Script.js">
-  </script>
->>>>>>> c75f614a1f26f404d904c2eccafabed540de4f52
 </body>
 </html>
