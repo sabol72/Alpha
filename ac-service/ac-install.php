@@ -177,13 +177,13 @@
 <section id="service-details" class="service-details section">
 
 <div class="container">
-
+<h2 class="section-title"> WHAT'S MORE?</h2>
   <div class="row gy-5">
   
     <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
       <img src="../acinstall.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
       <div class="text-content">
-        <h3>WELCOME TO AC INSTALLATION SERVICE</h3>
+        <h3>Reliable AC Installation</h3>
         <p>If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Building Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.</p>
       </div>
     </div>
@@ -207,7 +207,7 @@
 </div>
 </section>
     <!-- Services Section -->
-    <section class="services-section py-3">
+    <section class="services-section ">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center mb-4">

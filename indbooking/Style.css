@@ -1,105 +1,51 @@
 /* Google Font Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+
+/* Custom large button styles */
+.custom-btn-lg {
+  padding: 1.5rem 3rem; /* Adjust padding as needed */
+  font-size: 1.5rem; /* Adjust font size as needed */
 }
 
-.buttons .gbutton {
-  position: relative;
-  display: inline-block;
-  color: #fff;
-  padding: 12px 38px;
-  background: linear-gradient(90deg, #6616d0, #ac34e7);
-  border-radius: 45px;
-  margin: 10px;
-  font-size: 30px;
-  font-weight: 400;
-  text-decoration: none;
-  box-shadow: 3px 5px rgba(0, 0, 0, 0.1);
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  width: calc(50% - 20px); /* Ensure two buttons per row */
-  box-sizing: border-box; /* Include padding and border in element's total width */
-  text-align: center; /* Center align text */
+/* Back button styles */
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000; /* Ensure it's above other content */
+  padding: 0.75rem 1.5rem; /* Adjust padding as needed */
+  font-size: 1.5rem; /* Adjust font size as needed */
 }
 
-.buttons .gbutton:hover {
-  background: linear-gradient(90deg, #ac34e7, #6616d0);
+/* Custom container styles */
+.custom-container {
+  max-width: 1200px; /* Adjust max width as needed */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Add padding as needed */
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .buttons .gbutton {
-    width: calc(100% - 20px); /* One button per row on smaller screens */
-    transform: scale(1); /* Optional: Adjust scaling if needed for smaller screens */
+  .col-md-6 {
+    flex-basis: 100%; /* Ensure each column takes full width */
+    max-width: 100%; /* Ensure each column takes full width */
   }
-}
 
-.buttons .gbutton.two {
-  background: linear-gradient(90deg, #025ce3, #4e94fd);
-}
-
-.buttons .gbutton .overlay {
-  position: absolute;
-  background: #fff;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  animation: blink 0.5s linear;
-}
-
-@keyframes blink {
-  0% {
-    height: 0px;
-    width: 0px;
-    opacity: 0.3;
+  .mb-3 {
+    width: 100%;
+    float: none;
+    display: block;
+    margin-bottom: 10px;
   }
-  100% {
-    height: 400px;
-    width: 400px;
-    opacity: 0;
+
+  .custom-btn-lg {
+    padding: 1.5rem 2.5rem; /* Adjust padding for smaller screens */
+    font-size: 2rem; /* Adjust font size for smaller screens */
   }
-}
-
-/* Container */
-.title-section {
-  text-align: center;
-  padding-bottom: 60px;
-  position: relative;
-}
-
-.title-section h2 {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
-}
-.title-section h2:hover {
-  color: #09ff00;
-  font-size: 35px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
-}
-
-.title-section h2:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: var(--accent-color);
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-}
-
-.title-section p {
-  margin-bottom: 0;
+  
+  .back-button {
+    padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
 }
