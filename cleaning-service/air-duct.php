@@ -22,6 +22,9 @@
   <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
   <!-- Main CSS File -->
   <link href="../assets/css/main.css" rel="stylesheet">
 
@@ -53,6 +56,38 @@
     .service-details-content {
       margin-top: 20px;
     }
+
+    .booking-section {
+            text-align: center;
+            max-width: 800px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .booking-info {
+            margin-bottom: 20px;
+        }
+        .btn-book-now {
+            position: relative;
+            padding-right: 40px; /* Ensure space for arrow icon */
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            position: relative;
+        }
+        .btn-book-now i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.3s ease;
+        }
+        .btn-book-now:hover i {
+            transform: translate(5px, -50%);
+        }
+     
   </style>
 
 </head>
@@ -147,49 +182,49 @@
             </div>
 
              <!-- Add other service details sections similarly -->
+             <div class="booking-section mt-5">
+                  <h2 class="booking-info">Discover an unforgettable experience with our exclusive booking service.</h2>
+                 <p> provides personalized assistance to ensure your plans run smoothly from beginning to end. Enjoy the convenience of browsing available slots, receiving instant confirmations, and managing your bookings effortlessly, all at your fingertips.</p>   
+                               <a href="../book-service/booking.php" class="btn btn-primary btn-lg btn-book-now">
+                      Book Now <i class="fas fa-arrow-right ml-2"></i>
+                  </a>
+              </div>
 
           </div>
 
         </div>
 
-      </div>
 
-    </section><!-- /Service Details Section -->
+        <div class="section-title pb-3 pt-5">
+          <h2>What's more!</h2></div>
+    <div class="row gy-5">
+              <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
+                <img src="../img/ductcleaning1.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+                <div class="text-content">
+                  <h3>Professional HVAC Air Duct Cleaning Services</h3>
+                  <p>Ensure clean and healthy indoor air with Al Bahja Building Maintenance's professional HVAC air duct cleaning services. Our skilled technicians thoroughly clean your air ducts, removing dust, debris, and allergens that can accumulate over time. Clean air ducts not only improve indoor air quality but also enhance HVAC system efficiency, leading to energy savings. Trust us to deliver thorough and effective cleaning, ensuring a healthier and more comfortable environment for your home or business.</p>
+                </div>
+              </div>
+
+              <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
+                <div class="text-content">
+                  <h3>Reliable HVAC Air Duct Cleaning Services</h3>
+                  <p>Al Bahja Building Maintenance offers reliable HVAC air duct cleaning services to maintain clean indoor air quality. Our skilled technicians use effective techniques to remove dust, allergens, and debris from your ductwork, ensuring optimal airflow and system efficiency. With our thorough cleaning approach, we help create a healthier and more comfortable environment for your home or business. Trust us to deliver professional results that enhance the performance of your HVAC system and improve overall air quality.</p>
+                </div>
+                <img src="../img/ductcleaning.png" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+              </div>
+
+            <div class="text-center"   data-aos="fade-up" data-aos-delay="50">
+                <a href="../book-service/booking.php" class="btn btn-primary btn-lg btn-book-now">
+                    Book Now <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+     </div>
+  </div>
+ </section><!-- /Service Details Section -->
 
 
     
-<section id="service-details" class="service-details section">
-
-<div class="container">
-
-  <div class="row gy-5">
-  
-    <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-      <img src="../img/ductcleaning1.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
-      <div class="text-content">
-        <h3>Professional HVAC Air Duct Cleaning Services</h3>
-        <p>Ensure clean and healthy indoor air with Al Bahja Building Maintenance's professional HVAC air duct cleaning services. Our skilled technicians thoroughly clean your air ducts, removing dust, debris, and allergens that can accumulate over time. Clean air ducts not only improve indoor air quality but also enhance HVAC system efficiency, leading to energy savings. Trust us to deliver thorough and effective cleaning, ensuring a healthier and more comfortable environment for your home or business.</p>
-      </div>
-    </div>
-
-    <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
-      <div class="text-content">
-        <h3>Reliable HVAC Air Duct Cleaning Services</h3>
-        <p>Al Bahja Building Maintenance offers reliable HVAC air duct cleaning services to maintain clean indoor air quality. Our skilled technicians use effective techniques to remove dust, allergens, and debris from your ductwork, ensuring optimal airflow and system efficiency. With our thorough cleaning approach, we help create a healthier and more comfortable environment for your home or business. Trust us to deliver professional results that enhance the performance of your HVAC system and improve overall air quality.</p>
-      </div>
-      <img src="../img/ductcleaning.png" alt="AC Installation" class="img-fluid services-img me-3 w-50">
-    </div>
-
-<!-- Book Now Button -->
-<div class="row justify-content-center">
-      <div class="col-auto">
-        <a href="../book-service/booking.php" class="btn btn-primary" data-aos="fade-up" data-aos-delay="50">Book Now</a>
-      </div>
-    </div>
-
-</div>
-</div>
-</section>
 
     <?php include "service.php" ?>
   </main>

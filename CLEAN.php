@@ -290,6 +290,7 @@
 
 </section><!-- End Contact Section -->
 <!-- /Contact Section -->
+<?php include "FAQ.php"?>
 </main>
 
 

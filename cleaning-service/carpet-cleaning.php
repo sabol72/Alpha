@@ -21,6 +21,8 @@
   <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 
   <!-- Main CSS File -->
   <link href="../assets/css/main.css" rel="stylesheet">
@@ -53,6 +55,38 @@
     .service-details-content {
       margin-top: 20px;
     }
+
+
+    .booking-section {
+            text-align: center;
+            max-width: 800px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .booking-info {
+            margin-bottom: 20px;
+        }
+        .btn-book-now {
+            position: relative;
+            padding-right: 40px; /* Ensure space for arrow icon */
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            position: relative;
+        }
+        .btn-book-now i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.3s ease;
+        }
+        .btn-book-now:hover i {
+            transform: translate(5px, -50%);
+        }
   </style>
 
 </head>
@@ -148,17 +182,50 @@
            
             
              <!-- Add other service details sections similarly -->
+             <div class="booking-section mt-5">
+                  <h2 class="booking-info">Discover an unforgettable experience with our exclusive booking service.</h2>
+                 <p> provides personalized assistance to ensure your plans run smoothly from beginning to end. Enjoy the convenience of browsing available slots, receiving instant confirmations, and managing your bookings effortlessly, all at your fingertips.</p>   
+                               <a href="../book-service/booking.php" class="btn btn-primary btn-lg btn-book-now">
+                      Book Now <i class="fas fa-arrow-right ml-2"></i>
+                  </a>
+              </div>
 
           </div>
 
         </div>
+        <div class="section-title pb-3 pt-5">
+          <h2>What's more!</h2></div>
+    <div class="row gy-5">
+              <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
+              <img src="../img/carpet3.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+              <div class="text-content">
+              <h3>Expert Carpet Cleaning for a Pristine Home</h3>
+              <p> Choose Al Bahja Building Maintenance and Cleaning Services for refresh your living space with our professional carpet cleaning services. Our advanced cleaning methods remove deep-seated dirt, tough stains, and allergens, ensuring your carpets look and feel like new. Trust our experienced team to deliver thorough and efficient cleaning, enhancing the beauty and hygiene of your home.</p>
+              </div>
+              </div>
 
+              <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
+                <div class="text-content">
+                <h3>Deep Clean Your Carpets for Lasting Freshness</h3>
+                <p>Experience the ultimate in carpet care with our expert cleaning services. We use eco-friendly products and state-of-the-art equipment to eliminate dirt, dust, and odors, leaving your carpets revitalized and fresh. Enjoy a healthier home environment and extend the life of your carpets with our comprehensive cleaning solutions.</p>
+                </div>
+                <img src="../img/carpet2.jpg" alt="carpet cleaning" class="img-fluid services-img me-3 w-50">
+                </div>
+
+
+
+                <div class="text-center"   data-aos="fade-up" data-aos-delay="50">
+                <a href="../book-service/booking.php" class="btn btn-primary btn-lg btn-book-now">
+                    Book Now <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+     </div>    
       </div>
 
     </section><!-- /Service Details Section -->
 
 
-    
+<!--     
 <section id="service-details" class="service-details section">
 
 <div class="container">
@@ -179,18 +246,11 @@
         <p>Experience the ultimate in carpet care with our expert cleaning services. We use eco-friendly products and state-of-the-art equipment to eliminate dirt, dust, and odors, leaving your carpets revitalized and fresh. Enjoy a healthier home environment and extend the life of your carpets with our comprehensive cleaning solutions.</p>
       </div>
       <img src="../img/carpet2.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
-    </div>
-
-<!-- Book Now Button -->
-<div class="row justify-content-center">
-      <div class="col-auto">
-        <a href="book-service/booking.php" class="btn btn-primary" data-aos="fade-up" data-aos-delay="50">Book Now</a>
-      </div>
-    </div>
+    </div> 
 
 </div>
 </div>
-</section>
+</section>-->
 
 <?php include "service.php" ?>
   </main>

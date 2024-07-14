@@ -21,6 +21,7 @@
   <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
   <!-- Main CSS File -->
   <link href="../assets/css/main.css" rel="stylesheet">
@@ -38,7 +39,7 @@
     }
 
     .services-img {
-      max-width: 100%;
+      max-width: 400px;
       height: auto;
     }
 
@@ -53,6 +54,37 @@
     .service-details-content {
       margin-top: 20px;
     }
+
+    .booking-section {
+            text-align: center;
+            max-width: 800px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .booking-info {
+            margin-bottom: 20px;
+        }
+        .btn-book-now {
+            position: relative;
+            padding-right: 40px; /* Ensure space for arrow icon */
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            position: relative;
+        }
+        .btn-book-now i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.3s ease;
+        }
+        .btn-book-now:hover i {
+            transform: translate(5px, -50%);
+        }
   </style>
 
 </head>
@@ -137,7 +169,7 @@
             <div id="deep-cleaning" class="service-content active-content">
               <div class="row">
                 <div class="col-md-12">
-               <img src="sofa.jpg" alt="Upholstery Sofa Steam Cleaning" class="img-fluid services-img">
+               <img src="sofa.jpg" alt="Upholstery Sofa Steam Cleaning" class="img-fluid services-img" height="1rem">
                 </div>
                 <div class="col-md-12 service-details-content">
                 <h3>WELCOME TO UPHOLSTERY SOFA STEAM CLEANING</h3>
@@ -148,21 +180,18 @@
 
 
              <!-- Add other service details sections similarly -->
-
+              <div class="booking-section mt-5">
+                  <h2 class="booking-info">Discover an unforgettable experience with our exclusive booking service.</h2>
+                 <p> provides personalized assistance to ensure your plans run smoothly from beginning to end. Enjoy the convenience of browsing available slots, receiving instant confirmations, and managing your bookings effortlessly, all at your fingertips.</p>   
+                               <a href="../book-service/booking.php" class="btn btn-primary btn-lg btn-book-now">
+                      Book Now <i class="fas fa-arrow-right ml-2"></i>
+                  </a>
+              </div>
           </div>
 
         </div>
-
-      </div>
-
-    </section><!-- /Service Details Section -->
-
-
-    
-<section id="service-details" class="service-details section">
-
-<div class="container">
-
+        <div class="section-title pb-3 pt-5">
+<h2>Whats more!</h2></div>
   <div class="row gy-5">
   
     <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
@@ -184,15 +213,18 @@
     </div>
 
 <!-- Book Now Button -->
-<div class="row justify-content-center">
-      <div class="col-auto">
-        <a href="book-service/booking.php" class="btn btn-primary" data-aos="fade-up" data-aos-delay="50">Book Now</a>
-      </div>
-    </div>
+ 
+<div class="text-center"   data-aos="fade-up" data-aos-delay="50">
+                <a href="../book-service/booking.php" class="btn btn-primary btn-lg btn-book-now">
+                    Book Now <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
 
 </div>
-</div>
-</section>
+      </div>
+
+    </section><!-- /Service Details Section -->
+
 
 <?php include "service.php" ?>
   </main>

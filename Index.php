@@ -120,8 +120,8 @@ $conn->close();
                   <div class="content">
                     <span style="color: rgb(255, 255, 255); font-size: 70px;">AC Services</span>
                     <span>Get Your Service now!</span><br>
-                    <button id="slider1-btn" class="btn load-content-btn"  onclick="redirectToAC()">Click Here</button>
-                  </div>
+                    <a id="slider1-btn" class="btn load-content-btn" href="AC.php">Click Here</a>
+                    </div>
                 </div>
               </div>
               <div class="swiper-slide slide">
@@ -131,8 +131,8 @@ $conn->close();
                   <div class="content">
                     <span style="color: rgb(255, 255, 255); font-size: 70px;">Cleaning Services</span><br>
                     <span>Get Your Service now!</span><br>
-                    <button id="slider2-btn" class="btn load-content-btn"  onclick="redirectToCLEAN()">Click Here</button>
-                  </div>
+                    <a id="slider1-btn" class="btn load-content-btn" href="CLEAN.php">Click Here</a>
+                    </div>
                 </div>
               </div>
               <!-- Add more slides as needed -->
