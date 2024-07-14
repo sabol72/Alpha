@@ -39,7 +39,7 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <img src="logo.png" alt="">
+        <img src="assets/img/logo.png" alt="">
         
       </a>
 
@@ -197,11 +197,7 @@
                 <h2 style="text-align: left;">Air Conditioner</h2>
                 <p style="text-align: left;">If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Buildling  Maintenance.
                </p>
-<<<<<<< HEAD
-               <a href="ac-service/ac-install.php" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
-=======
                <a href="AC.php" class="read-more btn btn-primary stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
->>>>>>> 6a4515e50abaa0e8d2aae86a921074e6b8c64799
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -210,15 +206,9 @@
             <div class="service-item item-orange position-relative">
               <i class="bi bi-broadcast icon"></i>
               <div>
-<<<<<<< HEAD
-                <h3>CLEANING</h3>
-                <p>Al Bahja Building Maintenance is your trusted partner for comprehensive cleaning services in Dubai. We offer a wide range of cleaning solutions tailored to meet your specific needs, ensuring your home or office is clean, comfortable, and safe</p>
-                <a href="cleaning-service/deep-cleaning.php" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
-=======
                 <h2>Cleaning</h2>
                 <p style="text-align: left;">Al Bahja Building Maintenance is your trusted partner for comprehensive cleaning services in Dubai. </p>
                 <a href="CLEAN.php" class="read-more btn btn-primary stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
->>>>>>> 6a4515e50abaa0e8d2aae86a921074e6b8c64799
               </div>
             </div>
           </div>
