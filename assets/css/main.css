@@ -2153,3 +2153,57 @@ section,
     top: 46px;
 
  }
+
+
+ .col-lg-8 img {
+  width: 100%;
+  height: 200px; /* Adjust height as needed */
+  object-fit: cover; /* This ensures the image covers the entire space */
+}
+
+
+ /* why choose us */
+.chooseus {
+  text-align: center;
+  padding: 20px;
+
+}
+
+.section-heading {
+  margin-bottom: 20px;
+}
+
+.services-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Space between the cards */
+  justify-items: center;
+}
+
+.services-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-card i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.services-card h2 {
+  margin: 10px 0;
+  font-size: 25px;
+  
+}
+
+.services-card p {
+  font-size: 13px;
+  line-height: 1.5;
+}
+/* why choose us end */

@@ -183,7 +183,7 @@
              <div class="booking-section mt-5">
                   <h2 class="booking-info">Discover an unforgettable experience with our exclusive booking service.</h2>
                  <p> provides personalized assistance to ensure your plans run smoothly from beginning to end. Enjoy the convenience of browsing available slots, receiving instant confirmations, and managing your bookings effortlessly, all at your fingertips.</p>   
-                               <a href="../book-service/booking.php" class="btn btn-primary btn-lg btn-book-now">
+                               <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">
                       Book Now <i class="fas fa-arrow-right ml-2"></i>
                   </a>
               </div>
@@ -211,7 +211,7 @@
     </div>
            
     <div class="text-center"   data-aos="fade-up" data-aos-delay="50">
-                <a href="../book-service/booking.php" class="btn btn-primary btn-lg btn-book-now">
+                <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">
                     Book Now <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </div>

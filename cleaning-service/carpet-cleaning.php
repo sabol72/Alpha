@@ -91,7 +91,7 @@
 
 </head>
 
-<body class="service-details-page">
+< class="service-details-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
@@ -114,7 +114,7 @@
     </div>
   </header>
 
-  <main class="main">
+  < class="main">
 
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
@@ -129,6 +129,7 @@
         </nav>
       </div>
     </div><!-- End Page Title -->
+      
 
     <!-- Service Details Section -->
     <section id="service-details" class="service-details section">
@@ -144,16 +145,26 @@
               <h4>Services List</h4>
               <div class="services-list">
               <a href="deep-cleaning.php" class="service-link "><i class="bi bi-arrow-right-circle"></i><span>Deep Cleaning</span></a>
-                <a href="air-duct.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>HVAC Air Duct Cleaning</span></a>
+                <a href="air-duct.php" class="service-link active"><i class="bi bi-arrow-right-circle"></i><span>HVAC Air Duct Cleaning</span></a>
                 <a href="sofa-steam.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Upholstery Sofa Steam Cleaning</span></a>
                 <a href="villa.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Villa & House Cleaning</span></a>
                 <a href="tank.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Water Tank Cleaning & Disinfection</span></a>
                 <a href="glass-cleaning.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Window Glass Cleaning</span></a>
                 <a href="mattress.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Mattress Cleaning</span></a>
-                <a href="carpet-cleaning.php" class="service-link active"><i class="bi bi-arrow-right-circle"></i><span>Carpet Cleaning</span></a>
+                <a href="carpet-cleaning.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Carpet Cleaning</span></a>
                 <a href="pool-cleaning.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Pool Cleaning</span></a>
+      
+
+
               </div>
             </div><!-- End Services List -->
+            <div class="container">
+            <div class="services-list">
+            <h2 class="booking-info">Book your air-duct service today.</h2>
+            <a href="../indbooking/index.php" class=" btn-lg btn-book-now" style="color: white; background-color: green; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+    Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+      </div>
+      </div>
 
             <div class="help-box d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-headset help-icon"></i>
@@ -171,28 +182,35 @@
             <div id="deep-cleaning" class="service-content active-content">
               <div class="row">
                 <div class="col-md-12">
-                <img src="carpet-clean.jpg" alt="Carpet Cleaning" class="img-fluid services-img">
+                  <img src="hvac.jpg" alt="HVAC Air Duct Cleaning" class="img-fluid services-img">
                 </div>
                 <div class="col-md-12 service-details-content">
-                <h3>WELCOME TO CARPET CLEANING</h3>
-                <p>Our carpet cleaning service uses the latest technology, a variety of cleaning solutions, and deep cleaning techniques to ensure your carpets are clean and hygienic.</p>
+                <h3>WELCOME TO HVAC AIR DUCT CLEANING</h3>
+                <p>Breathe cleaner air with our expert HVAC air duct cleaning service, ensuring optimal indoor air quality for your home or office.</p>
                 </div>
               </div>
             </div>
-           
-            
-             <!-- Add other service details sections similarly -->
-             <div class="booking-section mt-5">
-                  <h2 class="booking-info">Discover an unforgettable experience with our exclusive booking service.</h2>
-                 <p> provides personalized assistance to ensure your plans run smoothly from beginning to end. Enjoy the convenience of browsing available slots, receiving instant confirmations, and managing your bookings effortlessly, all at your fingertips.</p>   
-                               <a href="../book-service/booking.php" class="btn btn-primary btn-lg btn-book-now">
-                      Book Now <i class="fas fa-arrow-right ml-2"></i>
-                  </a>
-              </div>
+                      
+            <!-- add more items in the div -->
 
+            <div id="deep-cleaning" class="service-content active-content">
+              <div class="row">
+                <div class="col-md-12">
+                <img src="../img/air-duct.jpg" alt="AC Installation" class="col-md-12" >
+                </div>
+                <div class="col-md-12 service-details-content">
+                <h3>Professional HVAC Air Duct Cleaning Services</h3>
+                <p>Ensure clean and healthy indoor air with Al Bahja Building Maintenance's professional HVAC air duct cleaning services. Our skilled technicians thoroughly clean your air ducts, removing dust, debris, and allergens that can accumulate over time. Clean air ducts not only improve indoor air quality but also enhance HVAC system efficiency, leading to energy savings. Trust us to deliver thorough and effective cleaning, ensuring a healthier and more comfortable environment for your home or business.</p>
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
+   
+         
+
+      
         <div class="section-title pb-3 pt-5">
           <h2>What's more!</h2></div>
     <div class="row gy-5">
@@ -212,17 +230,110 @@
                 <img src="../img/carpet2.jpg" alt="carpet cleaning" class="img-fluid services-img me-3 w-50">
                 </div>
 
+                <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
+                <div class="text-content">
+                <h3>Deep Clean Your Carpets for Lasting Freshness</h3>
+                <p>Experience the ultimate in carpet care with our expert cleaning services. We use eco-friendly products and state-of-the-art equipment to eliminate dirt, dust, and odors, leaving your carpets revitalized and fresh. Enjoy a healthier home environment and extend the life of your carpets with our comprehensive cleaning solutions.</p>
+                </div>
+                <img src="../img/carpet2.jpg" alt="carpet cleaning" class="img-fluid services-img me-3 w-50">
+                </div>
 
-
-                <div class="text-center"   data-aos="fade-up" data-aos-delay="50">
-                <a href="../book-service/booking.php" class="btn btn-primary btn-lg btn-book-now">
-                    Book Now <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
      </div>    
       </div>
 
     </section><!-- /Service Details Section -->
+
+
+
+    <section id="service-details" class="service-details section bg-light py-5">
+
+  <div class="container">
+  
+    <div class="row gy-5 justify-content-center">
+    
+      <div class="col-lg-8">
+      <div class="section-title pb-3 pt-5">
+      <h3 style="color: #007bff; font-weight: bold;">Why Choose Our HVAC Air Duct Cleaning Services?</h3>
+      </div>
+
+
+                  <!-- Box 1 -->
+
+          <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Experience cleaner, healthier indoor air with our professional HVAC air duct cleaning services. Our expert technicians utilize advanced equipment and industry-leading techniques to thoroughly clean and sanitize your air ducts.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 2 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Improved Indoor Air Quality</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Our thorough cleaning removes dust, allergens, and contaminants, promoting cleaner air for you and your family.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 3 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Energy Efficiency</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Clean air ducts improve airflow efficiency, helping your HVAC system operate more effectively and potentially reducing energy costs.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 4 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Odor Removal</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Say goodbye to lingering odors from mold, pets, or cooking with our comprehensive duct cleaning process.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 5 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Comprehensive Service</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Beyond duct cleaning, we inspect and clean HVAC components to ensure your entire system performs optimally.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 6 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Expert Technicians</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Our trained technicians have the expertise and equipment to deliver exceptional results, ensuring your satisfaction.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Button Box -->
+        <div class="text-center">
+          <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+  
+</section>
 
 
 <!--     

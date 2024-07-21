@@ -21,8 +21,6 @@
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
 
  
@@ -103,11 +101,80 @@
         </section>
       </section>
     </section>  
+
+
+     <!-- Services Section -->
+ <section id="services" class="services section">
+    <div class="container  section-title" data-aos="fade-up" id="service ">
+        <main class="content">
+            <section class="row image-and-text">
+                <div class="col-md-6 image-container">
+                    <img src="assets/img/about.webp" alt="A team of professional cleaners at work" class="img-fluid">
+                </div>
+                <div class="col-md-6 text-content">
+                    <h2>Al Bahja Building Maintenance and Cleaning Services</h2>
+                    <p>Al Bahja Building Maintenance and Cleaning Services provide eco-friendly cleaning services to
+                        keep your home, office, or workspace clean and beautiful so that you can focus on things that
+                        matter the most. Our team has been providing first-rate cleaning services in the UAE at very
+                        affordable rates. Our passion is cleaning offices, homes, schools, and businesses. Al Bahja
+                        Building Maintenance and Cleaning Services are proud to call ourselves cleaning experts. We
+                        guarantee that our staff are qualified, experienced, and insured so you can be sure that you are
+                        receiving the best service possible. Hence we strive hard to achieve the perfect results for our
+                        valuable clients.</p>
+                    <p>Al Bahja Building Maintenance and Cleaning Services do regular cleaning jobs, upholstery
+                        cleaning, after-party cleaning, deep cleaning, and move-in move-out cleaning. Al Bahja Building
+                        Maintenance and Cleaning Services have cleaners and buses running around Dubai every day.</p>
+                </div>
+            </section>
+        </main>
+        <div class="section">
+            <img src="assets/img/about.icon.png" alt="Logo" class="logo">
+            <div class="content">
+                <!-- Your section content goes here -->
+                <h2>Book Us Get Clean Done & Realx</h2>
+                <p>We offer a full range of Cleaning & Maintenance Services.</p>
+            </div>
+        </div>
+
+
+
+
+        <main class="content1">
+            <section class="row image-and-text">
+                <div class="col-md-6 text-content">
+                    <h2 class="mt-2">Mission Statement</h2>
+                    <p class="mt-2">Our mission is to provide superior customer service by delivering quality cleaning
+                        services in a
+                        safe and efficient manner, while protecting the environment around us. Al Bahja Building
+                        Maintenance and cleaning services strives to develop a lasting relationship with our customers
+                        by offering exceptional customer service, high standards of cleanliness, and a commitment to
+                        protecting the natural environment.</p>
+
+
+                    <h2 class="mt-2">Our Commitment</h2>
+                    <p class="mt-2">Al Bahja Building Maintenance and cleaning services is committed to the development
+                        and implementation of a good management system with a wide-ranging view of the effective
+                        expansion of its organization and its services to its customers.</p>
+
+                </div>
+                <div class="col-md-6 image-container">
+                    <img src="assets/img/about1.png" alt="A team of professional cleaners at work" class="img-fluid">
+                </div>
+            </section>
+            </main>
+            </div>
+            </div>
+ </section> 
+
+
+
+
+
     <!-- Features Section -->
     <section id="features" class="features section" style="padding-top: 0;" >
 
       <!-- Section Title -->
-      <div class="container mt-0 section-title" data-aos="fade-up">
+      <div class="container mt-4 section-title" data-aos="fade-up">
         <h2 class=""> Our Features</h2>
         <h3 class="text-muted">Your Comfort, Our Priority</h3>
           <h5 class="text-secondary">From installation to maintenance, we prioritize your comfort with meticulous care and attention.</h5>
@@ -216,6 +283,199 @@
       </div><!-- End Section Title -->
     </section><!-- /Services Section -->
 
+    <!-- Services Section -->
+    <section id="services" class="services section" id="service">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Cleaning Services</h2>
+        <div class="row g-5">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-cyan position-relative">
+            <img src="assets/img/deep.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+              <div>
+                <h3>Deep Cleaning Service</h3>
+                <p>Upholstery and mattress cleaning, Carpet cleaning, Cleaning of unreachable and tough spots</p>
+                <a href="cleaning-service/deep-cleaning.php" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-orange position-relative">
+            <img src="assets/img/hvac.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+              <div>
+                <h3>HVAC Air Duct Cleaning Service</h3>
+                <p>Breathe cleaner air with our expert HVAC air duct cleaning service, ensuring optimal indoor air quality.</p>
+                <a href="cleaning-service/air-duct.php" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+         
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+            <img src="assets/img/uph.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+              <div>
+                <h3>Upholstery Sofa Steam Cleaning</h3>
+                <p>Revive your upholstery with our professional sofa steam cleaning service, restoring freshness</p>
+                <a href="cleaning-service/sofa-steam.php" class="btn btn-primary">Learn More</a>
+
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+            <img src="assets/img/village.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+              <div>
+                <h3>Villa & House Cleaning</h3>
+                <p>Dusting, vacuuming, mopping, sanitizing bathrooms and kitchens, laundry or dishwashing</p>
+                <a href="cleaning-service/villa.php" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+            <img src="assets/img/water tank.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+              <div>
+                <h3>Water tank Cleaning & Disinfection</h3>
+                <p>Our Water Tank Cleaning & Disinfection Service is a comprehensive solution aimed at ensuring the purity</p>
+                <a href="cleaning-service/tank.php" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+            <img src="assets/img/window.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+              <div>
+                <h3>Window Glass Cleaning</h3>
+                <p>Exterior Window Cleaning, Facade Cleaning, High-rise Window Cleaning</p>
+                <a href="cleaning-service/glass-cleaning.php" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+            <img src="assets/img/mattress.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+              <div>
+                <h3>Mattress Cleaning</h3>
+               
+               <p>Revitalize your sleep sanctuary with our professional mattress cleaning service, ensuring a deep clean</p>
+               <a href="cleaning-service/mattress-cleaning.php" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+            <img src="assets/img/carpet.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+              <div>
+                <h3>Carpet Cleaning</h3>
+                <p>Revive your carpets with our professional cleaning service, restoring freshness and vibrancy to your home.</p>
+                <a href="cleaning-service/carpet-cleaning.php" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+            <img src="assets/img/pool.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+              <div>
+                <h3>Pool Cleaning</h3>
+                
+              <p>Keep your pool pristine with our expert pool cleaning service, ensuring crystal-clear waters for your enjoyment.</p>
+              <a href="cleaning-service/pool-cleaning.php" class="btn btn-primary">Learn More</a>
+            </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          
+        </div>
+
+      </div>
+
+
+    </section><!-- /Services Section -->
+
+
+
+
+
+
+    <!-- Services Section -->
+<section id="services" class="services section" id="service">
+
+<!-- Section Title -->
+<div class="container section-title" data-aos="fade-up">
+  <h2>AC Services</h2>
+
+<section class="services-section py-3">
+      <div class="row g-5">
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-item item-cyan position-relative">
+            <img src="assets/img/install.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+            <div>
+              <h3>AC Installation</h3>
+              <p>If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Building Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.</p>
+              <!-- Button to redirect to install.php -->
+              <a href="ac-service/ac-install.php" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-item item-red position-relative">
+            <img src="assets/img/duct.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+            <div>
+              <h3>AC Duct Cleaning</h3>
+              <p>The ducts that distribute cool air throughout your space can become clogged with dust, dirt, and other debris. This can reduce the efficiency of your AC system and even affect your indoor air quality. Our AC duct cleaning service ensures that your ducts are clean and free of debris, so your AC system is working efficiently and your indoor air quality is healthy.</p>
+              <!-- Button to redirect to cleaning.php -->
+              <a href="ac-service/ac-duct.php" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-item item-orange position-relative">
+            <img src="assets/img/maintainance.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+            <div>
+              <h3>AC Maintenance</h3>
+              <p>Regular AC maintenance is essential to ensure that your AC system is running at its best. Our AC maintenance service includes cleaning and checking your AC system’s various components, including the filters, coils, and condenser. By doing this, we can identify any potential issues and fix them before they become bigger problems.</p>
+              <!-- Button to redirect to maintain.php -->
+              <a href="ac-service/ac-maintain.php" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-item item-teal position-relative">
+            <img src="assets/img/repair.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+            <div>
+              <h3>AC Repair</h3>
+              <p>If your AC system is not functioning properly, you need a reliable AC repair service that you can trust. Our expert AC technicians can diagnose and repair a wide range of AC problems, from leaks and compressor issues to gas filling and more.</p>
+              <!-- Button to redirect to repair.php -->
+              <a href="ac-service/ac-repair.php" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+      </div><!-- End row -->
+  </section><!-- /Services Section -->
+</div><!-- End Section Title -->
+</section>
+
+
+  <?php include "why.php"?>
+
+
     <?php include "FAQ.php"?>
 
     </main>
@@ -236,9 +496,6 @@
 
 <!-- Vendor JS Files -->
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
