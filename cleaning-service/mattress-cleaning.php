@@ -21,6 +21,7 @@
   <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
   <!-- Main CSS File -->
   <link href="../assets/css/main.css" rel="stylesheet">
@@ -38,7 +39,8 @@
     }
 
     .services-img {
-      max-width: 100%;
+      max-width: 50%;
+      max-width: 60%;
       height: auto;
     }
 
@@ -53,6 +55,37 @@
     .service-details-content {
       margin-top: 20px;
     }
+
+    .booking-section {
+            text-align: center;
+            max-width: 800px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .booking-info {
+            margin-bottom: 20px;
+        }
+        .btn-book-now {
+            position: relative;
+            padding-right: 40px; /* Ensure space for arrow icon */
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            position: relative;
+        }
+        .btn-book-now i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.3s ease;
+        }
+        .btn-book-now:hover i {
+            transform: translate(5px, -50%);
+        }
   </style>
 
 </head>
@@ -148,53 +181,56 @@
             
             
              <!-- Add other service details sections similarly -->
-
+             <div class="booking-section mt-5">
+                  <h2 class="booking-info">Discover an unforgettable experience with our exclusive booking service.</h2>
+                 <p> provides personalized assistance to ensure your plans run smoothly from beginning to end. Enjoy the convenience of browsing available slots, receiving instant confirmations, and managing your bookings effortlessly, all at your fingertips.</p>   
+                               <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">
+                      Book Now <i class="fas fa-arrow-right ml-2"></i>
+                  </a>
+              </div>
           </div>
 
         </div>
+        <div class="row gy-5">
+        <div class="section-title pb-3 pt-5">
+        <h2>Whats more!</h2></div>
+  <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
+    <img src="../img/matress1.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+    <div class="text-content">
+      <h3>Deep Clean Your Mattress for Better Sleep</h3>
+      <p>At Al Bahja Building Maintenance and Cleaning Services, Achieve a cleaner, healthier sleeping environment with our specialized mattress cleaning services. We target and eliminate deep-seated dirt, allergens, and bacteria using eco-friendly methods, ensuring your mattress is thoroughly sanitized and refreshed. Enjoy a better night's sleep and prolong the life of your mattress with our professional cleaning services.</p>
+    </div>
+  </div>
+
+  <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
+    <div class="text-content">
+      <h3>Experience Freshness with Expert Mattress Cleaning</h3>
+      <p>Breathe easy with our professional mattress cleaning services. We deep clean and disinfect your mattress, eliminating harmful allergens and bacteria for a healthier sleeping surface. Our efficient and eco-friendly techniques ensure your mattress is left spotless and odor-free, promoting a more restful and rejuvenating sleep.</p>
+    </div>
+    <img src="../img/matress2.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+  </div>
+
+         
+  <div class="text-center"   data-aos="fade-up" data-aos-delay="50">
+                <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">
+                    Book Now <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
 
       </div>
 
     </section><!-- /Service Details Section -->
 
 
-    
-<section id="service-details" class="service-details section">
-
-<div class="container">
-
-  <div class="row gy-5">
   
-    <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-      <img src="../img/matress.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
-      <div class="text-content">
-        <h3>Deep Clean Your Mattress for Better Sleep</h3>
-        <p>At Al Bahja Building Maintenance and Cleaning Services, Achieve a cleaner, healthier sleeping environment with our specialized mattress cleaning services. We target and eliminate deep-seated dirt, allergens, and bacteria using eco-friendly methods, ensuring your mattress is thoroughly sanitized and refreshed. Enjoy a better night's sleep and prolong the life of your mattress with our professional cleaning services.</p>
-      </div>
-    </div>
+<?php include "service.php" ?>
 
-    <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
-      <div class="text-content">
-        <h3>Experience Freshness with Expert Mattress Cleaning</h3>
-        <p>Breathe easy with our professional mattress cleaning services. We deep clean and disinfect your mattress, eliminating harmful allergens and bacteria for a healthier sleeping surface. Our efficient and eco-friendly techniques ensure your mattress is left spotless and odor-free, promoting a more restful and rejuvenating sleep.</p>
-      </div>
-      <img src="../img/matress2.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
-    </div>
+<?php include "FAQ.php" ?>
 
-<!-- Book Now Button -->
-<div class="row justify-content-center">
-      <div class="col-auto">
-        <a href="book-service/booking.php" class="btn btn-primary" data-aos="fade-up" data-aos-delay="50">Book Now</a>
-      </div>
-    </div>
-
-</div>
-</div>
-</section>
   </main>
 
   <!-- Footer -->
-  <?php include "../footer.php" ?>
+  <?php include "footer.php" ?>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

@@ -21,6 +21,7 @@
   <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
   <!-- Main CSS File -->
   <link href="../assets/css/main.css" rel="stylesheet">
@@ -38,7 +39,7 @@
     }
 
     .services-img {
-      max-width: 100%;
+      max-width: 500px;
       height: auto;
     }
 
@@ -53,6 +54,36 @@
     .service-details-content {
       margin-top: 20px;
     }
+    .booking-section {
+            text-align: center;
+            max-width: 800px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .booking-info {
+            margin-bottom: 20px;
+        }
+        .btn-book-now {
+            position: relative;
+            padding-right: 40px; /* Ensure space for arrow icon */
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            position: relative;
+        }
+        .btn-book-now i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.3s ease;
+        }
+        .btn-book-now:hover i {
+            transform: translate(5px, -50%);
+        }
   </style>
 
 </head>
@@ -148,54 +179,57 @@
 
             
              <!-- Add other service details sections similarly -->
-
+             <div class="booking-section mt-5">
+                  <h2 class="booking-info">Discover an unforgettable experience with our exclusive booking service.</h2>
+                 <p> provides personalized assistance to ensure your plans run smoothly from beginning to end. Enjoy the convenience of browsing available slots, receiving instant confirmations, and managing your bookings effortlessly, all at your fingertips.</p>   
+                               <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">
+                      Book Now <i class="fas fa-arrow-right ml-2"></i>
+                  </a>
+              </div>
           </div>
 
         </div>
+        <div class="section-title pb-3 pt-5">
+        <h2>Whats more!</h2></div>
+
+        <div class="row gy-5">
+  
+  <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
+    <img src="../img/windowglass.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+    <div class="text-content">
+      <h3>Crystal Clear Window Glass Cleaning Services</h3>
+      <p>Experience the brilliance of spotless windows with our professional window glass cleaning services. Our skilled team uses high-quality tools and eco-friendly solutions to remove dirt, smudges, and streaks, leaving your windows sparkling clean. Enhance the appearance of your home or office with our reliable and efficient cleaning service. Trust us to deliver pristine windows that let in more light and improve your view.</p>
+    </div>
+  </div>
+
+  <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
+    <div class="text-content">
+      <h3>Revitalize Your View with Expert Window Glass Cleaning</h3>
+      <p> We provide thorough cleaning to eliminate grime and streaks, ensuring your windows are crystal clear. Using advanced techniques and safe cleaning products, our team guarantees a streak-free finish that enhances the beauty of your space. Enjoy a brighter, cleaner environment with our professional window cleaning services.
+</p>
+    </div>
+    <img src="../img/windowglass2.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+  </div>
+
+           
+  <div class="text-center"   data-aos="fade-up" data-aos-delay="50">
+                <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">
+                    Book Now <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
 
       </div>
 
     </section><!-- /Service Details Section -->
 
+<?php include "service.php" ?>
 
-    
-<section id="service-details" class="service-details section">
+<?php include "FAQ.php" ?>
 
-<div class="container">
-
-  <div class="row gy-5">
-  
-    <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-      <img src="../img/windowglass.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
-      <div class="text-content">
-        <h3>Crystal Clear Window Glass Cleaning Services</h3>
-        <p>Experience the brilliance of spotless windows with our professional window glass cleaning services. Our skilled team uses high-quality tools and eco-friendly solutions to remove dirt, smudges, and streaks, leaving your windows sparkling clean. Enhance the appearance of your home or office with our reliable and efficient cleaning service. Trust us to deliver pristine windows that let in more light and improve your view.</p>
-      </div>
-    </div>
-
-    <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
-      <div class="text-content">
-        <h3>Revitalize Your View with Expert Window Glass Cleaning</h3>
-        <p> We provide thorough cleaning to eliminate grime and streaks, ensuring your windows are crystal clear. Using advanced techniques and safe cleaning products, our team guarantees a streak-free finish that enhances the beauty of your space. Enjoy a brighter, cleaner environment with our professional window cleaning services.
-</p>
-      </div>
-      <img src="../img/windowglass2.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
-    </div>
-
-<!-- Book Now Button -->
-<div class="row justify-content-center">
-      <div class="col-auto">
-        <a href="book-service/booking.php" class="btn btn-primary" data-aos="fade-up" data-aos-delay="50">Book Now</a>
-      </div>
-    </div>
-
-</div>
-</div>
-</section>
   </main>
 
   <!-- Footer -->
-  <?php include "../footer.php" ?>
+  <?php include "footer.php" ?>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

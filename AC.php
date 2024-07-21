@@ -25,7 +25,7 @@
 <header id="header" class="header d-flex align-items-center fixed-top">
   
   <div class="container-fluid container-xl position-relative d-flex align-items-center">
-    <a href="index.php" class="logo d-flex align-items-center me-auto">
+    <a href="Index.php" class="logo d-flex align-items-center me-auto">
       <img src="assets/img/logo.png" alt="">
     </a>
 
@@ -104,7 +104,7 @@
       </div><!-- End row -->
   </section><!-- /Services Section -->
 </div><!-- End Section Title -->
-
+</section>
 
 
   <!-- features section -->
@@ -142,16 +142,16 @@
           </div>
         </div>
   
+        
         <div class="col-lg-4 mb-4">
           <div class="feature-box">
             <div class="text-center">
-              <i class="fas fa-check-circle fa-3x mb-3"></i>
+              <i class="fas fa-tools fa-3x mb-3"></i>
               <h3>Quality Assurance</h3>
               <p>We take pride in the quality of our workmanship and stand behind the services we provide. With us, you can expect reliable repairs and lasting results every time.</p>
             </div>
           </div>
         </div>
-  
         <div class="col-lg-4 mb-4">
           <div class="feature-box">
             <div class="text-center">
@@ -173,10 +173,9 @@
         </div>
       </div>
     </div>
-  
-  
-     
     
+  
+
     <!-- Contact Section -->
    <section id="contact" class="contact section" id="contact">
 
@@ -221,7 +220,7 @@
     </section><!-- End Contact Section -->
 <!-- /Contact Section -->
  
-    <?php include "book-service/booking.php"; ?>
+    <?php include "FAQ.php"; ?>
    </main>
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

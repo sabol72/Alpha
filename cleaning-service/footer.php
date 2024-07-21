@@ -116,7 +116,7 @@
 
     <div class="footer">
         <div class="column logo">
-            <img src="assets/img/logo.png" alt="Company Logo">
+            <img src="../assets/img/logo.png" alt="Company Logo">
             <div class="contact-info">
                 <div>📞 +971 (04) 357 2148</div>
                 <div>📞 +971 50 307 8180</div>
