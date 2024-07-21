@@ -147,7 +147,7 @@
                 <a href="villa.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Villa & House Cleaning</span></a>
                 <a href="tank.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Water Tank Cleaning & Disinfection</span></a>
                 <a href="glass-cleaning.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Window Glass Cleaning</span></a>
-                <a href="mattress.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Mattress Cleaning</span></a>
+                <a href="mattress-cleaning.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Mattress Cleaning</span></a>
                 <a href="carpet-cleaning.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Carpet Cleaning</span></a>
                 <a href="pool-cleaning.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Pool Cleaning</span></a>
       
@@ -208,7 +208,7 @@
 
         <div class="section-title pb-3 pt-5">
           <h2>What's more!</h2></div>
-    <div class="row gy-5">
+            <div class="row gy-5">
               <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
                 <img src="../img/ductcleaning1.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
                 <div class="text-content">

@@ -152,6 +152,13 @@
                 <a href="pool-cleaning.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Pool Cleaning</span></a>
               </div>
             </div><!-- End Services List -->
+            <div class="container">
+            <div class="services-list">
+            <h2 class="booking-info">Book your deep cleaning service today.</h2>
+            <a href="../indbooking/index.php" class=" btn-lg btn-book-now" style="color: white; background-color: green; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+    Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+      </div>
+      </div>
 
             <div class="help-box d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-headset help-icon"></i>
@@ -179,13 +186,7 @@
             </div>
 
             <!-- Add other service details sections similarly -->
-            <div class="booking-section mt-5">
-                  <h2 class="booking-info">Discover an unforgettable experience with our exclusive booking service.</h2>
-                 <p> provides personalized assistance to ensure your plans run smoothly from beginning to end. Enjoy the convenience of browsing available slots, receiving instant confirmations, and managing your bookings effortlessly, all at your fingertips.</p>   
-                               <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">
-                      Book Now <i class="fas fa-arrow-right ml-2"></i>
-                  </a>
-              </div>
+           
           </div>
 
         </div>
@@ -210,16 +211,119 @@
     <img src="../img/deepcleaningn2.webp" alt="AC Installation" class="img-fluid services-img me-3 w-50">
   </div>
 
-         
-  <div class="text-center"   data-aos="fade-up" data-aos-delay="50">
-                <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">
-                    Book Now <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
+  <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
+               <img src="../img/deepcleaning.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+    <div class="text-content">
+      <h3>Customized Solutions</h3>
+      <p>At our Deep Cleaning Service, we understand that every space is unique and requires a personalized approach to cleaning. Our customized solutions are designed to address your specific needs and preferences, ensuring a thorough and satisfying clean every time. We understand that every space has unique needs. Our services are tailored to meet your specific requirements and preferences.</p>
+    </div>
+  </div>
 
-      </div>
+  <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
+    <div class="text-content">
+      <h3>Flexible Scheduling</h3>
+      <p> At our Deep Cleaning Service, we know that life can be hectic and finding time for a thorough cleaning can be challenging. That's why we offer flexible scheduling options to accommodate your busy lifestyle and ensure your space is pristine whenever you need it. We understand that your time is valuable. That’s why we offer flexible scheduling options, including weekends and evenings, to fit your busy lifestyle.
+
+
+</p>
+    </div>
+    <img src="../img/deepcleaningn2.webp" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+  </div>
+
+         
+ 
 
     </section><!-- /Service Details Section -->
+    <section id="service-details" class="service-details section bg-light py-5">
+
+  <div class="container">
+  
+    <div class="row gy-5 justify-content-center">
+    
+      <div class="col-lg-8">
+      <div class="section-title pb-3 pt-5">
+      <h3 style="color: #007bff; font-weight: bold;">Why Choose Deep Cleaning Services?</h3>
+      </div>
+
+
+                  <!-- Box 1 -->
+
+          <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Our trained and skilled cleaning staff use advanced techniques and high-quality cleaning products to deliver exceptional results.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 2 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Eco-Friendly Products</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p> We prioritize your health and the environment by using eco-friendly cleaning solutions that are both effective and safe.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 3 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Satisfaction Guaranteed</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p> Your satisfaction is our priority. We are committed to delivering a cleaning service that exceeds your expectations.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 4 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Improved Air Quality </h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Our deep cleaning services help reduce allergens, bacteria, and other pollutants, resulting in better indoor air quality and a healthier environment for you and your loved ones.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 5 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Customer Support </h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Our dedicated customer support team is always ready to assist you with any questions or concerns, ensuring a positive and satisfying experience from start to finish.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 6 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Commitment to Quality</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p> Your satisfaction is our top priority. We stand by the quality of our work and are committed to delivering a cleaning service that exceeds your expectations.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Button Box -->
+        <div class="text-center">
+          <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+  
+</section>
+
 
 <?php include "service.php" ?>
 

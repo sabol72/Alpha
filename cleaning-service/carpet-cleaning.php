@@ -114,7 +114,7 @@
     </div>
   </header>
 
-  < class="main">
+  <div class="main">
 
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
@@ -160,7 +160,7 @@
             </div><!-- End Services List -->
             <div class="container">
             <div class="services-list">
-            <h2 class="booking-info">Book your air-duct service today.</h2>
+            <h2 class="booking-info">Book your carpet cleaning service today.</h2>
             <a href="../indbooking/index.php" class=" btn-lg btn-book-now" style="color: white; background-color: green; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
     Book Now <i class="fas fa-arrow-right ml-2"></i></a>
       </div>
@@ -230,10 +230,18 @@
                 <img src="../img/carpet2.jpg" alt="carpet cleaning" class="img-fluid services-img me-3 w-50">
                 </div>
 
+                <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
+              <img src="../img/carpet3.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+              <div class="text-content">
+              <h3>Eco-Friendly Cleaning Solutions</h3>
+              <p> We care about your health and the environment. That's why we use eco-friendly and non-toxic cleaning products that are safe for children and pets.Our green cleaning solutions effectively remove dirt and grime without leaving harmful residues. </p>
+              </div>
+              </div>
+
                 <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
                 <div class="text-content">
-                <h3>Deep Clean Your Carpets for Lasting Freshness</h3>
-                <p>Experience the ultimate in carpet care with our expert cleaning services. We use eco-friendly products and state-of-the-art equipment to eliminate dirt, dust, and odors, leaving your carpets revitalized and fresh. Enjoy a healthier home environment and extend the life of your carpets with our comprehensive cleaning solutions.</p>
+                <h3>Deep Fiber Cleaning</h3>
+                <p>Our advanced equipment reaches deep into carpet fibers to extract dirt, dust mites, allergens, and bacteria, leaving your carpets not only cleaner but also healthier.Extend the life of your carpets with our protective treatments. </p>
                 </div>
                 <img src="../img/carpet2.jpg" alt="carpet cleaning" class="img-fluid services-img me-3 w-50">
                 </div>
@@ -253,7 +261,7 @@
     
       <div class="col-lg-8">
       <div class="section-title pb-3 pt-5">
-      <h3 style="color: #007bff; font-weight: bold;">Why Choose Our HVAC Air Duct Cleaning Services?</h3>
+      <h3 style="color: #007bff; font-weight: bold;">Why Choose Our Carpet Cleaning Services?</h3>
       </div>
 
 
@@ -262,7 +270,7 @@
           <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
 
           <div style="font-size: 1.1rem; line-height: 1.8;">
-            <p>Experience cleaner, healthier indoor air with our professional HVAC air duct cleaning services. Our expert technicians utilize advanced equipment and industry-leading techniques to thoroughly clean and sanitize your air ducts.</p>
+            <p>Our comprehensive services are designed to meet all your carpet care needs and ensure your home or office stays fresh, clean, and healthy. </p>
           </div>
           
         </div>
@@ -270,10 +278,10 @@
         <!-- Box 2 -->
         <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
         
-          <h3 style="color: #007bff; font-weight: bold;">Improved Indoor Air Quality</h3>
+          <h3 style="color: #007bff; font-weight: bold;">Carpet Protection</h3>
           
           <div style="font-size: 1.1rem; line-height: 1.8;">
-            <p>Our thorough cleaning removes dust, allergens, and contaminants, promoting cleaner air for you and your family.</p>
+            <p>Extend the life of your carpets with our protective treatments. </p>
           </div>
           
         </div>
@@ -281,10 +289,11 @@
         <!-- Box 3 -->
         <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
         
-          <h3 style="color: #007bff; font-weight: bold;">Energy Efficiency</h3>
+          <h3 style="color: #007bff; font-weight: bold;">Quick Drying Process
+          </h3>
           
           <div style="font-size: 1.1rem; line-height: 1.8;">
-            <p>Clean air ducts improve airflow efficiency, helping your HVAC system operate more effectively and potentially reducing energy costs.</p>
+            <p>Our efficient drying process minimizes downtime, allowing you to get back to your routine quickly. </p>
           </div>
           
         </div>
@@ -292,10 +301,10 @@
         <!-- Box 4 -->
         <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
         
-          <h3 style="color: #007bff; font-weight: bold;">Odor Removal</h3>
+          <h3 style="color: #007bff; font-weight: bold;"> Professional and Friendly Staff</h3>
           
           <div style="font-size: 1.1rem; line-height: 1.8;">
-            <p>Say goodbye to lingering odors from mold, pets, or cooking with our comprehensive duct cleaning process.</p>
+            <p>We pride ourselves on our attention to detail, punctuality, and customer satisfaction. </p>
           </div>
           
         </div>
@@ -303,10 +312,10 @@
         <!-- Box 5 -->
         <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
         
-          <h3 style="color: #007bff; font-weight: bold;">Comprehensive Service</h3>
+          <h3 style="color: #007bff; font-weight: bold;">Flexible Scheduling</h3>
           
           <div style="font-size: 1.1rem; line-height: 1.8;">
-            <p>Beyond duct cleaning, we inspect and clean HVAC components to ensure your entire system performs optimally.</p>
+            <p>We offer flexible scheduling options to accommodate your busy lifestyle.</p>
           </div>
           
         </div>

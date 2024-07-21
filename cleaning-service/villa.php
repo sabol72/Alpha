@@ -151,6 +151,13 @@
                 <a href="pool-cleaning.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Pool Cleaning</span></a>
               </div>
             </div><!-- End Services List -->
+            <div class="container">
+            <div class="services-list">
+            <h2 class="booking-info">Book your Villa and House cleaning service today.</h2>
+            <a href="../indbooking/index.php" class=" btn-lg btn-book-now" style="color: white; background-color: green; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+    Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+      </div>
+      </div>
 
             <div class="help-box d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-headset help-icon"></i>
@@ -179,13 +186,7 @@
 
             
              <!-- Add other service details sections similarly -->
-             <div class="booking-section mt-5">
-                  <h2 class="booking-info">Discover an unforgettable experience with our exclusive booking service.</h2>
-                 <p> provides personalized assistance to ensure your plans run smoothly from beginning to end. Enjoy the convenience of browsing available slots, receiving instant confirmations, and managing your bookings effortlessly, all at your fingertips.</p>   
-                               <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">
-                      Book Now <i class="fas fa-arrow-right ml-2"></i>
-                  </a>
-              </div>
+           
           </div>
 
         </div>
@@ -209,17 +210,119 @@
       <img src="../img/villahouse3.webp" alt="AC Installation" class="img-fluid services-img me-3 w-50">
     </div>
 
+    <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
+      <img src="../img/villahouse.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <div class="text-content">
+        <h3>Comprehensive Villa Cleaning</h3>
+        <p>Our villa cleaning service is designed to cater to the grandeur and complexity of expansive living spaces. We provide an extensive cleaning regimen that covers all areas of your villa, from the luxurious living rooms to the serene bedrooms. Our professional team will thoroughly clean your kitchen, including appliances, countertops, and floors, as well as meticulously sanitize your bathrooms to uphold the highest standards of hygiene. We also address additional areas such as balconies, terraces, and special spaces, ensuring that no detail is overlooked.</p>
+      </div>
+    </div>
+
+    <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
+      <div class="text-content">
+        <h3>Thorough Home Cleaning</h3>
+        <p>For those who seek a more straightforward approach, our home cleaning service offers a comprehensive solution to keep your residence in top shape. We handle general cleaning tasks with meticulous care, including dusting, sweeping, mopping, and vacuuming. Our team focuses on key areas such as the kitchen and bathrooms, ensuring that surfaces are cleaned and sanitized effectively. Bedrooms are organized and refreshed, while living spaces are made inviting and comfortable.</p>
+      </div>
+      <img src="../img/villahouse3.webp" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+    </div>
+
 <!-- Book Now Button -->
-                <div class="text-center"   data-aos="fade-up" data-aos-delay="50">
-                <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">
-                    Book Now <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
+                
 
 </div>
       </div>
 
     </section><!-- /Service Details Section -->
+
+    <section id="service-details" class="service-details section bg-light py-5">
+
+  <div class="container">
+  
+    <div class="row gy-5 justify-content-center">
+    
+      <div class="col-lg-8">
+      <div class="section-title pb-3 pt-5">
+      <h3 style="color: #007bff; font-weight: bold;">Why Choose Our Villa And Home Cleaning Services?</h3>
+      </div>
+
+
+                  <!-- Box 1 -->
+
+          <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Maintaining a clean and organized home is more than just a matter of appearance; it’s crucial for your well-being and peace of mind.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 2 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">High-Quality Cleaning Standards/h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Cleaning services use advanced techniques and high-quality cleaning products to ensure your home is not just clean but hygienic. </p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 3 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Reliable and Trustworthy Service</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Reputable cleaning services prioritize customer satisfaction and build trust through reliable and consistent service.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 4 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;"> Flexibility and Scheduling</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Whether you need cleaning weekly, bi-weekly, or on a special occasion, professionals can accommodate your preferred schedule, ensuring that your home remains consistently clean and inviting.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 5 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Experienced Professionals</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Our team of skilled cleaners is trained to handle all types of cleaning tasks with precision and care.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 6 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Satisfaction Guaranteed</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>We take pride in our work and strive for excellence in every job. Your satisfaction is our top priority.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Button Box -->
+        <div class="text-center">
+          <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+  
+</section>
 
 
 <?php include "service.php" ?>

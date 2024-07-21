@@ -152,6 +152,13 @@
                 <a href="pool-cleaning.php" class="service-link active"><i class="bi bi-arrow-right-circle"></i><span>Pool Cleaning</span></a>
               </div>
             </div><!-- End Services List -->
+            <div class="container">
+            <div class="services-list">
+            <h2 class="booking-info">Book your pool cleaning service today.</h2>
+            <a href="../indbooking/index.php" class=" btn-lg btn-book-now" style="color: white; background-color: green; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+    Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+      </div>
+      </div>
 
             <div class="help-box d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-headset help-icon"></i>
@@ -180,13 +187,7 @@
            
         
              <!-- Add other service details sections similarly -->
-             <div class="booking-section mt-5">
-                  <h2 class="booking-info">Discover an unforgettable experience with our exclusive booking service.</h2>
-                 <p> provides personalized assistance to ensure your plans run smoothly from beginning to end. Enjoy the convenience of browsing available slots, receiving instant confirmations, and managing your bookings effortlessly, all at your fingertips.</p>   
-                               <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">
-                      Book Now <i class="fas fa-arrow-right ml-2"></i>
-                  </a>
-              </div>
+             
           </div>
 
         </div>
@@ -209,15 +210,98 @@
       </div>
       <img src="../img/pool.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
     </div>
+
+    <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
+      <img src="../img/pool2.webp" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <div class="text-content">
+        <h3> Equipment Inspections and Repairs</h3>
+        <p>Regular inspections of your pool’s equipment, including pumps, heaters, and chlorinators, help identify potential issues before they become major problems. Our technicians are skilled in repairing and replacing faulty equipment, ensuring your pool system runs smoothly.</p>
+      </div>
+    </div>
+
+    <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
+      <div class="text-content">
+        <h3>Leak Detection and Repair</h3>
+        <p>Even a small leak can lead to significant water loss and damage. We use advanced leak detection technology to accurately locate and repair leaks, preserving your pool’s structure and preventing costly repairs.</p>
+      </div>
+      <img src="../img/pool.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+    </div>
            
-    <div class="text-center"   data-aos="fade-up" data-aos-delay="50">
-                <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">
-                    Book Now <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
+    
       </div>
 
     </section><!-- /Service Details Section -->
+    <section id="service-details" class="service-details section bg-light py-5">
+
+  <div class="container">
+  
+    <div class="row gy-5 justify-content-center">
+    
+      <div class="col-lg-8">
+      <div class="section-title pb-3 pt-5">
+      <h3 style="color: #007bff; font-weight: bold;">Why Choose Our Pool Cleaning Services?</h3>
+      </div>
+
+
+                  <!-- Box 1 -->
+
+          <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Even a small leak can lead to significant water loss and damage. We use advanced leak detection technology to accurately locate and repair leaks, preserving your pool’s structure and preventing costly repairs.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 2 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Reliable and Consistent Service</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Our reliable team ensures timely and regular visits, so you never have to worry about the state of your pool.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 3 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Emergency Services</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Our team is available for emergency services to address urgent issues promptly, minimizing downtime and preventing further damage.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 4 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Community Trust</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>When you choose Al Bahja Building Maintenance and Cleaning Services, you’re choosing a partner committed to your pool’s health and longevity.</p>
+          </div>
+          
+        </div>
+        
+        
+        
+        <!-- Button Box -->
+        <div class="text-center">
+          <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+  
+</section>
+
+
 
 
 
