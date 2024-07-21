@@ -28,6 +28,7 @@
 
   <!-- Main CSS File -->
    <link href="assets/css/main.css" rel="stylesheet"> 
+   
 </head>
 
 <body class="index-page">
@@ -102,69 +103,63 @@
       </section>
     </section>  
 
-
-     <!-- Services Section -->
- <section id="services" class="services section">
-    <div class="container  section-title" data-aos="fade-up" id="service ">
-        <main class="content">
-            <section class="row image-and-text">
-                <div class="col-md-6 image-container">
-                    <img src="assets/img/about.webp" alt="A team of professional cleaners at work" class="img-fluid">
-                </div>
-                <div class="col-md-6 text-content">
-                    <h2>Al Bahja Building Maintenance and Cleaning Services</h2>
-                    <p>Al Bahja Building Maintenance and Cleaning Services provide eco-friendly cleaning services to
-                        keep your home, office, or workspace clean and beautiful so that you can focus on things that
-                        matter the most. Our team has been providing first-rate cleaning services in the UAE at very
-                        affordable rates. Our passion is cleaning offices, homes, schools, and businesses. Al Bahja
-                        Building Maintenance and Cleaning Services are proud to call ourselves cleaning experts. We
-                        guarantee that our staff are qualified, experienced, and insured so you can be sure that you are
-                        receiving the best service possible. Hence we strive hard to achieve the perfect results for our
-                        valuable clients.</p>
-                    <p>Al Bahja Building Maintenance and Cleaning Services do regular cleaning jobs, upholstery
-                        cleaning, after-party cleaning, deep cleaning, and move-in move-out cleaning. Al Bahja Building
-                        Maintenance and Cleaning Services have cleaners and buses running around Dubai every day.</p>
-                </div>
-            </section>
-        </main>
-        <div class="section">
-            <img src="assets/img/about.icon.png" alt="Logo" class="logo">
-            <div class="content">
-                <!-- Your section content goes here -->
-                <h2>Book Us Get Clean Done & Realx</h2>
-                <p>We offer a full range of Cleaning & Maintenance Services.</p>
+    <section id="services" class="services section">
+    <div class="container section-title" data-aos="fade-up" id="service">
+        <div class="row image-and-text">
+            <div class="col-md-6 image-container">
+                <img src="assets/img/about.webp" alt="A team of professional cleaners at work" class="img-fluid">
+            </div>
+            <div class="col-md-6 text-content">
+                <h2 style="text-align: center;">Al Bahja Building Maintenance and Cleaning Services</h2>
+                <p style="text-align: justify; text-indent: 20px;">Al Bahja Building Maintenance and Cleaning Services provide eco-friendly cleaning services to keep your home, office, or workspace clean and beautiful so that you can focus on things that matter the most. Our team has been providing first-rate cleaning services in the UAE at very affordable rates. Our passion is cleaning offices, homes, schools, and businesses. Al Bahja Building Maintenance and Cleaning Services are proud to call ourselves cleaning experts. We guarantee that our staff are qualified, experienced, and insured so you can be sure that you are receiving the best service possible. Hence we strive hard to achieve the perfect results for our valuable clients.</p>
+                <p style="text-align: justify; text-indent: 20px;">Al Bahja Building Maintenance and Cleaning Services do regular cleaning jobs, upholstery cleaning, after-party cleaning, deep cleaning, and move-in move-out cleaning. Al Bahja Building Maintenance and Cleaning Services have cleaners and buses running around Dubai every day.</p>
             </div>
         </div>
 
-
-
-
-        <main class="content1">
-            <section class="row image-and-text">
-                <div class="col-md-6 text-content">
-                    <h2 class="mt-2">Mission Statement</h2>
-                    <p class="mt-2">Our mission is to provide superior customer service by delivering quality cleaning
-                        services in a
-                        safe and efficient manner, while protecting the environment around us. Al Bahja Building
-                        Maintenance and cleaning services strives to develop a lasting relationship with our customers
-                        by offering exceptional customer service, high standards of cleanliness, and a commitment to
-                        protecting the natural environment.</p>
-
-
-                    <h2 class="mt-2">Our Commitment</h2>
-                    <p class="mt-2">Al Bahja Building Maintenance and cleaning services is committed to the development
-                        and implementation of a good management system with a wide-ranging view of the effective
-                        expansion of its organization and its services to its customers.</p>
-
+        <div class="row">
+            <div class="col-md-12 text-center mb-4">
+                <div class="section">
+                    <img src="assets/img/about.icon.png" alt="Logo" class="logo">
+                    <div class="content">
+                        <h2>Book Us Get Clean Done & Relax</h2>
+                        <p>We offer a full range of Cleaning & Maintenance Services.</p>
+                    </div>
                 </div>
-                <div class="col-md-6 image-container">
-                    <img src="assets/img/about1.png" alt="A team of professional cleaners at work" class="img-fluid">
+            </div>
+        </div>
+
+        
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row image-and-text">
+                <div class="col-md-12 text-content">
+                    <h2 class="mt-4 mb-3 text-center">Mission Statement</h2>
+                    <p style="text-align: justify;">Our mission is to provide superior customer service by delivering quality cleaning services in a safe and efficient manner, while protecting the environment around us. Al Bahja Building Maintenance and cleaning services strives to develop a lasting relationship with our customers by offering exceptional customer service, high standards of cleanliness, and a commitment to protecting the natural environment.</p>
                 </div>
-            </section>
-            </main>
             </div>
+
+            <div class="row image-and-text">
+                <div class="col-md-12 text-content">
+                    <h2 class="mt-2 mb-3 text-center">Our Commitment</h2>
+                    <p style="text-align: justify;">Al Bahja Building Maintenance and cleaning services is committed to the development and implementation of a good management system with a wide-ranging view of the effective expansion of its organization and its services to its customers.</p>
+
+                  </div>
             </div>
- </section> 
+        </div>
+
+        <div class="col-md-6">
+            <div class="image-container">
+                <img src="assets/img/about1.png" alt="A team of professional cleaners at work" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+</section>
+
+
+<?php include "how-we-works.php"?>
 
 
 
