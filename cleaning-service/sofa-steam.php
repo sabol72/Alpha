@@ -176,7 +176,7 @@
             <div id="deep-cleaning" class="service-content active-content">
               <div class="row">
                 <div class="col-md-12">
-               <img src="sofa.jpg" alt="Upholstery Sofa Steam Cleaning" class="col-md-12" height="500px">
+               <img src="../img/sofa7.png" alt="Upholstery Sofa Steam Cleaning" class="col-md-12" height="500px">
                 </div>
                 <div class="col-md-12 service-details-content">
                 <h3>WELCOME TO UPHOLSTERY SOFA STEAM CLEANING</h3>
@@ -187,6 +187,17 @@
 
 
              <!-- Add other service details sections similarly -->
+             <div id="deep-cleaning" class="service-content active-content">
+              <div class="row">
+                <div class="col-md-12">
+               <img src="../img/sofa8.png" alt="Upholstery Sofa Steam Cleaning" class="col-md-12" height="500px">
+                </div>
+                <div class="col-md-12 service-details-content">
+                <h3>Premium Sofa Steam Cleaning Services</h3>
+                <p>Is your sofa looking a bit worse for wear? Our professional sofa steam cleaning service is here to rejuvenate your favorite piece of furniture. Using advanced steam cleaning technology, we ensure a deep clean that not only removes dirt and stains but also eliminates allergens and bacteria, leaving your sofa fresh and hygienic.</p>
+                </div>
+              </div>
+            </div>
               
 
         </div>
@@ -195,7 +206,7 @@
   <div class="row gy-5">
   
     <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-      <img src="../img/sofa2.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/sofa2.png" alt="Upholstery Sofa Steam Cleaning" class="img-fluid services-img me-3 w-50">
       <div class="text-content">
         <h3>Revitalize Your Sofa with Professional Upholstery Steam Cleaning</h3>
         <p>s your sofa looking tired and worn out? Restore its beauty and freshness with our expert upholstery steam cleaning services. Using advanced steam cleaning technology, we penetrate deep into the fabric to remove stains, odors, and allergens effectively. Whether it's a stubborn spill or accumulated dirt, our thorough cleaning process ensures your sofa looks as good as new. Trust our skilled technicians to deliver exceptional results, leaving your upholstery clean, sanitized, and revitalized. Give your sofa the care it deserves with our professional upholstery steam cleaning services today!
@@ -209,11 +220,11 @@
         <h3>The Ultimate Guide to Upholstery Steam Cleaning</h3>
         <p>Learn everything you need to know about upholstery steam cleaning! From understanding the process to its benefits and what to expect, this guide covers it all. Discover how steam cleaning removes dirt, allergens, and stains effectively while rejuvenating your furniture. Whether you're tackling a specific issue or maintaining overall cleanliness, our comprehensive guide will help you make informed decisions for preserving your upholstery's beauty and comfort. Explore the power of steam cleaning and transform your living space today!</p>
       </div>
-      <img src="../img/sofa1.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/sofa4.png" alt="Upholstery Sofa Steam Cleaning" class="img-fluid services-img me-3 w-50">
     </div>
 
     <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-      <img src="../img/sofa2.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/sofa5.png" alt="Upholstery Sofa Steam Cleaning" class="img-fluid services-img me-3 w-50">
       <div class="text-content">
         <h3>Enhanced Air Quality</h3>
         <p>Our deep steam cleaning process doesn’t just clean your sofa; it also helps improve the air quality in your home by removing dust mites, allergens, and pollutants that can contribute to respiratory issues.
@@ -225,7 +236,7 @@
         <h3>Prolonged Upholstery Life</h3>
         <p>Regular professional cleaning helps extend the life of your upholstery by removing grit and grime that can wear down fabrics over time. Protect your investment and keep your sofa looking new longer!</p>
       </div>
-      <img src="../img/sofa1.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/sofa6.png" alt="Upholstery Sofa Steam Cleaning" class="img-fluid services-img me-3 w-50">
     </div>
 
 <!-- Book Now Button -->

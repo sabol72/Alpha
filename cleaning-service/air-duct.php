@@ -179,7 +179,7 @@
             <div id="deep-cleaning" class="service-content active-content">
               <div class="row">
                 <div class="col-md-12">
-                  <img src="hvac.jpg" alt="HVAC Air Duct Cleaning" class="img-fluid services-img">
+                  <img src="../img/hvac1.png" alt="HVAC Air Duct Cleaning" class="img-fluid services-img">
                 </div>
                 <div class="col-md-12 service-details-content">
                 <h3>WELCOME TO HVAC AIR DUCT CLEANING</h3>
@@ -193,11 +193,11 @@
             <div id="deep-cleaning" class="service-content active-content">
               <div class="row">
                 <div class="col-md-12">
-                <img src="../img/air-duct.jpg" alt="AC Installation" class="col-md-12" >
+                <img src="../img/hvac4.png" alt="HVAC air duct cleaning" class="col-md-12" >
                 </div>
                 <div class="col-md-12 service-details-content">
-                <h3>Professional HVAC Air Duct Cleaning Services</h3>
-                <p>Ensure clean and healthy indoor air with Al Bahja Building Maintenance's professional HVAC air duct cleaning services. Our skilled technicians thoroughly clean your air ducts, removing dust, debris, and allergens that can accumulate over time. Clean air ducts not only improve indoor air quality but also enhance HVAC system efficiency, leading to energy savings. Trust us to deliver thorough and effective cleaning, ensuring a healthier and more comfortable environment for your home or business.</p>
+                <h3>Why Clean Your Air Ducts?</h3>
+                <p>Over time, air ducts accumulate dust, debris, and other contaminants that can affect the quality of air in your home or business. Dirty air ducts can lead to allergies, respiratory issues, and increased energy costs due to inefficient HVAC systems.</p>
                 </div>
               </div>
             </div>
@@ -210,7 +210,7 @@
           <h2>What's more!</h2></div>
             <div class="row gy-5">
               <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-                <img src="../img/ductcleaning1.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+                <img src="../img/acduct1.png" alt="HVAC air duct cleaning" class="img-fluid services-img me-3 w-50">
                 <div class="text-content">
                   <h3>Professional HVAC Air Duct Cleaning Services</h3>
                   <p>Ensure clean and healthy indoor air with Al Bahja Building Maintenance's professional HVAC air duct cleaning services. Our skilled technicians thoroughly clean your air ducts, removing dust, debris, and allergens that can accumulate over time. Clean air ducts not only improve indoor air quality but also enhance HVAC system efficiency, leading to energy savings. Trust us to deliver thorough and effective cleaning, ensuring a healthier and more comfortable environment for your home or business.</p>
@@ -222,7 +222,7 @@
                   <h3>Reliable HVAC Air Duct Cleaning Services</h3>
                   <p>Al Bahja Building Maintenance offers reliable HVAC air duct cleaning services to maintain clean indoor air quality. Our skilled technicians use effective techniques to remove dust, allergens, and debris from your ductwork, ensuring optimal airflow and system efficiency. With our thorough cleaning approach, we help create a healthier and more comfortable environment for your home or business. Trust us to deliver professional results that enhance the performance of your HVAC system and improve overall air quality.</p>
                 </div>
-                <img src="../img/ductcleaning.png" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+                <img src="../img/acduct5.png" alt="HVAC air duct cleaning" class="img-fluid services-img me-3 w-50">
               </div>
 
          
@@ -232,7 +232,7 @@
 
      <div class="row gy-5">
               <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-                <img src="../img/air-duct2.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+                <img src="../img/acduct3.png" alt="HVAC air duct cleaning" class="img-fluid services-img me-3 w-50">
                 <div class="text-content">
                    <h3>Comprehensive Service</h3>
                    <p>Ensure clean and healthy indoor air with Al Bahja Building Maintenance's professional HVAC air duct cleaning services. Our skilled technicians thoroughly clean your air ducts, removing dust, debris, and allergens that can accumulate over time. Clean air ducts not only improve indoor air quality but also enhance HVAC system efficiency, leading to energy sa
@@ -245,10 +245,10 @@
 
               <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
                 <div class="text-content">
-                  <h3>Reliable HVAC Air Duct Cleaning Services</h3>
-                  <p>Al Bahja Building Maintenance offers reliable HVAC air duct cleaning services to maintain clean indoor air quality. Our skilled technicians use effective techniques to remove dust, allergens, and debris from your ductwork, ensuring optimal airflow and system efficiency. With our thorough cleaning approach, we help create a healthier and more comfortable environment for your home or business. Trust us to deliver professional results that enhance the performance of your HVAC system and improve overall air quality.</p>
+                  <h3>Breathe Cleaner Air Today</h3>
+                  <p>Your indoor air quality matters. Over time, dust, allergens, and other pollutants can accumulate in your air ducts, affecting your health and the efficiency of your HVAC system. Our professional air duct cleaning services are designed to ensure your home or business has the cleanest air possible.</p>
                 </div>
-                <img src="../img/air-duct3.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+                <img src="../img/acduct.png" alt="HVAC air duct cleaning" class="img-fluid services-img me-3 w-50">
               </div>
 
            

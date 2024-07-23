@@ -39,8 +39,8 @@
     }
 
     .services-img {
-      max-width: 50%;
-      max-width: 60%;
+      max-width: 100%;
+      
       height: auto;
     }
 
@@ -177,7 +177,7 @@
             <div id="deep-cleaning" class="service-content active-content">
               <div class="row">
                 <div class="col-md-12">
-                <img src="mattress.jpg" alt="Mattress Cleaning" class="img-fluid services-img">
+                <img src="../img/mattess0.png" alt="Mattress Cleaning" class="img-fluid services-img">
                 </div>
                 <div class="col-md-12 service-details-content">
                 <h3>WELCOME TO MATTRESS CLEANING</h3>
@@ -188,6 +188,17 @@
             
             
              <!-- Add other service details sections similarly -->
+             <div id="deep-cleaning" class="service-content active-content">
+              <div class="row">
+                <div class="col-md-12">
+                <img src="../img/matress1.png" alt="Mattress Cleaning" class="img-fluid services-img">
+                </div>
+                <div class="col-md-12 service-details-content">
+                <h3>Refresh Your Sleep Environment with Our Expert Mattress Cleaning</h3>
+                <p>A good night's sleep starts with a clean mattress. Over time, mattresses can accumulate dust mites, allergens, sweat, stains, and even bacteria, which can affect your sleep quality and health. Our professional mattress cleaning services are designed to deeply clean, sanitize, and revitalize your mattress, ensuring you sleep soundly on a fresh and hygienic bed.</p>
+                </div>
+              </div>
+            </div>
              
           </div>
 
@@ -196,7 +207,7 @@
         <div class="section-title pb-3 pt-5">
         <h2>Whats more!</h2></div>
   <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-    <img src="../img/matress1.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+    <img src="../img/matress4.png" alt="Mattress Cleaning" class="img-fluid services-img me-3 w-50">
     <div class="text-content">
       <h3>Deep Clean Your Mattress for Better Sleep</h3>
       <p>At Al Bahja Building Maintenance and Cleaning Services, Achieve a cleaner, healthier sleeping environment with our specialized mattress cleaning services. We target and eliminate deep-seated dirt, allergens, and bacteria using eco-friendly methods, ensuring your mattress is thoroughly sanitized and refreshed. Enjoy a better night's sleep and prolong the life of your mattress with our professional cleaning services.</p>
@@ -208,11 +219,11 @@
       <h3>Experience Freshness with Expert Mattress Cleaning</h3>
       <p>Breathe easy with our professional mattress cleaning services. We deep clean and disinfect your mattress, eliminating harmful allergens and bacteria for a healthier sleeping surface. Our efficient and eco-friendly techniques ensure your mattress is left spotless and odor-free, promoting a more restful and rejuvenating sleep.</p>
     </div>
-    <img src="../img/matress2.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+    <img src="../img/matress2 resize.png" alt="Mattress Cleaning" class="img-fluid services-img me-3 w-50">
   </div>
 
   <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-    <img src="../img/matress1.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+    <img src="../img/matress5.png" alt="Mattress Cleaning" class="img-fluid services-img me-3 w-50">
     <div class="text-content">
       <h3>Prolongs Mattress Life</h3>
       <p>Regular cleaning helps maintain the integrity of your mattress. Removing dirt, sweat, and stains prevents material breakdown, thus extending the lifespan of your mattress and ensuring you get the most out of your investment.</p>
@@ -224,7 +235,7 @@
       <h3>Enhanced Sleep Quality</h3>
       <p>A clean mattress contributes to better sleep quality. Dust mites, allergens, and dirt can disrupt your sleep and cause health issues. Regular mattress cleaning ensures a healthier sleeping environment, leading to more restful nights and refreshed mornings.</p>
     </div>
-    <img src="../img/matress2.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+    <img src="../img/matress6.png" alt="Mattress Cleaning" class="img-fluid services-img me-3 w-50">
   </div>
 
          

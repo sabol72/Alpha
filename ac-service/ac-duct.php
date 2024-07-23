@@ -181,6 +181,13 @@
                 <a href="ac-repair.php" style="color: #000;"><i class="bi bi-arrow-right-circle"></i><span>AC Repair</span></a>
               </div>
             </div><!-- End Services List -->
+            <div class="container">
+            <div class="services-list">
+            <h2 class="booking-info">Book your ac duct cleaning service today.</h2>
+            <a href="../indbooking/index.php" class=" btn-lg btn-book-now" style="color: white; background-color: green; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+    Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+      </div>
+      </div>
 
             <div class="help-box">
               <i class="bi bi-headset help-icon"></i>
@@ -191,23 +198,22 @@
 
           </div>
 
-          <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-8 ps-lg-5 " data-aos="fade-up" data-aos-delay="200">
             <div id="cleaning" class="service-content">
-              <img src="cleaner.jpg" alt="AC Duct Cleaning" class="img-fluid services-img">
+              <img src="../img/acduct0.png" alt="AC Duct Cleaning" class="img-fluid acservices-img">
               <h3>WELCOME TO AC DUCT CLEANING SERVICE</h3>
               <p>Keep your AC ducts clean and your indoor air fresh with our AC duct cleaning service. We remove dust, allergens, and contaminants, ensuring your AC system works efficiently and your air quality is improved.</p>
             </div>
+
+            <div id="cleaning" class="service-content">
+              <img src="../img/acduct.png" alt="AC Duct Cleaning" class="img-fluid acservices-img">
+              <h3>Professional AC Duct Cleaning Services</h3>
+              <p>Ensure your home's air quality with our comprehensive AC duct cleaning services. Our expert technicians use advanced equipment and techniques to remove dust, debris, and allergens, improving the efficiency of your HVAC system and promoting a healthier living environment.</p>
+            </div>
           </div>
          <!-- Add other service details sections similarly -->
-         <div class="booking-section mt-5 text-center"  data-aos="fade-up" data-aos-delay="200">
-                  <h2 class="booking-info">Discover an unforgettable experience with our exclusive booking service.</h2>
-                 <p> provides personalized assistance to ensure your plans run smoothly from beginning to end. Enjoy the convenience of browsing available slots, receiving instant confirmations, and managing your bookings effortlessly, all at your fingertips.</p>   
-                               <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">
-                      Book Now <i class="fas fa-arrow-right ml-2"></i>
-                  </a>
-              </div>
-        </div>
-
+        
+          
       </div>
 
     </section><!-- /Service Details Section -->
@@ -221,7 +227,7 @@
   <div class="row gy-5">
   
     <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-      <img src="../img/duct2.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/acduct1.png" alt="AC Installation" class="img-fluid services-img me-3 w-50">
       <div class="text-content">
         <h3>Excellence in Ac Duct Cleaning Services </h3>
         <p>At Al Bahja Building Maintenance and Cleaning Services, we pride ourselves on providing comprehensive and reliable maintenance and cleaning solutions for both residential and commercial properties. Our commitment to excellence and customer satisfaction sets us apart as a leading service provider in the industry.</p>
@@ -233,16 +239,30 @@
         <h3>Expert Ac Duct Cleaning Services</h3>
         <p>At Al Bahja Building Maintenance and Cleaning Services, we are dedicated to providing superior maintenance and cleaning solutions for residential and commercial properties. Our team of skilled professionals ensures that every aspect of your building is well-maintained, safe, and spotless.</p>
       </div>
-      <img src="../img/duct3.png" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/acduct2.png" alt="AC Installation" class="img-fluid services-img me-3 w-50">
     </div>
+    
+    <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
+      <img src="../img/acduct5.png" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <div class="text-content">
+        <h3>Breathe Easy with Professional AC Duct Cleaning </h3>
+        <p>Are you experiencing musty odors, increased allergies, or poor air quality in your home or office? It might be time for a professional AC duct cleaning.</p>
+      </div>
+    </div>
+
+    <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
+      <div class="text-content">
+        <h3>Why AC Duct Cleaning is Important?</h3>
+        <p>Over time, your air ducts can accumulate dust, debris, allergens, and even mold. These contaminants can affect the efficiency of your HVAC system and compromise the air quality in your living or working space.</p>
+      </div>
+      <img src="../img/acduct3.png" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+    </div>
+
+
 
 <!-- Book Now Button -->
  
-<div class="text-center"   data-aos="fade-up" data-aos-delay="50">
-                <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">
-                    Book Now <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
+
 </div>
 </div>
 </section>
@@ -302,6 +322,98 @@
         </div>
       </div>
     </section><!-- /Services Section -->
+
+    
+    <section id="service-details" class="service-details section bg-light py-5">
+
+  <div class="container">
+  
+    <div class="row gy-5 justify-content-center">
+    
+      <div class="col-lg-8">
+      <div class="section-title pb-3 pt-5">
+      <h3 style="color: #007bff; font-weight: bold;">Why Choose Our AC Duct Cleaning Services?</h3>
+      </div>
+
+
+                  <!-- Box 1 -->
+
+          <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Experience cleaner, healthier indoor air with our professional  ac duct cleaning services. Our expert technicians utilize advanced equipment and industry-leading techniques to thoroughly clean and sanitize your air ducts.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 2 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Improve Air Quality</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Our thorough cleaning remove dust, allergens, and pollutants from your air ducts to ensure clean, fresh air.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 3 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Experienced Technicians</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p> Our team of skilled professionals has extensive experience in duct cleaning and HVAC maintenance.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 4 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Customer Satisfaction</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>We are committed to delivering exceptional service and ensuring our customers are completely satisfied.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 5 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Transparent Process</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>We keep you informed throughout the entire cleaning process, so you know exactly what we’re doing and why.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 6 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Licensed and Insured</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>We are fully licensed and insured, giving you peace of mind knowing your property is in good hands.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Button Box -->
+        <div class="text-center">
+          <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+  
+</section>
+
 
     <?php include "FAQ.php" ?>
 

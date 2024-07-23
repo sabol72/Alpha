@@ -176,7 +176,7 @@
             <div id="deep-cleaning" class="service-content active-content">
               <div class="row">
                 <div class="col-md-12">
-                <img src="pool.jpg" alt="Pool Cleaning" class="img-fluid services-img">
+                <img src="../img/pool0.png" alt="Pool Cleaning" class="img-fluid services-img">
                 </div>
                 <div class="col-md-12 service-details-content">
                 <h3>WELCOME TO POOL CLEANING</h3>
@@ -187,6 +187,17 @@
            
         
              <!-- Add other service details sections similarly -->
+             <div id="deep-cleaning" class="service-content active-content">
+              <div class="row">
+                <div class="col-md-12">
+                <img src="../img/pool4.png" alt="Pool Cleaning" class="img-fluid services-img">
+                </div>
+                <div class="col-md-12 service-details-content">
+                <h3>Keep Your Pool Sparkling Clean All Year Round</h3>
+              <p>At Al Bahja Building Maintenance and Cleaning Services, we understand that maintaining a clean and healthy pool can be a daunting task. That's why we offer professional pool cleaning services designed to keep your pool in pristine condition, so you can enjoy it without the hassle.</p>
+                </div>
+              </div>
+            </div>
              
           </div>
 
@@ -196,7 +207,7 @@
   <div class="row gy-5">
   
     <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-      <img src="../img/pool2.webp" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/pool1.png" alt="Pool Cleaning" class="img-fluid services-img me-3 w-50">
       <div class="text-content">
         <h3>Sparkling Clean Pools with Professional Pool Cleaning Services</h3>
         <p>At Al Bahja Building Maintenance and Cleaning Services, we privide your pool crystal clear and inviting with our expert pool cleaning services. We remove debris, balance chemicals, and ensure your pool is safe and hygienic for swimming. Trust our skilled technicians to maintain your pool's pristine condition, so you can enjoy a refreshing and clean swimming experience every time.</p>
@@ -208,11 +219,11 @@
         <h3>Maintain a Clean and Healthy Pool with Expert Services</h3>
         <p>Enjoy a clean and healthy pool with our professional cleaning services. We tackle all aspects of pool maintenance, including vacuuming, filter cleaning, and water testing, to ensure optimal cleanliness and safety. Trust our experienced team to keep your pool in top condition, providing you with a refreshing and enjoyable swimming experience.</p>
       </div>
-      <img src="../img/pool.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/pool2.png" alt="Pool Cleaning" class="img-fluid services-img me-3 w-50">
     </div>
 
     <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-      <img src="../img/pool2.webp" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/pool3.png" alt="Pool Cleaning" class="img-fluid services-img me-3 w-50">
       <div class="text-content">
         <h3> Equipment Inspections and Repairs</h3>
         <p>Regular inspections of your pool’s equipment, including pumps, heaters, and chlorinators, help identify potential issues before they become major problems. Our technicians are skilled in repairing and replacing faulty equipment, ensuring your pool system runs smoothly.</p>
@@ -224,7 +235,7 @@
         <h3>Leak Detection and Repair</h3>
         <p>Even a small leak can lead to significant water loss and damage. We use advanced leak detection technology to accurately locate and repair leaks, preserving your pool’s structure and preventing costly repairs.</p>
       </div>
-      <img src="../img/pool.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/pool6.png" alt="Pool Cleaning" class="img-fluid services-img me-3 w-50">
     </div>
            
     

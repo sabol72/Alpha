@@ -176,7 +176,7 @@
             <div id="deep-cleaning" class="service-content active-content">
               <div class="row">
                 <div class="col-md-12">
-                  <img src="deep-clean.jpg" alt="Deep Cleaning" class="img-fluid services-img">
+                  <img src="../img/deepclean0.png" alt="Deep Cleaning" class="img-fluid services-img">
                 </div>
                 <div class="col-md-12 service-details-content">
                   <h3>WELCOME TO DEEP CLEANING SERVICE</h3>
@@ -184,8 +184,20 @@
                 </div>
               </div>
             </div>
+      
 
             <!-- Add other service details sections similarly -->
+            <div id="deep-cleaning" class="service-content active-content">
+              <div class="row">
+                <div class="col-md-12">
+                  <img src="../img/deepcleaning.png" alt="Deep Cleaning" class="img-fluid services-img">
+                </div>
+                <div class="col-md-12 service-details-content">
+                  <h3>Transform Your Space with Our Comprehensive Deep Cleaning Solutions</h3>
+                  <p>At Al Bahja Building Maintenance, we understand the importance of a thoroughly clean environment. Whether it's your home, office, or any other space, our deep cleaning services are designed to reach the areas that regular cleaning misses. Our experienced team uses advanced techniques and eco-friendly products to ensure your space is spotless and hygienic.</p>
+                </div>
+              </div>
+            </div>
            
           </div>
 
@@ -195,7 +207,7 @@
         <div class="row gy-5">
   
            <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-               <img src="../img/deepcleaning.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+               <img src="../img/deepclean1.png" alt="Deep Cleaning" class="img-fluid services-img me-3 w-50">
     <div class="text-content">
       <h3>Thorough Deep Cleaning Services</h3>
       <p>Discover unparalleled cleanliness with Al Bahja Building Maintenance's deep cleaning services in Dubai. Our meticulous approach ensures every corner of your home or office receives a thorough cleaning, leaving behind a fresh and hygienic environment. From high-touch surfaces to hidden nooks, we pay attention to detail to eliminate dust, grime, and allergens effectively. Whether preparing for a special occasion or maintaining a pristine workplace, trust our expert cleaners to deliver exceptional results. Experience the difference with our comprehensive deep cleaning service, tailored to meet your exact needs and exceed your expectations.</p>
@@ -208,11 +220,11 @@
       <p>Experience thorough cleanliness with Al Bahja Building Maintenance's deep cleaning services. We meticulously clean every corner of your home or office, ensuring a fresh and hygienic environment. Our detail-oriented approach eliminates dust, grime, and allergens from high-touch surfaces to hidden nooks. Whether for a special occasion or regular maintenance, trust our expert cleaners for exceptional results tailored to exceed your expectations.
 </p>
     </div>
-    <img src="../img/deepcleaningn2.webp" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+    <img src="../img/deepclean2.png" alt="Deep Cleaning" class="img-fluid services-img me-3 w-50">
   </div>
 
   <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-               <img src="../img/deepcleaning.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+               <img src="../img/deepcleaningn2.png" alt="Deep Cleaning" class="img-fluid services-img me-3 w-50">
     <div class="text-content">
       <h3>Customized Solutions</h3>
       <p>At our Deep Cleaning Service, we understand that every space is unique and requires a personalized approach to cleaning. Our customized solutions are designed to address your specific needs and preferences, ensuring a thorough and satisfying clean every time. We understand that every space has unique needs. Our services are tailored to meet your specific requirements and preferences.</p>
@@ -227,7 +239,7 @@
 
 </p>
     </div>
-    <img src="../img/deepcleaningn2.webp" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+    <img src="../img/deepclean4.png" alt="Deep Cleaning" class="img-fluid services-img me-3 w-50">
   </div>
 
          

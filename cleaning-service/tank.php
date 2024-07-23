@@ -175,7 +175,7 @@
             <div id="deep-cleaning" class="service-content active-content">
               <div class="row">
                 <div class="col-md-12">
-                <img src="water-tank.jpg" alt="Water Tank Cleaning & Disinfection" class="img-fluid services-img">
+                <img src="../img/water.png" alt="Water Tank Cleaning & Disinfection" class="img-fluid services-img">
                 </div>
                 <div class="col-md-12 service-details-content">
                 <h3>WELCOME TO WATER TANK CLEANING & DISINFECTION</h3>
@@ -190,6 +190,17 @@
               
             </div>
              <!-- Add other service details sections similarly -->
+             <div id="deep-cleaning" class="service-content active-content">
+              <div class="row">
+                <div class="col-md-12">
+                <img src="../img/tank2.png" alt="Water Tank Cleaning & Disinfection" class="img-fluid services-img">
+                </div>
+                <div class="col-md-12 service-details-content">
+                <h3>Ensure Pure and Safe Water for Your Home and Business</h3>
+                <p>Water is essential to life, and maintaining the cleanliness of your water tank is crucial for ensuring the health and safety of your family or employees. Over time, water tanks can accumulate dirt, algae, bacteria, and other contaminants that can compromise the quality of your water. Our professional water tank cleaning services are designed to thoroughly clean and disinfect your water tanks, providing you with peace of mind and clean water.</p>
+                </div>
+              </div>
+            </div>
              
           </div>
 
@@ -199,7 +210,7 @@
   <div class="row gy-5">
   
     <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-      <img src="../img/watertank3.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/watertank1.png" alt="Water Tank Cleaning & Disinfection" class="img-fluid services-img me-3 w-50">
       <div class="text-content">
         <h3>
         Expert Water Tank Cleaning and Disinfection Services</h3>
@@ -212,11 +223,11 @@
         <h3>The Importance of Clean Water Tanks</h3>
         <p>Understand why clean water tanks are crucial for your health and safety. Over time, sediment buildup and microbial growth can compromise water quality, leading to health risks. Our specialized cleaning and disinfection services remove contaminants, ensuring your water remains pure and safe for consumption. By maintaining clean tanks, you protect against waterborne diseases and ensure the longevity of your plumbing system. Trust our expertise to maintain optimal water hygiene standards with regular cleaning and disinfection of your water tanks.</p>
       </div>
-      <img src="../img/watertank2.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/watertank2.png" alt="Water Tank Cleaning & Disinfection" class="img-fluid services-img me-3 w-50">
     </div>
 
     <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-      <img src="../img/watertank3.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/tank1.png" alt="Water Tank Cleaning & Disinfection" class="img-fluid services-img me-3 w-50">
       <div class="text-content">
         <h3>
         Keep Your Water Safe and Clean</h3>
@@ -229,7 +240,7 @@
         <h3>Reliable Repairs and Ongoing Maintenance</h3>
         <p>In addition to cleaning, we offer minor repair services to address any issues found during our inspection. We also provide regular maintenance schedules to keep your tank in optimal condition, preventing future problems and extending the life of your tank.</p>
       </div>
-      <img src="../img/watertank2.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/watertank3.jpg" alt="Water Tank Cleaning & Disinfection" class="img-fluid services-img me-3 w-50">
     </div>
 
 <!-- Book Now Button -->

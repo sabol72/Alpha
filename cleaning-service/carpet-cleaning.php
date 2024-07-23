@@ -91,7 +91,7 @@
 
 </head>
 
-< class="service-details-page">
+<body class="service-details-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
@@ -182,11 +182,11 @@
             <div id="deep-cleaning" class="service-content active-content">
               <div class="row">
                 <div class="col-md-12">
-                  <img src="hvac.jpg" alt="HVAC Air Duct Cleaning" class="img-fluid services-img">
+                  <img src="../img/carpetcleaning.png" alt="carpet cleaning" class="img-fluid services-img">
                 </div>
                 <div class="col-md-12 service-details-content">
-                <h3>WELCOME TO HVAC AIR DUCT CLEANING</h3>
-                <p>Breathe cleaner air with our expert HVAC air duct cleaning service, ensuring optimal indoor air quality for your home or office.</p>
+                <h3>WELCOME TO CARPET CLEANING</h3>
+                <p>We understand the importance of a clean home. Our residential carpet cleaning service uses eco-friendly products and advanced cleaning techniques to remove dirt, stains, and allergens, leaving your carpets fresh and vibrant.</p>
                 </div>
               </div>
             </div>
@@ -196,11 +196,11 @@
             <div id="deep-cleaning" class="service-content active-content">
               <div class="row">
                 <div class="col-md-12">
-                <img src="../img/air-duct.jpg" alt="AC Installation" class="col-md-12" >
+                <img src="../img/carpet4.png" alt="carpet cleaning" class="col-md-12" >
                 </div>
                 <div class="col-md-12 service-details-content">
-                <h3>Professional HVAC Air Duct Cleaning Services</h3>
-                <p>Ensure clean and healthy indoor air with Al Bahja Building Maintenance's professional HVAC air duct cleaning services. Our skilled technicians thoroughly clean your air ducts, removing dust, debris, and allergens that can accumulate over time. Clean air ducts not only improve indoor air quality but also enhance HVAC system efficiency, leading to energy savings. Trust us to deliver thorough and effective cleaning, ensuring a healthier and more comfortable environment for your home or business.</p>
+                <h3>Professional Carpet Cleaning Services</h3>
+                <p>Ensure clean and healthy indoor air with Al Bahja Building Maintenance's professional Carpet cleaning services. Our skilled technicians thoroughly clean your carpet, removing dust, debris, and allergens that can accumulate over time. Clean air ducts not only improve indoor air quality but also enhance carpet efficiency, leading to energy savings. Trust us to deliver thorough and effective cleaning, ensuring a healthier and more comfortable environment for your home or business.</p>
                 </div>
               </div>
             </div>
@@ -215,7 +215,7 @@
           <h2>What's more!</h2></div>
     <div class="row gy-5">
               <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-              <img src="../img/carpet3.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+              <img src="../img/carpet2.png" alt="Carpet Cleaning" class="img-fluid services-img me-3 w-50">
               <div class="text-content">
               <h3>Expert Carpet Cleaning for a Pristine Home</h3>
               <p> Choose Al Bahja Building Maintenance and Cleaning Services for refresh your living space with our professional carpet cleaning services. Our advanced cleaning methods remove deep-seated dirt, tough stains, and allergens, ensuring your carpets look and feel like new. Trust our experienced team to deliver thorough and efficient cleaning, enhancing the beauty and hygiene of your home.</p>
@@ -227,11 +227,11 @@
                 <h3>Deep Clean Your Carpets for Lasting Freshness</h3>
                 <p>Experience the ultimate in carpet care with our expert cleaning services. We use eco-friendly products and state-of-the-art equipment to eliminate dirt, dust, and odors, leaving your carpets revitalized and fresh. Enjoy a healthier home environment and extend the life of your carpets with our comprehensive cleaning solutions.</p>
                 </div>
-                <img src="../img/carpet2.jpg" alt="carpet cleaning" class="img-fluid services-img me-3 w-50">
+                <img src="../img/carpet3.png" alt="carpet cleaning" class="img-fluid services-img me-3 w-50">
                 </div>
 
                 <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-              <img src="../img/carpet3.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+              <img src="../img/carpet4.png" alt="carpet cleaning" class="img-fluid services-img me-3 w-50">
               <div class="text-content">
               <h3>Eco-Friendly Cleaning Solutions</h3>
               <p> We care about your health and the environment. That's why we use eco-friendly and non-toxic cleaning products that are safe for children and pets.Our green cleaning solutions effectively remove dirt and grime without leaving harmful residues. </p>
@@ -243,7 +243,7 @@
                 <h3>Deep Fiber Cleaning</h3>
                 <p>Our advanced equipment reaches deep into carpet fibers to extract dirt, dust mites, allergens, and bacteria, leaving your carpets not only cleaner but also healthier.Extend the life of your carpets with our protective treatments. </p>
                 </div>
-                <img src="../img/carpet2.jpg" alt="carpet cleaning" class="img-fluid services-img me-3 w-50">
+                <img src="../img/carpet1.png" alt="carpet cleaning" class="img-fluid services-img me-3 w-50">
                 </div>
 
      </div>    

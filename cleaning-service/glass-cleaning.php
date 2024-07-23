@@ -39,7 +39,7 @@
     }
 
     .services-img {
-      max-width: 500px;
+      max-width: 100%;
       height: auto;
     }
 
@@ -175,7 +175,7 @@
             <div id="deep-cleaning" class="service-content active-content">
               <div class="row">
                 <div class="col-md-12">
-              <img src="glass-clean.jpg" alt="Window Glass Cleaning" class="img-fluid services-img">
+              <img src="../img/window1.png" alt="Window Glass Cleaning" class="img-fluid services-img">
                 </div>
                 <div class="col-md-12 service-details-content">
                 <h3>WELCOME TO WINDOW GLASS CLEANING</h3>
@@ -186,6 +186,17 @@
 
             
              <!-- Add other service details sections similarly -->
+             <div id="deep-cleaning" class="service-content active-content">
+              <div class="row">
+                <div class="col-md-12">
+              <img src="../img/window2.png" alt="Window Glass Cleaning" class="img-fluid services-img">
+                </div>
+                <div class="col-md-12 service-details-content">
+                <h3>The Ultimate Guide to Glass Cleaning</h3>
+              <p>Clean glass surfaces, whether windows, mirrors, or glass doors, can significantly enhance the aesthetic appeal of your home or office. Keeping them free of smudges, streaks, and grime doesn't have to be a daunting task. Here’s a comprehensive guide to help you maintain sparkling clean glass.</p>
+                </div>
+              </div>
+            </div>
             
           </div>
 
@@ -193,7 +204,7 @@
           <h2>What's more!</h2></div>
             <div class="row gy-5">
               <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-                <img src="../img/ductcleaning1.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+                <img src="../img/ductcleaning1.jpg" alt="Window Glass Cleaning" class="img-fluid services-img me-3 w-50">
                 <div class="text-content">
                   <h3>Crystal Clear Window Glass Cleaning Services</h3>
                   <p>Experience the brilliance of spotless windows with our professional window glass cleaning services. Our skilled team uses high-quality tools and eco-friendly solutions to remove dirt, smudges, and streaks, leaving your windows sparkling clean. Enhance the appearance of your home or office with our reliable and efficient cleaning service. Trust us to deliver pristine windows that let in more light and improve your view.</p>
@@ -205,7 +216,7 @@
                   <h3>Revitalize Your View with Expert Window Glass Cleaning</h3>
                   <p>We provide thorough cleaning to eliminate grime and streaks, ensuring your windows are crystal clear. Using advanced techniques and safe cleaning products, our team guarantees a streak-free finish that enhances the beauty of your space. Enjoy a brighter, cleaner environment with our professional window cleaning services.</p>
                 </div>
-                <img src="../img/ductcleaning.png" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+                <img src="../img/glass1.jpg" alt="Window Glass Cleaning" class="img-fluid services-img me-3 w-50">
               </div>
 
          
@@ -215,7 +226,7 @@
 
      <div class="row gy-5">
               <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-                <img src="../img/air-duct2.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+                <img src="../img/glass2.png" alt="Window Glass Cleaning" class="img-fluid services-img me-3 w-50">
                 <div class="text-content">
                    <h3>SparklePro Glass Cleaning Services</h3>
                    <p>We make your glass surfaces gleam with perfection. Our skilled team is dedicated to providing exceptional glass cleaning services for both residential and commercial properties, ensuring clear views and a pristine appearance.</p> 
@@ -229,7 +240,7 @@
                   <h3>Window Cleaning</h3>
                   <p>Al Bahja Building Maintenance , We provide thorough cleaning for all types of windows, inside and out, ensuring a streak-free shine.</p>
                 </div>
-                <img src="../img/air-duct3.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+                <img src="../img/glass.png" alt="Window Glass Cleaning" class="img-fluid services-img me-3 w-50">
               </div>
 
            

@@ -180,6 +180,13 @@
                 <a href="ac-repair.php" style="color: #000;"><i class="bi bi-arrow-right-circle"></i><span>AC Repair</span></a>
               </div>
             </div><!-- End Services List -->
+            <div class="container">
+            <div class="services-list">
+            <h2 class="booking-info">Book your ac ac installation service today.</h2>
+            <a href="../indbooking/index.php" class=" btn-lg btn-book-now" style="color: white; background-color: green; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+    Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+      </div>
+      </div>
 
             <div class="help-box">
               <i class="bi bi-headset help-icon"></i>
@@ -192,20 +199,20 @@
 
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
             <div id="install" class="service-content">
-              <img src="install.jpg" alt="AC Installation" class="img-fluid services-img">
+              <img src="../img/acinstall.png" alt="AC Installation" >
               <h3 style="color: #000;">WELCOME TO AC INSTALLATION SERVICE</h3>
               <p style="color: #000;">If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Building Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.</p>
+            </div>
+
+            <div id="install" class="service-content">
+              <img src="../img/ac5.png" alt="AC Installation" class="img-fluid services-img">
+              <h3 style="color: #000;">Experience Unmatched Comfort with Professional AC Installation</h3>
+              <p style="color: #000;">Are you tired of sweltering in the summer heat? Is your old air conditioning unit no longer keeping your home cool and comfortable? It's time to upgrade to a new, efficient air conditioning system with our professional AC installation services no further than Al Bahja Building Maintenance.</p>
             </div>
           
           </div>
                <!-- Add other service details sections similarly -->
-         <div class="booking-section mt-5 text-center"  data-aos="fade-up" data-aos-delay="200">
-                  <h2 class="booking-info">Discover an unforgettable experience with our exclusive booking service.</h2>
-                 <p> provides personalized assistance to ensure your plans run smoothly from beginning to end. Enjoy the convenience of browsing available slots, receiving instant confirmations, and managing your bookings effortlessly, all at your fingertips.</p>   
-                               <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">
-                      Book Now <i class="fas fa-arrow-right ml-2"></i>
-                  </a>
-              </div>
+         
         </div>
 
       </div>
@@ -220,7 +227,7 @@
   <div class="row gy-5">
   
     <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-      <img src="../install2.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/ac.png" alt="AC Installation" class="img-fluid services-img me-3 w-50">
       <div class="text-content">
         <h3>Professional AC Installation Solutions in Dubai</h3>
         <p>If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Building Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.</p>
@@ -232,15 +239,27 @@
         <h3>Expert AC Installation</h3>
         <p> Your trusted partner for comprehensive building care! Whether you need expert air conditioning installation, reliable maintenance, or thorough cleaning services, our team is dedicated to ensuring your spaces are well-maintained and comfortable.</p>
       </div>
-      <img src="../img/install3.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/ac3.png" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+    </div>
+
+    <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
+      <img src="../img/ac1.png" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <div class="text-content">
+        <h3>Stay Cool and Comfortable All Year Round</h3>
+        <p>we specialize in providing top-notch air conditioner installation services to ensure your home or office remains cool and comfortable, no matter how hot it gets outside. Our team of experienced technicians is dedicated to delivering high-quality installation services that meet your specific needs and budget.</p>
+      </div>
+    </div>
+
+    <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
+      <div class="text-content">
+        <h3>Schedule Your Installation Today!</h3>
+        <p>Don’t let the heat get the best of you. Trust Al Bahja Building Maintenance for expert air conditioner installation services that guarantee comfort and satisfaction. Contact us today to schedule a consultation and take the first step towards a cooler, more comfortable space.</p>
+      </div>
+      <img src="../img/ac4.png" alt="AC Installation" class="img-fluid services-img me-3 w-50">
     </div>
 
 <!-- Book Now Button -->
-<div class="text-center"   data-aos="fade-up" data-aos-delay="50">
-                <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">
-                    Book Now <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
+
 
 </div>
 </div>
@@ -299,6 +318,88 @@
         </div>
       </div>
     </section><!-- /Services Section -->
+
+    
+    <section id="service-details" class="service-details section bg-light py-5">
+
+  <div class="container">
+  
+    <div class="row gy-5 justify-content-center">
+    
+      <div class="col-lg-8">
+      <div class="section-title pb-3 pt-5">
+      <h3 style="color: #007bff; font-weight: bold;">Why Choose Our AC Installation Services?</h3>
+      </div>
+
+
+                  <!-- Box 1 -->
+
+          <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Our certified technicians have extensive experience in installing all types and brands of air conditioning units. We stay updated with the latest industry standards and techniques to provide you with the best possible service.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 2 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Customized Solutions</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>We understand that every space is unique. That’s why we offer personalized installation solutions tailored to your home or office layout, ensuring optimal performance and efficiency of your air conditioning system.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 3 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Comprehensive Consultation</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p> We’ll help you choose the right air conditioning unit that matches your requirements and budget.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 4 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Quality Products</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>WWe partner with leading air conditioner manufacturers to offer you high-quality, energy-efficient units. </p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 5 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Prompt and Reliable Service</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>ur team works efficiently to ensure minimal disruption to your daily routine while maintaining the highest standards of workmanship.</p>
+          </div>
+          
+        </div>
+        
+        
+        
+        <!-- Button Box -->
+        <div class="text-center">
+          <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+  
+</section>
  <!-- Footer -->
  <?php include "FAQ.php" ?>
 

@@ -175,7 +175,7 @@
             <div id="deep-cleaning" class="service-content active-content">
               <div class="row">
                 <div class="col-md-12">
-                <img src="house-clean.jpg" alt="Villa & House Cleaning" class="img-fluid services-img">
+                <img src="../img/villahouse3.png" alt="Villa & House Cleaning" class="img-fluid services-img">
                 </div>
                 <div class="col-md-12 service-details-content">
                 <h3>WELCOME TO VILLA & HOUSE CLEANING</h3>
@@ -186,6 +186,17 @@
 
             
              <!-- Add other service details sections similarly -->
+             <div id="deep-cleaning" class="service-content active-content">
+              <div class="row">
+                <div class="col-md-12">
+                <img src="../img/villa3.png" alt="Villa & House Cleaning" class="img-fluid services-img">
+                </div>
+                <div class="col-md-12 service-details-content">
+                <h3>About Us</h3>
+                <p>At  Villas & Homes Cleaning Services, we understand that your home is your sanctuary. Our professional team is dedicated to providing top-notch cleaning services tailored to meet the unique needs of villa and house owners. With years of experience and a commitment to excellence, we ensure your home is always in pristine condition.</p>
+                </div>
+              </div>
+            </div>
            
           </div>
 
@@ -195,7 +206,7 @@
   <div class="row gy-5">
   
     <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-      <img src="../img/villahouse.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/house1.png" alt="Villa & House Cleaning" class="img-fluid services-img me-3 w-50">
       <div class="text-content">
         <h3>Transform Your Home with Villa & House Cleaning Services</h3>
         <p>Elevate your living space with our top-notch villa and house cleaning services. Whether you need a one-time deep clean or regular maintenance, our professional team is here to ensure your home shines with cleanliness. Using industry-leading equipment and eco-friendly products, we tackle dust, grime, and stains effectively, leaving every surface sparkling and sanitized. From kitchens to bathrooms, bedrooms to living areas, we pay meticulous attention to detail to create a pristine environment you'll be proud to call home. Experience the difference with our tailored cleaning solutions designed to meet your specific needs and exceed your expectations.</p>
@@ -207,11 +218,11 @@
         <h3>Why Choose Professional Villa & House Cleaning?</h3>
         <p>Discover the advantages of professional villa and house cleaning! Our services go beyond surface cleaning to eliminate dust, dirt, and allergens, creating a healthier indoor environment. With attention to detail and a commitment to excellence, our trained cleaners provide meticulous care for every room. Enjoy peace of mind knowing your villa or house is in expert hands, with results that exceed your expectations. Choose professional cleaning to enhance hygiene, maintain your property's value, and enjoy a fresh, inviting home every day.</p>
       </div>
-      <img src="../img/villahouse3.webp" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/house2.png" alt="Villa & House Cleaning" class="img-fluid services-img me-3 w-50">
     </div>
 
     <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-      <img src="../img/villahouse.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/villa0.png" alt="Villa & House Cleaning" class="img-fluid services-img me-3 w-50">
       <div class="text-content">
         <h3>Comprehensive Villa Cleaning</h3>
         <p>Our villa cleaning service is designed to cater to the grandeur and complexity of expansive living spaces. We provide an extensive cleaning regimen that covers all areas of your villa, from the luxurious living rooms to the serene bedrooms. Our professional team will thoroughly clean your kitchen, including appliances, countertops, and floors, as well as meticulously sanitize your bathrooms to uphold the highest standards of hygiene. We also address additional areas such as balconies, terraces, and special spaces, ensuring that no detail is overlooked.</p>
@@ -223,7 +234,7 @@
         <h3>Thorough Home Cleaning</h3>
         <p>For those who seek a more straightforward approach, our home cleaning service offers a comprehensive solution to keep your residence in top shape. We handle general cleaning tasks with meticulous care, including dusting, sweeping, mopping, and vacuuming. Our team focuses on key areas such as the kitchen and bathrooms, ensuring that surfaces are cleaned and sanitized effectively. Bedrooms are organized and refreshed, while living spaces are made inviting and comfortable.</p>
       </div>
-      <img src="../img/villahouse3.webp" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/villa1.png" alt="Villa & House Cleaning" class="img-fluid services-img me-3 w-50">
     </div>
 
 <!-- Book Now Button -->
