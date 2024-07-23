@@ -181,6 +181,13 @@
                 <a href="ac-repair.php" class="active"  style="color: #000;"><i class="bi bi-arrow-right-circle"></i><span>AC Repair</span></a>
               </div>
             </div><!-- End Services List -->
+            <div class="container">
+            <div class="services-list">
+            <h2 class="booking-info">Book your ac repair  service today.</h2>
+            <a href="../indbooking/index.php" class=" btn-lg btn-book-now" style="color: white; background-color: green; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+    Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+      </div>
+      </div>
 
             <div class="help-box">
               <i class="bi bi-headset help-icon"></i>
@@ -193,18 +200,18 @@
 
           <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
           <div id="repair" class="service-content">
-              <img src="repair.jpg" alt="AC Repair" class="img-fluid services-img">
+              <img src="../img/acrepair1.png" alt="AC Repair" class="img-fluid services-img">
               <h3>WELCOME TO AC REPAIR SERVICE</h3>
               <p>If your AC system is not cooling properly or making strange noises, our AC repair service can help. Our technicians diagnose and repair all types of AC problems to restore comfort to your space.</p>
             </div>
+
+            <div id="repair" class="service-content">
+              <img src="../img/acrepair2.png" alt="AC Repair" class="img-fluid services-img">
+              <h3>Why Choose Us for Your AC Repair Needs?</h3>
+              <p>At  Al Bahja Building Maintenance , we understand the importance of a well-functioning air conditioning system, especially during those hot summer months. Our team of certified technicians is dedicated to providing prompt, reliable, and efficient AC repair services to ensure your home or business stays cool and comfortable all year round.</p>
+            </div>
           </div>
-          <div class="booking-section mt-5 text-center"  data-aos="fade-up" data-aos-delay="200">
-                  <h2 class="booking-info">Discover an unforgettable experience with our exclusive booking service.</h2>
-                 <p> provides personalized assistance to ensure your plans run smoothly from beginning to end. Enjoy the convenience of browsing available slots, receiving instant confirmations, and managing your bookings effortlessly, all at your fingertips.</p>   
-                               <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">
-                      Book Now <i class="fas fa-arrow-right ml-2"></i>
-                  </a>
-              </div>
+         
         </div>
 
       </div>
@@ -219,27 +226,39 @@
   <div class="row gy-5">
   
     <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-      <img src="../img/acrepair.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/acrepair3.png" alt="AC Installation" class="img-fluid services-img me-3 w-50">
       <div class="text-content">
         <h3>Prompt and Reliable AC Repair Services in Dubai</h3>
         <p>When your AC breaks down, trust Al Bahja Building Maintenance for prompt and reliable repairs in Dubai. Our experienced technicians handle all issues efficiently, ensuring your system is quickly up and running. We use high-quality parts for lasting solutions. Choose us for fast, effective, and affordable AC repair services to keep your space cool and comfortable.</p>
       </div>
     </div>
 
-    <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
+    
+
+   <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
       <div class="text-content">
         <h3>Efficient AC Repair Services in Dubai</h3>
         <p>Count on Al Bahja Building Maintenance for swift and reliable AC repairs in Dubai. Our skilled technicians swiftly diagnose and resolve a wide range of issues to restore your AC's functionality promptly. Using high-quality parts and efficient techniques, we ensure durable solutions to keep your space comfortably cool. Trust our expertise for fast, effective, and affordable AC repair services that prioritize your comfort and satisfaction.</p>
       </div>
-      <img src="../img/acrepair2.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/acmaintain6.png" alt="AC Installation" class="img-fluid services-img me-3 w-50">
     </div>
 
-<!-- Book Now Button -->
-<div class="text-center"   data-aos="fade-up" data-aos-delay="50">
-                <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">
-                    Book Now <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
+    <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
+      <img src="../img/acmaintain0.png" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <div class="text-content">
+        <h3>Stay Cool and Comfortable with Our Expert AC Repair Services</h3>
+        <p>At Al Bahja Building Maintenance, we understand the importance of a well-functioning air conditioning system, especially during the hot summer months. Our team of experienced technicians is dedicated to providing top-notch AC repair services to keep your home or business cool and comfortable.  </p>
+      </div>
+    </div>
+
+    <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
+      <div class="text-content">
+        <h3>Emergency AC Repair</h3>
+        <p>We know that AC problems can arise at any time, often when you least expect them. That's why we offer 24/7 emergency repair services. No matter the time of day or night, you can count on us to restore your comfort quickly and efficiently.</p>
+      </div>
+      <img src="../img/acrepair6.png" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+    </div>
+
 
 </div>
 </div>
@@ -298,6 +317,87 @@
         </div>
       </div>
     </section><!-- /Services Section -->
+
+    <section id="service-details" class="service-details section bg-light py-5">
+
+  <div class="container">
+  
+    <div class="row gy-5 justify-content-center">
+    
+      <div class="col-lg-8">
+      <div class="section-title pb-3 pt-5">
+      <h3 style="color: #007bff; font-weight: bold;">Why Choose Our AC  Repair Services?</h3>
+      </div>
+
+
+                  <!-- Box 1 -->
+
+          <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Our team of experienced technicians is dedicated to providing top-notch AC repair services to keep your home or business cool and comfortable.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 2 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Experienced Technicians</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Our skilled professionals have years of experience in diagnosing and repairing all types of air conditioning systems.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 3 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Prompt Service</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p> We value your time and offer quick response times to ensure your AC is up and running as soon as possible.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 4 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Customer Satisfaction</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>We are committed to delivering exceptional service and ensuring our customers are completely satisfied.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 5 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Comprehensive Repairs</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>From minor fixes to major repairs, we handle it all with precision and expertise.</p>
+          </div>
+          
+        </div>
+      
+        
+        <!-- Button Box -->
+        <div class="text-center">
+          <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+  
+</section>
+
 
      <?php include "FAQ.php" ?> 
 

@@ -39,8 +39,8 @@
     }
 
     .services-img {
-      max-width: 50%;
-      max-width: 60%;
+      max-width: 100%;
+      
       height: auto;
     }
 
@@ -153,6 +153,13 @@
                 <a href="pool-cleaning.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Pool Cleaning</span></a>
               </div>
             </div><!-- End Services List -->
+            <div class="container">
+            <div class="services-list">
+            <h2 class="booking-info">Book your air-duct service today.</h2>
+            <a href="../indbooking/index.php" class=" btn-lg btn-book-now" style="color: white; background-color: green; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+    Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+      </div>
+      </div>
 
             <div class="help-box d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-headset help-icon"></i>
@@ -170,7 +177,7 @@
             <div id="deep-cleaning" class="service-content active-content">
               <div class="row">
                 <div class="col-md-12">
-                <img src="mattress.jpg" alt="Mattress Cleaning" class="img-fluid services-img">
+                <img src="../img/mattess0.png" alt="Mattress Cleaning" class="img-fluid services-img">
                 </div>
                 <div class="col-md-12 service-details-content">
                 <h3>WELCOME TO MATTRESS CLEANING</h3>
@@ -181,13 +188,18 @@
             
             
              <!-- Add other service details sections similarly -->
-             <div class="booking-section mt-5">
-                  <h2 class="booking-info">Discover an unforgettable experience with our exclusive booking service.</h2>
-                 <p> provides personalized assistance to ensure your plans run smoothly from beginning to end. Enjoy the convenience of browsing available slots, receiving instant confirmations, and managing your bookings effortlessly, all at your fingertips.</p>   
-                               <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">
-                      Book Now <i class="fas fa-arrow-right ml-2"></i>
-                  </a>
+             <div id="deep-cleaning" class="service-content active-content">
+              <div class="row">
+                <div class="col-md-12">
+                <img src="../img/matress1.png" alt="Mattress Cleaning" class="img-fluid services-img">
+                </div>
+                <div class="col-md-12 service-details-content">
+                <h3>Refresh Your Sleep Environment with Our Expert Mattress Cleaning</h3>
+                <p>A good night's sleep starts with a clean mattress. Over time, mattresses can accumulate dust mites, allergens, sweat, stains, and even bacteria, which can affect your sleep quality and health. Our professional mattress cleaning services are designed to deeply clean, sanitize, and revitalize your mattress, ensuring you sleep soundly on a fresh and hygienic bed.</p>
+                </div>
               </div>
+            </div>
+             
           </div>
 
         </div>
@@ -195,7 +207,7 @@
         <div class="section-title pb-3 pt-5">
         <h2>Whats more!</h2></div>
   <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-    <img src="../img/matress1.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+    <img src="../img/matress4.png" alt="Mattress Cleaning" class="img-fluid services-img me-3 w-50">
     <div class="text-content">
       <h3>Deep Clean Your Mattress for Better Sleep</h3>
       <p>At Al Bahja Building Maintenance and Cleaning Services, Achieve a cleaner, healthier sleeping environment with our specialized mattress cleaning services. We target and eliminate deep-seated dirt, allergens, and bacteria using eco-friendly methods, ensuring your mattress is thoroughly sanitized and refreshed. Enjoy a better night's sleep and prolong the life of your mattress with our professional cleaning services.</p>
@@ -207,19 +219,111 @@
       <h3>Experience Freshness with Expert Mattress Cleaning</h3>
       <p>Breathe easy with our professional mattress cleaning services. We deep clean and disinfect your mattress, eliminating harmful allergens and bacteria for a healthier sleeping surface. Our efficient and eco-friendly techniques ensure your mattress is left spotless and odor-free, promoting a more restful and rejuvenating sleep.</p>
     </div>
-    <img src="../img/matress2.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+    <img src="../img/matress2 resize.png" alt="Mattress Cleaning" class="img-fluid services-img me-3 w-50">
+  </div>
+
+  <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
+    <img src="../img/matress5.png" alt="Mattress Cleaning" class="img-fluid services-img me-3 w-50">
+    <div class="text-content">
+      <h3>Prolongs Mattress Life</h3>
+      <p>Regular cleaning helps maintain the integrity of your mattress. Removing dirt, sweat, and stains prevents material breakdown, thus extending the lifespan of your mattress and ensuring you get the most out of your investment.</p>
+    </div>
+  </div>
+  
+  <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
+    <div class="text-content">
+      <h3>Enhanced Sleep Quality</h3>
+      <p>A clean mattress contributes to better sleep quality. Dust mites, allergens, and dirt can disrupt your sleep and cause health issues. Regular mattress cleaning ensures a healthier sleeping environment, leading to more restful nights and refreshed mornings.</p>
+    </div>
+    <img src="../img/matress6.png" alt="Mattress Cleaning" class="img-fluid services-img me-3 w-50">
   </div>
 
          
-  <div class="text-center"   data-aos="fade-up" data-aos-delay="50">
-                <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">
-                    Book Now <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
-
+  
       </div>
 
     </section><!-- /Service Details Section -->
+    <section id="service-details" class="service-details section bg-light py-5">
+
+  <div class="container">
+  
+    <div class="row gy-5 justify-content-center">
+    
+      <div class="col-lg-8">
+      <div class="section-title pb-3 pt-5">
+      <h3 style="color: #007bff; font-weight: bold;">Why Choose Our Mattress Cleaning Services?</h3>
+      </div>
+
+
+                  <!-- Box 1 -->
+
+          <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Removing stains, especially old or set-in ones, can be challenging with home cleaning products.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 2 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Thorough Cleaning</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Professional mattress cleaning services use advanced techniques and equipment that penetrate deeper into the mattress than typical household cleaning methods. </p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 3 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Better Sleep Quality</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Removing allergens, dust, and bacteria can lead to a more comfortable and healthier sleeping environment, helping you to wake up feeling more refreshed and energized.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 4 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Enhanced Comfort</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Professional cleaning removes lumps caused by accumulated dirt and dust, ensuring that your mattress remains plush and supportive, contributing to better sleep quality.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 5 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Safe and Effective Cleaning Solutions</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Professional services use specially formulated cleaning solutions that are both safe for your mattress and effective at eliminating dirt, stains, and odors.</p>
+          </div>
+          
+        </div>
+        
+        
+        
+        <!-- Button Box -->
+        <div class="text-center">
+          <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+  
+</section>
+
 
 
   
