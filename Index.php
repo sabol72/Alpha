@@ -473,6 +473,10 @@
 
     <?php include "FAQ.php"?>
 
+    <?php include "testomonial.php"?>
+
+    
+
     </main>
 
   <!-- footer part -->
