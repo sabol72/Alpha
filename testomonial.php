@@ -12,16 +12,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <style>
-        /* Inline styles based on provided CSS */
         .testimonial-container {
             margin: 50px auto;
-            width: 800px; /* Adjusted width */
-            height: 400px; /* Adjusted height */
+            width: 800px;
+            height: 400px;
             background-color: #fff;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             border-radius: 10px;
             overflow: hidden;
-            position: relative; /* Needed for absolute positioning of color buttons */
+            position: relative;
+            display: flex;
         }
 
         .testimonial-image {
@@ -29,7 +29,7 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            height: 100%; /* Adjusted height to fill container */
+            height: 100%;
         }
 
         .testimonial-content {
@@ -38,7 +38,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            position: relative; /* Added to position color buttons */
+            position: relative;
         }
 
         .customer-statement {
@@ -86,9 +86,9 @@
 
         .color-buttons {
             display: flex;
-            flex-direction: column; /* Changed to column */
+            flex-direction: column;
             position: absolute;
-            right: 10px; /* Adjust this value to position correctly */
+            right: 10px;
             top: 50%;
             transform: translateY(-50%);
         }
@@ -96,9 +96,9 @@
         .color-button {
             width: 40px;
             height: 40px;
-            margin: 5px 0; /* Adjusted margin for smaller spacing */
+            margin: 5px 0;
             cursor: pointer;
-            background-color: #ccc; /* Default background color */
+            background-color: #ccc;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -106,14 +106,14 @@
         }
 
         .arrow-icon {
-            font-size: 16px; /* Adjusted arrow size */
+            font-size: 16px;
         }
     </style>
 </head>
 <body>
 
     <div class="container mt-5">
-        <div class="row">
+        <!-- <div class="row"> -->
             <div class="col-lg-8 mx-auto">
                 <div class="testimonial-container">
                     <div class="testimonial-image" style="background-image: url('assets/img/testimonial-img-1.jpg');"></div>
@@ -141,8 +141,8 @@
         </div>
     </div>
 
-    <!-- Bootstrap JS and jQuery (Optional if needed) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
