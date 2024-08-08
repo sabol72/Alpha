@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 28, 2024 at 12:55 PM
+-- Generation Time: Aug 08, 2024 at 11:18 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -47,15 +47,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `first_name`, `last_name`, `gender`, `username`, `email`, `password`, `dob`, `phone`, `address`, `privacy_policy`, `created_at`) VALUES
-(1, 'John', 'Doe', 'male', 'johndoe', 'johndoe@example.com', 'password1', '1990-01-01', '1234567890', '123 Main St, Anytown, USA', 1, '2024-07-28 09:16:48'),
-(2, 'Jane', 'Smith', 'female', 'janesmith', 'janesmith@example.com', 'password2', '1992-02-02', '0987654321', '456 Elm St, Anytown, USA', 1, '2024-07-28 09:16:48'),
-(3, 'Alex', 'Johnson', 'other', 'alexjohnson', 'alexjohnson@example.com', 'password3', '1985-03-03', '5678901234', '789 Oak St, Anytown, USA', 0, '2024-07-28 09:16:48'),
-(4, 'Chris', 'Brown', 'male', 'chrisbrown', 'chrisbrown@example.com', 'password4', '1988-04-04', '2345678901', '101 Pine St, Anytown, USA', 1, '2024-07-28 09:16:48'),
-(5, 'Pat', 'Taylor', 'female', 'pattaylor', 'pattaylor@example.com', 'password5', '1995-05-05', '3456789012', '202 Maple St, Anytown, USA', 0, '2024-07-28 09:16:48'),
-(7, 'sabal', 'kc', 'male', 'sabal911', 'sabal@example.com', '$2y$10$SXnt.SBx8Jzm/jnMD92Eketev.MBBvYCQgxEs.zMq.KqpL9t.Vv/a', '1990-01-01', '1234567890', '123 Main St, Anytown, USA', 1, '2024-07-28 09:21:24'),
-(8, 'Sabal', 'Khatri', 'male', 'Sabol_91', 'sabal72sc@gmail.com', '$2y$10$//QhIV302Vy/njmIOhpOnOW6L.VjczZ5rdp63WrcrBfgb6dMg5MNy', '2005-03-23', '+977 9846459592', 'PANAUTI-12, kavrepalanchowk', 1, '2024-07-28 10:25:26'),
-(9, 'Sabal', 'Khatri', 'male', '112sabol', 'sabal@lastdoor.co', '$2y$10$5uA6A9K3tpmwMGUP21UyY.mvSpEfMWUNjYXLIlajtPfxNJFOeZlSS', '2024-07-31', '32165151321', 'asd', 1, '2024-07-28 10:32:25'),
-(14, 'Sabal', 'Khatri', 'male', '112saboll', 'sabal@g.co', '$2y$10$XN1.G.jfHVy3RGt9EwK5VuSnnCPjFDQkRa1D8rVFoF5q4xnABBsAu', '2024-07-03', '32165151321', 'asd', 1, '2024-07-28 10:50:33');
+(17, 'Sabal', 'Khatri', 'male', 'Sabol_911', 'sabal72sc@gmail.com', '$2y$10$TVWD7f/0Jb9gehXV7O/i/.pHuO4fuqclbPrLB9mljEyEnn1ZwPQIq', '2024-08-06', '+977 9846459592', 'address', 1, '2024-08-06 16:45:00');
 
 --
 -- Indexes for dumped tables
@@ -77,7 +69,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
