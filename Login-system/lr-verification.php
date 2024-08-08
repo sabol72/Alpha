@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $_SESSION['username'] = $username;
                 $_SESSION['email'] = $email;
                 $_SESSION['timeout'] = time() + $timeout_duration;
-                header('Location: index.php');
+                header('Location: ../indbooking/index.php ');
                 exit();
             } else {
                 // Incorrect password
