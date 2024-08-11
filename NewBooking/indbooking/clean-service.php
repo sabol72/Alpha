@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<?php include '../Login-system/check_login.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

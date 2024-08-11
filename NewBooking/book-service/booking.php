@@ -1,8 +1,22 @@
-<?php
-session_start();
+<?php 
+include '../Login-system/check_login.php'; 
+include '../db_connect.php'; // Include the database connection
+
+$username = $_SESSION['username']; // Assuming the session contains the username
 $selectedService = isset($_SESSION['selectedService']) ? $_SESSION['selectedService'] : 'None';
 $selectedServiceType = isset($_SESSION['selectedServiceType']) ? $_SESSION['selectedServiceType'] : 'None';
+
+$query = "SELECT first_name, last_name, email, phone FROM users WHERE username = ?";
+$stmt = $conn->prepare($query);
+$stmt->bind_param('s', $username);
+$stmt->execute();
+$stmt->bind_result($first_name, $last_name, $email, $phone);
+$stmt->fetch();
+$stmt->close();
+
+$full_name = $first_name . ' ' . $last_name; // Combine first name and second name into full name
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -127,26 +141,26 @@ $selectedServiceType = isset($_SESSION['selectedServiceType']) ? $_SESSION['sele
                     </div>
                     <!-- Details Section -->
                     <div id="details-section" class="form-section">
-                        <h4>Details</h4>
-                        <div class="form-group-row">
-                            <div class="form-group">
-                                <label for="name">Full Name</label>
-                                <input type="text" class="form-control" id="Cname" name="Cname" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Phone</label>
-                                <input type="tel" class="form-control" id="phone" name="phone" required>
-                            </div>
+                    <h4>Details</h4>
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" class="form-control" id="Cname" name="Cname" value="<?php echo htmlspecialchars($full_name); ?>" required>
                         </div>
-                        <div class="btn-grp">
-                        <button type="button" class="btn btn-secondary" onclick="previousSection('time-section')">Back</button>
-                        <button type="button" class="btn btn-primary" onclick="nextSection('payment-section')">Next</button>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" value="<?php echo htmlspecialchars($email); ?>" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" value="<?php echo htmlspecialchars($phone); ?>" required>
                         </div>
                     </div>
+                    <div class="btn-grp">
+                        <button type="button" class="btn btn-secondary" onclick="previousSection('time-section')">Back</button>
+                        <button type="button" class="btn btn-primary" onclick="nextSection('payment-section')">Next</button>
+                    </div>
+                </div>
 
                     <!-- Payment Section -->
                     <div id="payment-section" class="form-section">
