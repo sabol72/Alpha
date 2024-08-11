@@ -139,7 +139,7 @@
           <li><a href="../index.php#feature">Features</a></li>
           <li><a href="../index.php#service">Services</a></li>
           <li><a href="../index.php#contact">Contact</a></li>
-          <li><a href="../index.php#book"><button type="button" class="btn btn-primary">Book Now</button></a></li>
+          <li><a href="../Login-system/login.php"><button type="button" class="btn btn-primary">Book Now</button></a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -183,7 +183,7 @@
             <div class="container">
             <div class="services-list">
             <h2 class="booking-info">Book your ac ac installation service today.</h2>
-            <a href="../indbooking/index.php" class=" btn-lg btn-book-now" style="color: white; background-color: green; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+            <a href="../Login-system/login.php" class=" btn-lg btn-book-now" style="color: white; background-color: green; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
     Book Now <i class="fas fa-arrow-right ml-2"></i></a>
       </div>
       </div>
@@ -390,7 +390,7 @@
         
         <!-- Button Box -->
         <div class="text-center">
-          <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+          <a href="../Login-system/login.php" class="btn btn-primary btn-lg btn-book-now">Book Now <i class="fas fa-arrow-right ml-2"></i></a>
         </div>
         
       </div>
@@ -402,6 +402,7 @@
 </section>
  <!-- Footer -->
  <?php include "FAQ.php" ?>
+  
 
   </main>
  

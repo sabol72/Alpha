@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BBC FAQ</title>
     <link rel="stylesheet" href="../assets/css/FAQ.css" />
-    <link rel="stylesheet" href="assets/css/FAQ.css" />
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -16,7 +16,8 @@
     />
   </head>
   <body>
-    <div class="container section-title">
+     <div class="container section-title">
+
       <h2>FAQs</h2>
       <p>When it comes to repair & maintenance for your home or office, you need an expert. Let's get started</p>
 
@@ -92,6 +93,7 @@
         </div>
       </div>
     </div>
+  
 
     <script>
       var acc = document.getElementsByClassName("accordion");

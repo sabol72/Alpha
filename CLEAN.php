@@ -36,8 +36,7 @@
         <li><a href="#features">Features</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#book"><button type="button" class="btn btn-primary">Book Now</button></a></li>
-      </ul>
+        <li><a href="Login-system/login.php"><button type="button" class="btn btn-primary">Book Now</button></a></li>      </ul>
       <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
     </nav>
   </div>

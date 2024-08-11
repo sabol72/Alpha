@@ -152,7 +152,7 @@
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0" style="color: #000;">AC Installation Service</h1>
+        <h1 class="mb-2 mb-lg-0" style="color: #000;">AC repair Service</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="../index.php" style="color: #000;">Home</a></li>
@@ -184,7 +184,7 @@
             <div class="container">
             <div class="services-list">
             <h2 class="booking-info">Book your ac repair  service today.</h2>
-            <a href="../indbooking/index.php" class=" btn-lg btn-book-now" style="color: white; background-color: green; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+            <a href="../Login-system/login.php" class=" btn-lg btn-book-now" style="color: white; background-color: green; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
     Book Now <i class="fas fa-arrow-right ml-2"></i></a>
       </div>
       </div>
@@ -387,7 +387,7 @@
         
         <!-- Button Box -->
         <div class="text-center">
-          <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+          <a href="../Login-system/login.php" class="btn btn-primary btn-lg btn-book-now">Book Now <i class="fas fa-arrow-right ml-2"></i></a>
         </div>
         
       </div>

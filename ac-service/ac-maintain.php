@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>AC Installation Service</title>
+  <title>AC Maintenance Service</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -183,7 +183,7 @@
             <div class="container">
             <div class="services-list">
             <h2 class="booking-info">Book your ac duct cleaning service today.</h2>
-            <a href="../indbooking/index.php" class=" btn-lg btn-book-now" style="color: white; background-color: green; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+            <a href="../Login-system/login.php" class=" btn-lg btn-book-now" style="color: white; background-color: green; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
     Book Now <i class="fas fa-arrow-right ml-2"></i></a>
       </div>
       </div>
@@ -385,7 +385,7 @@
         
         <!-- Button Box -->
         <div class="text-center">
-          <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+          <a href="../Login-system/login.php" class="btn btn-primary btn-lg btn-book-now">Book Now <i class="fas fa-arrow-right ml-2"></i></a>
         </div>
         
       </div>

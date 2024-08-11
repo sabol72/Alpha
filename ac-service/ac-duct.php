@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>AC Installation Service</title>
+  <title>AC Duct cleaning Service</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -140,9 +140,7 @@
           <li><a href="../index.php#feature">Features</a></li>
           <li><a href="../index.php#service">Services</a></li>
           <li><a href="../index.php#contact">Contact</a></li>
-          <li><a href="../index.php#book"><button type="button" class="btn btn-primary">Book Now</button></a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          <li><a href="../Login-system/login.php"><button type="button" class="btn btn-primary">Book Now</button></a></li>        </ul>
       </nav>
     </div>
   </header>
@@ -155,7 +153,7 @@
         <h1 class="mb-2 mb-lg-0" style="color: #000;"> AC DUCT CLEANING</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="../index.php" style="color: #000;">Home</a></li>
+            <li><a href="../Index.php" style="color: #000;">Home</a></li>
             <li><a href="../index.php#service" style="color: #000;">Services</a></li>
             <li class="current" style="color: #000;"> AC DUCT CLEANING</li>
           </ol>
@@ -184,7 +182,7 @@
             <div class="container">
             <div class="services-list">
             <h2 class="booking-info">Book your ac duct cleaning service today.</h2>
-            <a href="../indbooking/index.php" class=" btn-lg btn-book-now" style="color: white; background-color: green; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+            <a href="../Login-system/login.php" class=" btn-lg btn-book-now" style="color: white; background-color: green; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
     Book Now <i class="fas fa-arrow-right ml-2"></i></a>
       </div>
       </div>
@@ -403,7 +401,7 @@
         
         <!-- Button Box -->
         <div class="text-center">
-          <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+          <a href="../Login-system/login.php" class="btn btn-primary btn-lg btn-book-now">Book Now <i class="fas fa-arrow-right ml-2"></i></a>
         </div>
         
       </div>

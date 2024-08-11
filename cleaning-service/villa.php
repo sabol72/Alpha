@@ -104,7 +104,7 @@
           <li><a href="AC.php#feature">Features</a></li>
           <li><a href="cleaning.php#service">Services</a></li>
           <li><a href="Ac.php#contact">Contact</a></li>
-          <li><a href="Ac.php#book"><button type="button" class="btn btn-primary">Book Now</button></a></li>
+          <li><a href="../Login-system/login.php"><button type="button" class="btn btn-primary">Book Now</button></a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -119,7 +119,7 @@
         <h1 class="mb-2 mb-lg-0">Service Details</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.php">Home</a></li>
+            <li><a href="../Index.php">Home</a></li>
             <li><a href="CLEAN.php">cleaning</a></li>
             <li class="current">house and villa cleaning</li>
           </ol>
@@ -154,7 +154,7 @@
             <div class="container">
             <div class="services-list">
             <h2 class="booking-info">Book your Villa and House cleaning service today.</h2>
-            <a href="../indbooking/index.php" class=" btn-lg btn-book-now" style="color: white; background-color: green; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+            <a href="../Login-system/login.php" class=" btn-lg btn-book-now" style="color: white; background-color: green; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
     Book Now <i class="fas fa-arrow-right ml-2"></i></a>
       </div>
       </div>
@@ -324,7 +324,7 @@
         
         <!-- Button Box -->
         <div class="text-center">
-          <a href="../indbooking/index.php" class="btn btn-primary btn-lg btn-book-now">Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+          <a href="../Login-system/login.php" class="btn btn-primary btn-lg btn-book-now">Book Now <i class="fas fa-arrow-right ml-2"></i></a>
         </div>
         
       </div>
