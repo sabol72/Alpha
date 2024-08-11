@@ -182,7 +182,7 @@
             </div><!-- End Services List -->
             <div class="container">
             <div class="services-list">
-            <h2 class="booking-info">Book your ac duct cleaning service today.</h2>
+            <h2 class="booking-info">Book your ac  maintainance service today.</h2>
             <a href="../indbooking/index.php" class=" btn-lg btn-book-now" style="color: white; background-color: green; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
     Book Now <i class="fas fa-arrow-right ml-2"></i></a>
       </div>

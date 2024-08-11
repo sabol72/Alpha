@@ -123,7 +123,7 @@
         <nav class="breadcrumbs">
           <ol>
             <li><a href="../Index.php">Home</a></li>
-            <li><a href="CLEAN.php">cleaning</a></li>
+            <li><a href="../CLEAN.php">cleaning</a></li>
             <li class="current">carpet cleaning</li>
           </ol>
         </nav>
@@ -145,13 +145,13 @@
               <h4>Services List</h4>
               <div class="services-list">
               <a href="deep-cleaning.php" class="service-link "><i class="bi bi-arrow-right-circle"></i><span>Deep Cleaning</span></a>
-                <a href="air-duct.php" class="service-link active"><i class="bi bi-arrow-right-circle"></i><span>HVAC Air Duct Cleaning</span></a>
+                <a href="air-duct.php" class="service-link "><i class="bi bi-arrow-right-circle"></i><span>HVAC Air Duct Cleaning</span></a>
                 <a href="sofa-steam.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Upholstery Sofa Steam Cleaning</span></a>
                 <a href="villa.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Villa & House Cleaning</span></a>
                 <a href="tank.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Water Tank Cleaning & Disinfection</span></a>
                 <a href="glass-cleaning.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Window Glass Cleaning</span></a>
                 <a href="mattress.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Mattress Cleaning</span></a>
-                <a href="carpet-cleaning.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Carpet Cleaning</span></a>
+                <a href="carpet-cleaning.php" class="service-link active"><i class="bi bi-arrow-right-circle"></i><span>Carpet Cleaning</span></a>
                 <a href="pool-cleaning.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Pool Cleaning</span></a>
       
 

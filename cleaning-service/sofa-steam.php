@@ -121,7 +121,7 @@
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.php">Home</a></li>
-            <li><a href="CLEAN.php">cleaning</a></li>
+            <li><a href="../CLEAN.php">cleaning</a></li>
             <li class="current">sofa-steam cleaning</li>
           </ol>
         </nav>
