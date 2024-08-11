@@ -211,8 +211,11 @@
                 </div>
               </div>
 
-              <!-- Expanded Gallery Section (Hidden by Default) -->
-              <div class="row mt-3" id="expandedGallery" style="display: none;">
+             
+
+            </div>
+               <!-- Expanded Gallery Section (Hidden by Default) -->
+               <div class="row mt-3" id="expandedGallery" style="display: none;">
                 <div class="col-md-6">
                   <img src="../img/deep-clean3.jpg" alt="Deep Cleaning" class="img-fluid services-img">
                 </div>
@@ -227,9 +230,6 @@
                 </div>
               </div>
               <!-- End Gallery Section -->
-
-            </div>
-
           </div>
 
 
