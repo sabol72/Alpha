@@ -21,6 +21,7 @@
   <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
   <!-- Main CSS File -->
   <link href="../assets/css/main.css" rel="stylesheet">
@@ -53,6 +54,37 @@
     .service-details-content {
       margin-top: 20px;
     }
+
+    .booking-section {
+            text-align: center;
+            max-width: 800px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .booking-info {
+            margin-bottom: 20px;
+        }
+        .btn-book-now {
+            position: relative;
+            padding-right: 40px; /* Ensure space for arrow icon */
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            position: relative;
+        }
+        .btn-book-now i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.3s ease;
+        }
+        .btn-book-now:hover i {
+            transform: translate(5px, -50%);
+        }
   </style>
 
 </head>
@@ -73,7 +105,7 @@
           <li><a href="AC.php#feature">Features</a></li>
           <li><a href="cleaning.php#service">Services</a></li>
           <li><a href="Ac.php#contact">Contact</a></li>
-          <li><a href="Ac.php#book"><button type="button" class="btn btn-primary">Book Now</button></a></li>
+          <li><a href="../Login-system/login.php"><button type="button" class="btn btn-primary">Book Now</button></a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -120,6 +152,13 @@
                 <a href="pool-cleaning.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Pool Cleaning</span></a>
               </div>
             </div><!-- End Services List -->
+            <div class="container">
+            <div class="services-list">
+            <h2 class="booking-info">Book your deep cleaning service today.</h2>
+            <a href="../Login-system/login.php" class=" btn-lg btn-book-now" style="color: white; background-color: green; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+    Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+      </div>
+      </div>
 
             <div class="help-box d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-headset help-icon"></i>
@@ -137,7 +176,7 @@
             <div id="deep-cleaning" class="service-content active-content">
               <div class="row">
                 <div class="col-md-12">
-                  <img src="deep-clean.jpg" alt="Deep Cleaning" class="img-fluid services-img">
+                  <img src="../img/deepclean0.png" alt="Deep Cleaning" class="img-fluid services-img">
                 </div>
                 <div class="col-md-12 service-details-content">
                   <h3>WELCOME TO DEEP CLEANING SERVICE</h3>
@@ -145,68 +184,172 @@
                 </div>
               </div>
             </div>
+      
 
             <!-- Add other service details sections similarly -->
-
+            <div id="deep-cleaning" class="service-content active-content">
+              <div class="row">
+                <div class="col-md-12">
+                  <img src="../img/deepcleaning.png" alt="Deep Cleaning" class="img-fluid services-img">
+                </div>
+                <div class="col-md-12 service-details-content">
+                  <h3>Transform Your Space with Our Comprehensive Deep Cleaning Solutions</h3>
+                  <p>At Al Bahja Building Maintenance, we understand the importance of a thoroughly clean environment. Whether it's your home, office, or any other space, our deep cleaning services are designed to reach the areas that regular cleaning misses. Our experienced team uses advanced techniques and eco-friendly products to ensure your space is spotless and hygienic.</p>
+                </div>
+              </div>
+            </div>
+           
           </div>
 
         </div>
-
-      </div>
-
-    </section><!-- /Service Details Section -->
-
-
-    
-<section id="service-details" class="service-details section">
-
-<div class="container">
-
-  <div class="row gy-5">
+        <div class="section-title pb-3 pt-5">
+        <h2>What's more!</h2></div>
+        <div class="row gy-5">
   
-    <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-      <img src="../img/deepcleaning.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
-      <div class="text-content">
-        <h3>Thorough Deep Cleaning Services</h3>
-        <p>Discover unparalleled cleanliness with Al Bahja Building Maintenance's deep cleaning services in Dubai. Our meticulous approach ensures every corner of your home or office receives a thorough cleaning, leaving behind a fresh and hygienic environment. From high-touch surfaces to hidden nooks, we pay attention to detail to eliminate dust, grime, and allergens effectively. Whether preparing for a special occasion or maintaining a pristine workplace, trust our expert cleaners to deliver exceptional results. Experience the difference with our comprehensive deep cleaning service, tailored to meet your exact needs and exceed your expectations.</p>
-      </div>
+           <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
+               <img src="../img/deepclean1.png" alt="Deep Cleaning" class="img-fluid services-img me-3 w-50">
+    <div class="text-content">
+      <h3>Thorough Deep Cleaning Services</h3>
+      <p>Discover unparalleled cleanliness with Al Bahja Building Maintenance's deep cleaning services in Dubai. Our meticulous approach ensures every corner of your home or office receives a thorough cleaning, leaving behind a fresh and hygienic environment. From high-touch surfaces to hidden nooks, we pay attention to detail to eliminate dust, grime, and allergens effectively. Whether preparing for a special occasion or maintaining a pristine workplace, trust our expert cleaners to deliver exceptional results. Experience the difference with our comprehensive deep cleaning service, tailored to meet your exact needs and exceed your expectations.</p>
     </div>
+  </div>
 
-    <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
-      <div class="text-content">
-        <h3>Comprehensive Deep Cleaning Services</h3>
-        <p>Experience thorough cleanliness with Al Bahja Building Maintenance's deep cleaning services. We meticulously clean every corner of your home or office, ensuring a fresh and hygienic environment. Our detail-oriented approach eliminates dust, grime, and allergens from high-touch surfaces to hidden nooks. Whether for a special occasion or regular maintenance, trust our expert cleaners for exceptional results tailored to exceed your expectations.
+  <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
+    <div class="text-content">
+      <h3>Comprehensive Deep Cleaning Services</h3>
+      <p>Experience thorough cleanliness with Al Bahja Building Maintenance's deep cleaning services. We meticulously clean every corner of your home or office, ensuring a fresh and hygienic environment. Our detail-oriented approach eliminates dust, grime, and allergens from high-touch surfaces to hidden nooks. Whether for a special occasion or regular maintenance, trust our expert cleaners for exceptional results tailored to exceed your expectations.
+</p>
+    </div>
+    <img src="../img/deepclean2.png" alt="Deep Cleaning" class="img-fluid services-img me-3 w-50">
+  </div>
 
+  <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
+               <img src="../img/deepcleaningn2.png" alt="Deep Cleaning" class="img-fluid services-img me-3 w-50">
+    <div class="text-content">
+      <h3>Customized Solutions</h3>
+      <p>At our Deep Cleaning Service, we understand that every space is unique and requires a personalized approach to cleaning. Our customized solutions are designed to address your specific needs and preferences, ensuring a thorough and satisfying clean every time. We understand that every space has unique needs. Our services are tailored to meet your specific requirements and preferences.</p>
+    </div>
+  </div>
 
-
-
+  <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
+    <div class="text-content">
+      <h3>Flexible Scheduling</h3>
+      <p> At our Deep Cleaning Service, we know that life can be hectic and finding time for a thorough cleaning can be challenging. That's why we offer flexible scheduling options to accommodate your busy lifestyle and ensure your space is pristine whenever you need it. We understand that your time is valuable. That’s why we offer flexible scheduling options, including weekends and evenings, to fit your busy lifestyle.
 
 
 </p>
-      </div>
-      <img src="../img/deepcleaningn2.webp" alt="AC Installation" class="img-fluid services-img me-3 w-50">
     </div>
+    <img src="../img/deepclean4.png" alt="Deep Cleaning" class="img-fluid services-img me-3 w-50">
+  </div>
 
-<!-- Book Now Button -->
-<div class="row justify-content-center">
-      <div class="col-auto">
-        <a href="book-service/booking.php" class="btn btn-primary" data-aos="fade-up" data-aos-delay="50">Book Now</a>
+         
+ 
+
+    </section><!-- /Service Details Section -->
+    <section id="service-details" class="service-details section bg-light py-5">
+
+  <div class="container">
+  
+    <div class="row gy-5 justify-content-center">
+    
+      <div class="col-lg-8">
+      <div class="section-title pb-3 pt-5">
+      <h3 style="color: #007bff; font-weight: bold;">Why Choose Deep Cleaning Services?</h3>
       </div>
-    </div>
 
-</div>
-</div>
+
+                  <!-- Box 1 -->
+
+          <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Our trained and skilled cleaning staff use advanced techniques and high-quality cleaning products to deliver exceptional results.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 2 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Eco-Friendly Products</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p> We prioritize your health and the environment by using eco-friendly cleaning solutions that are both effective and safe.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 3 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Satisfaction Guaranteed</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p> Your satisfaction is our priority. We are committed to delivering a cleaning service that exceeds your expectations.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 4 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Improved Air Quality </h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Our deep cleaning services help reduce allergens, bacteria, and other pollutants, resulting in better indoor air quality and a healthier environment for you and your loved ones.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 5 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Customer Support </h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Our dedicated customer support team is always ready to assist you with any questions or concerns, ensuring a positive and satisfying experience from start to finish.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 6 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Commitment to Quality</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p> Your satisfaction is our top priority. We stand by the quality of our work and are committed to delivering a cleaning service that exceeds your expectations.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Button Box -->
+        <div class="text-center">
+          <a href="../Login-system/login.php" class="btn btn-primary btn-lg btn-book-now">Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+  
 </section>
+
+
+<?php include "service.php" ?>
+
+
+<?php include "FAQ.php" ?>
+
   </main>
 
   <!-- Footer -->
-  <?php include "../footer.php" ?>
+  <?php include "footer.php" ?>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

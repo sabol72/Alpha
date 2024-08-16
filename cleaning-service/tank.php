@@ -21,6 +21,7 @@
   <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
   <!-- Main CSS File -->
   <link href="../assets/css/main.css" rel="stylesheet">
@@ -53,6 +54,36 @@
     .service-details-content {
       margin-top: 20px;
     }
+    .booking-section {
+            text-align: center;
+            max-width: 800px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .booking-info {
+            margin-bottom: 20px;
+        }
+        .btn-book-now {
+            position: relative;
+            padding-right: 40px; /* Ensure space for arrow icon */
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            position: relative;
+        }
+        .btn-book-now i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.3s ease;
+        }
+        .btn-book-now:hover i {
+            transform: translate(5px, -50%);
+        }
   </style>
 
 </head>
@@ -73,7 +104,7 @@
           <li><a href="AC.php#feature">Features</a></li>
           <li><a href="cleaning.php#service">Services</a></li>
           <li><a href="Ac.php#contact">Contact</a></li>
-          <li><a href="Ac.php#book"><button type="button" class="btn btn-primary">Book Now</button></a></li>
+          <li><a href="../Login-system/login.php"><button type="button" class="btn btn-primary">Book Now</button></a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -88,7 +119,7 @@
         <h1 class="mb-2 mb-lg-0">Service Details</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.php">Home</a></li>
+            <li><a href="../Index.php">Home</a></li>
             <li><a href="CLEAN.php">cleaning</a></li>
             <li class="current">water tank cleaning</li>
           </ol>
@@ -120,6 +151,13 @@
                 <a href="pool-cleaning.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Pool Cleaning</span></a>
               </div>
             </div><!-- End Services List -->
+            <div class="container">
+            <div class="services-list">
+            <h2 class="booking-info">Book your water tank cleaning service today.</h2>
+            <a href="../Login-system/login.php" class=" btn-lg btn-book-now" style="color: white; background-color: green; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+    Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+      </div>
+      </div>
 
             <div class="help-box d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-headset help-icon"></i>
@@ -137,7 +175,7 @@
             <div id="deep-cleaning" class="service-content active-content">
               <div class="row">
                 <div class="col-md-12">
-                <img src="water-tank.jpg" alt="Water Tank Cleaning & Disinfection" class="img-fluid services-img">
+                <img src="../img/water.png" alt="Water Tank Cleaning & Disinfection" class="img-fluid services-img">
                 </div>
                 <div class="col-md-12 service-details-content">
                 <h3>WELCOME TO WATER TANK CLEANING & DISINFECTION</h3>
@@ -152,25 +190,27 @@
               
             </div>
              <!-- Add other service details sections similarly -->
-
+             <div id="deep-cleaning" class="service-content active-content">
+              <div class="row">
+                <div class="col-md-12">
+                <img src="../img/tank2.png" alt="Water Tank Cleaning & Disinfection" class="img-fluid services-img">
+                </div>
+                <div class="col-md-12 service-details-content">
+                <h3>Ensure Pure and Safe Water for Your Home and Business</h3>
+                <p>Water is essential to life, and maintaining the cleanliness of your water tank is crucial for ensuring the health and safety of your family or employees. Over time, water tanks can accumulate dirt, algae, bacteria, and other contaminants that can compromise the quality of your water. Our professional water tank cleaning services are designed to thoroughly clean and disinfect your water tanks, providing you with peace of mind and clean water.</p>
+                </div>
+              </div>
+            </div>
+             
           </div>
 
         </div>
-
-      </div>
-
-    </section><!-- /Service Details Section -->
-
-
-    
-<section id="service-details" class="service-details section">
-
-<div class="container">
-
+        <div class="section-title pb-3 pt-5">
+<h2>Whats more!</h2></div>
   <div class="row gy-5">
   
     <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-      <img src="../img/watertank3.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/watertank1.png" alt="Water Tank Cleaning & Disinfection" class="img-fluid services-img me-3 w-50">
       <div class="text-content">
         <h3>
         Expert Water Tank Cleaning and Disinfection Services</h3>
@@ -183,29 +223,131 @@
         <h3>The Importance of Clean Water Tanks</h3>
         <p>Understand why clean water tanks are crucial for your health and safety. Over time, sediment buildup and microbial growth can compromise water quality, leading to health risks. Our specialized cleaning and disinfection services remove contaminants, ensuring your water remains pure and safe for consumption. By maintaining clean tanks, you protect against waterborne diseases and ensure the longevity of your plumbing system. Trust our expertise to maintain optimal water hygiene standards with regular cleaning and disinfection of your water tanks.</p>
       </div>
-      <img src="../img/watertank2.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/watertank2.png" alt="Water Tank Cleaning & Disinfection" class="img-fluid services-img me-3 w-50">
     </div>
 
-<!-- Book Now Button -->
-<div class="row justify-content-center">
-      <div class="col-auto">
-        <a href="book-service/booking.php" class="btn btn-primary" data-aos="fade-up" data-aos-delay="50">Book Now</a>
+    <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
+      <img src="../img/tank1.png" alt="Water Tank Cleaning & Disinfection" class="img-fluid services-img me-3 w-50">
+      <div class="text-content">
+        <h3>
+        Keep Your Water Safe and Clean</h3>
+        <p>A clean water tank is essential for maintaining the quality of your water supply and ensuring the health and safety of your household or business. At Al bahja building Maintanance and cleaning services, we specialize in providing comprehensive water tank cleaning services designed to remove contaminants, prevent bacterial growth, and extend the life of your tank.</p>
       </div>
     </div>
 
+    <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
+      <div class="text-content">
+        <h3>Reliable Repairs and Ongoing Maintenance</h3>
+        <p>In addition to cleaning, we offer minor repair services to address any issues found during our inspection. We also provide regular maintenance schedules to keep your tank in optimal condition, preventing future problems and extending the life of your tank.</p>
+      </div>
+      <img src="../img/watertank3.jpg" alt="Water Tank Cleaning & Disinfection" class="img-fluid services-img me-3 w-50">
+    </div>
+
+<!-- Book Now Button -->
+ 
+
 </div>
-</div>
+      </div>
+
+    </section><!-- /Service Details Section -->
+    <section id="service-details" class="service-details section bg-light py-5">
+
+  <div class="container">
+  
+    <div class="row gy-5 justify-content-center">
+    
+      <div class="col-lg-8">
+      <div class="section-title pb-3 pt-5">
+      <h3 style="color: #007bff; font-weight: bold;">Why Choose Our Water Tank  Cleaning Services?</h3>
+      </div>
+
+
+                  <!-- Box 1 -->
+
+          <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Regular cleaning of your water tank is crucial for maintaining the quality and safety of your water supply.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 2 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Expertise and Efficiency</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Our experienced team uses advanced equipment to ensure thorough and effective cleaning.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 3 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Enhanced Safety</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p> We remove contaminants to ensure your water is safe and clean.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 4 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Preventive Care</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Regular cleaning helps prevent costly repairs and extends the life of your tank.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 5 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Eco-Friendly</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>We use safe, eco-friendly cleaning agents that protect both your tank and the environment.</p>
+          </div>
+          
+        </div>
+        
+        
+        
+        <!-- Button Box -->
+        <div class="text-center">
+          <a href="../Login-system/login.php" class="btn btn-primary btn-lg btn-book-now">Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+  
 </section>
+
+
+
+ 
+
+<?php include "service.php" ?>
+
+<?php include "FAQ.php" ?>
+
   </main>
 
   <!-- Footer -->
-  <?php include "../footer.php" ?>
+  <?php include "footer.php" ?>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+ 
 
   <!-- Vendor JS Files -->
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

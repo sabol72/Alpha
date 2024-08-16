@@ -1,0 +1,57 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+/* Custom large button styles */
+.custom-btn-lg {
+  background-image: var(--linear-gradient-colors);
+  padding: 1.5rem 3rem; /* Adjust padding as needed */
+  font-size: 1.5rem; /* Adjust font size as needed */
+}
+.custom-btn-lg:hover {
+  background-image: var(--linear-hover-colors);
+  transform: scale(1.1); /* Scale up by 10% on hover */
+
+}
+
+/* Back button styles */
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000; /* Ensure it's above other content */
+  padding: 0.75rem 1.5rem; /* Adjust padding as needed */
+  font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+/* Custom container styles */
+.custom-container {
+  max-width: 1200px; /* Adjust max width as needed */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Add padding as needed */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .col-md-6 {
+    flex-basis: 100%; /* Ensure each column takes full width */
+    max-width: 100%; /* Ensure each column takes full width */
+  }
+
+  .mb-3 {
+    width: 100%;
+    float: none;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .custom-btn-lg {
+    padding: 1.5rem 2.5rem; /* Adjust padding for smaller screens */
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+  
+  .back-button {
+    padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+}

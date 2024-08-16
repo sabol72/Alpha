@@ -21,6 +21,7 @@
   <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
   <!-- Main CSS File -->
   <link href="../assets/css/main.css" rel="stylesheet">
@@ -38,7 +39,7 @@
     }
 
     .services-img {
-      max-width: 100%;
+      max-width: 400px;
       height: auto;
     }
 
@@ -53,6 +54,37 @@
     .service-details-content {
       margin-top: 20px;
     }
+
+    .booking-section {
+            text-align: center;
+            max-width: 800px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .booking-info {
+            margin-bottom: 20px;
+        }
+        .btn-book-now {
+            position: relative;
+            padding-right: 40px; /* Ensure space for arrow icon */
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            position: relative;
+        }
+        .btn-book-now i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.3s ease;
+        }
+        .btn-book-now:hover i {
+            transform: translate(5px, -50%);
+        }
   </style>
 
 </head>
@@ -73,7 +105,7 @@
           <li><a href="AC.php#feature">Features</a></li>
           <li><a href="cleaning.php#service">Services</a></li>
           <li><a href="Ac.php#contact">Contact</a></li>
-          <li><a href="Ac.php#book"><button type="button" class="btn btn-primary">Book Now</button></a></li>
+          <li><a href="../Login-system/login.php"><button type="button" class="btn btn-primary">Book Now</button></a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -88,7 +120,7 @@
         <h1 class="mb-2 mb-lg-0">Service Details</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.php">Home</a></li>
+            <li><a href="../Index.php">Home</a></li>
             <li><a href="CLEAN.php">cleaning</a></li>
             <li class="current">sofa-steam cleaning</li>
           </ol>
@@ -120,6 +152,13 @@
                 <a href="pool-cleaning.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Pool Cleaning</span></a>
               </div>
             </div><!-- End Services List -->
+            <div class="container">
+            <div class="services-list">
+            <h2 class="booking-info">Book your sofa steam service today.</h2>
+            <a href="../Login-system/login.php" class=" btn-lg btn-book-now" style="color: white; background-color: green; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+    Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+      </div>
+      </div>
 
             <div class="help-box d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-headset help-icon"></i>
@@ -137,7 +176,7 @@
             <div id="deep-cleaning" class="service-content active-content">
               <div class="row">
                 <div class="col-md-12">
-               <img src="sofa.jpg" alt="Upholstery Sofa Steam Cleaning" class="img-fluid services-img">
+               <img src="../img/sofa7.png" alt="Upholstery Sofa Steam Cleaning" class="col-md-12" height="500px">
                 </div>
                 <div class="col-md-12 service-details-content">
                 <h3>WELCOME TO UPHOLSTERY SOFA STEAM CLEANING</h3>
@@ -148,25 +187,26 @@
 
 
              <!-- Add other service details sections similarly -->
-
-          </div>
+             <div id="deep-cleaning" class="service-content active-content">
+              <div class="row">
+                <div class="col-md-12">
+               <img src="../img/sofa8.png" alt="Upholstery Sofa Steam Cleaning" class="col-md-12" height="500px">
+                </div>
+                <div class="col-md-12 service-details-content">
+                <h3>Premium Sofa Steam Cleaning Services</h3>
+                <p>Is your sofa looking a bit worse for wear? Our professional sofa steam cleaning service is here to rejuvenate your favorite piece of furniture. Using advanced steam cleaning technology, we ensure a deep clean that not only removes dirt and stains but also eliminates allergens and bacteria, leaving your sofa fresh and hygienic.</p>
+                </div>
+              </div>
+            </div>
+              
 
         </div>
-
-      </div>
-
-    </section><!-- /Service Details Section -->
-
-
-    
-<section id="service-details" class="service-details section">
-
-<div class="container">
-
+        <div class="section-title pb-3 pt-5">
+<h2>Whats more!</h2></div>
   <div class="row gy-5">
   
     <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-      <img src="../img/sofa2.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/sofa2.png" alt="Upholstery Sofa Steam Cleaning" class="img-fluid services-img me-3 w-50">
       <div class="text-content">
         <h3>Revitalize Your Sofa with Professional Upholstery Steam Cleaning</h3>
         <p>s your sofa looking tired and worn out? Restore its beauty and freshness with our expert upholstery steam cleaning services. Using advanced steam cleaning technology, we penetrate deep into the fabric to remove stains, odors, and allergens effectively. Whether it's a stubborn spill or accumulated dirt, our thorough cleaning process ensures your sofa looks as good as new. Trust our skilled technicians to deliver exceptional results, leaving your upholstery clean, sanitized, and revitalized. Give your sofa the care it deserves with our professional upholstery steam cleaning services today!
@@ -180,29 +220,127 @@
         <h3>The Ultimate Guide to Upholstery Steam Cleaning</h3>
         <p>Learn everything you need to know about upholstery steam cleaning! From understanding the process to its benefits and what to expect, this guide covers it all. Discover how steam cleaning removes dirt, allergens, and stains effectively while rejuvenating your furniture. Whether you're tackling a specific issue or maintaining overall cleanliness, our comprehensive guide will help you make informed decisions for preserving your upholstery's beauty and comfort. Explore the power of steam cleaning and transform your living space today!</p>
       </div>
-      <img src="../img/sofa1.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/sofa4.png" alt="Upholstery Sofa Steam Cleaning" class="img-fluid services-img me-3 w-50">
+    </div>
+
+    <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
+      <img src="../img/sofa5.png" alt="Upholstery Sofa Steam Cleaning" class="img-fluid services-img me-3 w-50">
+      <div class="text-content">
+        <h3>Enhanced Air Quality</h3>
+        <p>Our deep steam cleaning process doesn’t just clean your sofa; it also helps improve the air quality in your home by removing dust mites, allergens, and pollutants that can contribute to respiratory issues.
+        </p>
+      </div>
+    </div>
+    <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
+      <div class="text-content">
+        <h3>Prolonged Upholstery Life</h3>
+        <p>Regular professional cleaning helps extend the life of your upholstery by removing grit and grime that can wear down fabrics over time. Protect your investment and keep your sofa looking new longer!</p>
+      </div>
+      <img src="../img/sofa6.png" alt="Upholstery Sofa Steam Cleaning" class="img-fluid services-img me-3 w-50">
     </div>
 
 <!-- Book Now Button -->
-<div class="row justify-content-center">
-      <div class="col-auto">
-        <a href="book-service/booking.php" class="btn btn-primary" data-aos="fade-up" data-aos-delay="50">Book Now</a>
-      </div>
-    </div>
+ 
+
 
 </div>
-</div>
+      </div>
+
+    </section><!-- /Service Details Section -->
+    <section id="service-details" class="service-details section bg-light py-5">
+
+  <div class="container">
+  
+    <div class="row gy-5 justify-content-center">
+    
+      <div class="col-lg-8">
+      <div class="section-title pb-3 pt-5">
+      <h3 style="color: #007bff; font-weight: bold;">Why Choose Our Upholstery Sofa  Cleaning Services?</h3>
+      </div>
+
+
+                  <!-- Box 1 -->
+
+          <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Is your sofa looking a bit worse for wear? Bring back its original charm with our top-notch sofa steam cleaning services! At [Your Company Name], we specialize in revitalizing your upholstery, removing stains, and ensuring a fresh, hygienic environment for you and your family.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 2 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Deep Clean</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Our advanced steam cleaning technology penetrates deep into the fabric, eliminating dirt, allergens, and bacteria that regular vacuuming can't reach.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 3 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Stain Removal</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>We tackle stubborn stains and spots, restoring your sofa to its former glory without damaging the fabric.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 4 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Quick Drying</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Our efficient process ensures your sofa dries quickly, so you can get back to enjoying your living space without long wait times.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 5 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Professional Team</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Our experienced technicians are skilled in handling all types of upholstery, ensuring a meticulous and effective clean every time.</p>
+          </div>
+          
+        </div>
+        
+        
+        <!-- Button Box -->
+        <div class="text-center">
+          <a href="../Login-system/login.php" class="btn btn-primary btn-lg btn-book-now">Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+  
 </section>
+
+
+<?php include "service.php" ?>
+
+<?php include "FAQ.php" ?>
+
   </main>
 
   <!-- Footer -->
-  <?php include "../footer.php" ?>
+  <?php include "footer.php" ?>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+ 
 
   <!-- Vendor JS Files -->
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

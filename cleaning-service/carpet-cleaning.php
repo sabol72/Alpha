@@ -21,6 +21,8 @@
   <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 
   <!-- Main CSS File -->
   <link href="../assets/css/main.css" rel="stylesheet">
@@ -53,6 +55,38 @@
     .service-details-content {
       margin-top: 20px;
     }
+
+
+    .booking-section {
+            text-align: center;
+            max-width: 800px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .booking-info {
+            margin-bottom: 20px;
+        }
+        .btn-book-now {
+            position: relative;
+            padding-right: 40px; /* Ensure space for arrow icon */
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            position: relative;
+        }
+        .btn-book-now i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.3s ease;
+        }
+        .btn-book-now:hover i {
+            transform: translate(5px, -50%);
+        }
   </style>
 
 </head>
@@ -73,14 +107,14 @@
           <li><a href="AC.php#feature">Features</a></li>
           <li><a href="cleaning.php#service">Services</a></li>
           <li><a href="Ac.php#contact">Contact</a></li>
-          <li><a href="Ac.php#book"><button type="button" class="btn btn-primary">Book Now</button></a></li>
+          <li><a href="../Login-system/login.php"><button type="button" class="btn btn-primary">Book Now</button></a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
     </div>
   </header>
 
-  <main class="main">
+  <div class="main">
 
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
@@ -95,6 +129,7 @@
         </nav>
       </div>
     </div><!-- End Page Title -->
+      
 
     <!-- Service Details Section -->
     <section id="service-details" class="service-details section">
@@ -110,16 +145,26 @@
               <h4>Services List</h4>
               <div class="services-list">
               <a href="deep-cleaning.php" class="service-link "><i class="bi bi-arrow-right-circle"></i><span>Deep Cleaning</span></a>
-                <a href="air-duct.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>HVAC Air Duct Cleaning</span></a>
+                <a href="air-duct.php" class="service-link active"><i class="bi bi-arrow-right-circle"></i><span>HVAC Air Duct Cleaning</span></a>
                 <a href="sofa-steam.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Upholstery Sofa Steam Cleaning</span></a>
                 <a href="villa.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Villa & House Cleaning</span></a>
                 <a href="tank.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Water Tank Cleaning & Disinfection</span></a>
                 <a href="glass-cleaning.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Window Glass Cleaning</span></a>
                 <a href="mattress.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Mattress Cleaning</span></a>
-                <a href="carpet-cleaning.php" class="service-link active"><i class="bi bi-arrow-right-circle"></i><span>Carpet Cleaning</span></a>
+                <a href="carpet-cleaning.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Carpet Cleaning</span></a>
                 <a href="pool-cleaning.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Pool Cleaning</span></a>
+      
+
+
               </div>
             </div><!-- End Services List -->
+            <div class="container">
+            <div class="services-list">
+            <h2 class="booking-info">Book your carpet cleaning service today.</h2>
+            <a href="../Login-system/login.php" class=" btn-lg btn-book-now" style="color: white; background-color: green; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+    Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+      </div>
+      </div>
 
             <div class="help-box d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-headset help-icon"></i>
@@ -137,28 +182,170 @@
             <div id="deep-cleaning" class="service-content active-content">
               <div class="row">
                 <div class="col-md-12">
-                <img src="carpet-clean.jpg" alt="Carpet Cleaning" class="img-fluid services-img">
+                  <img src="../img/carpetcleaning.png" alt="carpet cleaning" class="img-fluid services-img">
                 </div>
                 <div class="col-md-12 service-details-content">
                 <h3>WELCOME TO CARPET CLEANING</h3>
-                <p>Our carpet cleaning service uses the latest technology, a variety of cleaning solutions, and deep cleaning techniques to ensure your carpets are clean and hygienic.</p>
+                <p>We understand the importance of a clean home. Our residential carpet cleaning service uses eco-friendly products and advanced cleaning techniques to remove dirt, stains, and allergens, leaving your carpets fresh and vibrant.</p>
                 </div>
               </div>
             </div>
-           
-            
-             <!-- Add other service details sections similarly -->
+                      
+            <!-- add more items in the div -->
 
+            <div id="deep-cleaning" class="service-content active-content">
+              <div class="row">
+                <div class="col-md-12">
+                <img src="../img/carpet4.png" alt="carpet cleaning" class="col-md-12" >
+                </div>
+                <div class="col-md-12 service-details-content">
+                <h3>Professional Carpet Cleaning Services</h3>
+                <p>Ensure clean and healthy indoor air with Al Bahja Building Maintenance's professional Carpet cleaning services. Our skilled technicians thoroughly clean your carpet, removing dust, debris, and allergens that can accumulate over time. Clean air ducts not only improve indoor air quality but also enhance carpet efficiency, leading to energy savings. Trust us to deliver thorough and effective cleaning, ensuring a healthier and more comfortable environment for your home or business.</p>
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
+   
+         
 
+      
+        <div class="section-title pb-3 pt-5">
+          <h2>What's more!</h2></div>
+    <div class="row gy-5">
+              <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
+              <img src="../img/carpet2.png" alt="Carpet Cleaning" class="img-fluid services-img me-3 w-50">
+              <div class="text-content">
+              <h3>Expert Carpet Cleaning for a Pristine Home</h3>
+              <p> Choose Al Bahja Building Maintenance and Cleaning Services for refresh your living space with our professional carpet cleaning services. Our advanced cleaning methods remove deep-seated dirt, tough stains, and allergens, ensuring your carpets look and feel like new. Trust our experienced team to deliver thorough and efficient cleaning, enhancing the beauty and hygiene of your home.</p>
+              </div>
+              </div>
+
+              <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
+                <div class="text-content">
+                <h3>Deep Clean Your Carpets for Lasting Freshness</h3>
+                <p>Experience the ultimate in carpet care with our expert cleaning services. We use eco-friendly products and state-of-the-art equipment to eliminate dirt, dust, and odors, leaving your carpets revitalized and fresh. Enjoy a healthier home environment and extend the life of your carpets with our comprehensive cleaning solutions.</p>
+                </div>
+                <img src="../img/carpet3.png" alt="carpet cleaning" class="img-fluid services-img me-3 w-50">
+                </div>
+
+                <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
+              <img src="../img/carpet4.png" alt="carpet cleaning" class="img-fluid services-img me-3 w-50">
+              <div class="text-content">
+              <h3>Eco-Friendly Cleaning Solutions</h3>
+              <p> We care about your health and the environment. That's why we use eco-friendly and non-toxic cleaning products that are safe for children and pets.Our green cleaning solutions effectively remove dirt and grime without leaving harmful residues. </p>
+              </div>
+              </div>
+
+                <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
+                <div class="text-content">
+                <h3>Deep Fiber Cleaning</h3>
+                <p>Our advanced equipment reaches deep into carpet fibers to extract dirt, dust mites, allergens, and bacteria, leaving your carpets not only cleaner but also healthier.Extend the life of your carpets with our protective treatments. </p>
+                </div>
+                <img src="../img/carpet1.png" alt="carpet cleaning" class="img-fluid services-img me-3 w-50">
+                </div>
+
+     </div>    
       </div>
 
     </section><!-- /Service Details Section -->
 
 
+
+    <section id="service-details" class="service-details section bg-light py-5">
+
+  <div class="container">
+  
+    <div class="row gy-5 justify-content-center">
     
+      <div class="col-lg-8">
+      <div class="section-title pb-3 pt-5">
+      <h3 style="color: #007bff; font-weight: bold;">Why Choose Our Carpet Cleaning Services?</h3>
+      </div>
+
+
+                  <!-- Box 1 -->
+
+          <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Our comprehensive services are designed to meet all your carpet care needs and ensure your home or office stays fresh, clean, and healthy. </p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 2 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Carpet Protection</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Extend the life of your carpets with our protective treatments. </p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 3 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Quick Drying Process
+          </h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Our efficient drying process minimizes downtime, allowing you to get back to your routine quickly. </p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 4 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;"> Professional and Friendly Staff</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>We pride ourselves on our attention to detail, punctuality, and customer satisfaction. </p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 5 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Flexible Scheduling</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>We offer flexible scheduling options to accommodate your busy lifestyle.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 6 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Expert Technicians</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Our trained technicians have the expertise and equipment to deliver exceptional results, ensuring your satisfaction.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Button Box -->
+        <div class="text-center">
+          <a href="../Login-system/login.php" class="btn btn-primary btn-lg btn-book-now">Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+  
+</section>
+
+
+<!--     
 <section id="service-details" class="service-details section">
 
 <div class="container">
@@ -179,28 +366,26 @@
         <p>Experience the ultimate in carpet care with our expert cleaning services. We use eco-friendly products and state-of-the-art equipment to eliminate dirt, dust, and odors, leaving your carpets revitalized and fresh. Enjoy a healthier home environment and extend the life of your carpets with our comprehensive cleaning solutions.</p>
       </div>
       <img src="../img/carpet2.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
-    </div>
-
-<!-- Book Now Button -->
-<div class="row justify-content-center">
-      <div class="col-auto">
-        <a href="book-service/booking.php" class="btn btn-primary" data-aos="fade-up" data-aos-delay="50">Book Now</a>
-      </div>
-    </div>
+    </div> 
 
 </div>
 </div>
-</section>
+</section>-->
+
+<?php include "service.php" ?>
+
+
+<?php include "FAQ.php" ?>
+
   </main>
 
   <!-- Footer -->
-  <?php include "../footer.php" ?>
+  <?php include "footer.php" ?>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+  
 
   <!-- Vendor JS Files -->
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

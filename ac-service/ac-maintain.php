@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>AC Installation Service</title>
+  <title>AC Maintenance Service</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -22,7 +22,8 @@
   <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
- 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
   <!-- Main CSS File -->
   <link href="../assets/css/main.css" rel="stylesheet">
 
@@ -46,7 +47,7 @@
     }
 
     .services-img {
-      max-width: 100%;
+      max-width:100%;
       height: auto;
     }
 
@@ -88,6 +89,36 @@
       border: 1px solid #ddd; /* Example border */
       border-radius: 5px; /* Example border radius */
     }
+    .booking-section {
+            text-align: center;
+            max-width: 800px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .booking-info {
+            margin-bottom: 20px;
+        }
+        .btn-book-now {
+            position: relative;
+            padding-right: 40px; /* Ensure space for arrow icon */
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            position: relative;
+        }
+        .btn-book-now i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.3s ease;
+        }
+        .btn-book-now:hover i {
+            transform: translate(5px, -50%);
+        }
   </style>
 
 </head>
@@ -149,6 +180,13 @@
                 <a href="ac-repair.php" style="color: #000;"><i class="bi bi-arrow-right-circle"></i><span>AC Repair</span></a>
               </div>
             </div><!-- End Services List -->
+            <div class="container">
+            <div class="services-list">
+            <h2 class="booking-info">Book your ac duct cleaning service today.</h2>
+            <a href="../Login-system/login.php" class=" btn-lg btn-book-now" style="color: white; background-color: green; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+    Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+      </div>
+      </div>
 
             <div class="help-box">
               <i class="bi bi-headset help-icon"></i>
@@ -161,12 +199,18 @@
 
           <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
           <div id="maintain" class="service-content">
-              <img src="maintain.jpg" alt="AC Maintenance Service" class="img-fluid services-img">
+              <img src="../img/acmaintain.png" alt="AC Maintenance Service" class="img-fluid services-img">
               <h3>WELCOME TO AC MAINTENANCE SERVICE</h3>
               <p>Ensure your AC system works smoothly year-round with our AC maintenance service. We offer regular inspections, cleaning, and adjustments to keep your AC unit running efficiently and prevent breakdowns.</p>
             </div>
-          </div>
 
+            <div id="maintain" class="service-content">
+              <img src="../img/acmaintain0.png" alt="AC Maintenance Service" class="img-fluid services-img">
+              <h3>Why Regular AC Maintenance is Important</h3>
+              <p>Maintaining your air conditioning system is crucial to ensure it runs efficiently and effectively, especially during the hot summer months. Regular maintenance can help extend the lifespan of your unit, reduce energy costs, and prevent unexpected breakdowns.</p>
+            </div>
+          </div>
+         
         </div>
 
       </div>
@@ -176,11 +220,12 @@
     <section id="service-details" class="service-details section">
 
 <div class="container">
-
+<div class="section-title pb-3 pt-5">
+<h2>What's more!</h2></div>
   <div class="row gy-5">
   
     <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-      <img src="../img/maintanace.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/acmaintain1.png" alt="AC Maintenance Service" class="img-fluid services-img me-3 w-50">
       <div class="text-content">
         <h3>Reliable AC Maintenance Solutions</h3>
         <p>At Al Bahja Building Maintenance, our skilled technicians offer thorough inspections, filter replacements, refrigerant level checks, and optimal component functioning. Our services enhance AC performance, reduce energy consumption, and prevent costly repairs. Trust us to keep your AC system running smoothly and reliably all year round.</p>
@@ -192,15 +237,25 @@
         <h3>Professional AC Maintenance in Dubai </h3>
         <p>Keep your AC unit at peak performance with Al Bahja Building Maintenance. Our experienced technicians offer meticulous inspections, filter replacements, refrigerant checks, and ensure all components are in top condition. Regular maintenance boosts efficiency, extends lifespan, reduces energy costs, and prevents breakdowns. Trust us to maintain your AC system for consistent comfort year-round.</p>
       </div>
-      <img src="../img/maintain.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
+      <img src="../img/acmaintain2.png" alt="AC Maintenance Service" class="img-fluid services-img me-3 w-50">
     </div>
 
-<!-- Book Now Button -->
-<div class="row justify-content-center">
-      <div class="col-auto">
-        <a href="book-service/booking.php" class="btn btn-primary" data-aos="fade-up" data-aos-delay="50">Book Now</a>
+    <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
+      <img src="../img/acmaintain3.png" alt="AC Maintenance Service" class="img-fluid services-img me-3 w-50">
+      <div class="text-content">
+        <h3>Benefits of Professional AC Maintenance</h3>
+        <p>Professional AC maintenance ensures your unit runs efficiently, saving you money on energy bills and preventing costly repairs. Technicians can identify and fix issues that may go unnoticed, extending the lifespan of your unit and improving indoor air quality. Regular professional check-ups can also prevent unexpected breakdowns during peak usage times.</p>
       </div>
     </div>
+
+    <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
+      <div class="text-content">
+        <h3>Common AC Issues and Solutions </h3>
+        <p>Common AC problems include dirty filters, refrigerant leaks, and faulty thermostats. Regularly replacing filters and checking for leaks can prevent these issues. If your AC isn’t cooling properly, it might be low on refrigerant or have a compressor problem. Ensure the thermostat is set correctly and functioning. Addressing these common issues promptly can help maintain your AC's performance and efficiency.</p>
+      </div>
+      <img src="../img/acmaintain6.png" alt="AC Maintenance Service" class="img-fluid services-img me-3 w-50">
+    </div>
+
 
 </div>
 </div>
@@ -259,19 +314,100 @@
         </div>
       </div>
     </section><!-- /Services Section -->
+    
+    <section id="service-details" class="service-details section bg-light py-5">
 
+  <div class="container">
+  
+    <div class="row gy-5 justify-content-center">
+    
+      <div class="col-lg-8">
+      <div class="section-title pb-3 pt-5">
+      <h3 style="color: #007bff; font-weight: bold;">Why Choose Our AC Duct Cleaning Services?</h3>
+      </div>
+
+
+                  <!-- Box 1 -->
+
+          <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Experience cleaner, healthier indoor air with our professional  ac duct cleaning services. Our expert technicians utilize advanced equipment and industry-leading techniques to thoroughly clean and sanitize your air ducts.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 2 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Efficiency</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Regular maintenance ensures your AC operates at peak efficiency, reducing energy bills and environmental impact.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 3 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Enhanced System Performance</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p> Routine checks and cleaning help your AC perform optimally, avoiding drops in performance and cooling efficiency.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 4 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Improved Safety</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p> Professional inspections can identify and address safety concerns, such as electrical issues or gas leaks, ensuring safe operation.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 5 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Lower Repair Costs</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Early detection and fixing of minor issues can prevent more costly repairs and replacements in the future.</p>
+          </div>
+          
+        </div>
+        
+        
+        
+        <!-- Button Box -->
+        <div class="text-center">
+          <a href="../Login-system/login.php" class="btn btn-primary btn-lg btn-book-now">Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+  
+</section>
+
+    <?php include "FAQ.php" ?>
 
   </main>
 
   <!-- Footer -->
-  <?php include "../footer.php"?>
+  <?php include "footer.php"?>
   <!-- End Footer -->
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+
 
   <!-- Vendor JS Files -->
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -18,9 +18,9 @@
   <!-- Vendor CSS Files -->
   <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 
   <!-- Main CSS File -->
   <link href="../assets/css/main.css" rel="stylesheet">
@@ -53,6 +53,38 @@
     .service-details-content {
       margin-top: 20px;
     }
+
+    .booking-section {
+            text-align: center;
+            max-width: 800px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .booking-info {
+            margin-bottom: 20px;
+        }
+        .btn-book-now {
+            position: relative;
+            padding-right: 40px; /* Ensure space for arrow icon */
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            position: relative;
+        }
+        .btn-book-now i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.3s ease;
+        }
+        .btn-book-now:hover i {
+            transform: translate(5px, -50%);
+        }
+     
   </style>
 
 </head>
@@ -73,7 +105,7 @@
           <li><a href="AC.php#feature">Features</a></li>
           <li><a href="cleaning.php#service">Services</a></li>
           <li><a href="Ac.php#contact">Contact</a></li>
-          <li><a href="Ac.php#book"><button type="button" class="btn btn-primary">Book Now</button></a></li>
+          <li><a href="../Login-system/login.php"><button type="button" class="btn btn-primary">Book Now</button></a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -115,11 +147,21 @@
                 <a href="villa.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Villa & House Cleaning</span></a>
                 <a href="tank.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Water Tank Cleaning & Disinfection</span></a>
                 <a href="glass-cleaning.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Window Glass Cleaning</span></a>
-                <a href="mattress.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Mattress Cleaning</span></a>
+                <a href="mattress-cleaning.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Mattress Cleaning</span></a>
                 <a href="carpet-cleaning.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Carpet Cleaning</span></a>
                 <a href="pool-cleaning.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Pool Cleaning</span></a>
+      
+
+
               </div>
             </div><!-- End Services List -->
+            <div class="container">
+            <div class="services-list">
+            <h2 class="booking-info">Book your air-duct service today.</h2>
+            <a href="../Login-system/login.php" class=" btn-lg btn-book-now" style="color: white; background-color: green; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+    Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+      </div>
+      </div>
 
             <div class="help-box d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-headset help-icon"></i>
@@ -137,7 +179,7 @@
             <div id="deep-cleaning" class="service-content active-content">
               <div class="row">
                 <div class="col-md-12">
-                  <img src="hvac.jpg" alt="HVAC Air Duct Cleaning" class="img-fluid services-img">
+                  <img src="../img/hvac1.png" alt="HVAC Air Duct Cleaning" class="img-fluid services-img">
                 </div>
                 <div class="col-md-12 service-details-content">
                 <h3>WELCOME TO HVAC AIR DUCT CLEANING</h3>
@@ -145,87 +187,184 @@
                 </div>
               </div>
             </div>
+                      
+            <!-- add more items in the div -->
 
-             <!-- Add other service details sections similarly -->
-
+            <div id="deep-cleaning" class="service-content active-content">
+              <div class="row">
+                <div class="col-md-12">
+                <img src="../img/hvac4.png" alt="HVAC air duct cleaning" class="col-md-12" >
+                </div>
+                <div class="col-md-12 service-details-content">
+                <h3>Why Clean Your Air Ducts?</h3>
+                <p>Over time, air ducts accumulate dust, debris, and other contaminants that can affect the quality of air in your home or business. Dirty air ducts can lead to allergies, respiratory issues, and increased energy costs due to inefficient HVAC systems.</p>
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
 
+
+        <div class="section-title pb-3 pt-5">
+          <h2>What's more!</h2></div>
+            <div class="row gy-5">
+              <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
+                <img src="../img/acduct1.png" alt="HVAC air duct cleaning" class="img-fluid services-img me-3 w-50">
+                <div class="text-content">
+                  <h3>Professional HVAC Air Duct Cleaning Services</h3>
+                  <p>Ensure clean and healthy indoor air with Al Bahja Building Maintenance's professional HVAC air duct cleaning services. Our skilled technicians thoroughly clean your air ducts, removing dust, debris, and allergens that can accumulate over time. Clean air ducts not only improve indoor air quality but also enhance HVAC system efficiency, leading to energy savings. Trust us to deliver thorough and effective cleaning, ensuring a healthier and more comfortable environment for your home or business.</p>
+                </div>
+              </div>
+
+              <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
+                <div class="text-content">
+                  <h3>Reliable HVAC Air Duct Cleaning Services</h3>
+                  <p>Al Bahja Building Maintenance offers reliable HVAC air duct cleaning services to maintain clean indoor air quality. Our skilled technicians use effective techniques to remove dust, allergens, and debris from your ductwork, ensuring optimal airflow and system efficiency. With our thorough cleaning approach, we help create a healthier and more comfortable environment for your home or business. Trust us to deliver professional results that enhance the performance of your HVAC system and improve overall air quality.</p>
+                </div>
+                <img src="../img/acduct5.png" alt="HVAC air duct cleaning" class="img-fluid services-img me-3 w-50">
+              </div>
+
+         
+     </div>
+
+
+
+     <div class="row gy-5">
+              <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
+                <img src="../img/acduct3.png" alt="HVAC air duct cleaning" class="img-fluid services-img me-3 w-50">
+                <div class="text-content">
+                   <h3>Comprehensive Service</h3>
+                   <p>Ensure clean and healthy indoor air with Al Bahja Building Maintenance's professional HVAC air duct cleaning services. Our skilled technicians thoroughly clean your air ducts, removing dust, debris, and allergens that can accumulate over time. Clean air ducts not only improve indoor air quality but also enhance HVAC system efficiency, leading to energy sa
+                    vings. Trust us to deliver thorough and effective cleaning, ensuring a healthier and m
+                    ore comfortable environment for your home or business.</p> 
+                
+          </div>
+       </div>
+
+
+              <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
+                <div class="text-content">
+                  <h3>Breathe Cleaner Air Today</h3>
+                  <p>Your indoor air quality matters. Over time, dust, allergens, and other pollutants can accumulate in your air ducts, affecting your health and the efficiency of your HVAC system. Our professional air duct cleaning services are designed to ensure your home or business has the cleanest air possible.</p>
+                </div>
+                <img src="../img/acduct.png" alt="HVAC air duct cleaning" class="img-fluid services-img me-3 w-50">
+              </div>
+
+           
+     </div>
+  </div>
+ </section><!-- /Service Details Section -->
+
+
+ <section id="service-details" class="service-details section bg-light py-5">
+
+  <div class="container">
+  
+    <div class="row gy-5 justify-content-center">
+    
+      <div class="col-lg-8">
+      <div class="section-title pb-3 pt-5">
+      <h3 style="color: #007bff; font-weight: bold;">Why Choose Our HVAC Air Duct Cleaning Services?</h3>
       </div>
 
-    </section><!-- /Service Details Section -->
 
+                  <!-- Box 1 -->
+
+          <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Experience cleaner, healthier indoor air with our professional HVAC air duct cleaning services. Our expert technicians utilize advanced equipment and industry-leading techniques to thoroughly clean and sanitize your air ducts.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 2 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Improved Indoor Air Quality</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Our thorough cleaning removes dust, allergens, and contaminants, promoting cleaner air for you and your family.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 3 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Energy Efficiency</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Clean air ducts improve airflow efficiency, helping your HVAC system operate more effectively and potentially reducing energy costs.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 4 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Odor Removal</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Say goodbye to lingering odors from mold, pets, or cooking with our comprehensive duct cleaning process.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 5 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Comprehensive Service</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Beyond duct cleaning, we inspect and clean HVAC components to ensure your entire system performs optimally.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Box 6 -->
+        <div class="service-box text-center p-4 mb-4" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        
+          <h3 style="color: #007bff; font-weight: bold;">Expert Technicians</h3>
+          
+          <div style="font-size: 1.1rem; line-height: 1.8;">
+            <p>Our trained technicians have the expertise and equipment to deliver exceptional results, ensuring your satisfaction.</p>
+          </div>
+          
+        </div>
+        
+        <!-- Button Box -->
+        <div class="text-center">
+          <a href="../Login-system/login.php" class="btn btn-primary btn-lg btn-book-now">Book Now <i class="fas fa-arrow-right ml-2"></i></a>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+  
+</section>
+
+
+    <?php include "service.php" ?>
 
     
-<section id="service-details" class="service-details section">
-
-<div class="container">
-
-  <div class="row gy-5">
-  
-<<<<<<< HEAD
-  <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-  <img src="../img/ductcleaning1.jpg" alt="duct cleaning" class="img-fluid services-img me-3 w-50">
-  <div class="text-content">
-    <h3>RESIDENTIAL DUCT CLEANING SERVICES</h3>
-    <p>Transform your home's air quality with our residential duct cleaning services. Our team at Al Bahja Building Maintenance specializes in thorough cleaning of HVAC ducts, eliminating dust, pollen, and mold to create a healthier indoor environment. We use advanced cleaning techniques to ensure your ducts are free from contaminants, enhancing airflow and system efficiency.</p>
-  </div>
-</div>
-
-<div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
-  <div class="text-content">
-    <h3>COMMERCIAL HVAC MAINTENANCE SOLUTIONS</h3>
-    <p>Keep your commercial space comfortable and efficient with our comprehensive HVAC maintenance solutions. From routine inspections to emergency repairs, Al Bahja Building Maintenance offers tailored services to meet your business needs. Our certified technicians ensure your HVAC systems operate at peak performance, reducing downtime and maximizing energy efficiency.</p>
-  </div>
-  <img src="../img/ductcleaning2.jpg" alt="Commercial HVAC Maintenance" class="img-fluid services-img me-3 w-50">
-</div>
-
-=======
-    <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
-      <img src="../img/ductcleaning.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
-      <div class="text-content">
-        <h3>Professional HVAC Air Duct Cleaning Services</h3>
-        <p>Ensure clean and healthy indoor air with Al Bahja Building Maintenance's professional HVAC air duct cleaning services. Our skilled technicians thoroughly clean your air ducts, removing dust, debris, and allergens that can accumulate over time. Clean air ducts not only improve indoor air quality but also enhance HVAC system efficiency, leading to energy savings. Trust us to deliver thorough and effective cleaning, ensuring a healthier and more comfortable environment for your home or business.</p>
-      </div>
-    </div>
-
-    <div class="service-content active-content d-flex align-items-start py-9" data-aos="fade-up" data-aos-delay="50">
-      <div class="text-content">
-        <h3>Reliable HVAC Air Duct Cleaning Services</h3>
-        <p>Al Bahja Building Maintenance offers reliable HVAC air duct cleaning services to maintain clean indoor air quality. Our skilled technicians use effective techniques to remove dust, allergens, and debris from your ductwork, ensuring optimal airflow and system efficiency. With our thorough cleaning approach, we help create a healthier and more comfortable environment for your home or business. Trust us to deliver professional results that enhance the performance of your HVAC system and improve overall air quality.</p>
-      </div>
-      <img src="../img/duct2.jpg" alt="AC Installation" class="img-fluid services-img me-3 w-50">
-    </div>
->>>>>>> 23b889687901cf223409614b977a1e6192c85497
-
-<!-- Book Now Button -->
-<div class="row justify-content-center">
-      <div class="col-auto">
-        <a href="book-service/booking.php" class="btn btn-primary" data-aos="fade-up" data-aos-delay="50">Book Now</a>
-      </div>
-    </div>
-
-</div>
-</div>
-</section>
+    <?php include "FAQ.php" ?>
   </main>
 
   <!-- Footer -->
-  <?php include "../footer.php" ?>
+  <?php include "footer.php" ?>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+  
+  
 
   <!-- Vendor JS Files -->
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/php-email-form/validate.js"></script>
-  <script src="../assets/vendor/aos/aos.js"></script>
-  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
   <script src="../assets/js/main.js"></script>
