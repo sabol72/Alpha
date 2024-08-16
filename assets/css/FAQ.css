@@ -1,0 +1,97 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+} */
+
+.FAQ {
+  max-width: 50%;
+  margin: auto;
+  padding: 1rem;
+}
+
+.FAQ > p,
+.FAQ > h2 {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.FAQ > h2 {
+  letter-spacing: 3px;
+}
+
+.accordion {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  border: none;
+  outline: none;
+  transition: background-color 0.4s, padding 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.accordion i {
+  font-size: 1.4rem;
+}
+
+.accordion:hover,
+.accordion.active {
+  background-color: #f1f7f5;
+}
+
+.pannel {
+  padding: 0 2rem 1.5rem 2rem;
+  background-color: #f1f7f5;
+  overflow: hidden;
+  display: none;
+  transition: max-height 0.4s ease;
+}
+
+.pannel p {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.faq {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 10px 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.faq.active {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .FAQ {
+    max-width: 90%;
+  }
+
+  .accordion {
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .accordion i {
+    font-size: 1.2rem;
+  }
+
+  .pannel {
+    padding: 0 1.5rem 1rem 1.5rem;
+  }
+
+  .pannel p {
+    font-size: 0.9rem;
+  }
+}

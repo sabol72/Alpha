@@ -1,131 +1,116 @@
-<?php
-// Initialize variables
-$showForm = true;
-$message = "";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AC services</title>
 
-// Check if the form is submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Retrieve form data
-    $name = $_POST['gname'];
-    $email = $_POST['gmail'];
-    $mobile = $_POST['cnum'];
-    $address = $_POST['CAddress'];
-    $serviceType = $_POST['cage'];
-    $userMessage = $_POST['message'];
+   
 
-    // Validate form data
-    if (!empty($name) && !empty($email) && !empty($mobile) && !empty($address) && !empty($serviceType) && !empty($userMessage)) {
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   
-$customer_name = $_POST['gname'];
-$customer_email = $_POST['gmail'];
-$mobile = $_POST['cnum'];
-$address = $_POST['CAddress'];
-$service_type = $_POST['cage'];
-$message = $_POST['message'];
+ 
 
-$sql = "INSERT INTO bookings (customer_name, customer_email, mobile, address, service_type, message) 
-        VALUES (?, ?, ?, ?, ?, ?)";
+  <!-- Main CSS File -->
+   <link href="assets/css/main.css" rel="stylesheet"> 
+</head>
+<body>
+<header id="header" class="header d-flex align-items-center fixed-top">
+  
+  <div class="container-fluid container-xl position-relative d-flex align-items-center">
+    <a href="index.php" class="logo d-flex align-items-center me-auto">
+      <img src="assets/img/logo.png" alt="">
+    </a>
 
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("ssssss", $customer_name, $customer_email, $mobile, $address, $service_type, $message);
-$txt="";
-if ($stmt->execute()) {
-    // $txt = "New record created successfully";
-
-    // echo "<script>alert('$txt');</script>";
-} else {
-    $txt = "Error: " . $sql . "<br>" . $conn->error;
-    echo "<script>alert('$txt');</script>";
-}
-
-$stmt->close();
-$conn->close();
-
-        // Display confirmation message
-        $showForm = false;
-        $message = "You have booked your service. We will get back to you shortly.";
-    }
-}
-?>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#services">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="Login-system/login.php"><button type="button" class="btn btn-primary">Book Now</button></a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+  </div>
+</header>
+  
  <!-- Services Section -->
- <section id="services" class="services section" id="service">
+<section id="services" class="services section" id="service">
 
 <!-- Section Title -->
 <div class="container section-title" data-aos="fade-up">
   <h2>AC Services</h2>
-  <p class="text-black">AC Services that we provide for you.</p>
+
+<section class="services-section py-3">
+      <div class="row g-5">
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-item item-cyan position-relative">
+            <img src="assets/img/install.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+            <div>
+              <h3>AC Installation</h3>
+              <p>If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Building Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.</p>
+              <!-- Button to redirect to install.php -->
+              <a href="ac-service/ac-install.php" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-item item-red position-relative">
+            <img src="assets/img/duct.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+            <div>
+              <h3>AC Duct Cleaning</h3>
+              <p>The ducts that distribute cool air throughout your space can become clogged with dust, dirt, and other debris. This can reduce the efficiency of your AC system and even affect your indoor air quality. Our AC duct cleaning service ensures that your ducts are clean and free of debris, so your AC system is working efficiently and your indoor air quality is healthy.</p>
+              <!-- Button to redirect to cleaning.php -->
+              <a href="ac-service/ac-duct.php" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-item item-orange position-relative">
+            <img src="assets/img/maintainance.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+            <div>
+              <h3>AC Maintenance</h3>
+              <p>Regular AC maintenance is essential to ensure that your AC system is running at its best. Our AC maintenance service includes cleaning and checking your AC system’s various components, including the filters, coils, and condenser. By doing this, we can identify any potential issues and fix them before they become bigger problems.</p>
+              <!-- Button to redirect to maintain.php -->
+              <a href="ac-service/ac-maintain.php" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-item item-teal position-relative">
+            <img src="assets/img/repair.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+            <div>
+              <h3>AC Repair</h3>
+              <p>If your AC system is not functioning properly, you need a reliable AC repair service that you can trust. Our expert AC technicians can diagnose and repair a wide range of AC problems, from leaks and compressor issues to gas filling and more.</p>
+              <!-- Button to redirect to repair.php -->
+              <a href="ac-service/ac-repair.php" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+      </div><!-- End row -->
+  </section><!-- /Services Section -->
 </div><!-- End Section Title -->
 
-<div class="container">
-
-  <div class="row g-5">
-
-    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-      <div class="service-item item-cyan position-relative">
-        <img src="assets/img/install.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
-        <div>
-          <h3>AC Installation</h3>
-          <p>If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Buildling  Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.
-
-</p>
-          
-        </div>
-      </div>
-    </div><!-- End Service Item -->
-
-    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-      <div class="service-item item-orange position-relative">
-      <img src="assets/img/maintainance.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
-        <div>
-          <h3>AC Maintainance</h3>
-          <p>Regular AC maintenance is essential to ensure that your AC system is running at its best. Our AC maintenance service includes cleaning and checking your AC system’s various components, including the filters, coils, and condenser. By doing this, we can identify any potential issues and fix them before they become bigger problems.</p>
-        </div>
-      </div>
-    </div><!-- End Service Item -->
-
-    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-      <div class="service-item item-teal position-relative">
-      <img src="assets/img/repair.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
-        <div>
-          <h3>AC Repairt</h3>
-          <p>If your AC system is not functioning properly, you need a reliable AC repair service that you can trust. Our expert AC technicians can diagnose and repair a wide range of AC problems, from leaks and compressor issues to gas filing and more.
-
-          One common issue with AC systems is leakage, which can lead to a range of problems, including reduced efficiency and higher electricity bills. Our AC technicians can diagnose and fix any leaks in your AC system, ensuring that it is running at its best.</p>
-          
-        </div>
-      </div>
-    </div><!-- End Service Item -->
-
-    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-      <div class="service-item item-red position-relative">
-      <img src="assets/img/duct.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
-        <div>
-          <h3>AC Duct cleaning</h3>
-          <p>The ducts that distribute cool air throughout your space can become clogged with dust, dirt, and other debris. This can reduce the efficiency of your AC system and even affect your indoor air quality. Our AC duct cleaning service ensures that your ducts are clean and free of debris, so your AC system is working efficiently and your indoor air quality is healthy.
-
-            we take pride in providing reliable, affordable, and high-quality AC technician services in Dubai. Contact us today to schedule an appointment with one of our experienced AC technicians.</p>
-          
-        </div>
-      </div>
-    </div><!-- End Service Item -->
-
-    
-
-
-  </div>
-
-</div>
-
-</section><!-- /Services Section -->
 
 
   <!-- features section -->
 
   <div class="container section-title " data-aos="fade-up" id="features">
-      <h1 class="text-center mt-5 mb-4">Our Features</h1>
-    </div>
-  
-  
+      <h2 class="text-center mt-5 mb-4">Our Features</h2>
       <div class="row">
         <div class="col-lg-4 mb-4">
           <div class="feature-box">
@@ -187,20 +172,16 @@ $conn->close();
           </div>
         </div>
       </div>
-    
+    </div>
+  
+
     <!-- Contact Section -->
    <section id="contact" class="contact section" id="contact">
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>Contact Us</h2>
-        
-    </div><!-- End Section Title -->
-
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
+          <div class="row gy-4">
             <div class="col-lg-6">
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
                     <i class="bi bi-geo-alt"></i>
@@ -226,88 +207,6 @@ $conn->close();
             </div><!-- End Info Item -->
 
         </div>
-
-        <div class="container mt-5" id="book">
-        <h3 class="text-center">Book Your Service Now</h3>
-            <div id="formContainer" <?php if (!$showForm) echo 'style="display: none;"'; ?>>
-                <form action="" method="post" class="needs-validation" novalidate>
-                    <div class="bg-white p-4 p-sm-5">
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="gname" name="gname" placeholder="Customer Name" required>
-                                    <label for="gname">Your Name</label>
-                                    <div class="invalid-feedback">
-                                        Please provide your name.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="gmail" name="gmail" placeholder="Customer Email" required>
-                                    <label for="gmail">Your Email</label>
-                                    <div class="invalid-feedback">
-                                        Please provide a valid email address.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="cnum" name="cnum" placeholder="Your Mobile" required pattern="[0-9]+" title="Please enter only numeric digits" minlength="10" maxlength="15">
-                                    <label for="cnum">Your Mobile</label>
-                                    <div class="invalid-feedback">
-                                        Please provide your mobile number (10 digits).
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="CAddress" name="CAddress" placeholder="Your Address" required>
-                                    <label for="CAddress">Your Address</label>
-                                    <div class="invalid-feedback">
-                                        Please provide your address.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <select class="form-select" id="cage" name="cage" aria-label="Service Type" required>
-                                        <option value="" selected disabled>Select Service Type</option>
-                                        <option value="Service 1">Service 1</option>
-                                        <option value="Service 2">Service 2</option>
-                                        <option value="Service 3">Service 3</option>
-                                        <option value="Service 4">Service 4</option>
-                                    </select>
-                                    <label for="cage">Service Type</label>
-                                    <div class="invalid-feedback">
-                                        Please select a service type.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 80px" required></textarea>
-                                    <label for="message">Message</label>
-                                    <div class="invalid-feedback">
-                                        Please leave a message.
-                                    </div>
-                                </div>
-                            </div>
-                            <input type="hidden" name="status" value="New">
-                            <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit">Book Now!</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div id="confirmationContainer" <?php if ($showForm) echo 'style="display: none;"'; ?>>
-                <div class="bg-white p-4 p-sm-5 text-center">
-                    <p class="lead"><?php echo $message; ?></p>
-                    <button class="btn btn-primary py-3 px-5" onclick="showForm()">Book Another Service</button>
-                </div>
-            </div>
-        </div><!-- End Container for Form and Confirmation -->
         <div class="row gy-4 mt-1 justify-content-center align-items-center">
     <div class="col-12 text-center">
         <h3>Our Location</h3>
@@ -316,68 +215,17 @@ $conn->close();
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div><!-- End Google Maps -->
 </div>
-    </div><!-- End Container for Contact Section Content -->
-
-</section><!-- End Contact Section -->
+  </div><!-- End Container for Contact Section Content -->
+    </section><!-- End Contact Section -->
 <!-- /Contact Section -->
-
-    <!-- about us -->
-
-    <div class="container section-title" data-aos="fade-up" id="about">
-    <h2>About Us</h2>
-    <P style="color: black;"> we are committed to keeping your home or business comfortable year-round with reliable air conditioning maintenance and repair services. Serving the  area, our team of experienced technicians is dedicated to providing exceptional service and exceeding our customers' expectations.</P>
-  </div>
-
-  <div class="container">
-    <h2 class="text-center my-4"> Meet Our Team</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/img/absolute-image.jpg" alt="Jane" class="card-img-top">
-          <div class="card-body">
-            <h2 class="card-title">Jane Doe</h2>
-            <p class="card-text">CEO & Founder</p>
-            <p class="card-text">Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>jane@example.com</p>
-            <button class="btn btn-primary">Contact</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/img/absolute-image.jpg" alt="Mike" class="card-img-top">
-          <div class="card-body">
-            <h2 class="card-title">Mike Ross</h2>
-            <p class="card-text">Art Director</p>
-            <p class="card-text">Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>mike@example.com</p>
-            <button class="btn btn-primary">Contact</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/img/absolute-image.jpg" alt="John" class="card-img-top">
-          <div class="card-body">
-            <h2 class="card-title">John Doe</h2>
-            <p class="card-text">Designer</p>
-            <p class="card-text">Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>john@example.com</p>
-            <button class="btn btn-primary">Contact</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  </main>
+ 
+   </main>
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
+  
+    <!-- footer part -->
+  <?php include "footer.php"?>
 
   
 
