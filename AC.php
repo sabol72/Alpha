@@ -36,7 +36,7 @@
         <li><a href="#features">Features</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#book"><button type="button" class="btn btn-primary">Book Now</button></a></li>
+        <li><a href="Login-system/login.php"><button type="button" class="btn btn-primary">Book Now</button></a></li>
       </ul>
       <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
     </nav>
@@ -175,9 +175,7 @@
     </div>
     
   
-  
-     
-    
+
     <!-- Contact Section -->
    <section id="contact" class="contact section" id="contact">
 
@@ -222,7 +220,6 @@
     </section><!-- End Contact Section -->
 <!-- /Contact Section -->
  
-    <?php include "book-service/booking.php"; ?>
    </main>
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

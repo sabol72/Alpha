@@ -359,5 +359,6 @@ $selectedServiceType = isset($_SESSION['selectedServiceType']) ? $_SESSION['sele
         }
     }
 </script>
+<script src="script.js"></script>
 </body>
 </html>

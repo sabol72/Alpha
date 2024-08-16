@@ -177,7 +177,7 @@
 <section id="service-details" class="service-details section">
 
 <div class="container">
-
+<h2 class="section-title"> WHAT'S MORE?</h2>
   <div class="row gy-5">
   
     <div class="service-content active-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30">
@@ -207,7 +207,7 @@
 </div>
 </section>
     <!-- Services Section -->
-    <section class="services-section py-3">
+    <section class="services-section ">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center mb-4">

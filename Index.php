@@ -33,62 +33,13 @@
 </head>
 
 <body class="index-page">
-<?php
-// Initialize variables
-$showForm = true;
-$message = "";
-
-// Check if the form is submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Retrieve form data
-    $name = $_POST['gname'];
-    $email = $_POST['gmail'];
-    $mobile = $_POST['cnum'];
-    $address = $_POST['CAddress'];
-    $serviceType = $_POST['cage'];
-    $userMessage = $_POST['message'];
-
-    // Validate form data
-    if (!empty($name) && !empty($email) && !empty($mobile) && !empty($address) && !empty($serviceType) && !empty($userMessage)) {
-  
-$customer_name = $_POST['gname'];
-$customer_email = $_POST['gmail'];
-$mobile = $_POST['cnum'];
-$address = $_POST['CAddress'];
-$service_type = $_POST['cage'];
-$message = $_POST['message'];
-
-$sql = "INSERT INTO bookings (customer_name, customer_email, mobile, address, service_type, message) 
-        VALUES (?, ?, ?, ?, ?, ?)";
-
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("ssssss", $customer_name, $customer_email, $mobile, $address, $service_type, $message);
-$txt="";
-if ($stmt->execute()) {
-    // $txt = "New record created successfully";
-
-    // echo "<script>alert('$txt');</script>";
-} else {
-    $txt = "Error: " . $sql . "<br>" . $conn->error;
-    echo "<script>alert('$txt');</script>";
-}
-
-$stmt->close();
-$conn->close();
-
-        // Display confirmation message
-        $showForm = false;
-        $message = "You have booked your service. We will get back to you shortly.";
-    }
-}
-?>
 
   <header id="header" class="header d-flex align-items-center fixed-top">
   
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <img src="assets/img/logo.png" alt="">
+        <img src="logo.png" alt="">
         
       </a>
 
@@ -97,8 +48,16 @@ $conn->close();
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#features">Features</a></li>
-          <li><a href="#service">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li>
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Services
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="AC.php">Air Conditioner</a>
+        <a class="dropdown-item" href="CLEAN.php">Cleaning</a>
+    </div>
+</li>         
+<li><a href="#contact">Contact</a></li>
           <li> <a href="indbooking/index.php"><button type="button" class="btn btn-primary">Book Now</button></a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -228,7 +187,6 @@ $conn->close();
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up" id="service">
         <h2>Services</h2>
-        <p>Services that we provide for you.</p>
       
         <div class="row g-5">
 
@@ -236,10 +194,14 @@ $conn->close();
             <div class="service-item item-cyan position-relative">
               <img src="assets/img/install.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 15px;">
               <div>
-                <h3>AC Installation</h3>
-                <p>If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Buildling  Maintenance. Our experienced AC technicians can install a wide range of AC systems, from window units to split systems, ensuring that your new unit is installed safely and securely. We also provide expert advice on the best AC system for your space and budget.
+                <h2 style="text-align: left;">Air Conditioner</h2>
+                <p style="text-align: left;">If you’re looking for a reliable AC installation service in Dubai, look no further than Al Bahja Buildling  Maintenance.
                </p>
+<<<<<<< HEAD
                <a href="ac-service/ac-install.php" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+=======
+               <a href="AC.php" class="read-more btn btn-primary stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+>>>>>>> 71531e20c1e8f96879c03bda7c08b83da6839cd3
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -248,9 +210,15 @@ $conn->close();
             <div class="service-item item-orange position-relative">
               <i class="bi bi-broadcast icon"></i>
               <div>
+<<<<<<< HEAD
                 <h3>CLEANING</h3>
                 <p>Al Bahja Building Maintenance is your trusted partner for comprehensive cleaning services in Dubai. We offer a wide range of cleaning solutions tailored to meet your specific needs, ensuring your home or office is clean, comfortable, and safe</p>
                 <a href="cleaning-service/deep-cleaning.php" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+=======
+                <h2>Cleaning</h2>
+                <p style="text-align: left;">Al Bahja Building Maintenance is your trusted partner for comprehensive cleaning services in Dubai. </p>
+                <a href="CLEAN.php" class="read-more btn btn-primary stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+>>>>>>> 71531e20c1e8f96879c03bda7c08b83da6839cd3
               </div>
             </div>
           </div>
