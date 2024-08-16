@@ -68,26 +68,111 @@
     }
 
     .btn-book-now {
-      position: relative;
-      padding-right: 40px;
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      transition: background-color 0.3s ease;
-      position: relative;
-    }
+  position: relative; /* Set relative positioning for the container */
+  display: inline-block; /* Ensure the container size fits the content */
+  padding: 10px; /* Add padding to create space around the button */
+}
 
-    .btn-book-now i {
-      position: absolute;
-      right: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-      transition: transform 0.3s ease;
-    }
+.btn-book-now i {
+  position: absolute;
+  right: 10px; /* Initial position of the arrow */
+  top: 50%;
+  transform: translateY(-50%); /* Center vertically */
+  transition: right 0.3s ease; /* Transition the 'right' property */
+}
 
-    .btn-book-now:hover i {
-      transform: translate(5px, -50%);
-    }
+.btn-book-now:hover i {
+  right: 0; /* Move the arrow to the end of the box */
+}
+
+.row {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.img-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.large-img-container {
+  height: 50vh; /* Large image takes up half of viewport height */
+}
+
+.small-img-container {
+  height: 50vh; /* Small image container takes up half of viewport height */
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  gap: 10px; /* Space between the small images */
+  position: relative; /* Position relative for absolute positioning of hovered image */
+}
+
+.small-img {
+  height: calc(50vh / 3); /* Set height of each small image to be equal to one-third of the large image's height */
+  position: relative; /* For absolute positioning of hovered image */
+  overflow: hidden; /* Ensure content does not overflow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effects */
+}
+
+.small-img img {
+  width: 100%;
+  height: 100%; /* Ensure images fill their container */
+  object-fit: contain; /* Do not crop, fit the image inside the container */
+  display: block; /* Remove extra space below the image */
+}
+
+.small-img:hover {
+  position: absolute; /* Take it out of the document flow */
+  top: 0;
+  left: 0;
+  width: 100%; /* Cover the full width */
+  height: 100%; /* Cover the full height */
+  z-index: 10; /* Ensure it is on top of other content */
+  transform: scale(1.1); /* Slightly zoom in the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.large-img-container img {
+  width: 100%;
+  height: 100%; /* Ensure the image covers the container */
+  object-fit: cover; /* Crop the image to fit the container */
+}
+
+/* Social Media Styles */
+.social-media {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  margin-top: 10px; /* Space above social media icons */
+}
+
+.social-icon {
+  margin: 0 10px; /* Space between icons */
+  font-size: 24px; /* Icon size */
+  color: #333; /* Default icon color */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.facebook-icon:hover {
+  color: #3b5998; /* Facebook theme color on hover */
+}
+
+.twitter-icon:hover {
+  color: #1da1f2; /* Twitter theme color on hover */
+}
+
+.instagram-icon:hover {
+  color: #e4405f; /* Instagram theme color on hover */
+}
+
+.linkedin-icon:hover {
+  color: #0077b5; /* LinkedIn theme color on hover */
+}
+
+
   </style>
 
 </head>
@@ -139,7 +224,7 @@
         <div class="row gy-5">
 
           <!-- Service List Column -->
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4" >
 
             <div class="service-box">
               <h4>Services List</h4>
@@ -155,13 +240,7 @@
                 <a href="pool-cleaning.php" class="service-link"><i class="bi bi-arrow-right-circle"></i><span>Pool Cleaning</span></a>
               </div>
             </div><!-- End Services List -->
-            <div class="container">
-              <div class="services-list">
-                <h2 class="booking-info">Book your deep cleaning service today.</h2>
-                <a href="../Login-system/login.php" class=" btn-lg btn-book-now" style="color: white; background-color: green; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
-                  Book Now <i class="fas fa-arrow-right ml-2"></i></a>
-              </div>
-            </div>
+       
 
             <div class="help-box d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-headset help-icon"></i>
@@ -170,77 +249,116 @@
               <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a href="mailto:contact@example.com">contact@example.com</a></p>
             </div>
 
-          </div>
+            <!-- <div class="container">
+              <div class="services-list">
+                <h2 class="Quote-info">Free quote for deep cleaning services.</h2>
+                <a href="../Login-system/login.php" class=" btn-lg btn-book-now" style="color: white; background-color: yellow; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+                 <h3> Get a Quote.</h3><i class="fas fa-arrow-right ml-2"></i></a>
+              </div>
+            </div> -->
 
-          <!-- Service Details Column -->
-          <div class="col-lg-8">
+  </div>
+ <div class="col-lg-8">
+<!-- Deep Cleaning Service -->
+<div id="deep-cleaning" class="service-content active-content">
+  <!-- Row for Large Image and Smaller Images -->
+  <div class="row no-gutters" style="margin: 0; padding: 0;">
+    <!-- Large Image Covering More Width -->
+    <div class="col-md-8 mb-0" style="padding: 0;">
+      <div class="img-container large-img-container" style="border-radius: 10px; overflow: hidden;">
+        <img src="../img/deepclean0.png" alt="Deep Cleaning" class="img-fluid services-img" style="border-radius: 10px;">
+      </div>
+    </div>
 
-            <!-- Deep Cleaning Service -->
-            <div id="deep-cleaning" class="service-content active-content">
-              <div class="row">
-                <div class="col-md-12">
-                  <img src="../img/deepclean0.png" alt="Deep Cleaning" class="img-fluid services-img">
-                </div>
-                <div class="col-md-12 service-details-content" style="font-family: 'Roboto', sans-serif; font-weight: 400; line-height: 1.6; margin-bottom: 30px;">
-  <h3 style="font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 24px; margin-bottom: 15px;">WELCOME TO DEEP CLEANING SERVICE</h3>
-  <p style="font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 16px; line-height: 1.6; text-align: justify; margin-bottom: 20px;">
-    If you're looking for thorough and comprehensive cleaning services, our deep cleaning service is perfect for you. We clean every nook and corner of your home or office, ensuring a fresh and hygienic environment. Our expert team uses the latest equipment and techniques to tackle even the toughest cleaning challenges, providing you with a spotless and sanitized space. Whether it's a routine clean or a one-time deep clean, we tailor our services to meet your specific needs and preferences, delivering exceptional results every time.
-  </p>
-  <p style="font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 16px; line-height: 1.6; text-align: justify;">
-    We understand that each space is unique, and our approach is customized to address your specific requirements. From detailed surface cleaning to addressing hidden areas, we ensure that no corner is overlooked. Our commitment to quality and customer satisfaction is what sets us apart, and we strive to exceed your expectations with every job. Choose our deep cleaning service for a thorough, reliable, and efficient cleaning experience that will leave your space looking and feeling brand new.
-  </p>
+    <!-- Column for Smaller Images -->
+    <div class="col-md-4 mb-0" style="padding: 0;">
+      <div class="img-container small-img-container" style="display: flex; flex-direction: column;">
+        <!-- Stack the smaller images vertically with no spacing -->
+        <div class="small-img" style="margin-bottom: 5px; border-radius: 10px; overflow: hidden;">
+          <img src="../img/deep-clean3.jpg" alt="Deep Cleaning" class="img-fluid services-img" style="border-radius: 10px;">
+        </div>
+        <div class="small-img" style="margin-bottom: 5px; border-radius: 10px; overflow: hidden;">
+          <img src="../img/deepclean2.png" alt="Deep Cleaning" class="img-fluid services-img" style="border-radius: 10px;">
+        </div>
+        <div class="small-img" style="border-radius: 10px; overflow: hidden;">
+          <img src="../img/deepclean3.jpg" alt="Deep Cleaning" class="img-fluid services-img" style="border-radius: 10px;">
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-              </div>
-            </div>
-
-              <!-- Gallery Section -->
-              <div class="row mt-5">
-                <div class="col-md-6">
-                  <img src="../img/deepclean1.png" alt="Deep Cleaning" class="img-fluid services-img">
-                </div>
-                <div class="col-md-6">
-                  <img src="../img/deepclean2.png" alt="Deep Cleaning" class="img-fluid services-img">
-                </div>
-              </div>
-
-              <!-- Button to Expand Gallery -->
-              <div class="row mt-3">
-                <div class="col-md-12 text-center">
-                  <button class="btn btn-primary" id="expandGalleryBtn">View More Photos</button>
-                </div>
-              </div>
-
-             
-
-            </div>
-               <!-- Expanded Gallery Section (Hidden by Default) -->
-               <div class="row mt-3" id="expandedGallery" style="display: none;">
-                <div class="col-md-6">
-                  <img src="../img/deep-clean3.jpg" alt="Deep Cleaning" class="img-fluid services-img">
-                </div>
-                <div class="col-md-6">
-                  <img src="../img/deepclean4.png" alt="Deep Cleaning" class="img-fluid services-img">
-                </div>
-                <div class="col-md-6 mt-3">
-                  <img src="../img/deep-clean5.png" alt="Deep " class="img-fluid services-img">
-                </div>
-                <div class="col-md-6 mt-3">
-                  <img src="../img/deepclean6.png" alt=" Cleaning" class="img-fluid services-img">
-                </div>
-              </div>
-              <!-- End Gallery Section -->
-          </div>
 
 
+
+              <div class="container mt-4">
+        <!-- Section Title -->
+        <h2 style="font-size: 20px; font-weight: 500;">Deep Cleaning services</h2>
+
+        <!-- Social Media Icons -->
+        <div class="mb-3">
+            <a href="#" class="me-2"><img src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="Facebook" style="width: 24px; height: 24px;"></a>
+            <a href="#" class="me-2"><img src="https://img.icons8.com/color/48/000000/twitter--v1.png" alt="Twitter" style="width: 24px; height: 24px;"></a>
+            <a href="#" class="me-2"><img src="https://img.icons8.com/color/48/000000/linkedin-circled.png" alt="LinkedIn" style="width: 24px; height: 24px;"></a>
+            <a href="#" class="me-2"><img src="https://img.icons8.com/color/48/000000/youtube-play.png" alt="YouTube" style="width: 24px; height: 24px;"></a>
+            <a href="#"><img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram" style="width: 24px; height: 24px;"></a>
+        </div>
+ <!-- CTA Box 1 -->
+    <div class="d-flex mb-3" style="background-color: #007bff; border-radius: 5px; overflow: hidden;">
+        <div class="flex-grow-1 text-white" style="padding: 15px;">
+            <strong>Book a Deep cleaning online</strong><br>
+            <span>Book affordable Deep cleaning services at fixed rates</span>
+        </div>
+        <div class="d-flex align-items-center justify-content-center" style="background-color: #6c757d; padding: 15px; width: 200px;">
+            <button class="btn text-white" style="background-color: #ff8c00; padding: 8px 20px; border-radius: 5px;">BOOK NOW</button>
+        </div>
+    </div>
+
+    <!-- CTA Box 2 -->
+    <div class="d-flex" style="background-color: #28a745; border-radius: 5px; overflow: hidden;">
+        <div class="flex-grow-1 text-white" style="padding: 15px;">
+            <strong>Quotes for Deep cleaning services</strong><br>
+            <span>Free quotes from Deep cleaning</span>
+        </div>
+        <div class="d-flex align-items-center justify-content-center" style="background-color: #6c757d; padding: 15px; width: 200px;">
+            <button class="btn text-white" style="background-color: #ff8c00; padding: 8px 20px; border-radius: 5px;">GET QUOTES</button>
+        </div>
+    </div>
+    </div>
+
+      
+
+    <!-- End Gallery Section -->
+  
+
+    <div class="col-md-12 service-details-content" style="font-family: 'Roboto', sans-serif; font-weight: 400; line-height: 1.6; margin-bottom: 30px;">
+      <h3 style="font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 24px; margin-bottom: 15px;">WELCOME TO DEEP CLEANING SERVICE</h3>
+      <p style="font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 16px; line-height: 1.6; text-align: justify; margin-bottom: 20px;">
+        If you're looking for thorough and comprehensive cleaning services, our deep cleaning service is perfect for you. We clean every nook and corner of your home or office, ensuring a fresh and hygienic environment. Our expert team uses the latest equipment and techniques to tackle even the toughest cleaning challenges, providing you with a spotless and sanitized space. Whether it's a routine clean or a one-time deep clean, we tailor our services to meet your specific needs and preferences, delivering exceptional results every time.
+      </p>
+      <p style="font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 16px; line-height: 1.6; text-align: justify;">
+        We understand that each space is unique, and our approach is customized to address your specific requirements. From detailed surface cleaning to addressing hidden areas, we ensure that no corner is overlooked. Our commitment to quality and customer satisfaction is what sets us apart, and we strive to exceed your expectations with every job. Choose our deep cleaning service for a thorough, reliable, and efficient cleaning experience that will leave your space looking and feeling brand new.
+      </p>
+    </div>
+
+
+    
+            
+
+
+      
+
+    <!-- End Gallery Section -->
+  </div>
+</div>
 
          <!-- Section Title -->
-<div class="section-title pb-3 pt-5 text-center">
+<div class="section-title pb-0 text-center">
   <h2 style="font-family: 'Roboto', sans-serif; font-size: 24px; font-weight: 700; margin-bottom: 20px;">What's more!</h2>
 </div>
 
 <!-- Service Content Section -->
-<div class="row gy-5">
+<div class="row gy-0">
   
   <!-- First Service Content -->
   <div class="service-content d-flex align-items-start" data-aos="fade-up" data-aos-delay="30" style="font-family: 'Roboto', sans-serif; font-weight: 400; line-height: 1.6; margin-bottom: 30px;">
