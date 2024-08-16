@@ -10,14 +10,11 @@
     <!-- Main CSS File -->
     <link href="../assets/css/main.css" rel="stylesheet">
     <style>
-
-body {
-            background-color: #ffffff; /* Set the background color of the entire page to white */
-        }
        .how-we-work {
             text-align: center;
             padding: 40px 20px;
-            
+            background-color: #f9f9f9;
+            color: #000;
         }
 
         .how-we-work h2 {
@@ -32,7 +29,7 @@ body {
             font-family: 'Roboto', sans-serif;
             font-weight: 400;
             font-size: 1.1em;
-            
+            color: #666;
             line-height: 1.6;
             margin-bottom: 30px;
         }
@@ -105,34 +102,36 @@ body {
             color: #777;
         }
 
-        .promotions {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-        }
+   .promotions {
+    display: flex;
+    justify-content: space-between; /* Space between the two images */
+}
 
-        .promotion {
-            width: 45%;
-            border-radius: 10px;
-            overflow: hidden;
-        }
+.promotion {
+    width: 45%;
+    border-radius: 10px;
+    overflow: hidden;
+}
 
-        .promotion img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
+.promotion img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
 
     </style>
 </head>
 <body>
 
 <!-- How we work section -->
-<section class="how-we-work">
-        <div class="section-title pb-3 pt-5">
+
+        <div class="section-title  pt-5">
             <h2>How It Works</h2>
         </div>
-        <p>We have partnered with India's best companies to get you the service you deserve</p>
+<p style="font-family: 'Roboto', sans-serif; text-align: center;">
+    We have partnered with India's best companies to get you the service you deserve
+</p>
         <div class="row justify-content-center">
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="step">
